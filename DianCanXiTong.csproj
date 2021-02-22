@@ -133,6 +133,10 @@
       <Project>{c53b39bf-effc-49f5-b729-83fc21a360d8}</Project>
       <Name>DianCanXiTongBLL</Name>
     </ProjectReference>
+    <ProjectReference Include="DianCanXiTongManager\DianCanXiTongManager.csproj">
+      <Project>{3eea94af-74af-4087-a035-18adbf4cb112}</Project>
+      <Name>DianCanXiTongManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
