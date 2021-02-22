@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiningComment.cs" />
     <Compile Include="CuisineType.cs" />
     <Compile Include="CuisineInformations.cs" />
     <Compile Include="CuisineComment.cs" />
