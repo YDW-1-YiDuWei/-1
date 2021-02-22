@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C53B39BF-EFFC-49F5-B729-83FC21A360D8}</ProjectGuid>
+    <ProjectGuid>{CB8359BE-A042-4B6B-A14C-10C3FAF91F75}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DianCanXiTongBLL</RootNamespace>
@@ -45,11 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DianCanXiTongDAL\DianCanXiTongDAL.csproj">
-      <Project>{5d070a3e-9541-47e6-9aca-38e7be0f22ba}</Project>
+      <Project>{51e1e677-3fb8-4bb9-a71b-4457f3d4a558}</Project>
       <Name>DianCanXiTongDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DianCanXiTongManager\DianCanXiTongManager.csproj">

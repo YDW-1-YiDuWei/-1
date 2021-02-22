@@ -130,7 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="DianCanXiTongBLL\DianCanXiTongBLL.csproj">
-      <Project>{c53b39bf-effc-49f5-b729-83fc21a360d8}</Project>
+      <Project>{cb8359be-a042-4b6b-a14c-10c3faf91f75}</Project>
       <Name>DianCanXiTongBLL</Name>
     </ProjectReference>
     <ProjectReference Include="DianCanXiTongManager\DianCanXiTongManager.csproj">
