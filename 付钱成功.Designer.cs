@@ -80,7 +80,6 @@
             // 
             // btW
             // 
-            this.btW.Image = ((System.Drawing.Image)(resources.GetObject("btW.Image")));
             this.btW.Location = new System.Drawing.Point(256, 153);
             this.btW.Name = "btW";
             this.btW.Size = new System.Drawing.Size(34, 30);
@@ -90,7 +89,6 @@
             // 
             // btSr
             // 
-            this.btSr.Image = ((System.Drawing.Image)(resources.GetObject("btSr.Image")));
             this.btSr.Location = new System.Drawing.Point(217, 153);
             this.btSr.Name = "btSr";
             this.btSr.Size = new System.Drawing.Size(33, 29);
@@ -100,7 +98,6 @@
             // 
             // btSan
             // 
-            this.btSan.Image = ((System.Drawing.Image)(resources.GetObject("btSan.Image")));
             this.btSan.Location = new System.Drawing.Point(178, 153);
             this.btSan.Name = "btSan";
             this.btSan.Size = new System.Drawing.Size(33, 28);
@@ -110,7 +107,6 @@
             // 
             // button3
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(139, 153);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(33, 28);
@@ -122,7 +118,6 @@
             // 
             this.btYX.BackColor = System.Drawing.Color.Transparent;
             this.btYX.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btYX.Image = ((System.Drawing.Image)(resources.GetObject("btYX.Image")));
             this.btYX.Location = new System.Drawing.Point(100, 152);
             this.btYX.Name = "btYX";
             this.btYX.Size = new System.Drawing.Size(33, 29);
