@@ -52,6 +52,7 @@
             this.Name = "提交";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "提交";
+            this.Load += new System.EventHandler(this.提交_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

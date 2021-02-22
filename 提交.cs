@@ -16,5 +16,11 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
+
+        private void 提交_Load(object sender, EventArgs e)//显示窗体的时候
+        {
+            //123
+
+        }
     }
 }
