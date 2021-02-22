@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongBLL", "DianCan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongDAL", "DianCanXiTongDAL\DianCanXiTongDAL.csproj", "{5D070A3E-9541-47E6-9ACA-38E7BE0F22BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongManager", "..\课堂\DianCanXiTongManager\DianCanXiTongManager.csproj", "{5A42C6EA-49D2-45D7-B6CA-0888D70DC7BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongManager", "DianCanXiTongManager\DianCanXiTongManager.csproj", "{3EEA94AF-74AF-4087-A035-18ADBF4CB112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{5D070A3E-9541-47E6-9ACA-38E7BE0F22BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D070A3E-9541-47E6-9ACA-38E7BE0F22BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D070A3E-9541-47E6-9ACA-38E7BE0F22BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A42C6EA-49D2-45D7-B6CA-0888D70DC7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A42C6EA-49D2-45D7-B6CA-0888D70DC7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A42C6EA-49D2-45D7-B6CA-0888D70DC7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A42C6EA-49D2-45D7-B6CA-0888D70DC7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEA94AF-74AF-4087-A035-18ADBF4CB112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEA94AF-74AF-4087-A035-18ADBF4CB112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEA94AF-74AF-4087-A035-18ADBF4CB112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEA94AF-74AF-4087-A035-18ADBF4CB112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
