@@ -21,6 +21,7 @@ namespace 点餐系统
         RestaurantManager restaurantManager = new RestaurantManager();
         private void button1_Click(object sender, EventArgs e)
         {
+            a();
             if (txtZH.Text.Trim() == "")
             {
                 MessageBox.Show("请输入账号");
@@ -38,15 +39,20 @@ namespace 点餐系统
             List<Restaurant> list = restaurantManager.Longin(txtZH.Text, txtPwd.Text);
             if (list.Count > 0)
             {
-                首页 sy = new 首页();
-                sy.Show();
-                this.Hide();
+                a();
             }
             else
             {
                 MessageBox.Show("账号或密码错误", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
 
+        }
+        public void a() 
+        {
+            首页 sy = new 首页();
+            sy.Show();
+            this.Hide();
         }
     }
 }

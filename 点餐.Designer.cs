@@ -80,6 +80,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.lkbWEI);
             this.panel1.Controls.Add(this.lkbTop);
             this.panel1.Controls.Add(this.lbYs);
@@ -96,17 +97,17 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(862, 488);
+            this.panel1.Size = new System.Drawing.Size(771, 467);
             this.panel1.TabIndex = 8;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lkbWEI
             // 
             this.lkbWEI.ActiveLinkColor = System.Drawing.Color.Yellow;
             this.lkbWEI.AutoSize = true;
+            this.lkbWEI.BackColor = System.Drawing.Color.Transparent;
             this.lkbWEI.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lkbWEI.LinkColor = System.Drawing.Color.Red;
-            this.lkbWEI.Location = new System.Drawing.Point(655, 457);
+            this.lkbWEI.Location = new System.Drawing.Point(550, 435);
             this.lkbWEI.Name = "lkbWEI";
             this.lkbWEI.Size = new System.Drawing.Size(40, 16);
             this.lkbWEI.TabIndex = 24;
@@ -117,9 +118,10 @@
             // 
             this.lkbTop.ActiveLinkColor = System.Drawing.Color.Yellow;
             this.lkbTop.AutoSize = true;
+            this.lkbTop.BackColor = System.Drawing.Color.Transparent;
             this.lkbTop.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lkbTop.LinkColor = System.Drawing.Color.Red;
-            this.lkbTop.Location = new System.Drawing.Point(439, 457);
+            this.lkbTop.Location = new System.Drawing.Point(334, 435);
             this.lkbTop.Name = "lkbTop";
             this.lkbTop.Size = new System.Drawing.Size(40, 16);
             this.lkbTop.TabIndex = 23;
@@ -129,9 +131,10 @@
             // lbYs
             // 
             this.lbYs.AutoSize = true;
+            this.lbYs.BackColor = System.Drawing.Color.Transparent;
             this.lbYs.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbYs.ForeColor = System.Drawing.Color.Red;
-            this.lbYs.Location = new System.Drawing.Point(547, 457);
+            this.lbYs.Location = new System.Drawing.Point(442, 435);
             this.lbYs.Name = "lbYs";
             this.lbYs.Size = new System.Drawing.Size(40, 16);
             this.lbYs.TabIndex = 22;
@@ -141,9 +144,10 @@
             // 
             this.lkbX.ActiveLinkColor = System.Drawing.Color.Yellow;
             this.lkbX.AutoSize = true;
+            this.lkbX.BackColor = System.Drawing.Color.Transparent;
             this.lkbX.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lkbX.LinkColor = System.Drawing.Color.Red;
-            this.lkbX.Location = new System.Drawing.Point(593, 457);
+            this.lkbX.Location = new System.Drawing.Point(488, 435);
             this.lkbX.Name = "lkbX";
             this.lkbX.Size = new System.Drawing.Size(56, 16);
             this.lkbX.TabIndex = 20;
@@ -154,9 +158,10 @@
             // 
             this.lkbS.ActiveLinkColor = System.Drawing.Color.Yellow;
             this.lkbS.AutoSize = true;
+            this.lkbS.BackColor = System.Drawing.Color.Transparent;
             this.lkbS.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lkbS.LinkColor = System.Drawing.Color.Red;
-            this.lkbS.Location = new System.Drawing.Point(485, 457);
+            this.lkbS.Location = new System.Drawing.Point(380, 435);
             this.lkbS.Name = "lkbS";
             this.lkbS.Size = new System.Drawing.Size(56, 16);
             this.lkbS.TabIndex = 21;
@@ -165,7 +170,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button3.Location = new System.Drawing.Point(26, 8);
             this.button3.Name = "button3";
@@ -186,8 +191,9 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(764, 438);
+            this.button2.Location = new System.Drawing.Point(679, 426);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(91, 38);
             this.button2.TabIndex = 15;
@@ -198,8 +204,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(653, 15);
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(568, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 17;
@@ -207,8 +215,9 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(758, 9);
+            this.button1.Location = new System.Drawing.Point(679, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 38);
             this.button1.TabIndex = 15;
@@ -229,10 +238,10 @@
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Location = new System.Drawing.Point(3, 49);
+            this.tabControl1.Location = new System.Drawing.Point(3, 45);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(856, 388);
+            this.tabControl1.Size = new System.Drawing.Size(765, 371);
             this.tabControl1.TabIndex = 11;
             // 
             // tabPage1
@@ -240,7 +249,7 @@
             this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(848, 362);
+            this.tabPage1.Size = new System.Drawing.Size(757, 345);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "全部";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -250,7 +259,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(842, 356);
+            this.listView1.Size = new System.Drawing.Size(758, 356);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -259,7 +268,7 @@
             this.tabPage3.Controls.Add(this.listView2);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(848, 362);
+            this.tabPage3.Size = new System.Drawing.Size(759, 345);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "冷菜";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -278,7 +287,7 @@
             this.tabPage4.Controls.Add(this.listView3);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(848, 362);
+            this.tabPage4.Size = new System.Drawing.Size(759, 345);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "热菜";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -297,7 +306,7 @@
             this.tabPage5.Controls.Add(this.listView4);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(848, 362);
+            this.tabPage5.Size = new System.Drawing.Size(759, 345);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "肉类";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -316,7 +325,7 @@
             this.tabPage6.Controls.Add(this.listView5);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(848, 362);
+            this.tabPage6.Size = new System.Drawing.Size(759, 345);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "海洋";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -335,7 +344,7 @@
             this.tabPage7.Controls.Add(this.listView6);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(848, 362);
+            this.tabPage7.Size = new System.Drawing.Size(759, 345);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "主食";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -354,7 +363,7 @@
             this.tabPage8.Controls.Add(this.listView7);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(848, 362);
+            this.tabPage8.Size = new System.Drawing.Size(759, 345);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "汤羮";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -373,7 +382,7 @@
             this.tabPage9.Controls.Add(this.listView8);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(848, 362);
+            this.tabPage9.Size = new System.Drawing.Size(759, 345);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "酒水";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -392,24 +401,29 @@
             this.tabPage10.Controls.Add(this.listView9);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(848, 362);
+            this.tabPage10.Size = new System.Drawing.Size(759, 345);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "甜点";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // listView9
             // 
+            this.listView9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView9.HideSelection = false;
             this.listView9.Location = new System.Drawing.Point(3, 3);
             this.listView9.Name = "listView9";
-            this.listView9.Size = new System.Drawing.Size(842, 356);
+            this.listView9.Size = new System.Drawing.Size(650, 356);
             this.listView9.TabIndex = 1;
             this.listView9.UseCompatibleStateImageBehavior = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(460, 23);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(407, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 12);
             this.label2.TabIndex = 14;
@@ -417,7 +431,7 @@
             // 
             // txtDishName
             // 
-            this.txtDishName.Location = new System.Drawing.Point(224, 18);
+            this.txtDishName.Location = new System.Drawing.Point(169, 18);
             this.txtDishName.Name = "txtDishName";
             this.txtDishName.Size = new System.Drawing.Size(230, 21);
             this.txtDishName.TabIndex = 13;
@@ -425,7 +439,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 22);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(84, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 12);
             this.label1.TabIndex = 12;
@@ -441,7 +457,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 488);
+            this.ClientSize = new System.Drawing.Size(775, 467);
             this.Controls.Add(this.panel1);
             this.Name = "点餐";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
