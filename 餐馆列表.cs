@@ -50,5 +50,13 @@ namespace 点餐系统
                 i++;
             }
         }
+
+        private void lvSJXX_Click(object sender, EventArgs e)//单击里面的餐馆的时候
+        {
+            if (lvSJXX.SelectedItems.Count != 0)
+            {
+                MessageBox.Show("1");
+            }
+        }
     }
 }
