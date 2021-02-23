@@ -50,9 +50,9 @@ namespace 点餐系统
 
         private void Label2_Click(object sender, EventArgs e)//订单
         {
-            订单 dd = new 订单();
-            dd.Show();
-            this.Hide();
+            //订单 dd = new 订单();
+          //  dd.Show();
+          //  this.Hide();
         }
     }
 }
