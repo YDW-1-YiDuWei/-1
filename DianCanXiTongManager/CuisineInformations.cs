@@ -8,13 +8,13 @@ namespace DianCanXiTongManager
 {
     public class CuisineInformations
     {
-        public int id { get; set; }//标识列ID
-        public string CuisineName { get; set; }//菜品名称 
-        public int RestaurantId { get; set; }//餐馆的标识列ID
-        public int CuisineTypeId { get; set; }//菜品类型ID  
-        public double CuisinePrice { get; set; }//菜品价格 
-        public int CuisineCommentId { get; set; }//菜品评论ID 
-        public int CuisineCount { get; set; }//菜品点餐次数 
-        public string CuisineImagePath { get; set; }//菜品图片路径 
+        public int id { get; set; }
+        public string CuisineName { get; set; }
+        public CuisineComment RestaurantId { get; set; }
+        public CuisineType CuisineTypeId { get; set; }
+        public double CuisinePrice { get; set; }
+        public CuisineComment CuisineCommentId { get; set; }
+        public int CuisineCount { get; set; }
+        public string CuisineImagePath { get; set; }
     }
 }
