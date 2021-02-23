@@ -20,20 +20,21 @@ namespace 点餐系统
             InitializeComponent();
         }
 
-        private void 餐馆列表_Load(object sender, EventArgs e)//查询窗体的时候
+        private void 餐馆列表_Load(object sender, EventArgs e)//显示窗体的时候
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)//查询按钮
         {
+            MessageBox.Show("123","提示");
             DataTable dt=restaurantManager.InquireRestaurantName(txtSJ.Text);
 
             Image[] asg = new Image[2];
             int i = 0;
             foreach (DataRow dr in dt.Rows)
             {
-                string gsName = dr[3].ToString();//歌手名字
+                string gsName = dr[3].ToString();//餐馆名字
                 lvSJXX.Items.Add(gsName, i);//这里是关键!!!!!!!!!倒
                 i++;
             }
