@@ -8,5 +8,6 @@ namespace DianCanXiTongDAL
 {
     public class Class1
     {
+       //
     }
 }

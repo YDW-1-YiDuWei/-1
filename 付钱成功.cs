@@ -19,8 +19,7 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //
-            //
+            
             提交 tj = new 提交();
             tj.Show();
             this.Close();
