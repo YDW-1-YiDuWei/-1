@@ -43,7 +43,7 @@ namespace 点餐系统
         {
             付钱成功 fqcg = new 付钱成功();
             fqcg.Show();
-            MessageBox.Show("123");
+          
             this.Close();
         }
 
