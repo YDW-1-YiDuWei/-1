@@ -66,12 +66,13 @@
             // 
             // lvOrder
             // 
-            this.lvOrder.HideSelection = false;
-            this.lvOrder.Location = new System.Drawing.Point(3, 99);
-            this.lvOrder.Name = "lvOrder";
-            this.lvOrder.Size = new System.Drawing.Size(627, 365);
-            this.lvOrder.TabIndex = 22;
-            this.lvOrder.UseCompatibleStateImageBehavior = false;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(3, 99);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(627, 365);
+            this.listView1.TabIndex = 22;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
@@ -95,6 +96,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(23, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 19);
@@ -105,6 +107,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
             this.label2.Location = new System.Drawing.Point(209, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 19);
@@ -115,6 +118,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(398, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 19);
@@ -125,6 +129,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
             this.label4.Location = new System.Drawing.Point(535, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 19);

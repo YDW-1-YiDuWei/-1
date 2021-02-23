@@ -16,5 +16,10 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
+
+        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
