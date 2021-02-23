@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="详细订单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="详细订单.Designer.cs">
+      <DependentUpon>详细订单.cs</DependentUpon>
+    </Compile>
     <Compile Include="餐馆列表.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <Compile Include="首页.Designer.cs">
       <DependentUpon>首页.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="详细订单.resx">
+      <DependentUpon>详细订单.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="餐馆列表.resx">
       <DependentUpon>餐馆列表.cs</DependentUpon>
     </EmbeddedResource>

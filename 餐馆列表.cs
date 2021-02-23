@@ -27,15 +27,26 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//查询按钮
         {
-            MessageBox.Show("123","提示");
-            DataTable dt=restaurantManager.InquireRestaurantName(txtSJ.Text);
+            lvSJXX.Clear();
+            Inquire();
+        }
+        public void Inquire() //查询餐馆
+        {
+            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());
 
-            Image[] asg = new Image[2];
             int i = 0;
-            foreach (DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)//循环表里的行
             {
                 string gsName = dr[3].ToString();//餐馆名字
-                lvSJXX.Items.Add(gsName, i);//这里是关键!!!!!!!!!倒
+                string gsName2 = dr[4].ToString();//餐馆地址
+                string gsName3 = dr[5].ToString();//餐馆电话
+                if (i == 0)
+                {
+                    lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i++);
+                }
+                lvSJXX.Items.Add("", i++);
+                lvSJXX.Items.Add("", i++);
+                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, i);//这里是关键!!!!!!!!!倒
                 i++;
             }
         }
