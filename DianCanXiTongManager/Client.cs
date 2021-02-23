@@ -15,6 +15,5 @@ namespace DianCanXiTongManager
         public string Phone { get; set; }
         public string Password { get; set; }
         public string Address { get; set; }
-        public string 海关 { get; set; }
     }
 }
