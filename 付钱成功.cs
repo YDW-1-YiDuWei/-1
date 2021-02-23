@@ -19,6 +19,7 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//提交按钮
         {
+            
             提交 tj = new 提交();
             tj.Show();
             this.Close();
@@ -26,7 +27,7 @@ namespace 点餐系统
 
         private void radioButton4_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
