@@ -65,6 +65,14 @@
             this.pictureBox1.TabStop = false;
             // 
             // lvOrder
+            // 
+            this.lvOrder.HideSelection = false;
+            this.lvOrder.Location = new System.Drawing.Point(3, 99);
+            this.lvOrder.Name = "lvOrder";
+            this.lvOrder.Size = new System.Drawing.Size(627, 365);
+            this.lvOrder.TabIndex = 26;
+            this.lvOrder.UseCompatibleStateImageBehavior = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
