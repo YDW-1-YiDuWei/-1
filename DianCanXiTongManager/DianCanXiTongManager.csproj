@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Rider.cs" />
+    <Compile Include="Restaurant.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="DistributionSituation.cs" />
+    <Compile Include="Distribution.cs" />
+    <Compile Include="DiningComment.cs" />
     <Compile Include="CuisineType.cs" />
     <Compile Include="CuisineInformations.cs" />
     <Compile Include="CuisineComment.cs" />

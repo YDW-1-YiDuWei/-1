@@ -19,6 +19,7 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             首页 sy = new 首页();
             sy.Show();
             this.Hide();
