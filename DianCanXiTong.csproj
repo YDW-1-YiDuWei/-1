@@ -97,6 +97,9 @@
     <EmbeddedResource Include="付钱成功.resx">
       <DependentUpon>付钱成功.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="我的.resx">
+      <DependentUpon>我的.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="提交.resx">
       <DependentUpon>提交.cs</DependentUpon>
     </EmbeddedResource>
