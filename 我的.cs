@@ -16,5 +16,19 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)//登入
+        {
+            登入修改 drxg = new 登入修改();
+            drxg.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)//修改
+        {
+            登入修改 drxg = new 登入修改();
+            drxg.Show();
+            this.Close();
+        }
     }
 }
