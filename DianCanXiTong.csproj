@@ -85,6 +85,12 @@
     <Compile Include="登录界面.Designer.cs">
       <DependentUpon>登录界面.cs</DependentUpon>
     </Compile>
+    <Compile Include="订单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单.Designer.cs">
+      <DependentUpon>订单.cs</DependentUpon>
+    </Compile>
     <Compile Include="首页.cs">
       <SubType>Form</SubType>
     </Compile>
