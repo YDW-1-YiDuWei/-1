@@ -29,18 +29,14 @@ namespace 点餐系统
         {
             DataTable dt=restaurantManager.InquireRestaurantName(txtSJ.Text);
 
-            /*Image[] asg = new Image[2];
+            Image[] asg = new Image[2];
             int i = 0;
             foreach (DataRow dr in dt.Rows)
             {
-                string luj = dr[4].ToString();//照片路径
-                string gsName = dr[1].ToString();//歌手名字
+                string gsName = dr[3].ToString();//歌手名字
                 lvSJXX.Items.Add(gsName, i);//这里是关键!!!!!!!!!倒!
-
-                asg[i] = System.Drawing.Image.FromFile(Resource_Path.singer + luj);//已经把拿到的图片保存到了这里面
                 i++;
             }
-            image.Images.AddRange(asg);*/
         }
     }
 }

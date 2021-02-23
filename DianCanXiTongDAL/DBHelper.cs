@@ -62,11 +62,11 @@ namespace DianCanXiTongDAL
                 if (sqlParams != null)
                 {
                     //添加参数到执行对象中
-                    cmd.Parameters.AddRange(sqlParams);//第一种方法
-                                                       /* foreach (var param in sqlParams)//第二种方法
-                                                        {
-                                                            cmd.Parameters.Add(param);
-                                                        }*/
+                    //cmd.Parameters.AddRange(sqlParams);//第一种方法
+                    foreach (var param in sqlParams)//第二种方法
+                    {
+                        cmd.Parameters.Add(param);
+                    }
                 }
                 return cmd.ExecuteNonQuery();//执行且返回影响行数
             }
@@ -95,11 +95,11 @@ namespace DianCanXiTongDAL
                 if (sqlParams != null)
                 {
                     //添加参数到执行对象中
-                    cmd.Parameters.AddRange(sqlParams);//第一种方法
-                                                       /* foreach (var param in sqlParams)//第二种方法
-                                                        {
-                                                            cmd.Parameters.Add(param);
-                                                        }*/
+                    //cmd.Parameters.AddRange(sqlParams);//第一种方法
+                    foreach (var param in sqlParams)//第二种方法
+                    {
+                        cmd.Parameters.Add(param);
+                    }
                 }
                 return cmd.ExecuteScalar();//执行且返回影响行数
             }
@@ -128,17 +128,18 @@ namespace DianCanXiTongDAL
                 if (sqlParams != null)
                 {
                     //添加参数到执行对象中
-                    cmd.Parameters.AddRange(sqlParams);//第一种方法
-                    /*foreach (var param in sqlParams)//第二种方法
+                    //cmd.Parameters.AddRange(sqlParams);//第一种方法
+                    foreach (var param in sqlParams)//第二种方法
                     {
                         cmd.Parameters.Add(param);
-                    }*/
+                    }
                 }
                 return cmd.ExecuteReader(CommandBehavior.CloseConnection);//当关闭对象，则自动关闭连接对象
             }
             catch (Exception ex)//当try里面的代码出现异常，则会执行catch里面的代码，如果无异常就不会执行
             {
-                throw;
+                Console.WriteLine(ex.Message);
+                return null;
             }
             finally //不管有没有异常都会执行
             {
@@ -176,11 +177,8 @@ namespace DianCanXiTongDAL
             }
             catch (Exception ex)
             {
-                throw;
-            }
-            finally //不管有没有异常都会执行
-            {
-                this.CloseConnection();//关闭连接
+                Console.WriteLine(ex.Message);
+                return null;
             }
         }
     }

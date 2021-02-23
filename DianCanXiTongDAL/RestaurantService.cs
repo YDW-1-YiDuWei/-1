@@ -12,10 +12,7 @@ namespace DianCanXiTongDAL
     public class RestaurantService//餐馆数据层
     {
         DBHelper db = new DBHelper();
-        /// <summary>
-        /// 根据餐馆名字查询
-        /// </summary>
-        public DataTable InquireRestaurantName(string name) 
+        public DataTable InquireRestaurantName(string name) // 根据餐馆名字查询
         {
             string sql = "select * from Restaurant where RestaurantName=@RestaurantName";
             SqlParameter[] sp = new SqlParameter[]
