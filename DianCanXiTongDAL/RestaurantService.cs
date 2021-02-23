@@ -26,6 +26,8 @@ namespace DianCanXiTongDAL
         }
         public List<Restaurant> Longin(string uid, string pwd)//餐厅登录
         {
+            SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
+
             List<Restaurant> list = new List<Restaurant>();
 
             DBHelper db = new DBHelper();
@@ -39,7 +41,10 @@ namespace DianCanXiTongDAL
                 new SqlParameter("@RestaurantNumber",uid),
                 new SqlParameter("@RestaurantNumberPwd",pwd)
             };
-            SqlDataReader sdr = db.ExecuteReader(sql, sp);
+            coon.Open();
+            SqlCommand cmd = new SqlCommand(sql, coon);
+            cmd.Parameters.AddRange(sp);
+            SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
                 rest = new Restaurant
