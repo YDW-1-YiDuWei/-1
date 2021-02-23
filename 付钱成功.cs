@@ -26,7 +26,7 @@ namespace 点餐系统
 
         private void radioButton4_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("123");
+           //123
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
