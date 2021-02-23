@@ -36,7 +36,7 @@ namespace 点餐系统
 
 
             int j = 1;
-            Image[] asg = new Image[4];
+            Image[] asg = new Image[5];
             int ima = 0;
             for (int i = 0; i < 1; i++)
             {
