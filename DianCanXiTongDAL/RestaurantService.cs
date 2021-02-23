@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DianCanXiTongManager;
+using System.Data;
 
 namespace DianCanXiTongDAL
 {
@@ -11,9 +13,10 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 查询餐馆全部
         /// </summary>
-        public void InquireRestaurant() 
+        public DataTable InquireRestaurant() 
         {
-        
+            DataTable dt = new DataTable();
+            return dt;
         }
     }
 }
