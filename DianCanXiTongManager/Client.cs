@@ -8,6 +8,7 @@ namespace DianCanXiTongManager
 {
     public class Client
     {
+
         public int Id { get; set; }//标识列ID
         public string Number { get; set; }//客户账号
         public string Name { get; set; }//客户姓名
