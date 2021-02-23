@@ -19,5 +19,9 @@ namespace DianCanXiTongBLL
         {
             return restauranSer.InquireRestaurant();
         }
+        public List<Restaurant> Longin(string uid,string pwd)
+        {
+            return restauranSer.Longin(uid, pwd);
+        }
     }
 }
