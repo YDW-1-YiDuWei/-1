@@ -39,5 +39,11 @@ namespace 点餐系统
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)//我的
+        {
+            我的 wd = new 我的();
+            wd.Show();
+            this.Close();
+        }
     }
 }
