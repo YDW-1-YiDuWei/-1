@@ -21,7 +21,7 @@ namespace DianCanXiTongDAL
             };
             return db.GetTable(sql, "Restaurant", sp);
         }
-        public List<Restaurant> Longin(string uid,string pwd)
+        public List<Restaurant> Longin(string uid,string pwd)//餐厅登录
         {
             List<Restaurant> list = new List<Restaurant>();
 
