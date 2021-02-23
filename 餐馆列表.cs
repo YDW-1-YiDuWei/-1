@@ -16,5 +16,10 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
+
+        private void 餐馆列表_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
