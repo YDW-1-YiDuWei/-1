@@ -48,7 +48,7 @@ namespace 点餐系统
             }
             return true;
         }
-        private void button1_Click(object sender, EventArgs e)//确认按钮
+        private void button1_Click(object sender, EventArgs e)//确认按钮（黑鬼乱写的）
         {
             if (Check())
             {
@@ -56,7 +56,7 @@ namespace 点餐系统
             }
         }
 
-        private void Button1_Click_1(object sender, EventArgs e)
+        private void Button1_Click_1(object sender, EventArgs e)//确认按钮
         {
             if (txtPwd2.Text.Trim() != txtPwd.Text.Trim())
             {
