@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(详细订单));
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvOrder = new System.Windows.Forms.ListView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,15 +64,14 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // listView1
+            // lvOrder
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 99);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(627, 365);
-            this.listView1.TabIndex = 22;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
+            this.lvOrder.HideSelection = false;
+            this.lvOrder.Location = new System.Drawing.Point(3, 99);
+            this.lvOrder.Name = "lvOrder";
+            this.lvOrder.Size = new System.Drawing.Size(627, 365);
+            this.lvOrder.TabIndex = 26;
+            this.lvOrder.UseCompatibleStateImageBehavior = false;
             // 
             // pictureBox2
             // 
@@ -159,10 +158,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvOrder);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Name = "详细订单";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "详细订单";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -176,7 +176,7 @@
 
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvOrder;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
