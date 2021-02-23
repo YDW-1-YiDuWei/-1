@@ -17,5 +17,8 @@ namespace DianCanXiTongDAL
         {
             string sql = "";
         }
+        public void InquireReservationService()//详细订单查询
+        {
+        }
     }
 }

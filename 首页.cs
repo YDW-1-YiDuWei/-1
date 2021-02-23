@@ -51,8 +51,8 @@ namespace 点餐系统
         private void Label2_Click(object sender, EventArgs e)//订单
         {
 
-            详细订单 xxdd = new 详细订单();
-            xxdd.Show();
+            模糊订单 mhdd = new 模糊订单();
+            mhdd.Show();
             this.Close();
         }
 
