@@ -19,8 +19,10 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            点餐 jm = new 点餐();
-            jm.Show();
+            餐馆列表 cglb = new 餐馆列表();
+            cglb.Show();
+            this.Close();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
