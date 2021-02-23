@@ -66,9 +66,10 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(539, 72);
+            this.label2.Location = new System.Drawing.Point(719, 64);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "张三";
             // 
@@ -104,10 +105,11 @@
             // 
             // 订单
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 468);
+            this.ClientSize = new System.Drawing.Size(907, 585);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "订单";
             this.Text = "订单";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
