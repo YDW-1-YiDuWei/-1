@@ -14,5 +14,6 @@ namespace DianCanXiTongManager
         public string RiderName { get; set; }//骑手姓名
         public string RiderPhone { get; set; }//骑手电话
         public string RiderComment { get; set; }//骑手评价信息
+
     }
 }
