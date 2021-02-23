@@ -34,21 +34,31 @@ namespace 点餐系统
         {
             DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());
 
-            int i = 0;
+
+            int j = 1;
+            Image[] asg = new Image[4];
+            int ima = 0;
+            for (int i = 0; i < 1; i++)
+            {
+                lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i);
+
+                asg[ima++] = System.Drawing.Image.FromFile(@"C:\Users\Administrator\Desktop\图片超清\FQ1WE53SGCNQ@64[P_94UHP.png");//已经把拿到的图片保存到了这里面
+            }
+
+           
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
                 string gsName = dr[3].ToString();//餐馆名字
                 string gsName2 = dr[4].ToString();//餐馆地址
                 string gsName3 = dr[5].ToString();//餐馆电话
-                if (i == 0)
-                {
-                    lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i++);
-                }
-                lvSJXX.Items.Add("", i++);
-                lvSJXX.Items.Add("", i++);
-                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, i);//这里是关键!!!!!!!!!倒
-                i++;
+                string gsName4 = dr[7].ToString();//餐馆图片
+
+                asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + gsName4);//已经把拿到的图片保存到了这里面
+                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, j);//这里是关键!!!!!!!!!倒
+
+                j++;
             }
+            image.Images.AddRange(asg);
         }
 
         private void lvSJXX_Click(object sender, EventArgs e)//单击里面的餐馆的时候

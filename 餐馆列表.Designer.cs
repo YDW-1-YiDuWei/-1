@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSJ = new System.Windows.Forms.TextBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.lvSJXX = new System.Windows.Forms.ListView();
+            this.image = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // label2
@@ -62,12 +62,6 @@
             this.txtSJ.Size = new System.Drawing.Size(240, 21);
             this.txtSJ.TabIndex = 5;
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(463, 9);
@@ -84,10 +78,18 @@
             this.lvSJXX.Location = new System.Drawing.Point(12, 54);
             this.lvSJXX.Name = "lvSJXX";
             this.lvSJXX.Size = new System.Drawing.Size(538, 397);
+            this.lvSJXX.SmallImageList = this.image;
+            this.lvSJXX.StateImageList = this.image;
             this.lvSJXX.TabIndex = 10;
             this.lvSJXX.UseCompatibleStateImageBehavior = false;
             this.lvSJXX.View = System.Windows.Forms.View.List;
             this.lvSJXX.Click += new System.EventHandler(this.lvSJXX_Click);
+            // 
+            // image
+            // 
+            this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.image.ImageSize = new System.Drawing.Size(64, 64);
+            this.image.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // 餐馆列表
             // 
@@ -112,8 +114,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSJ;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListView lvSJXX;
+        private System.Windows.Forms.ImageList image;
     }
 }
