@@ -15,9 +15,9 @@ namespace DianCanXiTongBLL
         /// <summary>
         /// 查询餐馆全部
         /// </summary>
-        public DataTable InquireRestaurant() 
+        public DataTable InquireRestaurantName() 
         {
-            return restauranSer.InquireRestaurant();
+            return restauranSer.InquireRestaurantName();
         }
     }
 }
