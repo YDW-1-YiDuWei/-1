@@ -15,7 +15,7 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 根据餐馆名字查询
         /// </summary>
-        public DataTable InquireRestaurantName(string name) 
+        public DataTable InquireRestaurantName(string name)
         {
             string sql = "select * from Restaurant where RestaurantName=@RestaurantName";
             SqlParameter[] sp = new SqlParameter[]
@@ -24,11 +24,11 @@ namespace DianCanXiTongDAL
             };
             return db.GetTable(sql, "Restaurant", sp);
         }
-        public List<Restaurant> Longin(string uid,string pwd)//餐厅登录
+        public List<Restaurant> Longin(string uid, string pwd)//餐厅登录
         {
             List<Restaurant> list = new List<Restaurant>();
 
-            DBHelper db=new DBHelper();
+            DBHelper db = new DBHelper();
 
             Restaurant rest = null;
 
@@ -49,6 +49,7 @@ namespace DianCanXiTongDAL
                 };
                 list.Add(rest);
             }
+
             return list;
         }
     }
