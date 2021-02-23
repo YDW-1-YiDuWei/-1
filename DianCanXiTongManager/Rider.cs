@@ -8,7 +8,6 @@ namespace DianCanXiTongManager
 {
     public class Rider
     {
-
         public int RiderId { get; set; }//标识列ID
         public string RiderNumber { get; set; }//后面增加的骑手账号
         public string RiderNumberPwd { get; set; }//后面增加的骑手密码
