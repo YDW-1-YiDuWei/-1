@@ -1,6 +1,6 @@
 ﻿namespace 点餐系统
 {
-    partial class FrmRestaurant
+    partial class 餐馆列表
     {
         /// <summary>
         /// Required designer variable.
