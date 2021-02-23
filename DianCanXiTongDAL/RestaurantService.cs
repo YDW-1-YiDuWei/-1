@@ -56,7 +56,7 @@ namespace DianCanXiTongDAL
                 };
                 list.Add(rest);
             }
-
+            coon.Close();
             return list;
         }
     }

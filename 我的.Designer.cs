@@ -64,6 +64,7 @@
             this.button3.TabIndex = 11;
             this.button3.Text = "退出登入";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button2
             // 
@@ -98,20 +99,20 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(246, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 13;
-            this.label2.Text = "密码：";
+            this.label2.Text = "电话号码：";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(246, 21);
+            this.label1.Location = new System.Drawing.Point(270, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 14;
-            this.label1.Text = "姓名：";
+            this.label1.Text = "名称：";
             // 
             // pictureBox2
             // 
@@ -136,6 +137,7 @@
             this.Name = "我的";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "我的";
+            this.Load += new System.EventHandler(this.我的_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
