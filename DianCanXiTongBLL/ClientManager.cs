@@ -13,7 +13,7 @@ namespace DianCanXiTongBLL
     {
         ClientService clientservice = new ClientService();
 
-        public List<Client> Login(string uid,string pwd)
+        public List<Client> Login(string uid,string pwd)//用户登录
         {
             return clientservice.Login(uid, pwd);
         }
