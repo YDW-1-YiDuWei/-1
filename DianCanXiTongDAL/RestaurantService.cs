@@ -12,10 +12,7 @@ namespace DianCanXiTongDAL
     public class RestaurantService//餐馆数据层
     {
         DBHelper db = new DBHelper();
-        /// <summary>
-        /// 根据餐馆名字查询
-        /// </summary>
-        public DataTable InquireRestaurantName(string name)
+        public DataTable InquireRestaurantName(string name) // 根据餐馆名字查询
         {
             string sql = "select * from Restaurant where RestaurantName=@RestaurantName";
             SqlParameter[] sp = new SqlParameter[]
@@ -26,6 +23,8 @@ namespace DianCanXiTongDAL
         }
         public List<Restaurant> Longin(string uid, string pwd)//餐厅登录
         {
+            SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
+
             List<Restaurant> list = new List<Restaurant>();
 
             DBHelper db = new DBHelper();
@@ -39,7 +38,10 @@ namespace DianCanXiTongDAL
                 new SqlParameter("@RestaurantNumber",uid),
                 new SqlParameter("@RestaurantNumberPwd",pwd)
             };
-            SqlDataReader sdr = db.ExecuteReader(sql, sp);
+            coon.Open();
+            SqlCommand cmd = new SqlCommand(sql, coon);
+            cmd.Parameters.AddRange(sp);
+            SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
                 rest = new Restaurant
