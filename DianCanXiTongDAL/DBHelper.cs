@@ -10,7 +10,6 @@ namespace DianCanXiTongDAL
 {
     public class DBHelper
     {
-
         private const string connString = "server=.;database=Order;uid=sa;pwd=sa";   
         private SqlConnection conn = null;
 
