@@ -65,15 +65,6 @@
             this.pictureBox1.TabStop = false;
             // 
             // lvOrder
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 99);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(627, 365);
-            this.listView1.TabIndex = 22;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
