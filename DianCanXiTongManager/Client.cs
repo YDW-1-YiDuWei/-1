@@ -8,12 +8,12 @@ namespace DianCanXiTongManager
 {
     public class Client
     {
-        public int Id { get; set; }
-        public string Number { get; set; }
-        public string Name { get; set; }
-        public char Sex { get; set; }
-        public string Phone { get; set; }
-        public string Password { get; set; }
-        public string Address { get; set; }
+        public int Id { get; set; }//标识列ID
+        public string Number { get; set; }//客户账号
+        public string Name { get; set; }//客户姓名
+        public char Sex { get; set; }//客户性别
+        public string Phone { get; set; }//客户电话
+        public string Password { get; set; }//客户密码
+        public string Address { get; set; }//客户地址
     }
 }

@@ -8,10 +8,10 @@ namespace DianCanXiTongManager
 {
     public class CuisineComment
     {
-        public int id { get; set; }
-        public int CuisineId { get; set; }
-        public string CuisineComments { get; set; }
-        public int CuisineRate { get; set; }
-        public int ClientId { get; set; }
+        public int id { get; set; }//标识列ID
+        public int CuisineId { get; set; }//菜品ID
+        public string CuisineComments { get; set; }//菜品评论 
+        public int CuisineRate { get; set; }//菜品评级
+        public int ClientId { get; set; }//用户ID
     }
 }
