@@ -59,6 +59,12 @@
     <Compile Include="付钱成功.Designer.cs">
       <DependentUpon>付钱成功.cs</DependentUpon>
     </Compile>
+    <Compile Include="我的.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="我的.Designer.cs">
+      <DependentUpon>我的.cs</DependentUpon>
+    </Compile>
     <Compile Include="提交.cs">
       <SubType>Form</SubType>
     </Compile>
