@@ -32,10 +32,10 @@ namespace 点餐系统
         }
         public void Inquire() //查询餐馆
         {
-            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text);
+            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());
 
             int i = 0;
-            foreach (DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)//循环表里的行
             {
                 string gsName = dr[3].ToString();//餐馆名字
                 string gsName2 = dr[4].ToString();//餐馆地址
