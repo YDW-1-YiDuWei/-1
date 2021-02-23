@@ -29,11 +29,5 @@ namespace 点餐系统
             this.Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
     }
 }
