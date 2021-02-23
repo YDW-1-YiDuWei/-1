@@ -34,7 +34,7 @@ namespace 点餐系统
             foreach (DataRow dr in dt.Rows)
             {
                 string gsName = dr[3].ToString();//歌手名字
-                lvSJXX.Items.Add(gsName, i);//这里是关键!!!!!!!!!倒!
+                lvSJXX.Items.Add(gsName, i);//这里是关键!!!!!!!!!倒
                 i++;
             }
         }
