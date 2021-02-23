@@ -19,7 +19,18 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (txtZH.Text.Trim()=="")
+            {
+                MessageBox.Show("请输入账号");
+                txtZH.Focus();
+                return;
+            }
+            if (txtPwd.Text.Trim()=="")
+            {
+                MessageBox.Show("请输入账号");
+                txtPwd.Focus();
+                return ;
+            }
 
             首页 sy = new 首页();
             sy.Show();

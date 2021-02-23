@@ -9,7 +9,7 @@ using System.Data;
 
 namespace DianCanXiTongBLL
 {
-    public class RestaurantManvace
+    public class RestaurantManager
     {
         RestaurantService restauranSer = new RestaurantService();
         /// <summary>

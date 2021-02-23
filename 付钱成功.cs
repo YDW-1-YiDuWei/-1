@@ -17,7 +17,7 @@ namespace 点餐系统
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//提交按钮
         {
             提交 tj = new 提交();
             tj.Show();

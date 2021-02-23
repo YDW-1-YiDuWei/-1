@@ -42,16 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RestaurantManvace.cs" />
+    <Compile Include="RestaurantManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DianCanXiTongDAL\DianCanXiTongDAL.csproj">
       <Project>{51e1e677-3fb8-4bb9-a71b-4457f3d4a558}</Project>
       <Name>DianCanXiTongDAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DianCanXiTongManager\DianCanXiTongManager.csproj">
+    <ProjectReference Include="..\DianCanXiTongManager\DianCanXiTongModel.csproj">
       <Project>{3eea94af-74af-4087-a035-18adbf4cb112}</Project>
-      <Name>DianCanXiTongManager</Name>
+      <Name>DianCanXiTongModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -170,9 +170,9 @@
       <Project>{cb8359be-a042-4b6b-a14c-10c3faf91f75}</Project>
       <Name>DianCanXiTongBLL</Name>
     </ProjectReference>
-    <ProjectReference Include="DianCanXiTongManager\DianCanXiTongManager.csproj">
+    <ProjectReference Include="DianCanXiTongManager\DianCanXiTongModel.csproj">
       <Project>{3eea94af-74af-4087-a035-18adbf4cb112}</Project>
-      <Name>DianCanXiTongManager</Name>
+      <Name>DianCanXiTongModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
