@@ -86,6 +86,7 @@
             this.lvSJXX.Size = new System.Drawing.Size(538, 397);
             this.lvSJXX.TabIndex = 10;
             this.lvSJXX.UseCompatibleStateImageBehavior = false;
+            this.lvSJXX.View = System.Windows.Forms.View.List;
             // 
             // 餐馆列表
             // 
