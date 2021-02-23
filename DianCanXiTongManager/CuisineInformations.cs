@@ -10,10 +10,10 @@ namespace DianCanXiTongManager
     {
         public int id { get; set; }
         public string CuisineName { get; set; }
-        public int RestaurantId { get; set; }
-        public int CuisineTypeId { get; set; }
+        public CuisineComment RestaurantId { get; set; }
+        public CuisineType CuisineTypeId { get; set; }
         public double CuisinePrice { get; set; }
-        public int CuisineCommentId { get; set; }
+        public CuisineComment CuisineCommentId { get; set; }
         public int CuisineCount { get; set; }
         public string CuisineImagePath { get; set; }
     }

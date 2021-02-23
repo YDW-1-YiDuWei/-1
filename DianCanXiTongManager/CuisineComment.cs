@@ -9,9 +9,9 @@ namespace DianCanXiTongManager
     public class CuisineComment
     {
         public int id { get; set; }
-        public int CuisineId { get; set; }
+        public CuisineInformations CuisineId { get; set; }
         public string CuisineComments { get; set; }
         public int CuisineRate { get; set; }
-        public int ClientId { get; set; }
+        public Client ClientId { get; set; }
     }
 }
