@@ -44,6 +44,8 @@ namespace 点餐系统
                 {
                     lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i++);
                 }
+                lvSJXX.Items.Add("", i++);
+                lvSJXX.Items.Add("", i++);
                 lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, i);//这里是关键!!!!!!!!!倒
                 i++;
             }
