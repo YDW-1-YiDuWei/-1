@@ -124,6 +124,9 @@
     <EmbeddedResource Include="登录界面.resx">
       <DependentUpon>登录界面.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="订单.resx">
+      <DependentUpon>订单.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="首页.resx">
       <DependentUpon>首页.cs</DependentUpon>
     </EmbeddedResource>
