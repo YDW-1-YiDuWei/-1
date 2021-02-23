@@ -14,7 +14,11 @@ namespace DianCanXiTongDAL
         DBHelper db = new DBHelper();
         public DataTable InquireRestaurantName(string name) // 根据餐馆名字查询
         {
-            string sql = "select * from Restaurant where RestaurantName=@RestaurantName";
+            string sql = "select * from Restaurant where 1=1";
+            if (name!="")
+            {
+                sql += " and RestaurantName=@RestaurantName";
+            }
             SqlParameter[] sp = new SqlParameter[]
             {
             new SqlParameter("@RestaurantName",name)

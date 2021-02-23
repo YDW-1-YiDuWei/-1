@@ -27,9 +27,9 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//查询按钮
         {
-            MessageBox.Show("123","提示");
-            DataTable dt=restaurantManager.InquireRestaurantName(txtSJ.Text);
-
+            MessageBox.Show("123","提示");//1
+            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text);
+            
             Image[] asg = new Image[2];
             int i = 0;
             foreach (DataRow dr in dt.Rows)
