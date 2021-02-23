@@ -78,5 +78,12 @@ namespace 点餐系统
                 MessageBox.Show("登录失败", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            我的 wd = new 我的();
+            wd.Show();
+            this.Close();
+        }
     }
 }
