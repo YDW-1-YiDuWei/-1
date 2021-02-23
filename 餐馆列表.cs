@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 点餐系统
 {
-    public partial class FrmRestaurant : Form
+    public partial class 餐馆列表 : Form
     {
-        public FrmRestaurant()
+        public 餐馆列表()
         {
             InitializeComponent();
         }

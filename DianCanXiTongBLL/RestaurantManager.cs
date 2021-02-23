@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DianCanXiTongDAL;
 using DianCanXiTongManager;
 using System.Data;
 
-namespace DianCanXiTongDAL
+namespace DianCanXiTongBLL
 {
-    public class RestaurantService//餐馆数据层
+    public class RestaurantManager
     {
+        RestaurantService restauranSer = new RestaurantService();
         /// <summary>
         /// 查询餐馆全部
         /// </summary>
         public DataTable InquireRestaurant() 
         {
-            DataTable dt = new DataTable();
-            return dt;
+            return restauranSer.InquireRestaurant();
         }
     }
 }

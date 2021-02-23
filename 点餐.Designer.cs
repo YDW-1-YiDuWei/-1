@@ -52,7 +52,7 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDishName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
@@ -74,7 +74,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtDishName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Name = "panel1";
@@ -307,12 +307,12 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "支持菜品名称查询/价格查询";
             // 
-            // textBox1
+            // txtDishName
             // 
-            this.textBox1.Location = new System.Drawing.Point(224, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 21);
-            this.textBox1.TabIndex = 13;
+            this.txtDishName.Location = new System.Drawing.Point(224, 18);
+            this.txtDishName.Name = "txtDishName";
+            this.txtDishName.Size = new System.Drawing.Size(230, 21);
+            this.txtDishName.TabIndex = 13;
             // 
             // label1
             // 
@@ -348,7 +348,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDishName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label label2;

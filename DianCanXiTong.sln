@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTong", "DianCanXiTong.csproj", "{C8110679-DAC8-49FC-A560-800BD8EF4B36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongManager", "DianCanXiTongManager\DianCanXiTongManager.csproj", "{3EEA94AF-74AF-4087-A035-18ADBF4CB112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongModel", "DianCanXiTongManager\DianCanXiTongModel.csproj", "{3EEA94AF-74AF-4087-A035-18ADBF4CB112}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DianCanXiTongBLL", "DianCanXiTongBLL\DianCanXiTongBLL.csproj", "{CB8359BE-A042-4B6B-A14C-10C3FAF91F75}"
 EndProject

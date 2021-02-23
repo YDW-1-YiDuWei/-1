@@ -47,9 +47,9 @@
     <Compile Include="RestaurantService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DianCanXiTongManager\DianCanXiTongManager.csproj">
+    <ProjectReference Include="..\DianCanXiTongManager\DianCanXiTongModel.csproj">
       <Project>{3eea94af-74af-4087-a035-18adbf4cb112}</Project>
-      <Name>DianCanXiTongManager</Name>
+      <Name>DianCanXiTongModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
