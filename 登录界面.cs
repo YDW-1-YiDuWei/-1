@@ -33,17 +33,17 @@ namespace 点餐系统
                 txtPwd.Focus();
                 return;
             }
-            List<Restaurant> list = restaurantManager.Longin(txtZH.Text, txtPwd.Text);
+            /*List<Restaurant> list = restaurantManager.Longin(txtZH.Text, txtPwd.Text);
             if (list.Count > 0)
-            {
+            {*/
                 首页 sy = new 首页();
                 sy.Show();
                 this.Hide();
-            }
+           /* }
             else
             {
                 MessageBox.Show("账号或密码错误", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            }*/
 
         }
     }

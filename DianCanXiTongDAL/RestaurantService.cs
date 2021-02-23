@@ -21,11 +21,11 @@ namespace DianCanXiTongDAL
             };
             return db.GetTable(sql, "Restaurant", sp);
         }
-        public List<Restaurant> Longin(string uid,string pwd)//餐厅登录
+        public List<Restaurant> Longin(string uid, string pwd)//餐厅登录
         {
             List<Restaurant> list = new List<Restaurant>();
 
-            DBHelper db=new DBHelper();
+            DBHelper db = new DBHelper();
 
             Restaurant rest = null;
 
@@ -46,6 +46,7 @@ namespace DianCanXiTongDAL
                 };
                 list.Add(rest);
             }
+
             return list;
         }
     }
