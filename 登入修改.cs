@@ -51,5 +51,12 @@ namespace 点餐系统
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            我的 wd = new 我的();
+            wd.Show();
+            this.Close();
+        }
     }
 }
