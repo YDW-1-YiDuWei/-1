@@ -16,5 +16,40 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
+        public bool Check() //判断输入的
+        {
+            if (txtZH.Text.Trim()=="")
+            {
+                MessageBox.Show("请输入账号");
+                txtZH.Focus();
+                return false;
+            }
+            if (txtPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入新密码");
+                txtPwd.Focus();
+                return false;
+            }
+            if (txtPwd2.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入请输入确认密码");
+                txtPwd2.Focus();
+                return false;
+            }
+            if (txtPwd.Text.Trim()!=txtPwd2.Text.Trim())
+            {
+                MessageBox.Show("新密码跟确认密码不正确");
+                txtPwd2.Focus();
+                return false;
+            }
+            return true;
+        }
+        private void button1_Click(object sender, EventArgs e)//确认按钮
+        {
+            if (Check())
+            {
+
+            }
+        }
     }
 }

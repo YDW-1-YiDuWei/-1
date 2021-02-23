@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(登录界面));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtZH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPwd = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,15 +67,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "账号：";
             // 
-            // textBox1
+            // txtZH
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtZH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(375, 204);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 21);
-            this.textBox1.TabIndex = 2;
+            this.txtZH.Location = new System.Drawing.Point(375, 204);
+            this.txtZH.Name = "txtZH";
+            this.txtZH.Size = new System.Drawing.Size(121, 21);
+            this.txtZH.TabIndex = 2;
             // 
             // label2
             // 
@@ -92,18 +92,18 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "密码：";
             // 
-            // textBox2
+            // txtPwd
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtPwd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            this.txtPwd.AutoCompleteCustomSource.AddRange(new string[] {
             "."});
-            this.textBox2.Location = new System.Drawing.Point(375, 269);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 21);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Tag = "";
+            this.txtPwd.Location = new System.Drawing.Point(375, 269);
+            this.txtPwd.Name = "txtPwd";
+            this.txtPwd.Size = new System.Drawing.Size(121, 21);
+            this.txtPwd.TabIndex = 2;
+            this.txtPwd.Tag = "";
             // 
             // button1
             // 
@@ -126,8 +126,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 571);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPwd);
+            this.Controls.Add(this.txtZH);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -145,9 +145,9 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtZH;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.Button button1;
     }
 }
