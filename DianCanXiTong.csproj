@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="模糊订单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模糊订单.Designer.cs">
+      <DependentUpon>模糊订单.cs</DependentUpon>
+    </Compile>
     <Compile Include="详细订单.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,18 +110,15 @@
     <Compile Include="登录界面.Designer.cs">
       <DependentUpon>登录界面.cs</DependentUpon>
     </Compile>
-    <Compile Include="订单.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="订单.Designer.cs">
-      <DependentUpon>订单.cs</DependentUpon>
-    </Compile>
     <Compile Include="首页.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="首页.Designer.cs">
       <DependentUpon>首页.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="模糊订单.resx">
+      <DependentUpon>模糊订单.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="详细订单.resx">
       <DependentUpon>详细订单.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,9 +154,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="登录界面.resx">
       <DependentUpon>登录界面.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="订单.resx">
-      <DependentUpon>订单.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="首页.resx">
       <DependentUpon>首页.cs</DependentUpon>
