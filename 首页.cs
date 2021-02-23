@@ -22,7 +22,7 @@ namespace 点餐系统
             餐馆列表 cglb = new 餐馆列表();
             cglb.Show();
             this.Close();
-            
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -46,6 +46,13 @@ namespace 点餐系统
             我的 wd = new 我的();
             wd.Show();
             this.Close();
+        }
+
+        private void Label2_Click(object sender, EventArgs e)//订单
+        {
+            订单 dd = new 订单();
+            dd.Show();
+            this.Hide();
         }
     }
 }
