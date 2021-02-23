@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 点餐系统
 {
-    public partial class 订单 : Form
+    public partial class 模糊订单 : Form
     {
-        public 订单()
+        public 模糊订单()
         {
             InitializeComponent();
         }

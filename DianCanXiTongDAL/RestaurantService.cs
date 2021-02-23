@@ -15,15 +15,16 @@ namespace DianCanXiTongDAL
         public DataTable InquireRestaurantName(string name) // 根据餐馆名字查询
         {
             string sql = "select * from Restaurant where 1=1";
-            if (name!="")
-            {
-                sql += " and RestaurantName=@RestaurantName";
-            }
             SqlParameter[] sp = new SqlParameter[]
             {
-            new SqlParameter("@RestaurantName",name)
+            new SqlParameter("@Name",name)
             };
-            return db.GetTable(sql, "Restaurant", sp);
+            if (name!="")
+            {
+                sql += " and RestaurantName like '%"+name+"%'";
+            }
+            
+            return db.GetTable(sql, "Restaurant");
         }
         public List<Restaurant> Longin(string uid, string pwd)//餐厅登录
         {

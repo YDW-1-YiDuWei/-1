@@ -19,8 +19,8 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//登入
         {
-            订单 dd = new 订单();
-            dd.Show();
+            //订单 dd = new 订单();
+            //dd.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)//修改

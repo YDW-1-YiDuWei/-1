@@ -87,6 +87,7 @@
             this.lvSJXX.TabIndex = 10;
             this.lvSJXX.UseCompatibleStateImageBehavior = false;
             this.lvSJXX.View = System.Windows.Forms.View.List;
+            this.lvSJXX.Click += new System.EventHandler(this.lvSJXX_Click);
             // 
             // 餐馆列表
             // 
