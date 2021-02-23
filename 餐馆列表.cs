@@ -21,5 +21,10 @@ namespace 点餐系统
         {
 
         }
+
+        private void txtSJ_TextChanged(object sender, EventArgs e)//搜索商家的输入框
+        {
+            
+        }
     }
 }
