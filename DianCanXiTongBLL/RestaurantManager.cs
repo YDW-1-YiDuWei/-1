@@ -15,9 +15,9 @@ namespace DianCanXiTongBLL
         /// <summary>
         /// 查询餐馆全部
         /// </summary>
-        public DataTable InquireRestaurantName() 
+        public DataTable InquireRestaurantName(string name) 
         {
-            return restauranSer.InquireRestaurantName();
+            return restauranSer.InquireRestaurantName(name);//按名字查询餐馆
         }
         public List<Restaurant> Longin(string uid,string pwd)
         {

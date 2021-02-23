@@ -22,9 +22,7 @@ namespace DianCanXiTongDAL
             {
             new SqlParameter("@RestaurantName",name)
             };
-
-            DataTable dt = new DataTable();
-            return dt;
+            return db.GetTable(sql, "Restaurant", sp);
         }
         public List<Restaurant> Longin(string uid,string pwd)//餐厅登录
         {
