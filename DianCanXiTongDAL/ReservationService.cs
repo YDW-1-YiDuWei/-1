@@ -11,7 +11,6 @@ namespace DianCanXiTongDAL
     /// </summary>
     public class ReservationService
     {
-
-
+        string str = "";
     }
 }
