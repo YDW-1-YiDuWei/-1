@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DianCanXiTongManager;
+using DianCanXiTongBLL;
 
 namespace 点餐系统
 {
     public partial class 我的 : Form
     {
+        public List<Client> list = null;
         public 我的()
         {
             InitializeComponent();
@@ -29,6 +32,34 @@ namespace 点餐系统
             登入修改 drxg = new 登入修改();
             drxg.Show();
             this.Close();
+        }
+
+        private void 我的_Load(object sender, EventArgs e)
+        {
+            if (list != null)
+            {
+                foreach (var item in list)
+                {
+                    label1.Text = "名称:" + item.Name;
+                    label2.Text = "电话号码:" + item.Password;
+                }
+                button1.Enabled = false;
+            }
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (label1.Text.Length < 4 || label2.Text.Length < 6)
+            {
+                MessageBox.Show("您还未登录账号", "登录提示", MessageBoxButtons.OK);
+                return;
+            }
+            if (MessageBox.Show("请问是否退出登录？", "登录提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                label1.Text = "名称:";
+                label2.Text = "电话号码:";
+                button1.Enabled = true;
+            }
         }
     }
 }

@@ -134,6 +134,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // button3
             // 
