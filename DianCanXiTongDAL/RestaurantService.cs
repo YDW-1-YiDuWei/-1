@@ -17,7 +17,7 @@ namespace DianCanXiTongDAL
             string sql = "select * from Restaurant where 1=1";
             if (name!="")
             {
-                sql += " and RestaurantName=@RestaurantName";
+                sql += " and RestaurantName like '%@RestaurantName%'";
             }
             SqlParameter[] sp = new SqlParameter[]
             {
