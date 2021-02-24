@@ -121,8 +121,8 @@ namespace DianCanXiTongDAL
         /// <returns></returns>
         public SqlDataReader ExecuteReader(string sql, params SqlParameter[] sqlParams)
         {
-            try//捕获异常，将可能出现异常的代码放入其中，不能单独出现
-            {
+            /*try//捕获异常，将可能出现异常的代码放入其中，不能单独出现
+            {*/
                 //创建执行对象
                 SqlCommand cmd = new SqlCommand(sql, Conn);//大写的Conn,小写的Conn不行
                 if (sqlParams != null)
@@ -135,7 +135,7 @@ namespace DianCanXiTongDAL
                     }
                 }
                 return cmd.ExecuteReader(CommandBehavior.CloseConnection);//当关闭对象，则自动关闭连接对象
-            }
+            /*}
             catch (Exception ex)//当try里面的代码出现异常，则会执行catch里面的代码，如果无异常就不会执行
             {
                 Console.WriteLine(ex.Message);
@@ -144,7 +144,7 @@ namespace DianCanXiTongDAL
             finally //不管有没有异常都会执行
             {
                 this.CloseConnection();//关闭连接
-            }
+            }*/
         }
         /// <summary>
         /// 返回操作表
