@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DianCanXiTongBLL;
+using DianCanXiTongManager;
 
 namespace 点餐系统
 {
     public partial class 详细订单 : Form
     {
+        ReservationManager reservationService = new ReservationManager();
         public 详细订单()
         {
             InitializeComponent();
@@ -23,6 +26,35 @@ namespace 点餐系统
             mhdd.Show();
             this.Close();
 
+        }
+
+        private void 详细订单_Load(object sender, EventArgs e)//显示窗体的时候
+        {
+            Inquire();
+        }
+        public void Inquire() //查询订单信息
+        {
+            DataTable dt = reservationService.InquireReservation();
+
+            int j = 0;
+            Image[] asg = new Image[2];
+            int ima = 0;
+
+
+            foreach (DataRow dr in dt.Rows)//循环表里的行
+            {
+                string gsName = dr[0].ToString();//菜品图片
+                string gsName2 = dr[1].ToString();//菜品名称
+                string gsName3 = dr[2].ToString();//菜品价格
+                string gsName4 = dr[3].ToString();//菜品数量
+                string gsName5 = dr[4].ToString();//小计
+
+                asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + gsName);//已经把拿到的图片保存到了这里面
+                lvOrder.Items.Add(gsName2 + "       " + gsName3 + "                              " + gsName4+"                    "+gsName5, j);//这里是关键!!!!!!!!!倒
+
+                j++;
+            }
+            image.Images.AddRange(asg);
         }
     }
 }

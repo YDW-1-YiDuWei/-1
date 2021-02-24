@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(详细订单));
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.image = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,11 +70,15 @@
             // lvOrder
             // 
             this.lvOrder.HideSelection = false;
+            this.lvOrder.LargeImageList = this.image;
             this.lvOrder.Location = new System.Drawing.Point(3, 99);
             this.lvOrder.Name = "lvOrder";
             this.lvOrder.Size = new System.Drawing.Size(627, 365);
+            this.lvOrder.SmallImageList = this.image;
+            this.lvOrder.StateImageList = this.image;
             this.lvOrder.TabIndex = 26;
             this.lvOrder.UseCompatibleStateImageBehavior = false;
+            this.lvOrder.View = System.Windows.Forms.View.List;
             // 
             // pictureBox2
             // 
@@ -147,6 +153,12 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "总共：￥";
             // 
+            // image
+            // 
+            this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.image.ImageSize = new System.Drawing.Size(64, 64);
+            this.image.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // 详细订单
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -165,6 +177,7 @@
             this.Name = "详细订单";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "详细订单";
+            this.Load += new System.EventHandler(this.详细订单_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -185,5 +198,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ImageList image;
     }
 }

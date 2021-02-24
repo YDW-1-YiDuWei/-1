@@ -415,7 +415,7 @@
             this.listView9.HideSelection = false;
             this.listView9.Location = new System.Drawing.Point(3, 3);
             this.listView9.Name = "listView9";
-            this.listView9.Size = new System.Drawing.Size(650, 356);
+            this.listView9.Size = new System.Drawing.Size(737, 356);
             this.listView9.TabIndex = 1;
             this.listView9.UseCompatibleStateImageBehavior = false;
             // 
