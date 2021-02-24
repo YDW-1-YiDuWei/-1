@@ -31,7 +31,7 @@ namespace 点餐系统
 
         private void 详细订单_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            List<Client>list= cm.Login(User.user,User.pass);//集合用户    样式
+            List<Client>list= cm.Login(User.user,User.pass);//集合用户    测试给你看的
             Inquire();//查询订单信息
         }
         public void Inquire() //查询订单信息
@@ -57,6 +57,18 @@ namespace 点餐系统
             }
             image.Images.AddRange(asg);//添加图片到上面去
             lbTotal.Text = Convert.ToString("总共："+reservationService.InquireReservationJG()+" 元");//计算总价
+        }
+
+        private void lvOrder_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)//鼠标悬浮在上面的时候
+        {
+            System.Drawing.Size a = new Size();//把图片变大
+            a.Width = 90;
+            a.Height = 90;
+            for (int i = 0; i < image.Images.Count; i++)
+            {
+                image.ImageSize= a;
+            }
+            Inquire();
         }
     }
 }

@@ -79,6 +79,7 @@
             this.lvOrder.TabIndex = 26;
             this.lvOrder.UseCompatibleStateImageBehavior = false;
             this.lvOrder.View = System.Windows.Forms.View.List;
+            this.lvOrder.ItemMouseHover += new System.Windows.Forms.ListViewItemMouseHoverEventHandler(this.lvOrder_ItemMouseHover);
             // 
             // image
             // 
