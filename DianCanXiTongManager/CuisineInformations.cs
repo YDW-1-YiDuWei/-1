@@ -12,7 +12,7 @@ namespace DianCanXiTongManager
         public string CuisineName { get; set; }
         public CuisineComment RestaurantId { get; set; }
         public CuisineType CuisineTypeId { get; set; }
-        public double CuisinePrice { get; set; }
+        public string CuisinePrice { get; set; }
         public CuisineComment CuisineCommentId { get; set; }
         public int CuisineCount { get; set; }
         public string CuisineImagePath { get; set; }
