@@ -17,8 +17,11 @@ namespace 点餐系统
             InitializeComponent();
         }
 
-        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            模糊订单 mhdd = new 模糊订单();
+            mhdd.Show();
+            this.Close();
 
         }
     }
