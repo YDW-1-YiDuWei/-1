@@ -16,7 +16,7 @@ namespace 点餐系统
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 点餐());
+            Application.Run(new 登录界面());
         }
     }
 }

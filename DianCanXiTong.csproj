@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Temp.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="模糊订单.cs">
       <SubType>Form</SubType>
     </Compile>

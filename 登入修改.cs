@@ -15,6 +15,9 @@ namespace 点餐系统
     public partial class 登入修改 : Form
     {
         ClientManager client = new ClientManager();
+        public int a = 0;
+        string Loin = "";
+        string pass = "";
 
         public 登入修改()
         {
@@ -60,30 +63,79 @@ namespace 点餐系统
         {
             if (txtPwd2.Text.Trim() != txtPwd.Text.Trim())
             {
-                MessageBox.Show("密码不一致", "登录提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("密码不一致", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            List<Client> list = client.Login(txtZH.Text, txtPwd.Text);
-            if (list.Count > 0)
+            if (a == 0)
             {
-                MessageBox.Show("登录成功", "登录提示", MessageBoxButtons.OK);
-                我的 wo = new 我的();
-                wo.list = list;
-                this.Close();
-                wo.Show();
+                List<Client> list = client.Login(txtZH.Text, txtPwd.Text);
+                if (list.Count > 0)
+                {
+                    MessageBox.Show("登录成功", "登录提示", MessageBoxButtons.OK);
+
+                    foreach (var item in list)
+                    {
+                        User.user = item.Number;
+                        User.pass = item.Password;
+                    }
+                    我的 wo = new 我的();
+                    wo.list = list;
+                    this.Close();
+                    wo.Show();
+                }
+                else
+                {
+                    MessageBox.Show("登录失败", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
             else
             {
-                MessageBox.Show("登录失败", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                List<Client> list = client.Login(User.user, User.pass);
+                int i = 0;
+                foreach (var item in list)
+                {
+                    i = item.Id;
+                }
+
+                List<Client> lists = client.Alter(txtZH.Text, txtPwd.Text, i);
+                if (lists.Count > 0)
+                {
+                    MessageBox.Show("修改成功", "修改提示", MessageBoxButtons.OK);
+                    User.user = txtZH.Text;
+                    User.pass = txtPwd.Text;
+                    我的 wo = new 我的();
+                    wo.list = list;
+                    this.Close();
+                    wo.Show();
+                }
+                else
+                {
+                    MessageBox.Show("修改失败", "修改提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
+            a = 0;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            List<Client> list = client.Login(User.user, User.pass);
             我的 wd = new 我的();
+            wd.list = list;
             wd.Show();
             this.Close();
+
+        }
+
+        private void 登入修改_Load(object sender, EventArgs e)//加载事件
+        {
+
+            if (a == 2)
+            {
+
+                txtZH.Text = User.user;
+                txtPwd.Text = User.pass;
+            }
         }
     }
 }

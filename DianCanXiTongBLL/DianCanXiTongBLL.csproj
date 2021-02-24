@@ -45,6 +45,7 @@
     <Compile Include="CuisineInformationsManager.cs" />
     <Compile Include="DistributionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationManager.cs" />
     <Compile Include="RestaurantManager.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -24,30 +24,39 @@ namespace 点餐系统
         {
             登入修改 drxg = new 登入修改();
             drxg.Show();
-            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)//修改
         {
             登入修改 drxg = new 登入修改();
+            drxg.a = 2;
             drxg.Show();
             this.Close();
         }
 
-        private void 我的_Load(object sender, EventArgs e)
+        private void 我的_Load(object sender, EventArgs e)//我的加载事件
         {
+            //没有登录账号修改控件就关了
+            button2.Enabled = false;
+            button1.Enabled = true;
+
+            //判断登录集合是否为空（不为空肯定是已经登录储存了）
             if (list != null)
             {
                 foreach (var item in list)
                 {
                     label1.Text = "名称:" + item.Name;
-                    label2.Text = "电话号码:" + item.Password;
+                    label2.Text = "电话号码:" + item.Phone;
                 }
-                button1.Enabled = false;
+                if (label1.Text.Length > 4 || label2.Text.Length > 6)
+                {
+                    button1.Enabled = false;
+                    button2.Enabled = true;
+                }
             }
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)//退出登录
         {
             if (label1.Text.Length < 4 || label2.Text.Length < 6)
             {
@@ -59,6 +68,8 @@ namespace 点餐系统
                 label1.Text = "名称:";
                 label2.Text = "电话号码:";
                 button1.Enabled = true;
+                User.user = "";
+                User.pass = "";
             }
         }
 
@@ -68,5 +79,7 @@ namespace 点餐系统
             sy.Show();
             this.Close();
         }
+
+
     }
 }

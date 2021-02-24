@@ -87,5 +87,12 @@ namespace 点餐系统
             btSr.BackColor = Color.Red;
             btW.BackColor = Color.Red;
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            付钱 fq = new 付钱();
+            fq.Show();
+            this.Close();
+        }
     }
 }

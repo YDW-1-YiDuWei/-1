@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DianCanXiTongManager;
+using System.Data;
 
 namespace DianCanXiTongDAL
 {
@@ -13,11 +14,18 @@ namespace DianCanXiTongDAL
     public class ReservationService
     {
         DBHelper db = new DBHelper();
-        public void InquireReservation() //查询订单信息
+        public DataTable InquireReservation() //查询详细订单信息
         {
-            string sql = "";
+            string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1,0 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
+            return db.GetTable(sql, "Reservation");
         }
-        public void InquireReservationService()//详细订单查询
+        public object InquireReservationJG() //返回这个订单多少钱总共
+        {
+            string sql = "select sum(ci.CuisinePrice) from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
+            
+            return db.ExecuteScalar(sql);
+        }
+        public void SelectReservation()//查询订单
         {
 
         }

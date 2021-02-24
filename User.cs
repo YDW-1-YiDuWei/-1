@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace 点餐系统
 {
-    public class Temp
+     static class User
     {
-        /// <summary>
-        /// 餐馆图片路径
-        /// </summary>
-        public static string pathCG = @"C:\菜谱\";
+       public static string user = "";
+       public static string pass="";
     }
 }
