@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using DianCanXiTongManager;
-using System.Data
 
 namespace DianCanXiTongDAL
 {
@@ -18,19 +17,20 @@ namespace DianCanXiTongDAL
         /// </summary>
         public List<CuisineInformations> CuisinelnformationsSelectService(string leix)
         {
-            string sql = "select a.Id, CuisineName, RestaurantId, c.CuisineTypeName, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join Restaurant b on a.RestaurantId=b.Id join CuisineType c on a.CuisineTypeId=c.Id join CuisineComment d on 1=1  where 1=1";
+            string sql = "select Id, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations where 1=1";
             if (leix.Trim()!="")
             {
-                sql += " and CuisineTypeName=" + leix;
+                sql += " and CuisineTypeId="+leix;
             }
-            DataTable dt= dB.GetTable(sql,"Dianc");
-            foreach (DataRow dr in dt.Rows)
+            SqlDataReader cmd=dB.ExecuteReader(sql);
+            while (cmd.Read())
             {
                 CuisineInformations cuisine = new CuisineInformations()
                 {
-                    id=int.Parse(dr["a.Id"].ToString()),
-                    CuisineName =dr["CuisineName"].ToString(),
-
+                    id =int.Parse(cmd["Id"].ToString()),
+                    CuisineName=cmd["CuisineName"].ToString(),
+                    CuisinePrice=cmd["CuisinePrice"].ToString(),
+                    CuisineCount=int.Parse(cmd["CuisineCount"].ToString())
                 };
             }
             return ls;
