@@ -23,13 +23,16 @@ namespace 点餐系统
             sy.Show();
             this.Close();
         }
+        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-        private void PictureBox2_Click(object sender, EventArgs e)
+        }
+
+        private void PictureBox2_Click_1(object sender, EventArgs e)
         {
             详细订单 xxdd = new 详细订单();
             xxdd.Show();
             this.Hide();
-
         }
     }
 }
