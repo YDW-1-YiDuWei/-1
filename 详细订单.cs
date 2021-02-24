@@ -59,13 +59,10 @@ namespace 点餐系统
             lbTotal.Text = Convert.ToString("总共：" + reservationService.InquireReservationJG() + " 元");//计算总价
         }
 
-        private void lvOrder_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)//鼠标悬浮在上面的时候
+        private void lvOrder_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)//鼠标悬浮在上面的时候   还没完成
         {
-            if (e.Item.Checked == true)
-            {
-
-            }
-            else { MessageBox.Show("1"); }
+            if (e.Item.Checked == true){  }
+            else {  }
             System.Drawing.Size a = new Size();//把图片变大
             a.Width = 90;
             a.Height = 90;

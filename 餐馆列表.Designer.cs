@@ -77,7 +77,7 @@
             this.lvSJXX.HideSelection = false;
             this.lvSJXX.Location = new System.Drawing.Point(12, 54);
             this.lvSJXX.Name = "lvSJXX";
-            this.lvSJXX.Size = new System.Drawing.Size(538, 397);
+            this.lvSJXX.Size = new System.Drawing.Size(666, 479);
             this.lvSJXX.SmallImageList = this.image;
             this.lvSJXX.StateImageList = this.image;
             this.lvSJXX.TabIndex = 10;
@@ -88,14 +88,14 @@
             // image
             // 
             this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.image.ImageSize = new System.Drawing.Size(64, 64);
+            this.image.ImageSize = new System.Drawing.Size(90, 90);
             this.image.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // 餐馆列表
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 463);
+            this.ClientSize = new System.Drawing.Size(690, 544);
             this.Controls.Add(this.lvSJXX);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
