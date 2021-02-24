@@ -34,5 +34,10 @@ namespace 点餐系统
             xxdd.Show();
             this.Hide();
         }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
