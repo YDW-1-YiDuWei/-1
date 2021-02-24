@@ -42,7 +42,7 @@ namespace 点餐系统
             {
                 lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i);
 
-                asg[ima++] = System.Drawing.Image.FromFile(@"C:\Users\Administrator\Desktop\图片超清\FQ1WE53SGCNQ@64[P_94UHP.png");//已经把拿到的图片保存到了这里面
+                asg[ima++] = System.Drawing.Image.FromFile(@"C:\Users\Administrator\Desktop\菜谱\FQ1WE53SGCNQ@64[P_94UHP.png");//已经把拿到的图片保存到了这里面
             }
 
            
