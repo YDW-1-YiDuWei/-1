@@ -63,7 +63,7 @@ namespace 点餐系统
 
         private void lvSJXX_Click(object sender, EventArgs e)//单击里面的餐馆的时候
         {
-            if (lvSJXX.SelectedItems.Count != 0)
+            if (lvSJXX.SelectedItems.Count != 0&&lvSJXX.SelectedItems.ToString()!= "餐馆名字：" + "    餐馆地址：" + "     餐馆电话：")
             {
                 MessageBox.Show("1");
             }
