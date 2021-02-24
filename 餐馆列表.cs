@@ -28,21 +28,22 @@ namespace 点餐系统
         private void button1_Click(object sender, EventArgs e)//查询按钮
         {
             lvSJXX.Clear();
+            image.Images.Clear();
             Inquire();
         }
         public void Inquire() //查询餐馆
         {
-            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());
-
+            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());//餐馆信息
+            int count = restaurantManager.InquireRestaurantNameCount(txtSJ.Text.Trim());//餐馆数量
 
             int j = 1;
-            Image[] asg = new Image[5];
+            Image[] asg = new Image[count+1];//这里是图片的多少
             int ima = 0;
             for (int i = 0; i < 1; i++)
             {
                 lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i);
 
-                asg[ima++] = System.Drawing.Image.FromFile(@"C:\Users\Administrator\Desktop\图片超清\FQ1WE53SGCNQ@64[P_94UHP.png");//已经把拿到的图片保存到了这里面
+                asg[ima++] = System.Drawing.Image.FromFile(@"C:\菜谱\FQ1WE53SGCNQ@64[P_94UHP.png");//这里是把空白图片丢到第一行因为不能丢null的
             }
 
            
@@ -54,18 +55,21 @@ namespace 点餐系统
                 string gsName4 = dr[7].ToString();//餐馆图片
 
                 asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + gsName4);//已经把拿到的图片保存到了这里面
-                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, j);//这里是关键!!!!!!!!!倒
+                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, j);//这里是关键!!!!!!!!!把数据倒进lv里面
 
                 j++;
             }
-            image.Images.AddRange(asg);
+            image.Images.AddRange(asg);//这里是把图片增加进去
+
         }
 
         private void lvSJXX_Click(object sender, EventArgs e)//单击里面的餐馆的时候
         {
             if (lvSJXX.SelectedItems.Count != 0)
             {
-                MessageBox.Show("1");
+                点餐 frm = new 点餐();
+                frm.Show();
+                this.Hide();
             }
         }
     }

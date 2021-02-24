@@ -17,6 +17,19 @@ namespace 点餐系统
             InitializeComponent();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            首页 sy = new 首页();
+            sy.Show();
+            this.Close();
+        }
 
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            详细订单 xxdd = new 详细订单();
+            xxdd.Show();
+            this.Hide();
+
+        }
     }
 }
