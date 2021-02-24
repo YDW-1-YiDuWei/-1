@@ -25,5 +25,9 @@ namespace DianCanXiTongDAL
             
             return db.ExecuteScalar(sql);
         }
+        public void SelectReservation()//查询订单
+        {
+            string sql = "select  from";
+        }
     }
 }

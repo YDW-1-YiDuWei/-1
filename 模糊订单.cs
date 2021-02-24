@@ -23,10 +23,6 @@ namespace 点餐系统
             sy.Show();
             this.Close();
         }
-        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void PictureBox2_Click_1(object sender, EventArgs e)
         {
