@@ -26,6 +26,20 @@ namespace DianCanXiTongDAL
             
             return db.GetTable(sql, "Restaurant");
         }
+        public int InquireRestaurantNameCount(string name) // 根据餐馆名字查询然后知道多少的餐馆
+        {
+            string sql = "select count(0) from Restaurant where 1=1";
+            SqlParameter[] sp = new SqlParameter[]
+            {
+            new SqlParameter("@Name",name)
+            };
+            if (name != "")
+            {
+                sql += " and RestaurantName like '%" + name + "%'";
+            }
+
+            return (int)db.ExecuteScalar(sql);
+        }
         public List<Restaurant> Longin(string uid, string pwd)//餐厅登录
         {
             SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");

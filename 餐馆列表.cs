@@ -28,15 +28,16 @@ namespace 点餐系统
         private void button1_Click(object sender, EventArgs e)//查询按钮
         {
             lvSJXX.Clear();
+            image.Images.Clear();
             Inquire();
         }
         public void Inquire() //查询餐馆
         {
-            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());
-
+            DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());//餐馆信息
+            int count = restaurantManager.InquireRestaurantNameCount(txtSJ.Text.Trim());//餐馆数量
 
             int j = 1;
-            Image[] asg = new Image[5];
+            Image[] asg = new Image[count+1];
             int ima = 0;
             for (int i = 0; i < 1; i++)
             {

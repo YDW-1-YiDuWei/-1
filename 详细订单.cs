@@ -37,7 +37,7 @@ namespace 点餐系统
             DataTable dt = reservationService.InquireReservation();
 
             int j = 0;
-            Image[] asg = new Image[2];
+            Image[] asg = new Image[2];//这里你要知道有几个菜  我只是随便加的
             int ima = 0;
 
 
