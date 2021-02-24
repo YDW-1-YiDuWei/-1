@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 详细订单 : Form
     {
+        ClientManager cm = new ClientManager();
         ReservationManager reservationService = new ReservationManager();
         public 详细订单()
         {
@@ -30,6 +31,7 @@ namespace 点餐系统
 
         private void 详细订单_Load(object sender, EventArgs e)//显示窗体的时候
         {
+            List<Client>list= cm.Login(User.user,User.pass);//集合用户    样式
             Inquire();//查询订单信息
         }
         public void Inquire() //查询订单信息
@@ -54,7 +56,8 @@ namespace 点餐系统
 
                 j++;
             }
-            image.Images.AddRange(asg);
+            image.Images.AddRange(asg);//添加图片到上面去
+            lbTotal.Text = Convert.ToString("总共："+reservationService.InquireReservationJG()+" 元");//计算总价
         }
     }
 }

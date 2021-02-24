@@ -16,5 +16,9 @@ namespace DianCanXiTongBLL
         {
             return reservationService.InquireReservation();
         }
+        public object InquireReservationJG() //查询这个订单总共多少钱
+        {
+            return reservationService.InquireReservationJG();
+        }
     }
 }
