@@ -11,6 +11,6 @@ namespace 点餐系统
         /// <summary>
         /// 餐馆图片路径
         /// </summary>
-        public static string pathCG = @"C:\Users\Administrator\Desktop\菜谱\";
+        public static string pathCG = @"C:\菜谱\";
     }
 }
