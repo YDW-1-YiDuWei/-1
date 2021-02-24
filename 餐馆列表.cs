@@ -43,7 +43,7 @@ namespace 点餐系统
             {
                 lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i);
 
-                asg[ima++] = System.Drawing.Image.FromFile(@"C:\菜谱\FQ1WE53SGCNQ@64[P_94UHP.png");//已经把拿到的图片保存到了这里面
+                asg[ima++] = System.Drawing.Image.FromFile(@"C:\菜谱\FQ1WE53SGCNQ@64[P_94UHP.png");//这里是把空白图片丢到第一行因为不能丢null的
             }
 
            
@@ -55,11 +55,11 @@ namespace 点餐系统
                 string gsName4 = dr[7].ToString();//餐馆图片
 
                 asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + gsName4);//已经把拿到的图片保存到了这里面
-                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, j);//这里是关键!!!!!!!!!倒
+                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, j);//这里是关键!!!!!!!!!把数据倒进lv里面
 
                 j++;
             }
-            image.Images.AddRange(asg);
+            image.Images.AddRange(asg);//这里是把图片增加进去
 
         }
 
