@@ -50,9 +50,10 @@
             this.listView1.Location = new System.Drawing.Point(0, 42);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1019, 604);
+            this.listView1.Size = new System.Drawing.Size(989, 604);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -61,7 +62,7 @@
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 75);
+            this.groupBox1.Location = new System.Drawing.Point(0, 43);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -100,7 +101,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(52, 71);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click_1);
             // 
             // label1
             // 
@@ -148,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 646);
+            this.ClientSize = new System.Drawing.Size(993, 646);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox1);
