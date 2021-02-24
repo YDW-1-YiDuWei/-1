@@ -39,9 +39,8 @@ namespace 点餐系统
             DataTable dt = reservationService.InquireReservation();
 
             int j = 0;
-            Image[] asg = new Image[2];//这里你要知道有几个菜  我只是随便加的
+            Image[] asg = new Image[2];//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
             int ima = 0;
-
 
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
