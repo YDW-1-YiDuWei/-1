@@ -23,5 +23,13 @@ namespace 点餐系统
             sy.Show();
             this.Close();
         }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            详细订单 xxdd = new 详细订单();
+            xxdd.Show();
+            this.Hide();
+
+        }
     }
 }
