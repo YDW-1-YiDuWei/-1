@@ -19,6 +19,8 @@ namespace 点餐系统
             InitializeComponent();
         }
         RestaurantManager restaurantManager = new RestaurantManager();
+
+        ClientManager client = new ClientManager();
         private void button1_Click(object sender, EventArgs e)
         {
             a();
@@ -36,10 +38,15 @@ namespace 点餐系统
             }
 
             //调用业务层的登录方法
-            List<Restaurant> list = restaurantManager.Longin(txtZH.Text, txtPwd.Text);
+            List<Client> list = client.Login(txtZH.Text, txtPwd.Text);
             if (list.Count > 0)
             {
                 a();
+                //记录账号密码
+                User.user = txtZH.Text;
+                User.pass = txtPwd.Text;
+
+               
             }
             else
             {
