@@ -119,7 +119,9 @@ namespace 点餐系统
 
         private void button3_Click(object sender, EventArgs e)
         {
+            List<Client> list = client.Login(User.user, User.pass);
             我的 wd = new 我的();
+            wd.list = list;
             wd.Show();
             this.Close();
 
@@ -130,9 +132,9 @@ namespace 点餐系统
 
             if (a == 2)
             {
-               
-                    txtZH.Text = User.user;
-                    txtPwd.Text =User.pass;
+
+                txtZH.Text = User.user;
+                txtPwd.Text = User.pass;
             }
         }
     }

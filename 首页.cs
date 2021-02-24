@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DianCanXiTongBLL;
+using DianCanXiTongManager;
 
 namespace 点餐系统
 {
@@ -43,7 +45,10 @@ namespace 点餐系统
 
         private void label1_Click(object sender, EventArgs e)//我的
         {
+            ClientManager client = new ClientManager();
+            List<Client> list = client.Login(User.user,User.pass);
             我的 wd = new 我的();
+            wd.list = list;
             wd.Show();
             this.Close();
         }
