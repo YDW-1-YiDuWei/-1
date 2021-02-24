@@ -33,14 +33,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lvOrder = new System.Windows.Forms.ListView();
+            this.image = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.image = new System.Windows.Forms.ImageList(this.components);
+            this.lbTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -80,6 +80,12 @@
             this.lvOrder.UseCompatibleStateImageBehavior = false;
             this.lvOrder.View = System.Windows.Forms.View.List;
             // 
+            // image
+            // 
+            this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.image.ImageSize = new System.Drawing.Size(64, 64);
+            this.image.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -103,7 +109,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(23, 57);
+            this.label1.Location = new System.Drawing.Point(86, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 19);
             this.label1.TabIndex = 25;
@@ -142,22 +148,16 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "小计";
             // 
-            // label5
+            // lbTotal
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(418, 483);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 19);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "总共：￥";
-            // 
-            // image
-            // 
-            this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.image.ImageSize = new System.Drawing.Size(64, 64);
-            this.image.TransparentColor = System.Drawing.Color.Transparent;
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbTotal.ForeColor = System.Drawing.Color.Maroon;
+            this.lbTotal.Location = new System.Drawing.Point(418, 483);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(85, 19);
+            this.lbTotal.TabIndex = 25;
+            this.lbTotal.Text = "总共：￥";
             // 
             // 详细订单
             // 
@@ -166,7 +166,7 @@
             this.ClientSize = new System.Drawing.Size(632, 543);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
@@ -197,7 +197,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.ImageList image;
     }
 }
