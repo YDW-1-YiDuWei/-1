@@ -43,7 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvwQB = new System.Windows.Forms.ListView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listView2 = new System.Windows.Forms.ListView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -246,7 +246,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.listView1);
+            this.tabPage1.Controls.Add(this.lvwQB);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(757, 345);
@@ -254,21 +254,22 @@
             this.tabPage1.Text = "全部";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // lvwQB
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(758, 356);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvwQB.HideSelection = false;
+            this.lvwQB.Location = new System.Drawing.Point(3, 3);
+            this.lvwQB.Name = "lvwQB";
+            this.lvwQB.Size = new System.Drawing.Size(751, 339);
+            this.lvwQB.TabIndex = 0;
+            this.lvwQB.UseCompatibleStateImageBehavior = false;
+            this.lvwQB.View = System.Windows.Forms.View.Details;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.listView2);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(759, 345);
+            this.tabPage3.Size = new System.Drawing.Size(757, 345);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "冷菜";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -278,7 +279,7 @@
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(3, 3);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(842, 356);
+            this.listView2.Size = new System.Drawing.Size(751, 342);
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
@@ -287,7 +288,7 @@
             this.tabPage4.Controls.Add(this.listView3);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(759, 345);
+            this.tabPage4.Size = new System.Drawing.Size(757, 345);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "热菜";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -297,7 +298,7 @@
             this.listView3.HideSelection = false;
             this.listView3.Location = new System.Drawing.Point(3, 3);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(842, 356);
+            this.listView3.Size = new System.Drawing.Size(751, 339);
             this.listView3.TabIndex = 1;
             this.listView3.UseCompatibleStateImageBehavior = false;
             // 
@@ -306,7 +307,7 @@
             this.tabPage5.Controls.Add(this.listView4);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(759, 345);
+            this.tabPage5.Size = new System.Drawing.Size(757, 345);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "肉类";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -316,7 +317,7 @@
             this.listView4.HideSelection = false;
             this.listView4.Location = new System.Drawing.Point(3, 3);
             this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(842, 356);
+            this.listView4.Size = new System.Drawing.Size(751, 339);
             this.listView4.TabIndex = 1;
             this.listView4.UseCompatibleStateImageBehavior = false;
             // 
@@ -325,7 +326,7 @@
             this.tabPage6.Controls.Add(this.listView5);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(759, 345);
+            this.tabPage6.Size = new System.Drawing.Size(757, 345);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "海洋";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -344,7 +345,7 @@
             this.tabPage7.Controls.Add(this.listView6);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(759, 345);
+            this.tabPage7.Size = new System.Drawing.Size(757, 345);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "主食";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -363,7 +364,7 @@
             this.tabPage8.Controls.Add(this.listView7);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(759, 345);
+            this.tabPage8.Size = new System.Drawing.Size(757, 345);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "汤羮";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -382,7 +383,7 @@
             this.tabPage9.Controls.Add(this.listView8);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(759, 345);
+            this.tabPage9.Size = new System.Drawing.Size(757, 345);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "酒水";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -401,7 +402,7 @@
             this.tabPage10.Controls.Add(this.listView9);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(759, 345);
+            this.tabPage10.Size = new System.Drawing.Size(757, 345);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "甜点";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -505,7 +506,7 @@
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvwQB;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.ListView listView4;
