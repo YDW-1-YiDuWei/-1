@@ -19,6 +19,7 @@ namespace DianCanXiTongDAL
         }
         public void InquireReservationService()//详细订单查询
         {
+
         }
     }
 }
