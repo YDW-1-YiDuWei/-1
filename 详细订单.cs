@@ -76,5 +76,6 @@ namespace 点餐系统
             }
             Inquire();
         }
+
     }
 }
