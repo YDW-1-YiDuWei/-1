@@ -59,6 +59,7 @@ namespace 点餐系统
                 j++;
             }
             image.Images.AddRange(asg);
+
         }
 
         private void lvSJXX_Click(object sender, EventArgs e)//单击里面的餐馆的时候
