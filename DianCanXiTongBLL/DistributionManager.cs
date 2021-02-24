@@ -10,7 +10,7 @@ namespace DianCanXiTongBLL
     public class DistributionManager
     {
         /// <summary>
-        /// 订单增加，业务层
+        /// 配送表，业务层
         /// </summary>
         /// <returns></returns>
         public int DistributionAddManager(string riderId, string cuisineId, string lientId, string restaurantId)

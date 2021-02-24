@@ -12,7 +12,7 @@ namespace DianCanXiTongDAL
     {
         private DBHelper dB = new DBHelper();
         /// <summary>
-        /// 订单增加
+        /// 配送表
         /// </summary>
         /// <returns></returns>
         public int CuisinelnformationsAddService(string riderId, string cuisineId, string lientId, string restaurantId)
