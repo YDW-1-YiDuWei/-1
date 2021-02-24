@@ -37,7 +37,7 @@ namespace 点餐系统
             int count = restaurantManager.InquireRestaurantNameCount(txtSJ.Text.Trim());//餐馆数量
 
             int j = 1;
-            Image[] asg = new Image[count+1];
+            Image[] asg = new Image[count+1];//这里是图片的多少
             int ima = 0;
             for (int i = 0; i < 1; i++)
             {

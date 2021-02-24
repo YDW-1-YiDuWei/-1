@@ -30,7 +30,7 @@ namespace 点餐系统
 
         private void 详细订单_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            Inquire();
+            Inquire();//查询订单信息
         }
         public void Inquire() //查询订单信息
         {
