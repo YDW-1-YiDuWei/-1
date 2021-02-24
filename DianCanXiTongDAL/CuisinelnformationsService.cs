@@ -40,21 +40,5 @@ namespace DianCanXiTongDAL
             cmd.Close();
             return ls;
         }
-        /// <summary>
-        /// 订单增加
-        /// </summary>
-        /// <returns></returns>
-        public int CuisinelnformationsAddService(string riderId, string cuisineId, string lientId, string restaurantId)
-        {
-            string sql = "insert into Distribution(RiderId,CuisineId,ClientId,RestaurantId)values(@RiderId,@CuisineId,@ClientId,@RestaurantId)";
-            SqlParameter[] sp =
-            {
-                new SqlParameter("@RiderId",riderId),
-                new SqlParameter("@CuisineId",cuisineId),
-                new SqlParameter("@ClientId",lientId),
-                new SqlParameter("@RestaurantId",restaurantId),
-            };
-            return dB.ExecuteNonQuery(sql,sp);
-        }
     }
 }
