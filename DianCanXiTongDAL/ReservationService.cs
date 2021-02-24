@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DianCanXiTongManager;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace DianCanXiTongDAL
 {
@@ -28,6 +29,21 @@ namespace DianCanXiTongDAL
         public void SelectReservation()//查询订单
         {
 
+        }
+        /// <summary>
+        /// 订单增加
+        /// </summary>
+        /// <returns></returns>
+        public int AddReservationService(string clientId,string money,string cuisineInformationId)
+        {
+            string sql = "insert into Reservation(ClientId, Money, CuisineInformationId)values(@ClientId, @Money, @CuisineInformationId)";
+            SqlParameter[] sp =
+            {
+                new SqlParameter("@ClientId",clientId),
+                new SqlParameter("@Money",money),
+                new SqlParameter("@CuisineInformationId",cuisineInformationId),
+            };
+            return db.ExecuteNonQuery(sql,sp);
         }
     }
 }
