@@ -22,5 +22,12 @@ namespace 点餐系统
             //123
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            付钱成功 fqcg = new 付钱成功();
+            fqcg.Show();
+            fqcg.Close();
+        }
     }
 }
