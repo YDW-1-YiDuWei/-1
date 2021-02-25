@@ -63,5 +63,11 @@ namespace 点餐系统
             sy.Show();
             this.Hide();
         }
+
+        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            登入修改 drsg = new 登入修改();
+            drsg.Show();
+        }
     }
 }
