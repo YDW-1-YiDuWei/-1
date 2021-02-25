@@ -89,6 +89,22 @@ namespace 点餐系统
                     MessageBox.Show("登录失败", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+            else if (a==1)
+            {
+                List<Client> list = client.AddClients(txtZH.Text, txtPwd.Text);
+                if (list.Count > 0)
+                {
+                    MessageBox.Show("注册成功", "注册提示", MessageBoxButtons.OK);
+                    登录界面 dljm = new 登录界面();
+                    dljm.list = list;
+                    dljm.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("注册失败", "注册提示", MessageBoxButtons.OK);
+                }
+            }
             else
             {
                 List<Client> list = client.Login(User.user, User.pass);

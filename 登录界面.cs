@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 登录界面 : Form
     {
+        public List<Client> list = null;
         public 登录界面()
         {
             InitializeComponent();
@@ -54,10 +55,10 @@ namespace 点餐系统
             {
                 MessageBox.Show("账号或密码错误", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
 
         }
-        public void a() 
+        public void a()
         {
             首页 sy = new 首页();
             sy.Show();
@@ -73,8 +74,25 @@ namespace 点餐系统
         private void Label3_Click(object sender, EventArgs e)
         {
             登入修改 drsg = new 登入修改();
+            drsg.a = 1;
             drsg.Show();
             this.Hide();
+        }
+
+        private void 登录界面_Load(object sender, EventArgs e)
+        {
+            if (list != null)
+            {
+                if (MessageBox.Show("是否登录该账号", "登录提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    foreach (var item in list)
+                    {
+                        txtZH.Text = item.Number;
+                        txtPwd.Text = item.Password;
+                    }
+                    MessageBox.Show("请您点击登录即可进入点餐", "登录提示", MessageBoxButtons.OK);
+                }
+            }
         }
     }
 }

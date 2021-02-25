@@ -47,7 +47,6 @@ namespace 点餐系统
                 string gsName2 = dr[1].ToString();//菜品名称
                 string gsName3 = dr[2].ToString();//菜品价格
                 string gsName4 = dr[3].ToString();//菜品数量
-                string gsName5 = dr[4].ToString();//小计
 
                 asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + dr[0].ToString());//已经把拿到的图片保存到了这里面
                 lvOrder.Items.Add(dr[0] + "" + dr[1] + "" + dr[2] + "" + dr[3],j);//这里是关键!!!!!!!!!倒
