@@ -22,9 +22,11 @@ namespace 点餐系统
         /// 餐馆ID
         /// </summary>
         public string CanGuanBianHao { get; set; }
+        public List<Reservation> Li { get; set; }
         public 点餐()
         {
             InitializeComponent();
+            Li = new List<Reservation>();
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -35,6 +37,7 @@ namespace 点餐系统
         private void button2_Click(object sender, EventArgs e)
         {
             付钱 fq = new 付钱();
+            fq.Li = Li;
             fq.Show();
             //this.Close();
         }
@@ -44,7 +47,7 @@ namespace 点餐系统
             cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
             DIanCaiFangFa();
             Uiop.Items.Clear();//清空
-            foreach (CuisineInformations item in cFM.CuisinelnformationsSelectManager(cuisineInformationsLX, cuisineInformationsLXName))
+            foreach (CuisineInformations item in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName))
             {
                 string[] ab = { item.CuisineName, item.CuisinePrice, item.CuisineImagePath };
                 ListViewItem i = new ListViewItem(ab);
@@ -70,8 +73,18 @@ namespace 点餐系统
                 MessageBox.Show("请选中菜品进行点菜，谢谢^.^");
                 return;
             }
+
             MessageBox.Show("菜品已加入菜篮，谢谢您对本店的支持^.^！");
             lblJGS.Text = (int.Parse(Uiop.SelectedItems[0].SubItems[1].Text.ToString())+ int.Parse(lblJGS.Text.ToString())).ToString();
+
+            CuisineInformations cuisine=(CuisineInformations)lvwQB.SelectedItems[0].Tag;
+            Reservation rv = new Reservation
+            {
+                ClientId = int.Parse(User.khID),
+                Money = int.Parse(lvwQB.SelectedItems[0].SubItems[1].Text.ToString()),
+                CuisineInformationId = cuisine.id
+            };
+            Li.Add(rv);
             Uiop = null;
         }
         /// <summary>

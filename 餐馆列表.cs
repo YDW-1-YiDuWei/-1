@@ -69,9 +69,9 @@ namespace 点餐系统
         {
             if (lvSJXX.SelectedItems.Count != 0)
             {
-                string name=(string)lvSJXX.SelectedItems[0].Tag;
 
                 点餐 frm = new 点餐();
+                frm.CanGuanBianHao = (string)lvSJXX.SelectedItems[0].Tag;
                 frm.Show();
                 this.Hide();
             }

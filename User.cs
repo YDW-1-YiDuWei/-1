@@ -10,5 +10,6 @@ namespace 点餐系统
     {
        public static string user = "";
        public static string pass="";
+        public static string khID = "";
     }
 }

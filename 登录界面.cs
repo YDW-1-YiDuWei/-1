@@ -41,12 +41,14 @@ namespace 点餐系统
             List<Client> list = client.Login(txtZH.Text, txtPwd.Text);
             if (list.Count > 0)
             {
+                Client avv = list[0];
                 a();
                 //记录账号密码
                 User.user = txtZH.Text;
                 User.pass = txtPwd.Text;
+                User.khID = avv.Id.ToString();
 
-               
+
             }
             else
             {
