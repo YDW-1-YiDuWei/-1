@@ -47,7 +47,7 @@ namespace 点餐系统
                 string gsName3 = dr[2].ToString();//菜品价格
                 string gsName4 = dr[3].ToString();//菜品数量
 
-                asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + gsName);//已经把拿到的图片保存到了这里面
+                asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + gsName);//已经把拿到的图片保存到了这里面     第一个属性是保存到你们电脑里面的路径，后面的数据就是数据库里面的图片名称
                 lvOrder.Items.Add(gsName2 + "                  " + gsName3 + "                                  " + gsName4, i);//这里是关键!!!!!!!!!倒
 
                 i++;

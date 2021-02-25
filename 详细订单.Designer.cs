@@ -68,7 +68,7 @@
             // 
             // lvOrder
             // 
-            this.lvOrder.HideSelection = false;
+            this.lvOrder.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.lvOrder.LargeImageList = this.image;
             this.lvOrder.Location = new System.Drawing.Point(3, 99);
             this.lvOrder.Name = "lvOrder";
