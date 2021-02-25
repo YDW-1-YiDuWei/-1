@@ -50,96 +50,96 @@
   <ItemGroup>
     <Compile Include="Temp.cs" />
     <Compile Include="User.cs" />
-    <Compile Include="模糊订单.cs">
+    <Compile Include="NewFolder1\模糊订单.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="模糊订单.Designer.cs">
+    <Compile Include="NewFolder1\模糊订单.Designer.cs">
       <DependentUpon>模糊订单.cs</DependentUpon>
     </Compile>
-    <Compile Include="详细订单.cs">
+    <Compile Include="NewFolder1\详细订单.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="详细订单.Designer.cs">
+    <Compile Include="NewFolder1\详细订单.Designer.cs">
       <DependentUpon>详细订单.cs</DependentUpon>
     </Compile>
-    <Compile Include="餐馆列表.cs">
+    <Compile Include="NewFolder1\餐馆列表.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="餐馆列表.Designer.cs">
+    <Compile Include="NewFolder1\餐馆列表.Designer.cs">
       <DependentUpon>餐馆列表.cs</DependentUpon>
     </Compile>
-    <Compile Include="付钱.cs">
+    <Compile Include="NewFolder1\付钱.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="付钱.designer.cs">
+    <Compile Include="NewFolder1\付钱.designer.cs">
       <DependentUpon>付钱.cs</DependentUpon>
     </Compile>
-    <Compile Include="付钱成功.cs">
+    <Compile Include="NewFolder1\付钱成功.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="付钱成功.Designer.cs">
+    <Compile Include="NewFolder1\付钱成功.Designer.cs">
       <DependentUpon>付钱成功.cs</DependentUpon>
     </Compile>
-    <Compile Include="我的.cs">
+    <Compile Include="NewFolder1\我的.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="我的.Designer.cs">
+    <Compile Include="NewFolder1\我的.Designer.cs">
       <DependentUpon>我的.cs</DependentUpon>
     </Compile>
-    <Compile Include="提交.cs">
+    <Compile Include="NewFolder1\提交.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="提交.Designer.cs">
+    <Compile Include="NewFolder1\提交.Designer.cs">
       <DependentUpon>提交.cs</DependentUpon>
     </Compile>
-    <Compile Include="点餐.cs">
+    <Compile Include="NewFolder1\点餐.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="点餐.Designer.cs">
+    <Compile Include="NewFolder1\点餐.Designer.cs">
       <DependentUpon>点餐.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="登入修改.cs">
+    <Compile Include="NewFolder1\登入修改.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="登入修改.Designer.cs">
+    <Compile Include="NewFolder1\登入修改.Designer.cs">
       <DependentUpon>登入修改.cs</DependentUpon>
     </Compile>
-    <Compile Include="登录界面.cs">
+    <Compile Include="NewFolder1\登录界面.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="登录界面.Designer.cs">
+    <Compile Include="NewFolder1\登录界面.Designer.cs">
       <DependentUpon>登录界面.cs</DependentUpon>
     </Compile>
-    <Compile Include="首页.cs">
+    <Compile Include="NewFolder1\首页.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="首页.Designer.cs">
+    <Compile Include="NewFolder1\首页.Designer.cs">
       <DependentUpon>首页.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="模糊订单.resx">
+    <EmbeddedResource Include="NewFolder1\模糊订单.resx">
       <DependentUpon>模糊订单.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="详细订单.resx">
+    <EmbeddedResource Include="NewFolder1\详细订单.resx">
       <DependentUpon>详细订单.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="餐馆列表.resx">
+    <EmbeddedResource Include="NewFolder1\餐馆列表.resx">
       <DependentUpon>餐馆列表.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="付钱.resx">
+    <EmbeddedResource Include="NewFolder1\付钱.resx">
       <DependentUpon>付钱.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="付钱成功.resx">
+    <EmbeddedResource Include="NewFolder1\付钱成功.resx">
       <DependentUpon>付钱成功.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="我的.resx">
+    <EmbeddedResource Include="NewFolder1\我的.resx">
       <DependentUpon>我的.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="提交.resx">
+    <EmbeddedResource Include="NewFolder1\提交.resx">
       <DependentUpon>提交.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="点餐.resx">
+    <EmbeddedResource Include="NewFolder1\点餐.resx">
       <DependentUpon>点餐.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -151,13 +151,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="登入修改.resx">
+    <EmbeddedResource Include="NewFolder1\登入修改.resx">
       <DependentUpon>登入修改.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="登录界面.resx">
+    <EmbeddedResource Include="NewFolder1\登录界面.resx">
       <DependentUpon>登录界面.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="首页.resx">
+    <EmbeddedResource Include="NewFolder1\首页.resx">
       <DependentUpon>首页.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
