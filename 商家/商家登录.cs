@@ -17,9 +17,15 @@ namespace 点餐系统
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void 商家登录_Load(object sender, EventArgs e)//显示窗体的时候
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)//登录按钮
         {
             商家首页 a = new 商家首页();
         }
+    }
     }
 }

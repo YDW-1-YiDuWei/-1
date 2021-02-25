@@ -135,6 +135,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "商家登录";
             this.Text = "商家登录";
+            this.Load += new System.EventHandler(this.商家登录_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

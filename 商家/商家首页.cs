@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 点餐系统.商家
+namespace 点餐系统
 {
     public partial class 商家首页 : Form
     {
