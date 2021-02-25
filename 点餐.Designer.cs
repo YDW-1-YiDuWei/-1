@@ -42,6 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.lblJG = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lvwQB = new System.Windows.Forms.ListView();
@@ -94,7 +95,6 @@
             this.txtDishName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.image = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -271,6 +271,17 @@
             this.lblJG.TabIndex = 17;
             this.lblJG.Text = "合计：";
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(679, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 25);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "已点菜(几)";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -352,7 +363,7 @@
             this.tabPage3.Controls.Add(this.lVlC);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(757, 353);
+            this.tabPage3.Size = new System.Drawing.Size(757, 359);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "冷菜";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -391,7 +402,7 @@
             this.tabPage4.Controls.Add(this.lVRC);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(757, 353);
+            this.tabPage4.Size = new System.Drawing.Size(757, 359);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "热菜";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -430,7 +441,7 @@
             this.tabPage5.Controls.Add(this.lVRL);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(757, 353);
+            this.tabPage5.Size = new System.Drawing.Size(757, 359);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "肉类";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -469,7 +480,7 @@
             this.tabPage6.Controls.Add(this.lVHX);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(757, 353);
+            this.tabPage6.Size = new System.Drawing.Size(757, 359);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "海鲜";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -508,7 +519,7 @@
             this.tabPage7.Controls.Add(this.lVZS);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(757, 353);
+            this.tabPage7.Size = new System.Drawing.Size(757, 359);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "主食";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -547,7 +558,7 @@
             this.tabPage8.Controls.Add(this.lVT);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(757, 353);
+            this.tabPage8.Size = new System.Drawing.Size(757, 359);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "汤";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -586,7 +597,7 @@
             this.tabPage9.Controls.Add(this.lVJS);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(757, 353);
+            this.tabPage9.Size = new System.Drawing.Size(757, 359);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "酒水";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -625,7 +636,7 @@
             this.tabPage10.Controls.Add(this.lVTD);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(757, 353);
+            this.tabPage10.Size = new System.Drawing.Size(757, 359);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "甜点";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -695,17 +706,6 @@
             this.image.ImageSize = new System.Drawing.Size(64, 64);
             this.image.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(679, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 25);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "已点菜(几)";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // 点餐
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -714,7 +714,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "点餐";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "菜院";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -760,7 +760,6 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.ListView lvwQB;
         private System.Windows.Forms.ListView lVRC;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -799,6 +798,7 @@
         private System.Windows.Forms.ToolStripMenuItem 加入菜篮ToolStripMenuItem;
         private System.Windows.Forms.Label lblJGS;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
 

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DianCanXiTongBLL;
 
 namespace 点餐系统
 {
     public partial class 付钱成功 : Form
     {
+        private ReservationManager reservation = new ReservationManager();
         public 付钱成功()
         {
             InitializeComponent();
@@ -19,9 +21,10 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//提交按钮
         {
-            
+
             提交 tj = new 提交();
             tj.Show();
+            //reservation.AddReservationManager();
             this.Close();
         }
 
