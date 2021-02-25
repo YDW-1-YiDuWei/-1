@@ -28,12 +28,13 @@ namespace DianCanXiTongDAL
         }
         public void SelectReservation()//查询订单
         {
-
+            string sql = "select  from "; 
         }
         /// <summary>
         /// 订单增加
         /// </summary>
-        /// <returns></returns>
+        /// <returns></returns> 325
+        /// 
         public int AddReservationService(string clientId,string money,string cuisineInformationId)
         {
             string sql = "insert into Reservation(ClientId, Money, CuisineInformationId)values(@ClientId, @Money, @CuisineInformationId)";
