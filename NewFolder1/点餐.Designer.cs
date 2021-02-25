@@ -33,6 +33,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblJGS = new System.Windows.Forms.Label();
             this.bTSS = new System.Windows.Forms.Button();
+            this.lkbWEI = new System.Windows.Forms.LinkLabel();
+            this.lkbTop = new System.Windows.Forms.LinkLabel();
+            this.lbYs = new System.Windows.Forms.Label();
+            this.lkbX = new System.Windows.Forms.LinkLabel();
+            this.lkbS = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -48,53 +53,48 @@
             this.加入菜篮ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.image = new System.Windows.Forms.ImageList(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtDishName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lkbS = new System.Windows.Forms.LinkLabel();
-            this.lkbX = new System.Windows.Forms.LinkLabel();
-            this.lbYs = new System.Windows.Forms.Label();
-            this.lkbTop = new System.Windows.Forms.LinkLabel();
-            this.lkbWEI = new System.Windows.Forms.LinkLabel();
             this.lVlC = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.lVRC = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lVHX = new System.Windows.Forms.ListView();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lVZS = new System.Windows.Forms.ListView();
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.lVRL = new System.Windows.Forms.ListView();
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.lVHX = new System.Windows.Forms.ListView();
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.lVZS = new System.Windows.Forms.ListView();
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.lVT = new System.Windows.Forms.ListView();
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.lVJS = new System.Windows.Forms.ListView();
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.lVTD = new System.Windows.Forms.ListView();
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDishName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -115,7 +115,6 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.lblJGS);
             this.panel1.Controls.Add(this.bTSS);
             this.panel1.Controls.Add(this.lkbWEI);
@@ -165,6 +164,89 @@
             this.bTSS.Text = "搜索";
             this.bTSS.UseVisualStyleBackColor = false;
             this.bTSS.Click += new System.EventHandler(this.BTSS_Click);
+            // 
+            // lkbWEI
+            // 
+            this.lkbWEI.ActiveLinkColor = System.Drawing.Color.Yellow;
+            this.lkbWEI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lkbWEI.AutoSize = true;
+            this.lkbWEI.BackColor = System.Drawing.Color.Transparent;
+            this.lkbWEI.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lkbWEI.LinkColor = System.Drawing.Color.White;
+            this.lkbWEI.Location = new System.Drawing.Point(504, 446);
+            this.lkbWEI.Name = "lkbWEI";
+            this.lkbWEI.Size = new System.Drawing.Size(29, 12);
+            this.lkbWEI.TabIndex = 24;
+            this.lkbWEI.TabStop = true;
+            this.lkbWEI.Text = "尾页";
+            // 
+            // lkbTop
+            // 
+            this.lkbTop.ActiveLinkColor = System.Drawing.Color.Yellow;
+            this.lkbTop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lkbTop.AutoSize = true;
+            this.lkbTop.BackColor = System.Drawing.Color.Transparent;
+            this.lkbTop.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lkbTop.LinkColor = System.Drawing.Color.White;
+            this.lkbTop.Location = new System.Drawing.Point(288, 446);
+            this.lkbTop.Name = "lkbTop";
+            this.lkbTop.Size = new System.Drawing.Size(29, 12);
+            this.lkbTop.TabIndex = 23;
+            this.lkbTop.TabStop = true;
+            this.lkbTop.Text = "首页";
+            // 
+            // lbYs
+            // 
+            this.lbYs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbYs.AutoSize = true;
+            this.lbYs.BackColor = System.Drawing.Color.Transparent;
+            this.lbYs.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbYs.ForeColor = System.Drawing.Color.White;
+            this.lbYs.Location = new System.Drawing.Point(396, 446);
+            this.lbYs.Name = "lbYs";
+            this.lbYs.Size = new System.Drawing.Size(29, 12);
+            this.lbYs.TabIndex = 22;
+            this.lbYs.Text = "1/10";
+            // 
+            // lkbX
+            // 
+            this.lkbX.ActiveLinkColor = System.Drawing.Color.Yellow;
+            this.lkbX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lkbX.AutoSize = true;
+            this.lkbX.BackColor = System.Drawing.Color.Transparent;
+            this.lkbX.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lkbX.LinkColor = System.Drawing.Color.White;
+            this.lkbX.Location = new System.Drawing.Point(442, 446);
+            this.lkbX.Name = "lkbX";
+            this.lkbX.Size = new System.Drawing.Size(41, 12);
+            this.lkbX.TabIndex = 20;
+            this.lkbX.TabStop = true;
+            this.lkbX.Text = "下一页";
+            // 
+            // lkbS
+            // 
+            this.lkbS.ActiveLinkColor = System.Drawing.Color.Yellow;
+            this.lkbS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lkbS.AutoSize = true;
+            this.lkbS.BackColor = System.Drawing.Color.Transparent;
+            this.lkbS.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lkbS.LinkColor = System.Drawing.Color.White;
+            this.lkbS.Location = new System.Drawing.Point(334, 446);
+            this.lkbS.Name = "lkbS";
+            this.lkbS.Size = new System.Drawing.Size(41, 12);
+            this.lkbS.TabIndex = 21;
+            this.lkbS.TabStop = true;
+            this.lkbS.Text = "上一页";
             // 
             // button3
             // 
@@ -273,7 +355,7 @@
             this.lvwQB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvwQB.BackColor = System.Drawing.Color.White;
+            this.lvwQB.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lvwQB.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader3,
@@ -334,192 +416,6 @@
             this.tabPage3.Text = "冷菜";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.lVRC);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(757, 359);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "热菜";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.lVRL);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(757, 359);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "肉类";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.lVHX);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(757, 359);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "海鲜";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.lVZS);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(757, 359);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "主食";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.lVT);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(757, 359);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "汤";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.lVJS);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(757, 359);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "酒水";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.lVTD);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(757, 359);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "甜点";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(166, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 17);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "支持菜品名称查询/价格查询";
-            // 
-            // txtDishName
-            // 
-            this.txtDishName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDishName.Location = new System.Drawing.Point(169, 20);
-            this.txtDishName.Name = "txtDishName";
-            this.txtDishName.Size = new System.Drawing.Size(270, 21);
-            this.txtDishName.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(84, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "搜索商品名称";
-            // 
-            // lkbS
-            // 
-            this.lkbS.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbS.AutoSize = true;
-            this.lkbS.BackColor = System.Drawing.Color.Transparent;
-            this.lkbS.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbS.LinkColor = System.Drawing.Color.White;
-            this.lkbS.Location = new System.Drawing.Point(334, 446);
-            this.lkbS.Name = "lkbS";
-            this.lkbS.Size = new System.Drawing.Size(41, 12);
-            this.lkbS.TabIndex = 21;
-            this.lkbS.TabStop = true;
-            this.lkbS.Text = "上一页";
-            // 
-            // lkbX
-            // 
-            this.lkbX.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbX.AutoSize = true;
-            this.lkbX.BackColor = System.Drawing.Color.Transparent;
-            this.lkbX.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbX.LinkColor = System.Drawing.Color.White;
-            this.lkbX.Location = new System.Drawing.Point(442, 446);
-            this.lkbX.Name = "lkbX";
-            this.lkbX.Size = new System.Drawing.Size(41, 12);
-            this.lkbX.TabIndex = 20;
-            this.lkbX.TabStop = true;
-            this.lkbX.Text = "下一页";
-            // 
-            // lbYs
-            // 
-            this.lbYs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbYs.AutoSize = true;
-            this.lbYs.BackColor = System.Drawing.Color.Transparent;
-            this.lbYs.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbYs.ForeColor = System.Drawing.Color.White;
-            this.lbYs.Location = new System.Drawing.Point(396, 446);
-            this.lbYs.Name = "lbYs";
-            this.lbYs.Size = new System.Drawing.Size(29, 12);
-            this.lbYs.TabIndex = 22;
-            this.lbYs.Text = "1/10";
-            // 
-            // lkbTop
-            // 
-            this.lkbTop.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbTop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbTop.AutoSize = true;
-            this.lkbTop.BackColor = System.Drawing.Color.Transparent;
-            this.lkbTop.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbTop.LinkColor = System.Drawing.Color.White;
-            this.lkbTop.Location = new System.Drawing.Point(288, 446);
-            this.lkbTop.Name = "lkbTop";
-            this.lkbTop.Size = new System.Drawing.Size(29, 12);
-            this.lkbTop.TabIndex = 23;
-            this.lkbTop.TabStop = true;
-            this.lkbTop.Text = "首页";
-            // 
-            // lkbWEI
-            // 
-            this.lkbWEI.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbWEI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbWEI.AutoSize = true;
-            this.lkbWEI.BackColor = System.Drawing.Color.Transparent;
-            this.lkbWEI.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbWEI.LinkColor = System.Drawing.Color.White;
-            this.lkbWEI.Location = new System.Drawing.Point(504, 446);
-            this.lkbWEI.Name = "lkbWEI";
-            this.lkbWEI.Size = new System.Drawing.Size(29, 12);
-            this.lkbWEI.TabIndex = 24;
-            this.lkbWEI.TabStop = true;
-            this.lkbWEI.Text = "尾页";
-            // 
             // lVlC
             // 
             this.lVlC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -555,6 +451,16 @@
             // 
             this.columnHeader9.Text = "价格";
             this.columnHeader9.Width = 212;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.lVRC);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(757, 359);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "热菜";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // lVRC
             // 
@@ -592,77 +498,15 @@
             this.columnHeader6.Text = "价格";
             this.columnHeader6.Width = 212;
             // 
-            // lVHX
+            // tabPage5
             // 
-            this.lVHX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lVHX.BackColor = System.Drawing.Color.White;
-            this.lVHX.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12});
-            this.lVHX.ContextMenuStrip = this.cMSDC;
-            this.lVHX.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lVHX.HideSelection = false;
-            this.lVHX.LargeImageList = this.image;
-            this.lVHX.Location = new System.Drawing.Point(3, 3);
-            this.lVHX.Name = "lVHX";
-            this.lVHX.Size = new System.Drawing.Size(751, 353);
-            this.lVHX.SmallImageList = this.image;
-            this.lVHX.TabIndex = 4;
-            this.lVHX.UseCompatibleStateImageBehavior = false;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "图片";
-            this.columnHeader10.Width = 281;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "名称";
-            this.columnHeader11.Width = 254;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "价格";
-            this.columnHeader12.Width = 212;
-            // 
-            // lVZS
-            // 
-            this.lVZS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lVZS.BackColor = System.Drawing.Color.White;
-            this.lVZS.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15});
-            this.lVZS.ContextMenuStrip = this.cMSDC;
-            this.lVZS.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lVZS.HideSelection = false;
-            this.lVZS.LargeImageList = this.image;
-            this.lVZS.Location = new System.Drawing.Point(3, 3);
-            this.lVZS.Name = "lVZS";
-            this.lVZS.Size = new System.Drawing.Size(751, 353);
-            this.lVZS.SmallImageList = this.image;
-            this.lVZS.TabIndex = 5;
-            this.lVZS.UseCompatibleStateImageBehavior = false;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "图片";
-            this.columnHeader13.Width = 281;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "名称";
-            this.columnHeader14.Width = 254;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "价格";
-            this.columnHeader15.Width = 212;
+            this.tabPage5.Controls.Add(this.lVRL);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(757, 359);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "肉类";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // lVRL
             // 
@@ -700,6 +544,108 @@
             this.columnHeader27.Text = "价格";
             this.columnHeader27.Width = 212;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.lVHX);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(757, 359);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "海鲜";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // lVHX
+            // 
+            this.lVHX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lVHX.BackColor = System.Drawing.Color.White;
+            this.lVHX.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12});
+            this.lVHX.ContextMenuStrip = this.cMSDC;
+            this.lVHX.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lVHX.HideSelection = false;
+            this.lVHX.LargeImageList = this.image;
+            this.lVHX.Location = new System.Drawing.Point(3, 3);
+            this.lVHX.Name = "lVHX";
+            this.lVHX.Size = new System.Drawing.Size(751, 353);
+            this.lVHX.SmallImageList = this.image;
+            this.lVHX.TabIndex = 4;
+            this.lVHX.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "图片";
+            this.columnHeader10.Width = 281;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "名称";
+            this.columnHeader11.Width = 254;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "价格";
+            this.columnHeader12.Width = 212;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.lVZS);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(757, 359);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "主食";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // lVZS
+            // 
+            this.lVZS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lVZS.BackColor = System.Drawing.Color.White;
+            this.lVZS.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.lVZS.ContextMenuStrip = this.cMSDC;
+            this.lVZS.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lVZS.HideSelection = false;
+            this.lVZS.LargeImageList = this.image;
+            this.lVZS.Location = new System.Drawing.Point(3, 3);
+            this.lVZS.Name = "lVZS";
+            this.lVZS.Size = new System.Drawing.Size(751, 353);
+            this.lVZS.SmallImageList = this.image;
+            this.lVZS.TabIndex = 5;
+            this.lVZS.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "图片";
+            this.columnHeader13.Width = 281;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "名称";
+            this.columnHeader14.Width = 254;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "价格";
+            this.columnHeader15.Width = 212;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.lVT);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(757, 359);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "汤";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // lVT
             // 
             this.lVT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -735,6 +681,16 @@
             // 
             this.columnHeader18.Text = "价格";
             this.columnHeader18.Width = 212;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.lVJS);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(757, 359);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "酒水";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // lVJS
             // 
@@ -772,6 +728,16 @@
             this.columnHeader21.Text = "价格";
             this.columnHeader21.Width = 212;
             // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.lVTD);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(757, 359);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "甜点";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
             // lVTD
             // 
             this.lVTD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -807,6 +773,39 @@
             // 
             this.columnHeader24.Text = "价格";
             this.columnHeader24.Width = 212;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(166, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 17);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "支持菜品名称查询/价格查询";
+            // 
+            // txtDishName
+            // 
+            this.txtDishName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDishName.Location = new System.Drawing.Point(169, 20);
+            this.txtDishName.Name = "txtDishName";
+            this.txtDishName.Size = new System.Drawing.Size(270, 21);
+            this.txtDishName.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(84, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "搜索商品名称";
             // 
             // 点餐
             // 
