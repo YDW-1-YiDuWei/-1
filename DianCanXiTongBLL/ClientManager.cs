@@ -22,5 +22,11 @@ namespace DianCanXiTongBLL
         {
             return clientservice.Alter(uid, pwd,id);
         }
+
+        public List<Client> AddClients(string uid, string pwd)
+        {
+            return clientservice.AddClients(uid,pwd);
+        }
+
     }
 }
