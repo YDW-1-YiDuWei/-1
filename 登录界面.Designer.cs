@@ -153,6 +153,7 @@
             this.Name = "登录界面";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录界面";
+            this.Load += new System.EventHandler(this.登录界面_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

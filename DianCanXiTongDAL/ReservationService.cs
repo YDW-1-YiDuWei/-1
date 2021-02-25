@@ -17,7 +17,7 @@ namespace DianCanXiTongDAL
         DBHelper db = new DBHelper();
         public DataTable InquireReservation() //查询详细订单信息
         {
-            string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1,0 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
+            string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
             return db.GetTable(sql, "Reservation");
         }
         public object InquireReservationJG() //返回这个订单总共多少钱

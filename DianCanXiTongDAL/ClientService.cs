@@ -46,6 +46,7 @@ namespace DianCanXiTongDAL
             }
             return list;
         }
+
         public List<Client> Alter(string uid, string pwd, int id)//用户修改
         {
             SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
@@ -76,6 +77,40 @@ namespace DianCanXiTongDAL
                 list = null;
             }
             coon.Close();
+            return list;
+        }
+
+        public List<Client> AddClients(string uid,string pwd)//用户账号注册
+        {
+            SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
+
+            list.Clear();
+
+            Client client = null;
+
+            string sql = "insert into Client(Name,Number,Password) values(@Name,@Number,@Password)";
+
+            coon.Open();
+
+            SqlParameter[] sp =
+            {
+                new SqlParameter("@Name",uid),
+                new SqlParameter("@Number",uid),
+                new SqlParameter("@Password",pwd)
+            };
+            SqlCommand cmd = new SqlCommand(sql, coon);
+            cmd.Parameters.AddRange(sp);
+            int count = cmd.ExecuteNonQuery();
+            if (count > 0)
+            {
+                client = new Client
+                {
+                    Name=uid,
+                    Number=uid,
+                    Password=pwd,
+                };
+                list.Add(client);
+            }
             return list;
         }
 
