@@ -36,15 +36,15 @@ namespace 点餐系统
             DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());//餐馆信息
             int count = restaurantManager.InquireRestaurantNameCount(txtSJ.Text.Trim());//餐馆数量
 
-            int j = 1;
-            Image[] asg = new Image[count+1];//这里是图片的多少
+            int j = 0;
+            Image[] asg = new Image[count];//这里是图片的多少
             int ima = 0;
-            for (int i = 0; i < 1; i++)
+            /*for (int i = 0; i < 1; i++)
             {
                 lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i);
 
                 asg[ima++] = System.Drawing.Image.FromFile(@"C:\菜谱\FQ1WE53SGCNQ@64[P_94UHP.png");//这里是把空白图片丢到第一行因为不能丢null的
-            }
+            }*/
 
            
             foreach (DataRow dr in dt.Rows)//循环表里的行
