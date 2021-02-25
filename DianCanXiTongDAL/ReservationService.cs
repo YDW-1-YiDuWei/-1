@@ -28,7 +28,7 @@ namespace DianCanXiTongDAL
         }
         public void SelectReservation()//查询订单
         {
-            string sql = "select  from";
+
         }
     }
 }
