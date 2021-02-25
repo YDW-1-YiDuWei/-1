@@ -14,16 +14,16 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 菜品查询
         /// </summary>
-        public List<CuisineInformations> CuisinelnformationsSelectService(string leix,string cuisineInformationsLXName)
+        public List<CuisineInformations> CuisinelnformationsSelectService(string canGuanBianHao,string leix,string cuisineInformationsLXName)
         {
             List<CuisineInformations> ls = new List<CuisineInformations>();
-            string sql = "select a.Id, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join CuisineType b on a.CuisineTypeId=b.Id where 1=1";
+            string sql = "select a.Id, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join CuisineType b on a.CuisineTypeId=b.Id where RestaurantId="+canGuanBianHao;
             if (leix.Trim() != "")
             {
                 sql += " and b.CuisineTypeName='" + leix + "'";
             } else if (cuisineInformationsLXName.Trim()!="")
             {
-                sql += " and CuisineName ='"+ cuisineInformationsLXName + "'";
+                sql += " and CuisineName like '"+ cuisineInformationsLXName + "%'";
             }
             SqlDataReader cmd=dB.ExecuteReader(sql);
             while (cmd.Read())

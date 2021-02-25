@@ -20,7 +20,7 @@ namespace DianCanXiTongDAL
             string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1,0 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
             return db.GetTable(sql, "Reservation");
         }
-        public object InquireReservationJG() //返回这个订单多少钱总共
+        public object InquireReservationJG() //返回这个订单总共多少钱
         {
             string sql = "select sum(ci.CuisinePrice) from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
             
@@ -28,12 +28,13 @@ namespace DianCanXiTongDAL
         }
         public void SelectReservation()//查询订单
         {
-
+            string sql = "select  from "; 
         }
         /// <summary>
         /// 订单增加
         /// </summary>
-        /// <returns></returns>
+        /// <returns></returns> 325
+        /// 
         public int AddReservationService(string clientId,string money,string cuisineInformationId)
         {
             string sql = "insert into Reservation(ClientId, Money, CuisineInformationId)values(@ClientId, @Money, @CuisineInformationId)";

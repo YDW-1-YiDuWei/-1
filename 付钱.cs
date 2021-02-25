@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DianCanXiTongManager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,17 @@ namespace 点餐系统
 {
     public partial class 付钱 : Form
     {
+        public List<Reservation> Li { get; set; }
         public 付钱()
         {
             InitializeComponent();
+            Li = new List<Reservation>();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             付钱成功 fqcg = new 付钱成功();
+            FangFa(fqcg);
             fqcg.Show();
             this.Close();
         }
@@ -27,6 +31,7 @@ namespace 点餐系统
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             付钱成功 fqcg = new 付钱成功();
+            FangFa(fqcg);
             fqcg.Show();
             this.Close();
         }
@@ -34,6 +39,7 @@ namespace 点餐系统
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             付钱成功 fqcg = new 付钱成功();
+            FangFa(fqcg);
             fqcg.Show();
             this.Close();
            
@@ -42,6 +48,7 @@ namespace 点餐系统
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             付钱成功 fqcg = new 付钱成功();
+            FangFa(fqcg);
             fqcg.Show();
           
             this.Close();
@@ -50,6 +57,10 @@ namespace 点餐系统
         private void 付钱_Load(object sender, EventArgs e)
         {
 
+        }
+        public void FangFa(付钱成功 fqcg)
+        {
+            fqcg.Li = Li;
         }
     }
 }

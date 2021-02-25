@@ -41,10 +41,14 @@ namespace 点餐系统
             List<Client> list = client.Login(txtZH.Text, txtPwd.Text);
             if (list.Count > 0)
             {
+                Client avv = list[0];
                 a();
                 //记录账号密码
                 User.user = txtZH.Text;
                 User.pass = txtPwd.Text;
+                User.khID = avv.Id.ToString();
+
+
             }
             else
             {
@@ -58,6 +62,12 @@ namespace 点餐系统
             首页 sy = new 首页();
             sy.Show();
             this.Hide();
+        }
+
+        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            登入修改 drsg = new 登入修改();
+            drsg.Show();
         }
     }
 }

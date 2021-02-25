@@ -8,23 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DianCanXiTongBLL;
+using DianCanXiTongManager;
 
 namespace 点餐系统
 {
     public partial class 付钱成功 : Form
     {
-        private ReservationManager reservation = new ReservationManager();
+        public List<Reservation> Li { get; set; }
         public 付钱成功()
         {
             InitializeComponent();
+            Li = new List<Reservation>();
         }
 
         private void button1_Click(object sender, EventArgs e)//提交按钮
         {
-
+            ReservationManager reservation = new ReservationManager();
             提交 tj = new 提交();
+            foreach (Reservation item in Li)
+            {
+                reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString());
+            }
             tj.Show();
-            //reservation.AddReservationManager();
+                
             this.Close();
         }
 
