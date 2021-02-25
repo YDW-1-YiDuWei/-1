@@ -25,11 +25,19 @@ namespace 点餐系统
         {
             ReservationManager reservation = new ReservationManager();
             提交 tj = new 提交();
+            int a = 0;
             foreach (Reservation item in Li)
             {
-                reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString());
+                a=reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString());
             }
-            tj.Show();
+            if (a > 0)
+            {
+                tj.Show();
+            }
+            else
+            {
+                MessageBox.Show("下单失败");
+            }
                 
             this.Close();
         }
