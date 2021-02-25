@@ -38,7 +38,7 @@ namespace 点餐系统
             {
                 MessageBox.Show("下单失败");
             }
-                
+            Li = null;
             this.Close();
         }
 
