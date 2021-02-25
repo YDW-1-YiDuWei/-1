@@ -167,9 +167,7 @@
             this.label3.Size = new System.Drawing.Size(47, 19);
             this.label3.TabIndex = 25;
             this.label3.Text = "数量";
-            // 
-            // label4
-            // 
+
             // 
             // lbTotal
             // 
