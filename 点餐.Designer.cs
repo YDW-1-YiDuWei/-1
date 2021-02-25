@@ -714,7 +714,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "点餐";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "菜院";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -760,7 +760,6 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.ListView lvwQB;
         private System.Windows.Forms.ListView lVRC;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -799,6 +798,7 @@
         private System.Windows.Forms.ToolStripMenuItem 加入菜篮ToolStripMenuItem;
         private System.Windows.Forms.Label lblJGS;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
 
