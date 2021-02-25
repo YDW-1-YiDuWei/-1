@@ -56,6 +56,12 @@
     <Compile Include="商家\商家登录.Designer.cs">
       <DependentUpon>商家登录.cs</DependentUpon>
     </Compile>
+    <Compile Include="商家\商家首页.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商家\商家首页.Designer.cs">
+      <DependentUpon>商家首页.cs</DependentUpon>
+    </Compile>
     <Compile Include="用户\模糊订单.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="商家\商家登录.resx">
       <DependentUpon>商家登录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商家\商家首页.resx">
+      <DependentUpon>商家首页.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="用户\模糊订单.resx">
       <DependentUpon>模糊订单.cs</DependentUpon>

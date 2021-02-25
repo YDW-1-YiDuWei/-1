@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 点餐系统
+namespace 点餐系统.商家
 {
-    public partial class 商家登录 : Form
+    public partial class 商家首页 : Form
     {
-        public 商家登录()
+        public 商家首页()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页按钮
         {
-            
+            panel1.Visible = true;//显示首页
         }
     }
 }
