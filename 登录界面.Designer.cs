@@ -45,10 +45,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1135, 714);
+            this.pictureBox1.Size = new System.Drawing.Size(851, 571);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -62,10 +61,9 @@
             this.label1.BackColor = System.Drawing.Color.Maroon;
             this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(399, 255);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(299, 204);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 24);
+            this.label1.Size = new System.Drawing.Size(66, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "账号：";
             // 
@@ -74,10 +72,9 @@
             this.txtZH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtZH.Location = new System.Drawing.Point(500, 255);
-            this.txtZH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtZH.Location = new System.Drawing.Point(375, 204);
             this.txtZH.Name = "txtZH";
-            this.txtZH.Size = new System.Drawing.Size(160, 25);
+            this.txtZH.Size = new System.Drawing.Size(121, 21);
             this.txtZH.TabIndex = 0;
             // 
             // label2
@@ -89,10 +86,9 @@
             this.label2.BackColor = System.Drawing.Color.Maroon;
             this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(399, 336);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(299, 269);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.Size = new System.Drawing.Size(66, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "密码：";
             // 
@@ -103,11 +99,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPwd.AutoCompleteCustomSource.AddRange(new string[] {
             "."});
-            this.txtPwd.Location = new System.Drawing.Point(500, 336);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPwd.Location = new System.Drawing.Point(375, 269);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(160, 25);
+            this.txtPwd.Size = new System.Drawing.Size(121, 21);
             this.txtPwd.TabIndex = 1;
             this.txtPwd.Tag = "";
             // 
@@ -119,10 +114,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(519, 412);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(389, 330);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "登入";
             this.button1.UseVisualStyleBackColor = false;
@@ -130,16 +124,15 @@
             // 
             // 登录界面
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1137, 714);
+            this.ClientSize = new System.Drawing.Size(853, 571);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtZH);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "登录界面";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -45,8 +45,6 @@ namespace 点餐系统
                 //记录账号密码
                 User.user = txtZH.Text;
                 User.pass = txtPwd.Text;
-
-               
             }
             else
             {
