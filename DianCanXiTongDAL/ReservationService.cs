@@ -21,6 +21,7 @@ namespace DianCanXiTongDAL
             return db.GetTable(sql, "Reservation");
         }
         public object InquireReservationJG() //返回这个订单多少钱总共
+
         {
             string sql = "select sum(ci.CuisinePrice) from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
             
