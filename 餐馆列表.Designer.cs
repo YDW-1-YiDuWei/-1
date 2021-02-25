@@ -74,7 +74,9 @@
             // 
             // lvSJXX
             // 
+            this.lvSJXX.FullRowSelect = true;
             this.lvSJXX.HideSelection = false;
+            this.lvSJXX.LargeImageList = this.image;
             this.lvSJXX.Location = new System.Drawing.Point(12, 54);
             this.lvSJXX.Name = "lvSJXX";
             this.lvSJXX.Size = new System.Drawing.Size(666, 479);

@@ -20,5 +20,13 @@ namespace DianCanXiTongBLL
         {
             return reservationService.InquireReservationJG();
         }
+        /// <summary>
+        /// 订单增加 业务层
+        /// </summary>
+        /// <returns></returns>
+        public int AddReservationManager(string clientId, string money, string cuisineInformationId)
+        {
+            return reservationService.AddReservationService(clientId, money, cuisineInformationId);
+        }
     }
 }

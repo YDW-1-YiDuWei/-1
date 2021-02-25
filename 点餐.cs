@@ -18,6 +18,10 @@ namespace 点餐系统
         private string cuisineInformationsLX = "";
         private string cuisineInformationsLXName = "";
         public ListView Uiop { get; set; }
+        /// <summary>
+        /// 餐馆ID
+        /// </summary>
+        public string CanGuanBianHao { get; set; }
         public 点餐()
         {
             InitializeComponent();
