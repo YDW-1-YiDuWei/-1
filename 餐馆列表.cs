@@ -36,9 +36,8 @@ namespace 点餐系统
             DataTable dt = restaurantManager.InquireRestaurantName(txtSJ.Text.Trim());//餐馆信息
             int count = restaurantManager.InquireRestaurantNameCount(txtSJ.Text.Trim());//餐馆数量
 
-            int j = 0;
             Image[] asg = new Image[count];//这里是图片的多少
-            int ima = 0;
+            int i = 0;
             /*for (int i = 0; i < 1; i++)
             {
                 lvSJXX.Items.Add("餐馆名字：" + "    餐馆地址：" + "     餐馆电话：", i);
@@ -49,15 +48,18 @@ namespace 点餐系统
            
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
+                string name = dr[0].ToString();//餐馆id
                 string gsName = dr[3].ToString();//餐馆名字
                 string gsName2 = dr[4].ToString();//餐馆地址
                 string gsName3 = dr[5].ToString();//餐馆电话
                 string gsName4 = dr[7].ToString();//餐馆图片
 
-                asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + gsName4);//已经把拿到的图片保存到了这里面
-                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, j);//这里是关键!!!!!!!!!把数据倒进lv里面
+                asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + gsName4);//已经把拿到的图片保存到了这里面
+                
+                lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, i);//这里是关键!!!!!!!!!把数据倒进lv里面
+                lvSJXX.Items[i].Tag = name;
 
-                j++;
+                i++;
             }
             image.Images.AddRange(asg);//这里是把图片增加进去
 
@@ -67,6 +69,8 @@ namespace 点餐系统
         {
             if (lvSJXX.SelectedItems.Count != 0)
             {
+                string name=(string)lvSJXX.SelectedItems[0].Tag;
+
                 点餐 frm = new 点餐();
                 frm.Show();
                 this.Hide();
