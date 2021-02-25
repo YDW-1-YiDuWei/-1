@@ -43,17 +43,26 @@ namespace 点餐系统
         }
 
         private void TabControl1_Click(object sender, EventArgs e)
-        {
+        {      
             cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
             DIanCaiFangFa();
-            Uiop.Items.Clear();//清空
-            foreach (CuisineInformations item in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName))
+            Uiop.Items.Clear();
+
+            int j = 0;
+            Image asg = null;
+
+            foreach (CuisineInformations dr in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName))
             {
-                string[] ab = { item.CuisineName, item.CuisinePrice, item.CuisineImagePath };
-                ListViewItem i = new ListViewItem(ab);
-                i.Tag = item;
-                Uiop.Items.Add(i);
+                asg= System.Drawing.Image.FromFile(Temp.pathCG + dr.CuisineImagePath);
+                Uiop.Tag = dr;
+                Uiop.Items.Add(dr.CuisineName,j);//这里是关键!!!!!!!!!倒
+                
+                //添加图片到上面去
+                image.Images.Add(asg);
+                j++;
             }
+          
+
             Uiop = null;
         }
 
@@ -75,13 +84,13 @@ namespace 点餐系统
             }
 
             MessageBox.Show("菜品已加入菜篮，谢谢您对本店的支持^.^！");
-            lblJGS.Text = (int.Parse(Uiop.SelectedItems[0].SubItems[1].Text.ToString())+ int.Parse(lblJGS.Text.ToString())).ToString();
+            CuisineInformations cuisine = (CuisineInformations)Uiop.Tag;
 
-            CuisineInformations cuisine=(CuisineInformations)lvwQB.SelectedItems[0].Tag;
+            lblJGS.Text = (int.Parse(cuisine.CuisinePrice) + int.Parse(lblJGS.Text.ToString())).ToString();
             Reservation rv = new Reservation
             {
                 ClientId = int.Parse(User.khID),
-                Money = int.Parse(lvwQB.SelectedItems[0].SubItems[1].Text.ToString()),
+                Money = int.Parse(cuisine.CuisinePrice),
                 CuisineInformationId = cuisine.id
             };
             Li.Add(rv);

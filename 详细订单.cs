@@ -38,7 +38,7 @@ namespace 点餐系统
             DataTable dt = reservationService.InquireReservation();
 
             int j = 0;
-            Image[] asg = new Image[3];//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
+            Image[] asg = new Image[8];//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
             int ima = 0;
 
             foreach (DataRow dr in dt.Rows)//循环表里的行
@@ -50,10 +50,11 @@ namespace 点餐系统
                 string gsName5 = dr[4].ToString();//小计
 
                 asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + dr[0].ToString());//已经把拿到的图片保存到了这里面
-                lvOrder.Items.Add(dr[0] + "       " + dr[1] + "                              " + dr[2] + "                    " + dr[3],j);//这里是关键!!!!!!!!!倒
-
+                lvOrder.Items.Add(dr[0] + "" + dr[1] + "" + dr[2] + "" + dr[3],j);//这里是关键!!!!!!!!!倒
                 j++;
             }
+            //lvOrder.Columns.Add("1");
+            
             image.Images.AddRange(asg);//添加图片到上面去
             lbTotal.Text = Convert.ToString("总共：" + reservationService.InquireReservationJG() + " 元");//计算总价
         }

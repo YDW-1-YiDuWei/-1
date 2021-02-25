@@ -32,8 +32,9 @@ namespace DianCanXiTongDAL
                 {
                     id =int.Parse(cmd["Id"].ToString()),
                     CuisineName=cmd["CuisineName"].ToString(),
-                    CuisinePrice=cmd["CuisinePrice"].ToString(),
-                    CuisineCount=int.Parse(cmd["CuisineCount"].ToString())
+                    CuisinePrice = cmd["CuisinePrice"].ToString(),
+                    CuisineImagePath= cmd["CuisineImagePath"].ToString(),
+                    CuisineCount =int.Parse(cmd["CuisineCount"].ToString())
                 };
                 ls.Add(cuisine);
             }

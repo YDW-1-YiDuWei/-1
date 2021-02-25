@@ -33,6 +33,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lvOrder = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.image = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -41,11 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbTotal = new System.Windows.Forms.Label();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -89,8 +89,28 @@
             this.lvOrder.StateImageList = this.image;
             this.lvOrder.TabIndex = 26;
             this.lvOrder.UseCompatibleStateImageBehavior = false;
-            this.lvOrder.View = System.Windows.Forms.View.Details;
+            this.lvOrder.View = System.Windows.Forms.View.Tile;
             this.lvOrder.ItemMouseHover += new System.Windows.Forms.ListViewItemMouseHoverEventHandler(this.lvOrder_ItemMouseHover);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 129;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Width = 130;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Width = 127;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Width = 127;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Width = 112;
             // 
             // image
             // 
@@ -170,26 +190,6 @@
             this.lbTotal.Size = new System.Drawing.Size(85, 19);
             this.lbTotal.TabIndex = 25;
             this.lbTotal.Text = "总共：￥";
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 129;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Width = 130;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Width = 127;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Width = 127;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Width = 112;
             // 
             // 详细订单
             // 
