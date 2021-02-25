@@ -28,7 +28,7 @@ namespace DianCanXiTongDAL
         }
         public void SelectReservation()//查询订单
         {
-            string sql = "select r.RestaurantName from Distribution d inner join Restaurant r"; 
+            string sql = " "; 
         }
         /// <summary>
         /// 订单增加
