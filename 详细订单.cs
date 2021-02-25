@@ -35,26 +35,20 @@ namespace 点餐系统
         }
         public void Inquire() //查询订单信息
         {
-            DataTable dt = reservationService.InquireReservation();
+            DataTable dt = reservationService.InquireReservation(User.khID);
 
             int j = 0;
-            Image[] asg = new Image[8];//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
+            Image asg =null;//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
             int ima = 0;
 
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
-                string gsName = dr[0].ToString();//菜品图片
-                string gsName2 = dr[1].ToString();//菜品名称
-                string gsName3 = dr[2].ToString();//菜品价格
-                string gsName4 = dr[3].ToString();//菜品数量
+                asg = System.Drawing.Image.FromFile(Temp.pathCG + dr[0].ToString());//已经把拿到的图片保存到了这里面
+                lvOrder.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"]+"/元)",j);//这里是关键!!!!!!!!!倒
 
-                asg[ima++] = System.Drawing.Image.FromFile(Temp.pathCG + dr[0].ToString());//已经把拿到的图片保存到了这里面
-                lvOrder.Items.Add(dr[0] + "" + dr[1] + "" + dr[2] + "" + dr[3],j);//这里是关键!!!!!!!!!倒
+                image.Images.Add(asg);//添加图片到上面去
                 j++;
             }
-            //lvOrder.Columns.Add("1");
-            
-            image.Images.AddRange(asg);//添加图片到上面去
             lbTotal.Text = Convert.ToString("总共：" + reservationService.InquireReservationJG() + " 元");//计算总价
         }
 

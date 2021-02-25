@@ -12,9 +12,9 @@ namespace DianCanXiTongBLL
     public class ReservationManager//订单业务层
     {
         ReservationService reservationService = new ReservationService();
-        public DataTable InquireReservation() //查询详细订单
+        public DataTable InquireReservation(string yHId) //查询详细订单
         {
-            return reservationService.InquireReservation();
+            return reservationService.InquireReservation(yHId);
         }
         public object InquireReservationJG() //查询这个订单总共多少钱
         {

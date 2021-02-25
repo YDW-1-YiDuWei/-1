@@ -167,17 +167,7 @@
             this.label3.Size = new System.Drawing.Size(47, 19);
             this.label3.TabIndex = 25;
             this.label3.Text = "数量";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(535, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 19);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "小计";
+
             // 
             // lbTotal
             // 
@@ -195,7 +185,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 543);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.label2);
