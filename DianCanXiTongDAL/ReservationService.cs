@@ -20,7 +20,7 @@ namespace DianCanXiTongDAL
             string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1,0 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
             return db.GetTable(sql, "Reservation");
         }
-        public object InquireReservationJG() //返回这个订单多少钱总共
+        public object InquireReservationJG() //返回这个订单总共多少钱
         {
             string sql = "select sum(ci.CuisinePrice) from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
             

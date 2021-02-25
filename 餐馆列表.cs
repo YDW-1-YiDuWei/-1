@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 餐馆列表 : Form
     {
+        ClientManager cm = new ClientManager();
         RestaurantManager restaurantManager = new RestaurantManager();
         public 餐馆列表()
         {
@@ -22,7 +23,9 @@ namespace 点餐系统
 
         private void 餐馆列表_Load(object sender, EventArgs e)//显示窗体的时候
         {
+            List<Client> list = cm.Login(User.user, User.pass);//测试拿到登录用户的id
 
+            int count= list[0].Id;//这里是拿到登录的用户id
         }
 
         private void button1_Click(object sender, EventArgs e)//查询按钮
@@ -57,7 +60,7 @@ namespace 点餐系统
                 asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + gsName4);//已经把拿到的图片保存到了这里面
                 
                 lvSJXX.Items.Add(gsName + "       " + gsName2 + "        " + gsName3, i);//这里是关键!!!!!!!!!把数据倒进lv里面
-                lvSJXX.Items[i].Tag = name;
+                lvSJXX.Items[i].Tag = name;//把餐馆id保存到Tag里面去
 
                 i++;
             }
