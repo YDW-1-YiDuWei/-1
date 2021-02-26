@@ -26,16 +26,28 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
-            i = 1;
-            if (Check())//判断是否为空
+            if (count == 0)
             {
-                int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
-                if (count > 0)
+                if (Check())//判断是否为空
                 {
-                    MessageBox.Show("增加成功");
+                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("增加成功");
+                        Inquire();
+                    }
+                    else { MessageBox.Show("增加失败"); }
+                }
+            }
+            else 
+            {
+                int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag,txtName.Text,cbLX.SelectedIndex,decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
+                if (index > 0)
+                {
+                    MessageBox.Show("修改成功");
                     Inquire();
                 }
-                else { MessageBox.Show("增加失败"); }
+                else { MessageBox.Show("修改失败"); }
             }
         }
         public void Inquire() //查询菜品图片
@@ -157,15 +169,14 @@ namespace 点餐系统
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-            List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), (int)listView2.Tag);
+            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID,(int)listView2.SelectedItems[0].Tag);
             foreach (CuisineInformations item in list)
             {
                 txtName.Text = item.CuisineName;
                 txtMoney.Text = item.CuisinePrice;
                 cbLX.SelectedIndex = item.CuisineTypeId.id;
-                pbImage.Image= System.Drawing.Image.FromFile(item.CuisineImagePath);
+                pbImage.Image= System.Drawing.Image.FromFile(Temp.pathCG+item.CuisineImagePath);
             }
-
         }
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单
