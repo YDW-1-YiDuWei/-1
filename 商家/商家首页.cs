@@ -49,6 +49,7 @@ namespace 点餐系统
         }
         private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页（按钮）
         {
+            label3.Text = DateTime.Now.ToShortTimeString().ToString();
             panel1.Visible = true;//显示商家首页（Panel控键）
             panel3.Visible = false;//隐藏商家菜品添加（Panel控键）
 
@@ -104,6 +105,20 @@ namespace 点餐系统
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
 
+        }
+
+        private void 商家首页_Load(object sender, EventArgs e)
+        {
+           label16.Text = DateTime.Now.ToLongDateString().ToString();
+           label17.Text = DateTime.Now.ToLongTimeString().ToString();
+            
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            label16.Text = DateTime.Now.ToLongDateString().ToString();
+            label17.Text = DateTime.Now.ToLongTimeString().ToString();
+            label3.Text = DateTime.Now.ToShortTimeString().ToString();
         }
     }
 }
