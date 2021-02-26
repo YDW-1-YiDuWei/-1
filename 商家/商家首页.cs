@@ -129,10 +129,13 @@ namespace 点餐系统
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
         }
 
-        private void button6_Click(object sender, EventArgs e)//商家的菜品修改按钮
+        private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+
+
+
         }
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单

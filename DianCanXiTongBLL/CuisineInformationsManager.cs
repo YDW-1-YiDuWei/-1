@@ -33,5 +33,19 @@ namespace DianCanXiTongBLL
         {
             return cS.AddCuisineInformations(name,cgId,lxId,money,b,ptho);
         }
+        /// <summary>
+        /// 修改菜品
+        /// </summary>
+        /// <param name="name">菜品名称</param>
+        /// <param name="cgId">餐馆ID</param>//修改没有餐馆
+        /// <param name="lxId">类型ID</param>
+        /// <param name="money">菜品价格</param>
+        /// <param name="a">菜品评论</param>//删除了评论
+        /// <param name="b">菜品次数</param>//修改没有菜品次数
+        /// <param name="ptho">菜品图片路径</param>
+        public int AmendCuisineInformations(int id, string name, int lxId, decimal money, string ptho) 
+        {
+            return cS.AmendCuisineInformations(id,name,lxId,money,ptho);
+        }
     }
 }
