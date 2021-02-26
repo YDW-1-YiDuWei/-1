@@ -25,6 +25,8 @@ namespace 点餐系统
         private void button1_Click(object sender, EventArgs e)//登录按钮
         {
             商家首页 a = new 商家首页();
+            a.Show();
+            this.Close();
         }
     }
     }

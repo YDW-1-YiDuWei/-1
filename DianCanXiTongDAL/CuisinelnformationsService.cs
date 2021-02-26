@@ -8,7 +8,7 @@ using DianCanXiTongManager;
 
 namespace DianCanXiTongDAL
 {
-    public class CuisinelnformationsService
+    public class CuisinelnformationsService//菜品数据层
     {
         private DBHelper dB = new DBHelper();
         /// <summary>
@@ -40,6 +40,30 @@ namespace DianCanXiTongDAL
             }
             cmd.Close();
             return ls;
+        }
+        /// <summary>
+        /// 增加菜品
+        /// </summary>
+        /// <param name="name">菜品名称</param>
+        /// <param name="cgId">餐馆ID</param>
+        /// <param name="lxId">类型ID</param>
+        /// <param name="money">菜品价格</param>
+        /// <param name="a">菜品评论</param>//删除了评论
+        /// <param name="b">菜品次数</param>
+        /// <param name="ptho">菜品图片路径</param>
+        public int AddCuisineInformations(string name,int cgId, int lxId,string money,int b,string ptho) 
+        {
+            string sql = "insert  into  CuisineInformations(CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCount, CuisineImagePath ) values(@CuisineName, @RestaurantId, @CuisineTypeId, @CuisinePrice, @CuisineCommentId, @CuisineCount, @CuisineImagePath)";
+            SqlParameter[] sp = new SqlParameter[] 
+            {
+            new SqlParameter("CuisineName",name),
+            new SqlParameter("RestaurantId",cgId),
+            new SqlParameter("CuisineTypeId",lxId),
+            new SqlParameter("CuisinePrice",money),
+            new SqlParameter("CuisineCount",b),
+            new SqlParameter("CuisineImagePath",ptho)
+            };
+            return dB.ExecuteNonQuery(sql,sp);
         }
     }
 }
