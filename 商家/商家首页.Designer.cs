@@ -76,6 +76,7 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.pbImage = new System.Windows.Forms.PictureBox();
+            this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -603,6 +604,10 @@
             this.pbImage.TabIndex = 8;
             this.pbImage.TabStop = false;
             // 
+            // ofdLJ
+            // 
+            this.ofdLJ.FileName = "openFileDialog1";
+            // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -685,5 +690,6 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pbImage;
+        private System.Windows.Forms.OpenFileDialog ofdLJ;
     }
 }
