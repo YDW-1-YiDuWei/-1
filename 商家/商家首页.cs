@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DianCanXiTongBLL;
+using DianCanXiTongManager;
 
 namespace 点餐系统
 {
     public partial class 商家首页 : Form
     {
+        CuisineInformationsManager cIM = new CuisineInformationsManager();
         public 商家首页()
         {
             InitializeComponent();
