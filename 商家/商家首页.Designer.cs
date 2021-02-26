@@ -360,6 +360,12 @@
             this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel3);
