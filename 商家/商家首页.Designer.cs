@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(商家首页));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -43,12 +44,15 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btInquire = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInquireName = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtCPName = new System.Windows.Forms.TextBox();
+            this.txtCPMoney = new System.Windows.Forms.TextBox();
+            this.txtCPlx = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -56,7 +60,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvCPAdmin = new System.Windows.Forms.ListView();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -76,11 +80,11 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btQD = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.pbCPImage = new System.Windows.Forms.PictureBox();
+            this.btXZ = new System.Windows.Forms.Button();
+            this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -92,7 +96,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCPImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -201,7 +205,7 @@
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(990, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(1013, 30);
             this.toolStrip1.TabIndex = 36;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -223,15 +227,15 @@
             this.toolStripLabel3.Text = "我的";
             this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
-            // button8
+            // btInquire
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(631, 17);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "查询";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btInquire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInquire.Location = new System.Drawing.Point(631, 17);
+            this.btInquire.Name = "btInquire";
+            this.btInquire.Size = new System.Drawing.Size(75, 23);
+            this.btInquire.TabIndex = 25;
+            this.btInquire.Text = "查询";
+            this.btInquire.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -243,12 +247,12 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtInquireName
             // 
-            this.textBox1.Location = new System.Drawing.Point(381, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 21);
-            this.textBox1.TabIndex = 24;
+            this.txtInquireName.Location = new System.Drawing.Point(381, 17);
+            this.txtInquireName.Name = "txtInquireName";
+            this.txtInquireName.Size = new System.Drawing.Size(244, 21);
+            this.txtInquireName.TabIndex = 24;
             // 
             // button7
             // 
@@ -270,8 +274,8 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.btInquire);
+            this.panel1.Controls.Add(this.txtInquireName);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
@@ -288,10 +292,11 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.btXZ);
+            this.panel3.Controls.Add(this.pbCPImage);
+            this.panel3.Controls.Add(this.txtCPName);
+            this.panel3.Controls.Add(this.txtCPMoney);
+            this.panel3.Controls.Add(this.txtCPlx);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.button9);
@@ -304,6 +309,33 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(226, 377);
             this.panel3.TabIndex = 27;
+            // 
+            // txtCPName
+            // 
+            this.txtCPName.Location = new System.Drawing.Point(88, 91);
+            this.txtCPName.Name = "txtCPName";
+            this.txtCPName.Size = new System.Drawing.Size(121, 21);
+            this.txtCPName.TabIndex = 9;
+            // 
+            // txtCPMoney
+            // 
+            this.txtCPMoney.Location = new System.Drawing.Point(88, 132);
+            this.txtCPMoney.Name = "txtCPMoney";
+            this.txtCPMoney.Size = new System.Drawing.Size(121, 21);
+            this.txtCPMoney.TabIndex = 9;
+            // 
+            // txtCPlx
+            // 
+            this.txtCPlx.FormattingEnabled = true;
+            this.txtCPlx.Items.AddRange(new object[] {
+            "--请选择--",
+            "小菜",
+            "炒菜",
+            "主食"});
+            this.txtCPlx.Location = new System.Drawing.Point(88, 175);
+            this.txtCPlx.Name = "txtCPlx";
+            this.txtCPlx.Size = new System.Drawing.Size(121, 20);
+            this.txtCPlx.TabIndex = 8;
             // 
             // label15
             // 
@@ -368,21 +400,25 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.listView2);
+            this.panel2.Controls.Add(this.lvCPAdmin);
             this.panel2.Location = new System.Drawing.Point(304, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(690, 473);
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
             // 
-            // listView2
+            // lvCPAdmin
             // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(3, 3);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(684, 467);
-            this.listView2.TabIndex = 21;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lvCPAdmin.HideSelection = false;
+            this.lvCPAdmin.LargeImageList = this.imageList1;
+            this.lvCPAdmin.Location = new System.Drawing.Point(3, 3);
+            this.lvCPAdmin.Name = "lvCPAdmin";
+            this.lvCPAdmin.Size = new System.Drawing.Size(684, 467);
+            this.lvCPAdmin.SmallImageList = this.imageList1;
+            this.lvCPAdmin.StateImageList = this.imageList1;
+            this.lvCPAdmin.TabIndex = 21;
+            this.lvCPAdmin.UseCompatibleStateImageBehavior = false;
+            this.lvCPAdmin.View = System.Windows.Forms.View.List;
             // 
             // button6
             // 
@@ -603,37 +639,6 @@
             this.btQD.Text = "确定";
             this.btQD.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(88, 218);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 86);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(88, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 21);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(88, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 21);
-            this.textBox3.TabIndex = 9;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -643,11 +648,41 @@
             this.label16.TabIndex = 40;
             this.label16.Text = "label16";
             // 
+            // pbCPImage
+            // 
+            this.pbCPImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbCPImage.Location = new System.Drawing.Point(88, 225);
+            this.pbCPImage.Name = "pbCPImage";
+            this.pbCPImage.Size = new System.Drawing.Size(100, 77);
+            this.pbCPImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCPImage.TabIndex = 10;
+            this.pbCPImage.TabStop = false;
+            // 
+            // btXZ
+            // 
+            this.btXZ.Location = new System.Drawing.Point(24, 279);
+            this.btXZ.Name = "btXZ";
+            this.btXZ.Size = new System.Drawing.Size(58, 23);
+            this.btXZ.TabIndex = 11;
+            this.btXZ.Text = "选择";
+            this.btXZ.UseVisualStyleBackColor = true;
+            this.btXZ.Click += new System.EventHandler(this.btXZ_Click);
+            // 
+            // ofdLJ
+            // 
+            this.ofdLJ.FileName = "openFileDialog1";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 604);
+            this.ClientSize = new System.Drawing.Size(1013, 604);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox1);
@@ -655,6 +690,7 @@
             this.Controls.Add(this.label2);
             this.Name = "商家首页";
             this.Text = "商家首页";
+            this.Load += new System.EventHandler(this.商家首页_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.toolStrip1.ResumeLayout(false);
@@ -671,7 +707,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCPImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -693,9 +729,9 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btInquire;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInquireName;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
@@ -703,7 +739,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvCPAdmin;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -726,10 +762,13 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btQD;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtCPName;
+        private System.Windows.Forms.TextBox txtCPMoney;
+        private System.Windows.Forms.ComboBox txtCPlx;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btXZ;
+        private System.Windows.Forms.PictureBox pbCPImage;
+        private System.Windows.Forms.OpenFileDialog ofdLJ;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
