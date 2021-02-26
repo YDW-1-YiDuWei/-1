@@ -134,7 +134,14 @@ namespace 点餐系统
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-
+            List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), (int)listView2.Tag);
+            foreach (CuisineInformations item in list)
+            {
+                txtName.Text = item.CuisineName;
+                txtMoney.Text = item.CuisinePrice;
+                cbLX.SelectedIndex = item.CuisineTypeId.id;
+                pbImage.Image= System.Drawing.Image.FromFile(item.CuisineImagePath);
+            }
 
         }
 
