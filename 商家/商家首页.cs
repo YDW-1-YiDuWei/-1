@@ -105,5 +105,9 @@ namespace 点餐系统
         {
 
         }
+        private void Timer1_Tick_1(object sender, EventArgs e)
+        {
+            label3.Text = DateTime.Now.ToString();
+        }
     }
 }
