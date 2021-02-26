@@ -80,6 +80,8 @@
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             this.button9 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -91,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.Cmlist.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -343,11 +346,12 @@
             // 
             // listView2
             // 
+            this.listView2.ContextMenuStrip = this.Cmlist;
             this.listView2.HideSelection = false;
             this.listView2.LargeImageList = this.imageList1;
-            this.listView2.Location = new System.Drawing.Point(3, 3);
+            this.listView2.Location = new System.Drawing.Point(3, 0);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(684, 467);
+            this.listView2.Size = new System.Drawing.Size(685, 470);
             this.listView2.SmallImageList = this.imageList1;
             this.listView2.StateImageList = this.imageList1;
             this.listView2.TabIndex = 21;
@@ -525,9 +529,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 0);
+            this.listView1.Location = new System.Drawing.Point(3, 5);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(222, 379);
+            this.listView1.Size = new System.Drawing.Size(217, 374);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -619,17 +623,6 @@
             // 
             this.ofdLJ.FileName = "openFileDialog1";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(87, 576);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "label2";
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Black;
@@ -641,13 +634,25 @@
             this.button9.TabIndex = 28;
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click_2);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // Cmlist
+            // 
+            this.Cmlist.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem});
+            this.Cmlist.Name = "Cmlist";
+            this.Cmlist.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
             // 
             // 商家首页
             // 
@@ -678,6 +683,7 @@
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.Cmlist.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -735,5 +741,7 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ContextMenuStrip Cmlist;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
     }
 }

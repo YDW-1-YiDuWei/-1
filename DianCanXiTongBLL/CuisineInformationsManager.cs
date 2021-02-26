@@ -47,5 +47,10 @@ namespace DianCanXiTongBLL
         {
             return cS.AmendCuisineInformations(id,name,lxId,money,ptho);
         }
+
+        public int DeleteCuisineInformations(int id)
+        {
+            return cS.DeleteCuisineInformations(id);
+        }
     }
 }
