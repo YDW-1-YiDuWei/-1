@@ -312,6 +312,7 @@
             this.pbSJLJ.Location = new System.Drawing.Point(0, 11);
             this.pbSJLJ.Name = "pbSJLJ";
             this.pbSJLJ.Size = new System.Drawing.Size(64, 64);
+            this.pbSJLJ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSJLJ.TabIndex = 0;
             this.pbSJLJ.TabStop = false;
             // 
