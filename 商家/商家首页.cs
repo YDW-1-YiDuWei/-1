@@ -85,6 +85,7 @@ namespace 点餐系统
         {
             if (list != null)
             {
+                pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
                 lbSJName.Text="商家的名称："+ list[0].RestaurantName;
             }
         }
