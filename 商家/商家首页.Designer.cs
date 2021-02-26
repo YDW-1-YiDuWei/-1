@@ -54,7 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btXZ = new System.Windows.Forms.Button();
-            this.pbImage = new System.Windows.Forms.PictureBox();
             this.btQX = new System.Windows.Forms.Button();
             this.btQD = new System.Windows.Forms.Button();
             this.cbLX = new System.Windows.Forms.ComboBox();
@@ -76,6 +75,7 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -84,9 +84,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -365,8 +365,8 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btXZ);
             this.panel3.Controls.Add(this.pbImage);
+            this.panel3.Controls.Add(this.btXZ);
             this.panel3.Controls.Add(this.btQX);
             this.panel3.Controls.Add(this.btQD);
             this.panel3.Controls.Add(this.cbLX);
@@ -393,15 +393,6 @@
             this.btXZ.TabIndex = 7;
             this.btXZ.Text = "选择";
             this.btXZ.UseVisualStyleBackColor = false;
-            // 
-            // pbImage
-            // 
-            this.pbImage.BackColor = System.Drawing.Color.White;
-            this.pbImage.Location = new System.Drawing.Point(72, 262);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(78, 63);
-            this.pbImage.TabIndex = 6;
-            this.pbImage.TabStop = false;
             // 
             // btQX
             // 
@@ -604,6 +595,14 @@
             this.toolStripLabel3.Size = new System.Drawing.Size(52, 27);
             this.toolStripLabel3.Text = "我的";
             // 
+            // pbImage
+            // 
+            this.pbImage.Location = new System.Drawing.Point(72, 247);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(78, 77);
+            this.pbImage.TabIndex = 8;
+            this.pbImage.TabStop = false;
+            // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -628,10 +627,10 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,7 +663,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btXZ;
-        private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.Button btQX;
         private System.Windows.Forms.Button btQD;
         private System.Windows.Forms.ComboBox cbLX;
@@ -686,5 +684,6 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pbImage;
     }
 }
