@@ -130,11 +130,36 @@ namespace 点餐系统
         }
         public void Inquire() //查询菜品
         {
-        
+            lvCPAdmin.Items.Clear();//清除
+            Image.Images.Clear();
+            List<CuisineInformations> list= cIM.CuisinelnformationsSelectManager(User.restaKhID,"", txtInquireName.Text.Trim());
+
+
+            Image[] asg = new Image[list.Count];//这里是图片的多少
+            int i = 0;
+            
+            foreach (CuisineInformations item in list)
+            {
+                //item.CuisineImagePath//图片路径
+                string name = item.CuisineTypeId.id == 1 ? "小菜" : item.CuisineTypeId.id == 2 ? "炒菜" : "主食";
+
+
+                asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
+
+                lvCPAdmin.Items.Add(item.CuisineName + "  " + name+ "  " + item.CuisinePrice, i) ;//这里是关键!!!!!!!!!把数据倒进lv里面
+                
+                i++;
+            }
+            Image.Images.AddRange(asg);
         }
-        private void Timer1_Tick_1(object sender, EventArgs e)
+        private void Timer1_Tick_1(object sender, EventArgs e)//计时器
         {
             label3.Text = DateTime.Now.ToString();
+        }
+
+        private void btInquire_Click(object sender, EventArgs e)//查询按钮
+        {
+            Inquire();
         }
     }
 }

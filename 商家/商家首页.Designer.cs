@@ -84,7 +84,7 @@
             this.pbCPImage = new System.Windows.Forms.PictureBox();
             this.btXZ = new System.Windows.Forms.Button();
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.Image = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -236,6 +236,7 @@
             this.btInquire.TabIndex = 25;
             this.btInquire.Text = "查询";
             this.btInquire.UseVisualStyleBackColor = true;
+            this.btInquire.Click += new System.EventHandler(this.btInquire_Click);
             // 
             // pictureBox1
             // 
@@ -410,12 +411,12 @@
             // lvCPAdmin
             // 
             this.lvCPAdmin.HideSelection = false;
-            this.lvCPAdmin.LargeImageList = this.imageList1;
+            this.lvCPAdmin.LargeImageList = this.Image;
             this.lvCPAdmin.Location = new System.Drawing.Point(3, 3);
             this.lvCPAdmin.Name = "lvCPAdmin";
             this.lvCPAdmin.Size = new System.Drawing.Size(684, 467);
-            this.lvCPAdmin.SmallImageList = this.imageList1;
-            this.lvCPAdmin.StateImageList = this.imageList1;
+            this.lvCPAdmin.SmallImageList = this.Image;
+            this.lvCPAdmin.StateImageList = this.Image;
             this.lvCPAdmin.TabIndex = 21;
             this.lvCPAdmin.UseCompatibleStateImageBehavior = false;
             this.lvCPAdmin.View = System.Windows.Forms.View.List;
@@ -672,11 +673,11 @@
             // 
             this.ofdLJ.FileName = "openFileDialog1";
             // 
-            // imageList1
+            // Image
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.Image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.Image.ImageSize = new System.Drawing.Size(64, 64);
+            this.Image.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // 商家首页
             // 
@@ -769,6 +770,6 @@
         private System.Windows.Forms.Button btXZ;
         private System.Windows.Forms.PictureBox pbCPImage;
         private System.Windows.Forms.OpenFileDialog ofdLJ;
-        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList Image;
     }
 }
