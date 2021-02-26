@@ -21,6 +21,10 @@ namespace 点餐系统
         {
 
         }
+        public void Inquire() //查询菜品的图片
+        {
+        
+        }
         public bool Check() //判断是否为空
         {
             if (txtName.Text.Trim()=="")
@@ -48,6 +52,11 @@ namespace 点餐系统
                 return false;
             }
             return true;
+        }
+
+        private void 商家首页_Load(object sender, EventArgs e)//显示窗体的时候
+        {
+            cbLX.SelectedIndex = 0;
         }
     }
 }

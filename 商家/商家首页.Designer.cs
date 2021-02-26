@@ -421,6 +421,11 @@
             // cbLX
             // 
             this.cbLX.FormattingEnabled = true;
+            this.cbLX.Items.AddRange(new object[] {
+            "--请选择--",
+            "小菜",
+            "炒菜",
+            "主食"});
             this.cbLX.Location = new System.Drawing.Point(81, 212);
             this.cbLX.Name = "cbLX";
             this.cbLX.Size = new System.Drawing.Size(125, 20);
@@ -601,6 +606,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "商家首页";
             this.Text = "商家首页";
+            this.Load += new System.EventHandler(this.商家首页_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
