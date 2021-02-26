@@ -19,7 +19,34 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
-
+        public bool Check() //判断是否为空
+        {
+            if (txtName.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入菜品名称");
+                txtName.Focus();
+                return false;
+            }
+            if (txtMoney.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入菜品价格");
+                txtMoney.Focus();
+                return false;
+            }
+            if (cbLX.SelectedIndex == 0)
+            {
+                MessageBox.Show("请选择菜品类型");
+                cbLX.Focus();
+                return false;
+            }
+            if (pbImage.Image == null)
+            {
+                MessageBox.Show("请加入菜品图片");
+                pbImage.Focus();
+                return false;
+            }
+            return true;
+        }
         private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页（按钮）
         {
             panel1.Visible = true;//显示商家首页（Panel控键）
@@ -72,6 +99,11 @@ namespace 点餐系统
         {
             panel3.Visible = false;//隐藏商家菜品添加（Panel控键）
             panel2.Visible = false;//隐藏商家菜品添加（Panel控键）
+        }
+
+        private void button9_Click(object sender, EventArgs e)//确定按钮
+        {
+
         }
     }
 }

@@ -139,10 +139,10 @@
             // 
             // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 21);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 21);
-            this.textBox2.TabIndex = 2;
+            this.txtName.Location = new System.Drawing.Point(0, 0);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 21);
+            this.txtName.TabIndex = 0;
             // 
             // label14
             // 
@@ -283,10 +283,6 @@
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.button9);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label12);
@@ -329,11 +325,11 @@
             this.button9.TabIndex = 5;
             this.button9.Text = "确定";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Location = new System.Drawing.Point(4, 6);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(218, 375);
@@ -594,7 +590,6 @@
             this.btQD.TabIndex = 5;
             this.btQD.Text = "确定";
             this.btQD.UseVisualStyleBackColor = true;
-            this.btQD.Click += new System.EventHandler(this.btQD_Click);
             // 
             // 商家首页
             // 
