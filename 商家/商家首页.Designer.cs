@@ -78,8 +78,8 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -360,12 +360,6 @@
             this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel3);
@@ -592,7 +586,7 @@
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(995, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(992, 30);
             this.toolStrip1.TabIndex = 24;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -625,17 +619,6 @@
             // 
             this.ofdLJ.FileName = "openFileDialog1";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(71, 576);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "label2";
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Black;
@@ -648,13 +631,18 @@
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 597);
+            this.ClientSize = new System.Drawing.Size(992, 597);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -733,7 +721,7 @@
         private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.OpenFileDialog ofdLJ;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Timer timer1;
     }
 }

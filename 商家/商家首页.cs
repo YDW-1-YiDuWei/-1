@@ -156,7 +156,6 @@ namespace 点餐系统
         private void button9_Click_1(object sender, EventArgs e)
         {
             label3.Text= DateTime.Now.ToShortTimeString().ToString();
-            label1.Text= DateTime.Now.ToShortTimeString().ToString();
             label2.Text= DateTime.Now.ToLongDateString().ToString();
         }
 
@@ -173,6 +172,12 @@ namespace 点餐系统
         private void button8_Click(object sender, EventArgs e)//查询按钮
         {
             Inquire();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            label3.Text = DateTime.Now.ToString("t");
+            label2.Text = DateTime.Now.ToString();
         }
     }
 }
