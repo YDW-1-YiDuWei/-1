@@ -50,7 +50,7 @@ namespace DianCanXiTongDAL
 
             Restaurant rest = null;
 
-            string sql = "select [Id],RestaurantNumber,RestaurantNumberPwd from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
+            string sql = "select Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
 
             SqlParameter[] sp =
             {
@@ -67,7 +67,12 @@ namespace DianCanXiTongDAL
                 {
                     id = (int)sdr["Id"],
                     RestaurantNumber = sdr["RestaurantNumber"].ToString(),
-                    RestaurantNumberPwd = sdr["RestaurantNumberPwd"].ToString()
+                    RestaurantNumberPwd = sdr["RestaurantNumberPwd"].ToString(),
+                    RestaurantName=sdr["RestaurantName"].ToString(),
+                    RestaurantAddress=sdr["RestaurantAddress"].ToString(),
+                    RestaurantPhone=sdr["RestaurantPhone"].ToString(),
+                    RestaurantComment=sdr["RestaurantComment"].ToString(),
+                    RestaurantImage=sdr["RestaurantImage"].ToString()
                 };
                 list.Add(rest);
             }
