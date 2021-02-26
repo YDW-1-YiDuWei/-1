@@ -44,9 +44,9 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btInquire = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInquireName = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -58,10 +58,8 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvCPAdmin = new System.Windows.Forms.ListView();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -99,7 +97,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(2, 8);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 64);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -226,32 +224,32 @@
             this.toolStripLabel3.Text = "我的";
             this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
-            // button8
+            // btInquire
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(631, 17);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "查询";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btInquire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInquire.Location = new System.Drawing.Point(631, 17);
+            this.btInquire.Name = "btInquire";
+            this.btInquire.Size = new System.Drawing.Size(75, 23);
+            this.btInquire.TabIndex = 25;
+            this.btInquire.Text = "查询";
+            this.btInquire.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 579);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1003, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(1000, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtInquireName
             // 
-            this.textBox1.Location = new System.Drawing.Point(381, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 21);
-            this.textBox1.TabIndex = 24;
+            this.txtInquireName.Location = new System.Drawing.Point(381, 17);
+            this.txtInquireName.Name = "txtInquireName";
+            this.txtInquireName.Size = new System.Drawing.Size(244, 21);
+            this.txtInquireName.TabIndex = 24;
             // 
             // button7
             // 
@@ -270,6 +268,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -291,10 +291,11 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.btXZ);
+            this.panel3.Controls.Add(this.pbCPImage);
+            this.panel3.Controls.Add(this.txtCPName);
+            this.panel3.Controls.Add(this.txtCPMoney);
+            this.panel3.Controls.Add(this.txtCPlx);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.button9);
@@ -382,41 +383,27 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(909, 27);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 12);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "label9";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(837, 26);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 12);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "label9";
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.listView2);
+            this.panel2.Controls.Add(this.lvCPAdmin);
             this.panel2.Location = new System.Drawing.Point(304, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(690, 473);
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
             // 
-            // listView2
+            // lvCPAdmin
             // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(3, 3);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(684, 467);
-            this.listView2.TabIndex = 21;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lvCPAdmin.HideSelection = false;
+            this.lvCPAdmin.LargeImageList = this.imageList1;
+            this.lvCPAdmin.Location = new System.Drawing.Point(3, 3);
+            this.lvCPAdmin.Name = "lvCPAdmin";
+            this.lvCPAdmin.Size = new System.Drawing.Size(684, 467);
+            this.lvCPAdmin.SmallImageList = this.imageList1;
+            this.lvCPAdmin.StateImageList = this.imageList1;
+            this.lvCPAdmin.TabIndex = 21;
+            this.lvCPAdmin.UseCompatibleStateImageBehavior = false;
+            this.lvCPAdmin.View = System.Windows.Forms.View.List;
             // 
             // button6
             // 
@@ -590,7 +577,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 2;
-            this.label3.Text = "时间";
+            this.label3.Text = "9:50";
             // 
             // label1
             // 
@@ -603,17 +590,21 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(143, 26);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(18, 17);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(72, 26);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(18, 17);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
@@ -636,6 +627,37 @@
             this.btQD.TabIndex = 5;
             this.btQD.Text = "确定";
             this.btQD.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(88, 218);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 86);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(88, 175);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(88, 132);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 21);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(88, 91);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 21);
+            this.textBox3.TabIndex = 9;
             // 
             // label16
             // 
@@ -703,17 +725,15 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btInquire;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInquireName;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvCPAdmin;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -736,10 +756,9 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btQD;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtCPName;
+        private System.Windows.Forms.TextBox txtCPMoney;
+        private System.Windows.Forms.ComboBox txtCPlx;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Timer timer1;
     }
