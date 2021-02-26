@@ -23,9 +23,7 @@ namespace 点餐系统
 
         private void 餐馆列表_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            List<Client> list = cm.Login(User.user, User.pass);//测试拿到登录用户的id
 
-            int count= list[0].Id;//这里是拿到登录的用户id
         }
 
         private void button1_Click(object sender, EventArgs e)//查询按钮

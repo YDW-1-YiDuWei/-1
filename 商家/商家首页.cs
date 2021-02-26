@@ -14,9 +14,9 @@ namespace 点餐系统
 {
     public partial class 商家首页 : Form
     {
-        CuisineInformationsManager cIM = new CuisineInformationsManager();
+       CuisineInformationsManager cIM = new CuisineInformationsManager();
        public List<Restaurant> list = null;
-
+        int count = 0;
         public 商家首页()
         {
             InitializeComponent();
@@ -24,15 +24,28 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
-            if (Check())//判断是否为空
+            if (count == 0)
             {
-                int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
-                if (count > 0)
+                if (Check())//判断是否为空
                 {
-                    MessageBox.Show("增加成功");
+                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("增加成功");
+                        Inquire();
+                    }
+                    else { MessageBox.Show("增加失败"); }
+                }
+            }
+            else 
+            {
+                int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag,txtName.Text,cbLX.SelectedIndex,decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
+                if (index > 0)
+                {
+                    MessageBox.Show("修改成功");
                     Inquire();
                 }
-                else { MessageBox.Show("增加失败"); }
+                else { MessageBox.Show("修改失败"); }
             }
         }
         public void Inquire() //查询菜品图片
@@ -54,7 +67,7 @@ namespace 点餐系统
                 asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
 
                 listView2.Items.Add(item.CuisineName + "  " + name + "  " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
-                listView2.Tag = item.id;
+                listView2.Items[i].Tag = item.id;
                 i++;
             }
             imageList1.Images.AddRange(asg);
@@ -133,18 +146,18 @@ namespace 点餐系统
 
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
+            count = 1;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-            List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), (int)listView2.Tag);
+            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID,(int)listView2.SelectedItems[0].Tag);
             foreach (CuisineInformations item in list)
             {
                 txtName.Text = item.CuisineName;
                 txtMoney.Text = item.CuisinePrice;
                 cbLX.SelectedIndex = item.CuisineTypeId.id;
-                pbImage.Image= System.Drawing.Image.FromFile(item.CuisineImagePath);
+                pbImage.Image= System.Drawing.Image.FromFile(Temp.pathCG+item.CuisineImagePath);
             }
-
         }
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单
