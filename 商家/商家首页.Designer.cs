@@ -268,10 +268,6 @@
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
@@ -288,8 +284,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btXZ);
-            this.panel3.Controls.Add(this.pbCPImage);
             this.panel3.Controls.Add(this.txtCPName);
             this.panel3.Controls.Add(this.txtCPMoney);
             this.panel3.Controls.Add(this.txtCPlx);
@@ -361,12 +355,9 @@
             // lvCPAdmin
             // 
             this.lvCPAdmin.HideSelection = false;
-            this.lvCPAdmin.LargeImageList = this.imageList1;
             this.lvCPAdmin.Location = new System.Drawing.Point(3, 3);
             this.lvCPAdmin.Name = "lvCPAdmin";
             this.lvCPAdmin.Size = new System.Drawing.Size(684, 467);
-            this.lvCPAdmin.SmallImageList = this.imageList1;
-            this.lvCPAdmin.StateImageList = this.imageList1;
             this.lvCPAdmin.TabIndex = 21;
             this.lvCPAdmin.UseCompatibleStateImageBehavior = false;
             this.lvCPAdmin.View = System.Windows.Forms.View.List;
