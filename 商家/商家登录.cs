@@ -61,14 +61,16 @@ namespace 点餐系统
                 MessageBox.Show("请您输入密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
-            else if (textBox1.Text.Length < 5|| textBox1.Text.Length > 15)
+            /*else if (textBox1.Text.Length < 5|| textBox1.Text.Length > 15)
             {
-                MessageBox.Show("请您输入正确的账号""登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("请您输入正确的账号","登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
             }
-            else if (textBox2.Text.Length<5)
+            else if (textBox2.Text.Length<5||textBox2.Text.Length>15)
             {
-                MessageBox.Show("请您输入正确的密码""登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+                MessageBox.Show("请您输入正确的密码","登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }*/
             return true;
         }
     }
