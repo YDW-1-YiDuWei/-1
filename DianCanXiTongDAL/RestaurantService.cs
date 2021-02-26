@@ -49,8 +49,8 @@ namespace DianCanXiTongDAL
             DBHelper db = new DBHelper();
 
             Restaurant rest = null;
-
             string sql = "select Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
+
 
             SqlParameter[] sp =
             {
@@ -72,8 +72,7 @@ namespace DianCanXiTongDAL
                     RestaurantAddress=sdr["RestaurantAddress"].ToString(),
                     RestaurantPhone=sdr["RestaurantPhone"].ToString(),
                     RestaurantComment=sdr["RestaurantComment"].ToString(),
-                    RestaurantImage = sdr["RestaurantImage"].ToString()
-
+                    RestaurantImage=sdr["RestaurantImage"].ToString()
                 };
                 list.Add(rest);
             }
