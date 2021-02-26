@@ -28,6 +28,10 @@ namespace 点餐系统
         {
 
         }
+        public void Inquire() //查询菜品的图片
+        {
+        
+        }
         public bool Check() //判断是否为空
         {
             if (txtName.Text.Trim()=="")
@@ -81,8 +85,8 @@ namespace 点餐系统
         {
             if (list != null)
             {
-                /*label1.Text="商家的名称"+ list[0].RestaurantName;
-                pictureBox3.Image = Image.FromFile(list[0].RestaurantImage);*/
+                lbSJName.Text="商家的名称"+ list[0].RestaurantName;
+                pbSJLJ.Image = Image.FromFile(list[0].RestaurantImage);
             }
         }
 
