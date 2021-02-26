@@ -108,8 +108,10 @@ namespace 点餐系统
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
         }
 
-        private void 商家首页_Load(object sender, EventArgs e)
+        private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
         {
+            label1.Text = DateTime.Now.ToLongTimeString().ToString();
+            label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
@@ -166,7 +168,6 @@ namespace 点餐系统
         private void button9_Click_1(object sender, EventArgs e)
         {
             label3.Text= DateTime.Now.ToShortTimeString().ToString();
-            label1.Text= DateTime.Now.ToShortTimeString().ToString();
             label2.Text= DateTime.Now.ToLongDateString().ToString();
         }
 
@@ -183,6 +184,12 @@ namespace 点餐系统
         private void button8_Click(object sender, EventArgs e)//查询按钮
         {
             Inquire();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            label3.Text = DateTime.Now.ToString("t");
+            label2.Text = DateTime.Now.ToString();
         }
     }
 }
