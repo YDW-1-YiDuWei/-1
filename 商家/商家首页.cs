@@ -136,7 +136,14 @@ namespace 点餐系统
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-
+            List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), (int)listView2.Tag);
+            foreach (CuisineInformations item in list)
+            {
+                txtName.Text = item.CuisineName;
+                txtMoney.Text = item.CuisinePrice;
+                cbLX.SelectedIndex = item.CuisineTypeId.id;
+                pbImage.Image= System.Drawing.Image.FromFile(item.CuisineImagePath);
+            }
 
         }
 
@@ -158,6 +165,12 @@ namespace 点餐系统
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
         }
 
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            label3.Text= DateTime.Now.ToShortTimeString().ToString();
+            label2.Text= DateTime.Now.ToLongDateString().ToString();
+        }
+
         private void btXZ_Click(object sender, EventArgs e)//选择按钮
         {
             if (DialogResult.OK == ofdLJ.ShowDialog())
@@ -173,11 +186,10 @@ namespace 点餐系统
             Inquire();
         }
 
-        private void button9_Click_2(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
-            label3.Text = DateTime.Now.ToShortTimeString().ToString();
-            label1.Text = DateTime.Now.ToLongTimeString().ToString(); 
-            label2.Text = DateTime.Now.ToLongDateString().ToString();
+            label3.Text = DateTime.Now.ToString("t");
+            label2.Text = DateTime.Now.ToString();
         }
     }
 }
