@@ -20,7 +20,7 @@ namespace DianCanXiTongBLL
             return cS.CuisinelnformationsSelectService(canGuanBianHao,leix, cuisineInformationsLXName);
         }
         /// <summary>
-        /// 增加菜品，业务层
+        /// 增加菜品方法
         /// </summary>
         /// <param name="name">菜品名称</param>
         /// <param name="cgId">餐馆ID</param>

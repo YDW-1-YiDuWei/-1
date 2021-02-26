@@ -32,6 +32,7 @@ namespace DianCanXiTongDAL
                 {
                     id =int.Parse(cmd["Id"].ToString()),
                     CuisineName=cmd["CuisineName"].ToString(),
+                    CuisineTypeId = new CuisineType() {id= int.Parse(cmd["CuisineTypeId"].ToString()) },//邪 加的菜品类型id
                     CuisinePrice = cmd["CuisinePrice"].ToString(),
                     CuisineImagePath= cmd["CuisineImagePath"].ToString(),
                     CuisineCount =int.Parse(cmd["CuisineCount"].ToString())
