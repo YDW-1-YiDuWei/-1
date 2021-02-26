@@ -23,7 +23,7 @@ namespace 点餐系统
         }
         public void Inquire() //查询菜品的图片
         {
-        
+        //
         }
         public bool Check() //判断是否为空
         {
