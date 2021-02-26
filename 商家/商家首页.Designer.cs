@@ -602,6 +602,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "商家首页";
             this.Text = "商家首页";
+            this.Load += new System.EventHandler(this.商家首页_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DianCanXiTongBLL;
+using DianCanXiTongManager;
 
 namespace 点餐系统
 {
+    
     public partial class 商家首页 : Form
     {
+
+       public List<Restaurant> list = null;
+
         public 商家首页()
         {
             InitializeComponent();
@@ -50,19 +56,13 @@ namespace 点餐系统
             return true;
         }
 
-        private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页（按钮）
+        private void 商家首页_Load(object sender, EventArgs e)
         {
-            panel1.Visible = true;//商家首页显示（panel1）
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            if (list != null)
+            {
+                label1.Text="商家的名称"+ list[0].RestaurantName;
+                pictureBox3.Image = Image.FromFile(list[0].RestaurantImage);
+            }
         }
-
-        private void toolStripLabel3_Click(object sender, EventArgs e)//商家我的（按钮）
-        {
-            panel1.Visible = false;//商家首页显示（panel1）
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
-        }
-
     }
 }
