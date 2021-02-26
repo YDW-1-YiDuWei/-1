@@ -49,7 +49,6 @@ namespace DianCanXiTongDAL
             DBHelper db = new DBHelper();
 
             Restaurant rest = null;
-
             string sql = "select Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
 
 
