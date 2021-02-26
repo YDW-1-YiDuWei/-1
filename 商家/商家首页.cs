@@ -28,6 +28,10 @@ namespace 点餐系统
         {
 
         }
+        public void Inquire() //查询菜品的图片
+        {
+        
+        }
         public bool Check() //判断是否为空
         {
             if (txtName.Text.Trim()=="")
@@ -71,13 +75,54 @@ namespace 点餐系统
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
         }
+        private void button5_Click(object sender, EventArgs e)//商家已完成（按钮）
+        {
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+        }
+
         private void 商家首页_Load(object sender, EventArgs e)
         {
             if (list != null)
             {
-                lbSJName.Text="商家的名称  "+ list[0].RestaurantName;
-                pbSJLJ.Image = Image.FromFile(list[0].RestaurantImage);
+                lbSJName.Text="商家的名称："+ list[0].RestaurantName;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
+        {
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button3_Click(object sender, EventArgs e)//商家的菜品删除(按钮)
+        {
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button6_Click(object sender, EventArgs e)//商家的菜品修改
+        {
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button7_Click(object sender, EventArgs e)//商家客户打单
+        {
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button4_Click(object sender, EventArgs e)//商家退单
+        {
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button1_Click(object sender, EventArgs e)//商家接单
+        {
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
         }
     }
 }

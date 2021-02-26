@@ -54,7 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btXZ = new System.Windows.Forms.Button();
-            this.pbImage = new System.Windows.Forms.PictureBox();
             this.btQX = new System.Windows.Forms.Button();
             this.btQD = new System.Windows.Forms.Button();
             this.cbLX = new System.Windows.Forms.ComboBox();
@@ -76,6 +75,8 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.pbImage = new System.Windows.Forms.PictureBox();
+            this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -84,9 +85,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -113,6 +114,7 @@
             this.button6.TabIndex = 16;
             this.button6.Text = "菜品修改";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -127,6 +129,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "菜品\r\n删除";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -141,6 +144,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "菜品\r\n添加";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -155,6 +159,7 @@
             this.button5.TabIndex = 19;
             this.button5.Text = "已完成";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // groupBox2
             // 
@@ -183,6 +188,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "接单\r\n(+)";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -197,6 +203,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "退单\r\n(-)";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label8
             // 
@@ -249,6 +256,7 @@
             this.button7.TabIndex = 15;
             this.button7.Text = "打印\r\n客单";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // groupBox1
             // 
@@ -358,8 +366,8 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btXZ);
             this.panel3.Controls.Add(this.pbImage);
+            this.panel3.Controls.Add(this.btXZ);
             this.panel3.Controls.Add(this.btQX);
             this.panel3.Controls.Add(this.btQD);
             this.panel3.Controls.Add(this.cbLX);
@@ -387,15 +395,6 @@
             this.btXZ.Text = "选择";
             this.btXZ.UseVisualStyleBackColor = false;
             // 
-            // pbImage
-            // 
-            this.pbImage.BackColor = System.Drawing.Color.White;
-            this.pbImage.Location = new System.Drawing.Point(72, 262);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(78, 63);
-            this.pbImage.TabIndex = 6;
-            this.pbImage.TabStop = false;
-            // 
             // btQX
             // 
             this.btQX.BackColor = System.Drawing.Color.White;
@@ -422,6 +421,11 @@
             // cbLX
             // 
             this.cbLX.FormattingEnabled = true;
+            this.cbLX.Items.AddRange(new object[] {
+            "--请选择--",
+            "小菜",
+            "炒菜",
+            "主食"});
             this.cbLX.Location = new System.Drawing.Point(81, 212);
             this.cbLX.Name = "cbLX";
             this.cbLX.Size = new System.Drawing.Size(125, 20);
@@ -592,6 +596,18 @@
             this.toolStripLabel3.Size = new System.Drawing.Size(52, 27);
             this.toolStripLabel3.Text = "我的";
             // 
+            // pbImage
+            // 
+            this.pbImage.Location = new System.Drawing.Point(72, 247);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(78, 77);
+            this.pbImage.TabIndex = 8;
+            this.pbImage.TabStop = false;
+            // 
+            // ofdLJ
+            // 
+            this.ofdLJ.FileName = "openFileDialog1";
+            // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -620,6 +636,7 @@
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -652,7 +669,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btXZ;
-        private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.Button btQX;
         private System.Windows.Forms.Button btQD;
         private System.Windows.Forms.ComboBox cbLX;
@@ -674,5 +690,7 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pbImage;
+        private System.Windows.Forms.OpenFileDialog ofdLJ;
     }
 }
