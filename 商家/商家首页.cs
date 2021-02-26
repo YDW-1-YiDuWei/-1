@@ -12,11 +12,9 @@ using DianCanXiTongManager;
 
 namespace 点餐系统
 {
-    
-
     public partial class 商家首页 : Form
     {
-
+        CuisineInformationsManager cIM = new CuisineInformationsManager();
        public List<Restaurant> list = null;
 
         public 商家首页()
@@ -26,11 +24,40 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
-            
+            if (Check())//判断是否为空
+            {
+                int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
+                if (count > 0)
+                {
+                    MessageBox.Show("增加成功");
+                    Inquire();
+                }
+                else { MessageBox.Show("增加失败"); }
+            }
         }
-        public void Inquire() //查询菜品的图片
+        public void Inquire() //查询菜品图片
         {
-        
+            listView2.Items.Clear();//清除
+            imageList1.Images.Clear();
+            List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim());
+
+            Image[] asg = new Image[list.Count];//这里是图片的多少
+            int i = 0;
+
+            //这个项目真的是多灾多难
+            foreach (CuisineInformations item in list)
+            {
+                //item.CuisineImagePath//图片路径
+                string name = item.CuisineTypeId.id == 1 ? "小菜" : item.CuisineTypeId.id == 2 ? "炒菜" : "主食";
+
+
+                asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
+
+                listView2.Items.Add(item.CuisineName + "  " + name + "  " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
+
+                i++;
+            }
+            imageList1.Images.AddRange(asg);
         }
         public bool Check() //判断是否为空
         {
@@ -131,6 +158,21 @@ namespace 点餐系统
             label3.Text= DateTime.Now.ToShortTimeString().ToString();
             label1.Text= DateTime.Now.ToShortTimeString().ToString();
             label2.Text= DateTime.Now.ToLongDateString().ToString();
+        }
+
+        private void btXZ_Click(object sender, EventArgs e)//选择按钮
+        {
+            if (DialogResult.OK == ofdLJ.ShowDialog())
+            {
+                //    //ofdLJ.FileName;//拿到图片的路径
+                //    //string name = ofdLJ.SafeFileName;//这里是可以拿到这个菜的名称
+                pbImage.Image = System.Drawing.Image.FromFile(ofdLJ.FileName);
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)//查询按钮
+        {
+            Inquire();
         }
     }
 }

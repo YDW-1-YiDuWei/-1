@@ -71,7 +71,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -352,6 +352,13 @@
             this.listView2.StateImageList = this.imageList1;
             this.listView2.TabIndex = 21;
             this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.List;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // imageList1
             // 
@@ -365,7 +372,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtCPName);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
@@ -405,6 +412,7 @@
             this.pbImage.Location = new System.Drawing.Point(72, 247);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(78, 77);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImage.TabIndex = 8;
             this.pbImage.TabStop = false;
             // 
@@ -418,6 +426,7 @@
             this.btXZ.TabIndex = 7;
             this.btXZ.Text = "选择";
             this.btXZ.UseVisualStyleBackColor = false;
+            this.btXZ.Click += new System.EventHandler(this.btXZ_Click);
             // 
             // btQX
             // 
@@ -555,13 +564,14 @@
             this.button8.TabIndex = 25;
             this.button8.Text = "查询";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // textBox1
+            // txtCPName
             // 
-            this.textBox1.Location = new System.Drawing.Point(386, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 21);
-            this.textBox1.TabIndex = 24;
+            this.txtCPName.Location = new System.Drawing.Point(386, 16);
+            this.txtCPName.Name = "txtCPName";
+            this.txtCPName.Size = new System.Drawing.Size(244, 21);
+            this.txtCPName.TabIndex = 24;
             // 
             // panel2
             // 
@@ -637,7 +647,6 @@
             this.button9.TabIndex = 28;
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // 商家首页
             // 
@@ -714,7 +723,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCPName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
