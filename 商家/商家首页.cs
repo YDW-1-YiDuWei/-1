@@ -54,7 +54,7 @@ namespace 点餐系统
                 asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
 
                 listView2.Items.Add(item.CuisineName + "  " + name + "  " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
-
+                listView2.Tag = item.id;
                 i++;
             }
             imageList1.Images.AddRange(asg);
@@ -108,8 +108,10 @@ namespace 点餐系统
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
         }
 
-        private void 商家首页_Load(object sender, EventArgs e)
+        private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
         {
+            label1.Text = DateTime.Now.ToLongTimeString().ToString();
+            label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
@@ -129,10 +131,13 @@ namespace 点餐系统
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
         }
 
-        private void button6_Click(object sender, EventArgs e)//商家的菜品修改
+        private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+
+
+
         }
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单
