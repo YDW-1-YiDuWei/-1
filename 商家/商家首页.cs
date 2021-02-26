@@ -26,7 +26,7 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
-
+            
         }
         public void Inquire() //查询菜品的图片
         {
@@ -124,6 +124,13 @@ namespace 点餐系统
         {
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            label3.Text= DateTime.Now.ToShortTimeString().ToString();
+            label1.Text= DateTime.Now.ToShortTimeString().ToString();
+            label2.Text= DateTime.Now.ToLongDateString().ToString();
         }
     }
 }
