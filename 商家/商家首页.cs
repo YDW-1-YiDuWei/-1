@@ -26,7 +26,7 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
-
+            
         }
         public void Inquire() //查询菜品的图片
         {
