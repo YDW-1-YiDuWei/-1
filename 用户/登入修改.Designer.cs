@@ -75,6 +75,7 @@
             // 
             this.txtZH.Location = new System.Drawing.Point(201, 152);
             this.txtZH.Name = "txtZH";
+            this.txtZH.ReadOnly = true;
             this.txtZH.Size = new System.Drawing.Size(174, 21);
             this.txtZH.TabIndex = 23;
             // 
