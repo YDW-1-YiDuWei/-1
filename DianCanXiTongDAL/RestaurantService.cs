@@ -19,11 +19,11 @@ namespace DianCanXiTongDAL
             {
             new SqlParameter("@Name",name)
             };
-            if (name!="")
+            if (name != "")
             {
-                sql += " and RestaurantName like '%"+name+"%'";
+                sql += " and RestaurantName like '%" + name + "%'";
             }
-            
+
             return db.GetTable(sql, "Restaurant");
         }
         public int InquireRestaurantNameCount(string name) // 根据餐馆名字查询然后知道多少的餐馆
@@ -50,7 +50,7 @@ namespace DianCanXiTongDAL
 
             Restaurant rest = null;
 
-            string sql = "select RestaurantNumber,RestaurantNumberPwd from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
+            string sql = "select [Id],RestaurantNumber,RestaurantNumberPwd from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
 
             SqlParameter[] sp =
             {
@@ -65,6 +65,7 @@ namespace DianCanXiTongDAL
             {
                 rest = new Restaurant
                 {
+                    id = (int)sdr["Id"],
                     RestaurantNumber = sdr["RestaurantNumber"].ToString(),
                     RestaurantNumberPwd = sdr["RestaurantNumberPwd"].ToString()
                 };
