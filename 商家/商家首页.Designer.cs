@@ -68,8 +68,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -159,7 +157,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(240, 13);
+            this.button5.Location = new System.Drawing.Point(240, 14);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(63, 59);
             this.button5.TabIndex = 19;
@@ -367,8 +365,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.txtCPName);
             this.panel1.Controls.Add(this.panel2);
@@ -535,24 +531,6 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(914, 26);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 12);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "label9";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(842, 25);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 12);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "label9";
-            // 
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -635,11 +613,18 @@
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
             // 
-            // timer1
+            // contextMenuStrip1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
             // 
             // Cmlist
             // 
@@ -683,6 +668,7 @@
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.Cmlist.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -726,8 +712,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox txtCPName;
         private System.Windows.Forms.Panel panel2;

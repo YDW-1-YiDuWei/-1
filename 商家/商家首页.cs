@@ -91,8 +91,8 @@ namespace 点餐系统
         private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页（按钮）
         {
             panel1.Visible = true;//商家首页显示（panel1）
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
         }
 
@@ -144,7 +144,14 @@ namespace 点餐系统
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-
+            List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), (int)listView2.Tag);
+            foreach (CuisineInformations item in list)
+            {
+                txtName.Text = item.CuisineName;
+                txtMoney.Text = item.CuisinePrice;
+                cbLX.SelectedIndex = item.CuisineTypeId.id;
+                pbImage.Image= System.Drawing.Image.FromFile(item.CuisineImagePath);
+            }
 
         }
 

@@ -14,7 +14,7 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 菜品查询
         /// </summary>
-        public List<CuisineInformations> CuisinelnformationsSelectService(string canGuanBianHao,string leix,string cuisineInformationsLXName)
+        public List<CuisineInformations> CuisinelnformationsSelectService(string canGuanBianHao,string leix,string cuisineInformationsLXName,params int[] i)
         {
             List<CuisineInformations> ls = new List<CuisineInformations>();
             string sql = "select a.Id, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join CuisineType b on a.CuisineTypeId=b.Id where RestaurantId="+canGuanBianHao;
@@ -25,6 +25,10 @@ namespace DianCanXiTongDAL
             {
                 sql += " and CuisineName like '"+ cuisineInformationsLXName + "%'";
             }
+           /* else if (i[0]!=-1)
+            {
+                sql += " and Id="+i[0];
+            }*/
             SqlDataReader cmd=dB.ExecuteReader(sql);
             while (cmd.Read())
             {
