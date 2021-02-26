@@ -15,6 +15,5 @@ namespace DianCanXiTongManager
         public string RestaurantAddress { get; set; }//餐馆地址
         public string RestaurantPhone { get; set; }//餐馆电话
         public string RestaurantComment { get; set; }//餐馆评论
-        public string RestaurantImage { get; set; }//餐馆图片路径
     }
 }

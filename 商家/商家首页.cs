@@ -14,7 +14,6 @@ namespace 点餐系统
 {
     public partial class 商家首页 : Form
     {
-        public List<Restaurant> list = null;
         CuisineInformationsManager cIM = new CuisineInformationsManager();
         public 商家首页()
         {
