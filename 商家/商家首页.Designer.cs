@@ -77,7 +77,11 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btQD = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -89,6 +93,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -149,7 +154,8 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(19, 185);
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(22, 254);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 12);
             this.label14.TabIndex = 1;
@@ -159,7 +165,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(17, 200);
+            this.label13.Location = new System.Drawing.Point(17, 178);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 12);
             this.label13.TabIndex = 1;
@@ -169,7 +175,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(17, 159);
+            this.label12.Location = new System.Drawing.Point(17, 135);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 12);
             this.label12.TabIndex = 1;
@@ -179,7 +185,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(17, 121);
+            this.label11.Location = new System.Drawing.Point(17, 94);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 12);
             this.label11.TabIndex = 1;
@@ -196,7 +202,7 @@
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1014, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(990, 30);
             this.toolStrip1.TabIndex = 36;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -233,7 +239,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 579);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(994, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(1003, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -283,6 +289,10 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.button9);
@@ -291,9 +301,9 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.listView1);
-            this.panel3.Location = new System.Drawing.Point(6, 84);
+            this.panel3.Location = new System.Drawing.Point(3, 85);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(225, 378);
+            this.panel3.Size = new System.Drawing.Size(226, 377);
             this.panel3.TabIndex = 27;
             // 
             // label15
@@ -311,7 +321,7 @@
             // 
             this.button10.BackColor = System.Drawing.Color.White;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(118, 316);
+            this.button10.Location = new System.Drawing.Point(118, 327);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 5;
@@ -322,7 +332,7 @@
             // 
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(17, 316);
+            this.button9.Location = new System.Drawing.Point(17, 327);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 5;
@@ -333,9 +343,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(4, 6);
+            this.listView1.Location = new System.Drawing.Point(3, 1);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(218, 375);
+            this.listView1.Size = new System.Drawing.Size(223, 375);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -594,15 +604,52 @@
             this.btQD.Text = "确定";
             this.btQD.UseVisualStyleBackColor = true;
             // 
-            // timer1
+            // pictureBox2
             // 
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick_1);
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(88, 218);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 86);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(88, 175);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(88, 132);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 21);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(88, 91);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 21);
+            this.textBox3.TabIndex = 9;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 585);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(47, 12);
+            this.label16.TabIndex = 40;
+            this.label16.Text = "label16";
             // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 618);
+            this.ClientSize = new System.Drawing.Size(990, 604);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -625,6 +672,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -679,6 +727,10 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btQD;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label16;
     }
 }
