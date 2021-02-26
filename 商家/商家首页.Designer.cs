@@ -113,6 +113,7 @@
             this.button6.TabIndex = 16;
             this.button6.Text = "菜品修改";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -127,6 +128,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "菜品\r\n删除";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -141,6 +143,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "菜品\r\n添加";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -155,6 +158,7 @@
             this.button5.TabIndex = 19;
             this.button5.Text = "已完成";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // groupBox2
             // 
@@ -183,6 +187,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "接单\r\n(+)";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -197,6 +202,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "退单\r\n(-)";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label8
             // 
@@ -249,6 +255,7 @@
             this.button7.TabIndex = 15;
             this.button7.Text = "打印\r\n客单";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // groupBox1
             // 
@@ -615,6 +622,7 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
