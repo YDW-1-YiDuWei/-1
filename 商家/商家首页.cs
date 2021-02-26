@@ -74,7 +74,7 @@ namespace 点餐系统
         }
         public bool Check() //判断是否为空
         {
-            if (txtName.Text.Trim()=="")
+            if (txtName.Text.Trim() == "")
             {
                 MessageBox.Show("请输入菜品名称");
                 txtName.Focus();
@@ -86,13 +86,13 @@ namespace 点餐系统
                 txtMoney.Focus();
                 return false;
             }
-            if (cbLX.SelectedIndex==0)
+            if (cbLX.SelectedIndex == 0)
             {
                 MessageBox.Show("请选择菜品类型");
                 cbLX.Focus();
                 return false;
             }
-            if (pbImage.Image==null)
+            if (pbImage.Image == null)
             {
                 MessageBox.Show("请选择菜品图片");
                 pbImage.Focus();
@@ -123,13 +123,13 @@ namespace 点餐系统
 
         private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
         {
-           // label1.Text = DateTime.Now.ToLongTimeString().ToString();
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
-                lbSJName.Text="商家的名称："+ list[0].RestaurantName;
+                lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
             }
+            Cmlist.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
@@ -140,8 +140,16 @@ namespace 点餐系统
 
         private void button3_Click(object sender, EventArgs e)//商家的菜品删除(按钮)
         {
+            if (listView2.SelectedIndices.Count == 0)
+            {
+                return;
+            }
+            Cmlist.Enabled = true;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+
+            int a = (int)listView2.SelectedItems[0].Tag;
+
         }
 
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
@@ -180,8 +188,8 @@ namespace 点餐系统
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-            label3.Text= DateTime.Now.ToShortTimeString().ToString();
-            label2.Text= DateTime.Now.ToLongDateString().ToString();
+            label3.Text = DateTime.Now.ToShortTimeString().ToString();
+            label2.Text = DateTime.Now.ToLongDateString().ToString();
         }
 
         private void btXZ_Click(object sender, EventArgs e)//选择按钮

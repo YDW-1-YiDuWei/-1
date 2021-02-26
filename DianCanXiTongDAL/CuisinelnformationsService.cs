@@ -114,5 +114,26 @@ namespace DianCanXiTongDAL
             cmd.Close();
             return ls;
         }
+
+        /// <summary>
+        ///  删除菜品
+        /// </summary>
+        /// <param name="id">菜品编号</param>
+        /// <returns></returns>
+        public int DeleteCuisineInformations(int id)
+        {
+            DBHelper dB = new DBHelper();
+            string sql = "Delete from CuisineInformations where Id=@Id";
+            SqlParameter[] sp =
+            {
+                new SqlParameter("@Id",id)
+            };
+            int count = dB.ExecuteNonQuery(sql, sp);
+            if (count > 0)
+            {
+                return count;
+            }
+            return count;
+        }
     }
 }
