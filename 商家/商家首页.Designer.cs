@@ -254,7 +254,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(240, 389);
+            this.button7.Location = new System.Drawing.Point(243, 388);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 59);
             this.button7.TabIndex = 15;
