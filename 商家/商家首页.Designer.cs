@@ -348,7 +348,7 @@
             this.listView2.LargeImageList = this.imageList1;
             this.listView2.Location = new System.Drawing.Point(3, 3);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(684, 467);
+            this.listView2.Size = new System.Drawing.Size(685, 467);
             this.listView2.SmallImageList = this.imageList1;
             this.listView2.StateImageList = this.imageList1;
             this.listView2.TabIndex = 21;
@@ -524,7 +524,7 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 0);
+            this.listView1.Location = new System.Drawing.Point(0, 5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(222, 379);
             this.listView1.TabIndex = 0;
