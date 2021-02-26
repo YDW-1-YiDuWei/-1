@@ -52,6 +52,7 @@ namespace DianCanXiTongDAL
 
             string sql = "select Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage from Restaurant where RestaurantNumber=@RestaurantNumber and RestaurantNumberPwd=@RestaurantNumberPwd";
 
+
             SqlParameter[] sp =
             {
                 new SqlParameter("@RestaurantNumber",uid),
