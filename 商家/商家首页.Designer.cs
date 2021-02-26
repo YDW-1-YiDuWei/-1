@@ -77,7 +77,8 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             this.button9 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -89,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -341,6 +343,7 @@
             // 
             // listView2
             // 
+            this.listView2.ContextMenuStrip = this.contextMenuStrip1;
             this.listView2.HideSelection = false;
             this.listView2.LargeImageList = this.imageList1;
             this.listView2.Location = new System.Drawing.Point(3, 3);
@@ -360,8 +363,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.txtCPName);
@@ -599,17 +600,6 @@
             // 
             this.ofdLJ.FileName = "openFileDialog1";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(87, 576);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "label2";
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Black;
@@ -621,7 +611,19 @@
             this.button9.TabIndex = 28;
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click_2);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
             // 
             // 商家首页
             // 
@@ -652,6 +654,7 @@
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -706,5 +709,7 @@
         private System.Windows.Forms.OpenFileDialog ofdLJ;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
     }
 }

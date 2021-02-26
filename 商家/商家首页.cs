@@ -110,7 +110,7 @@ namespace 点餐系统
 
         private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
         {
-            label1.Text = DateTime.Now.ToLongTimeString().ToString();
+           // label1.Text = DateTime.Now.ToLongTimeString().ToString();
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
@@ -127,7 +127,7 @@ namespace 点餐系统
 
         private void button3_Click(object sender, EventArgs e)//商家的菜品删除(按钮)
         {
-            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
         }
 

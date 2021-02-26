@@ -25,10 +25,10 @@ namespace DianCanXiTongDAL
             {
                 sql += " and CuisineName like '"+ cuisineInformationsLXName + "%'";
             }
-            else if (i[0]!=0)
+           /* else if (i[0]!=-1)
             {
                 sql += " and Id="+i[0];
-            }
+            }*/
             SqlDataReader cmd=dB.ExecuteReader(sql);
             while (cmd.Read())
             {
