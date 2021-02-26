@@ -50,15 +50,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtCPName = new System.Windows.Forms.TextBox();
-            this.txtCPMoney = new System.Windows.Forms.TextBox();
-            this.txtCPlx = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lvCPAdmin = new System.Windows.Forms.ListView();
             this.button6 = new System.Windows.Forms.Button();
@@ -81,10 +76,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btQD = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.pbCPImage = new System.Windows.Forms.PictureBox();
-            this.btXZ = new System.Windows.Forms.Button();
-            this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -96,14 +88,14 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCPImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(2, 8);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
@@ -205,7 +197,7 @@
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1013, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(990, 30);
             this.toolStrip1.TabIndex = 36;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -242,7 +234,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 579);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1003, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(1000, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -272,10 +264,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.btInquire);
-            this.panel1.Controls.Add(this.txtInquireName);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
@@ -292,8 +280,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btXZ);
-            this.panel3.Controls.Add(this.pbCPImage);
             this.panel3.Controls.Add(this.txtCPName);
             this.panel3.Controls.Add(this.txtCPMoney);
             this.panel3.Controls.Add(this.txtCPlx);
@@ -309,33 +295,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(226, 377);
             this.panel3.TabIndex = 27;
-            // 
-            // txtCPName
-            // 
-            this.txtCPName.Location = new System.Drawing.Point(88, 91);
-            this.txtCPName.Name = "txtCPName";
-            this.txtCPName.Size = new System.Drawing.Size(121, 21);
-            this.txtCPName.TabIndex = 9;
-            // 
-            // txtCPMoney
-            // 
-            this.txtCPMoney.Location = new System.Drawing.Point(88, 132);
-            this.txtCPMoney.Name = "txtCPMoney";
-            this.txtCPMoney.Size = new System.Drawing.Size(121, 21);
-            this.txtCPMoney.TabIndex = 9;
-            // 
-            // txtCPlx
-            // 
-            this.txtCPlx.FormattingEnabled = true;
-            this.txtCPlx.Items.AddRange(new object[] {
-            "--请选择--",
-            "小菜",
-            "炒菜",
-            "主食"});
-            this.txtCPlx.Location = new System.Drawing.Point(88, 175);
-            this.txtCPlx.Name = "txtCPlx";
-            this.txtCPlx.Size = new System.Drawing.Size(121, 20);
-            this.txtCPlx.TabIndex = 8;
             // 
             // label15
             // 
@@ -380,24 +339,6 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(909, 27);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 12);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "label9";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(837, 26);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 12);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "label9";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lvCPAdmin);
@@ -410,12 +351,9 @@
             // lvCPAdmin
             // 
             this.lvCPAdmin.HideSelection = false;
-            this.lvCPAdmin.LargeImageList = this.imageList1;
             this.lvCPAdmin.Location = new System.Drawing.Point(3, 3);
             this.lvCPAdmin.Name = "lvCPAdmin";
             this.lvCPAdmin.Size = new System.Drawing.Size(684, 467);
-            this.lvCPAdmin.SmallImageList = this.imageList1;
-            this.lvCPAdmin.StateImageList = this.imageList1;
             this.lvCPAdmin.TabIndex = 21;
             this.lvCPAdmin.UseCompatibleStateImageBehavior = false;
             this.lvCPAdmin.View = System.Windows.Forms.View.List;
@@ -592,7 +530,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 2;
-            this.label3.Text = "时间";
+            this.label3.Text = "9:50";
             // 
             // label1
             // 
@@ -605,17 +543,21 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(143, 26);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(18, 17);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(72, 26);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(18, 17);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
@@ -648,41 +590,17 @@
             this.label16.TabIndex = 40;
             this.label16.Text = "label16";
             // 
-            // pbCPImage
+            // timer1
             // 
-            this.pbCPImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbCPImage.Location = new System.Drawing.Point(88, 225);
-            this.pbCPImage.Name = "pbCPImage";
-            this.pbCPImage.Size = new System.Drawing.Size(100, 77);
-            this.pbCPImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCPImage.TabIndex = 10;
-            this.pbCPImage.TabStop = false;
-            // 
-            // btXZ
-            // 
-            this.btXZ.Location = new System.Drawing.Point(24, 279);
-            this.btXZ.Name = "btXZ";
-            this.btXZ.Size = new System.Drawing.Size(58, 23);
-            this.btXZ.TabIndex = 11;
-            this.btXZ.Text = "选择";
-            this.btXZ.UseVisualStyleBackColor = true;
-            this.btXZ.Click += new System.EventHandler(this.btXZ_Click);
-            // 
-            // ofdLJ
-            // 
-            this.ofdLJ.FileName = "openFileDialog1";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(64, 64);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // 商家首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 604);
+            this.ClientSize = new System.Drawing.Size(990, 604);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox1);
@@ -690,7 +608,6 @@
             this.Controls.Add(this.label2);
             this.Name = "商家首页";
             this.Text = "商家首页";
-            this.Load += new System.EventHandler(this.商家首页_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.toolStrip1.ResumeLayout(false);
@@ -707,7 +624,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCPImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -736,8 +652,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListView lvCPAdmin;
         private System.Windows.Forms.Button button6;
@@ -766,9 +680,6 @@
         private System.Windows.Forms.TextBox txtCPMoney;
         private System.Windows.Forms.ComboBox txtCPlx;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button btXZ;
-        private System.Windows.Forms.PictureBox pbCPImage;
-        private System.Windows.Forms.OpenFileDialog ofdLJ;
-        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
