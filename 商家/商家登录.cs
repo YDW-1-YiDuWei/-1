@@ -35,8 +35,6 @@ namespace 点餐系统
                 User.restaPass = list[0].RestaurantNumberPwd;
                 User.restaKhID = list[0].id.ToString();
                 商家首页 a = new 商家首页();
-                a.Show();
-                this.Hide();
             }
             else
             {
