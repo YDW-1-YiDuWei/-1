@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 商家首页 : Form
     {
+        public List<Restaurant> list = null;
         CuisineInformationsManager cIM = new CuisineInformationsManager();
         public 商家首页()
         {
@@ -105,9 +106,20 @@ namespace 点餐系统
         {
 
         }
-        private void Timer1_Tick_1(object sender, EventArgs e)
+
+        private void Timer1_Tick(object sender, EventArgs e)
         {
-            label3.Text = DateTime.Now.ToString();
+            label3.Text = DateTime.Now.ToString("T");
+        }
+
+        private void 商家首页_Load(object sender, EventArgs e)
+        {
+            if (list != null)
+            {
+                label1.Text = "商家名称 "+list[0].RestaurantName;
+                pictureBox3.Image = Image.FromFile(list[0].RestaurantImage);
+
+            }
         }
     }
 }

@@ -50,6 +50,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -77,23 +81,20 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btQD = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -101,6 +102,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(0, 11);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
@@ -305,6 +307,37 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(226, 377);
             this.panel3.TabIndex = 27;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(88, 91);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 21);
+            this.textBox3.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(88, 132);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 21);
+            this.textBox2.TabIndex = 9;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(88, 175);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(88, 218);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 86);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // label15
             // 
@@ -604,37 +637,6 @@
             this.btQD.Text = "确定";
             this.btQD.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(88, 218);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 86);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(88, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 21);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(88, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 21);
-            this.textBox3.TabIndex = 9;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -643,6 +645,12 @@
             this.label16.Size = new System.Drawing.Size(47, 12);
             this.label16.TabIndex = 40;
             this.label16.Text = "label16";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // 商家首页
             // 
@@ -656,6 +664,7 @@
             this.Controls.Add(this.label2);
             this.Name = "商家首页";
             this.Text = "商家首页";
+            this.Load += new System.EventHandler(this.商家首页_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.toolStrip1.ResumeLayout(false);
@@ -665,6 +674,7 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -672,7 +682,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,5 +741,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Timer timer1;
     }
 }
