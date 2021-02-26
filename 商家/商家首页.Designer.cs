@@ -571,7 +571,6 @@
             this.toolStrip1.BackColor = System.Drawing.Color.Black;
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
             this.toolStripLabel1,
             this.toolStripLabel2,
             this.toolStripLabel3});
@@ -638,7 +637,6 @@
             this.button9.TabIndex = 28;
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // 商家首页
             // 
