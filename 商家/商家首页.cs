@@ -137,6 +137,7 @@ namespace 点餐系统
 
             Image[] asg = new Image[list.Count];//这里是图片的多少
             int i = 0;
+
             
             foreach (CuisineInformations item in list)
             {
