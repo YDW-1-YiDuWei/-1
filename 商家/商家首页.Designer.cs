@@ -66,7 +66,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtMoney = new System.Windows.Forms.TextBox();
-            this.cbLX = new System.Windows.Forms.ComboBox();
             this.btQD = new System.Windows.Forms.Button();
             this.btQX = new System.Windows.Forms.Button();
             this.btXZ = new System.Windows.Forms.Button();
@@ -436,13 +435,36 @@
             // 
             // button8
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(636, 16);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "查询";
-            this.button8.UseVisualStyleBackColor = true;
+            this.Cmlist.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem});
+            this.Cmlist.Name = "Cmlist";
+            this.Cmlist.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.txtCPName);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Location = new System.Drawing.Point(-8, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(997, 532);
+            this.panel1.TabIndex = 25;
+            this.panel1.Visible = false;
             // 
             // panel3
             // 
@@ -513,16 +535,6 @@
             // 
             // cbLX
             // 
-            this.cbLX.FormattingEnabled = true;
-            this.cbLX.Items.AddRange(new object[] {
-            "--请选择--",
-            "小菜",
-            "炒菜",
-            "主食"});
-            this.cbLX.Location = new System.Drawing.Point(81, 212);
-            this.cbLX.Name = "cbLX";
-            this.cbLX.Size = new System.Drawing.Size(125, 20);
-            this.cbLX.TabIndex = 3;
             // 
             // btQD
             // 
@@ -584,6 +596,32 @@
             this.panel1.Size = new System.Drawing.Size(997, 532);
             this.panel1.TabIndex = 25;
             this.panel1.Visible = false;
+            // 
+            this.toolStripLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel3.ForeColor = System.Drawing.Color.White;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(52, 27);
+            this.toolStripLabel3.Text = "我的";
+            // 
+            // ofdLJ
+            // 
+            this.ofdLJ.FileName = "openFileDialog1";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Black;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(908, 571);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 28;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick_1);
             // 
             // 商家首页
             // 

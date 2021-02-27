@@ -48,12 +48,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.listView2 = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -87,12 +91,12 @@
             this.panel2.SuspendLayout();
             this.Cmlist.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSJLJ)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -280,12 +284,31 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.listView2);
             this.panel2.Location = new System.Drawing.Point(304, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(690, 484);
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(4, 3);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(674, 481);
+            this.listView3.TabIndex = 0;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.listView3);
+            this.panel5.Location = new System.Drawing.Point(4, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(678, 471);
+            this.panel5.TabIndex = 22;
+            this.panel5.Visible = false;
             // 
             // listView2
             // 
@@ -295,9 +318,9 @@
             this.listView2.ContextMenuStrip = this.Cmlist;
             this.listView2.HideSelection = false;
             this.listView2.LargeImageList = this.imageList1;
-            this.listView2.Location = new System.Drawing.Point(0, 0);
+            this.listView2.Location = new System.Drawing.Point(3, 0);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(688, 485);
+            this.listView2.Size = new System.Drawing.Size(685, 470);
             this.listView2.SmallImageList = this.imageList1;
             this.listView2.StateImageList = this.imageList1;
             this.listView2.TabIndex = 21;
@@ -336,6 +359,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.txtCPName);
@@ -352,6 +376,24 @@
             this.panel1.Size = new System.Drawing.Size(997, 532);
             this.panel1.TabIndex = 30;
             this.panel1.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.listView1);
+            this.panel4.Location = new System.Drawing.Point(4, 84);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(228, 379);
+            this.panel4.TabIndex = 9;
+            this.panel4.Visible = false;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(4, 3);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(221, 370);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // button7
             // 
@@ -592,7 +634,6 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.toolStripMenuItem1.Text = "删除";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStrip1
             // 
@@ -647,7 +688,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 613);
+            this.ClientSize = new System.Drawing.Size(1068, 632);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox1);
@@ -666,6 +707,7 @@
             this.Cmlist.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -673,7 +715,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSJLJ)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -724,8 +765,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pbSJLJ;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
@@ -734,5 +773,9 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ContextMenuStrip Cmlist;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.ListView listView3;
     }
 }
