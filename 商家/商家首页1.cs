@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +12,105 @@ using DianCanXiTongManager;
 
 namespace 点餐系统
 {
-    public partial class 商家首页 : Form
+    public partial class 商家首页1 : Form
     {
         public int i = 1;
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
         public List<Restaurant> list = null;
-        public 商家首页()
+        public 商家首页1()
         {
             InitializeComponent();
         }
+        private void toolStripLabel2_Click_1(object sender, EventArgs e)//商家首页
+        {
+            i = 1;
+            panel1.Visible = true;//商家首页显示（panel1）
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
 
-        private void button9_Click(object sender, EventArgs e)//确定按钮
+        private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
+        {
+
+            i = 1;
+            panel1.Visible = false;//商家首页显示（panel1）
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button5_Click(object sender, EventArgs e)//商家已完成
+        {
+            i = 1;
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button2_Click(object sender, EventArgs e)//商家菜品增加
+        {
+            i = 1; count = 0;
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button3_Click(object sender, EventArgs e)//商家菜品删除
+        {
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            i = 0;
+            if (listView2.SelectedIndices.Count == 0)
+            {
+                return;
+            }
+            Cmlist.Enabled = true;
+            listView2.ContextMenuStrip = Cmlist;
+        }
+
+        private void button6_Click(object sender, EventArgs e)//商家修改
+        {
+            i = 1;
+            count = 1;
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+
+            if (listView2.SelectedItems.Count == 0)//判断有没有选中菜品
+            {
+                MessageBox.Show("请选择你要修改的菜品");
+                return;
+            }
+
+            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID, (int)listView2.SelectedItems[0].Tag);
+            foreach (CuisineInformations item in list)
+            {
+                txtName.Text = item.CuisineName;
+                txtMoney.Text = item.CuisinePrice;
+                cbLX.SelectedIndex = item.CuisineTypeId.id;
+                pbImage.Image = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)//商家客户打单
+        {
+            i = 1;
+            panel2.Visible = true;//商家的菜品查询（panel2）
+            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+        }
+
+        private void button4_Click(object sender, EventArgs e)//商家退单
+        {
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            i = 1;
+        }
+
+        private void button1_Click(object sender, EventArgs e)//商家接单
+        {
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            i = 1;
+        }
+
+        private void btQD_Click(object sender, EventArgs e)//确定按钮
         {
             if (Check())//判断是否为空
             {
@@ -111,122 +198,18 @@ namespace 点餐系统
             cbLX.SelectedIndex = 0;
             pbImage.Image = null;
         }
-        private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页（按钮）
-        {
-            i = 1;
-            panel1.Visible = true;//商家首页显示（panel1）
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-        }
-
-        private void toolStripLabel3_Click(object sender, EventArgs e)//商家我的（按钮）
+        private void 商家首页1_Load(object sender, EventArgs e)
         {
-            i = 1;
-            panel1.Visible = false;//商家首页显示（panel1）
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
-        }
-        private void button5_Click(object sender, EventArgs e)//商家已完成（按钮）
-        {
-            i = 1;
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
-        }
-
-        private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
-        {
-            cbLX.SelectedIndex = 0;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
             }
-
         }
 
-        private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
-        {
-            //i = 1; count = 0;
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
-        }
-
-        private void button3_Click(object sender, EventArgs e)//商家的菜品删除(按钮)
-        {
-            i = 0;
-            if (listView2.SelectedIndices.Count == 0)
-            {
-                return;
-            }
-            Cmlist.Enabled = true;
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
-
-            listView2.ContextMenuStrip = Cmlist;
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
-        {
-            i = 1;
-            //count = 1;
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
-
-            if (listView2.SelectedItems.Count == 0)//判断有没有选中菜品
-            {
-                MessageBox.Show("请选择你要修改的菜品");
-                return;
-            }
-
-            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID, (int)listView2.SelectedItems[0].Tag);
-            foreach (CuisineInformations item in list)
-            {
-                txtName.Text = item.CuisineName;
-                txtMoney.Text = item.CuisinePrice;
-                cbLX.SelectedIndex = item.CuisineTypeId.id;
-                pbImage.Image = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);
-            }
-        }
-
-        private void button7_Click(object sender, EventArgs e)//商家客户打单
-        {
-            i = 1;
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
-
-            ReservationManager reser = new ReservationManager();
-           int count= reser.PrintReservationService();
-            if (count == 1)
-            {
-                MessageBox.Show("打单成功");
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)//商家退单
-        {
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            i = 1;
-        }
-
-        private void button1_Click(object sender, EventArgs e)//商家接单按钮
-        {
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            i = 1;
-        }
-
-        private void button9_Click_1(object sender, EventArgs e)
-        {
-            i = 1;
-            label3.Text = DateTime.Now.ToShortTimeString().ToString();
-            label2.Text = DateTime.Now.ToLongDateString().ToString();
-        }
-
-        private void btXZ_Click(object sender, EventArgs e)//选择按钮
+        private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
         {
             i = 1;
             if (DialogResult.OK == ofdLJ.ShowDialog())
@@ -237,20 +220,14 @@ namespace 点餐系统
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)//查询按钮
+        private void button8_Click(object sender, EventArgs e)//商家查询
         {
             i = 1;
             Inquire();
         }
 
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            i = 1;
-            label3.Text = DateTime.Now.ToString("t");
-            label2.Text = DateTime.Now.ToString();
-        }
 
-        private void Timer1_Tick_1(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             if (i == 1)
             {
@@ -276,4 +253,3 @@ namespace 点餐系统
         }
     }
 }
-*/
