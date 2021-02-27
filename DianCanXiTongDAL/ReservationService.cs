@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using DianCanXiTongManager;
 using System.Data;
 using System.Data.SqlClient;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace DianCanXiTongDAL
 {
@@ -47,9 +50,30 @@ namespace DianCanXiTongDAL
             return db.ExecuteNonQuery(sql, sp);
         }
 
-        public void AD()
+        public void PrintReservationService()
         {
+            List<Reservation> list = new List<Reservation>();
+
+            DBHelper db = new DBHelper();
+
+            //Reservation rest = null;
             string sql = "select r.Id,c.Name, Money, s.CuisineName from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
+
+            SqlDataReader sdr = db.ExecuteReader(sql);
+            while (sdr.Read())
+            {
+                string name = sdr["c.Name"].ToString();
+
+              
+                using (FileStream fs = new FileStream(@"d:\student.txt", FileMode.Create, FileAccess.Write))
+                {
+                    //创建XML序列化对象
+                    XmlSerializer xml = new XmlSerializer(typeof(List<Reservation>));
+                    xml.Serialize(fs, list);//实现序列化操作
+                }
+            }
+
+
 
         }
     }
