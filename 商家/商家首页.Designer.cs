@@ -66,7 +66,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtMoney = new System.Windows.Forms.TextBox();
-            this.cbLX = new System.Windows.Forms.ComboBox();
             this.btQD = new System.Windows.Forms.Button();
             this.btQX = new System.Windows.Forms.Button();
             this.btXZ = new System.Windows.Forms.Button();
@@ -451,7 +450,6 @@
             this.panel3.Controls.Add(this.btXZ);
             this.panel3.Controls.Add(this.btQX);
             this.panel3.Controls.Add(this.btQD);
-            this.panel3.Controls.Add(this.cbLX);
             this.panel3.Controls.Add(this.txtMoney);
             this.panel3.Controls.Add(this.txtName);
             this.panel3.Controls.Add(this.label14);
@@ -530,16 +528,6 @@
             // 
             // cbLX
             // 
-            this.cbLX.FormattingEnabled = true;
-            this.cbLX.Items.AddRange(new object[] {
-            "--请选择--",
-            "小菜",
-            "炒菜",
-            "主食"});
-            this.cbLX.Location = new System.Drawing.Point(81, 212);
-            this.cbLX.Name = "cbLX";
-            this.cbLX.Size = new System.Drawing.Size(125, 20);
-            this.cbLX.TabIndex = 3;
             // 
             // btQD
             // 
