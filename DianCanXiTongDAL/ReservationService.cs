@@ -50,31 +50,38 @@ namespace DianCanXiTongDAL
             return db.ExecuteNonQuery(sql, sp);
         }
 
-        public void PrintReservationService()
+        public int PrintReservationService()
         {
             List<Reservation> list = new List<Reservation>();
 
             DBHelper db = new DBHelper();
 
-            //Reservation rest = null;
-            string sql = "select r.Id,c.Name, Money, s.CuisineName from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
+            string sql = "select r.Id,c.Name, Money, s.CuisineName,c.Phone,c.Address from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
 
             SqlDataReader sdr = db.ExecuteReader(sql);
             while (sdr.Read())
             {
-                string name = sdr["c.Name"].ToString();
+                string name = sdr["Name"].ToString();
+                decimal mony = decimal.Parse(sdr["Money"].ToString());
+                string reservationName = sdr["CuisineName"].ToString();
+                string phone = sdr["Phone"].ToString();
+                string address = sdr["Address"].ToString();
 
-              
-                using (FileStream fs = new FileStream(@"d:\student.txt", FileMode.Create, FileAccess.Write))
+                using (FileStream fs = new FileStream(""+name+".txt", FileMode.Create, FileAccess.Write))
                 {
-                    //创建XML序列化对象
-                    XmlSerializer xml = new XmlSerializer(typeof(List<Reservation>));
-                    xml.Serialize(fs, list);//实现序列化操作
-                }
+                    StreamWriter sw = new StreamWriter(fs);
+                    sw.WriteLine("***************************");
+                    sw.WriteLine("菜品名称：   " + reservationName);
+                    sw.WriteLine("-------------------------- -");
+                    sw.WriteLine("费用金额：   " + mony);
+                    sw.WriteLine("收货地址：   " + address);
+                    sw.WriteLine("联系电话：   " + phone);
+                    sw.WriteLine("  收货人：   " + name);
+                    sw.WriteLine("* **************************");
+                    sw.Close();
+                } 
             }
-
-
-
+            return 1;
         }
     }
 }

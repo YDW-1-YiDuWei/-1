@@ -28,5 +28,10 @@ namespace DianCanXiTongBLL
         {
             return reservationService.AddReservationService(clientId, money, cuisineInformationId);
         }
+
+        public int PrintReservationService()
+        {
+            return reservationService.PrintReservationService();
+        }
     }
 }

@@ -186,6 +186,13 @@ namespace 点餐系统
             i = 1;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+
+            ReservationManager reser = new ReservationManager();
+           int count= reser.PrintReservationService();
+            if (count == 1)
+            {
+                MessageBox.Show("打单成功");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)//商家退单
