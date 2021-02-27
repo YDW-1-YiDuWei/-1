@@ -226,7 +226,18 @@ namespace 点餐系统
             Inquire();
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)//商家右键删除（按钮）
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (i == 1)
+            {
+                listView2.ContextMenuStrip = null;
+            }
+            label3.Text = DateTime.Now.ToString("t");
+            label2.Text = DateTime.Now.ToString("g");
+        }
+
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int a = (int)listView2.SelectedItems[0].Tag;
             int count = cIM.DeleteCuisinelnformationsAmend(a);
@@ -239,16 +250,6 @@ namespace 点餐系统
             {
                 MessageBox.Show("删除失败");
             }
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (i == 1)
-            {
-                listView2.ContextMenuStrip = null;
-            }
-            label3.Text = DateTime.Now.ToString("t");
-            label2.Text = DateTime.Now.ToString("g");
         }
     }
 }
