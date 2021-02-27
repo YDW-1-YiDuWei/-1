@@ -19,7 +19,7 @@ namespace 点餐系统
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
         public List<Restaurant> list = null;
-        int count = 0;
+        //int count = 0;
         public 商家首页()
         {
             InitializeComponent();
@@ -133,6 +133,7 @@ namespace 点餐系统
 
         private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
         {
+            cbLX.SelectedIndex = 0;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
@@ -144,7 +145,7 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
         {
-            i = 1; count = 0;
+            //i = 1; count = 0;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
         }
@@ -168,7 +169,7 @@ namespace 点餐系统
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
             i = 1;
-            count = 1;
+            //count = 1;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
