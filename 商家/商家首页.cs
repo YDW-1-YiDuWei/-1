@@ -18,7 +18,7 @@ namespace 点餐系统
         public int i = 0;
         CuisineInformationsManager cIM = new CuisineInformationsManager();
         public List<Restaurant> list = null;
-
+        int count = 0;
         public 商家首页()
         {
             InitializeComponent();
@@ -142,7 +142,7 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
         {
-            i = 1;
+            i = 1; count = 0;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
         }
@@ -166,6 +166,7 @@ namespace 点餐系统
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
             i = 1;
+            count = 1;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
@@ -181,7 +182,7 @@ namespace 点餐系统
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单
         {
-            i = 1;
+            i = 1; 
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
         }
@@ -202,7 +203,7 @@ namespace 点餐系统
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-            i = 1;
+            i = 1; 
             label3.Text = DateTime.Now.ToShortTimeString().ToString();
             label2.Text = DateTime.Now.ToLongDateString().ToString();
         }
