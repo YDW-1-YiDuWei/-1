@@ -19,7 +19,7 @@ namespace 点餐系统
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
         public List<Restaurant> list = null;
-        int count = 0;
+        //int count = 0;
         public 商家首页()
         {
             InitializeComponent();
@@ -167,12 +167,11 @@ namespace 点餐系统
             Cmlist.Enabled = true;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
 
             listView2.ContextMenuStrip = Cmlist;
 
-
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
@@ -196,35 +195,29 @@ namespace 点餐系统
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单
         {
-            i = 1; 
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
             panel4.Visible = false;//商家接单（panel4）模糊订单
             panel5.Visible = false;//商家接单（panel4）详细订单
+            i = 1; 
         }
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            i = 1;
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
             panel4.Visible = false;//商家接单（panel4）模糊订单
             panel5.Visible = false;//商家接单（panel4）详细订单
+            i = 1;
         }
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            i = 1;
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
             panel4.Visible = true;//商家接单（panel4）模糊订单
             panel5.Visible = true;//商家接单（panel4）详细订单
+            i = 1;
         }
 
         private void button9_Click_1(object sender, EventArgs e)
