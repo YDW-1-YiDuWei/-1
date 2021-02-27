@@ -77,8 +77,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pbSJLJ = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            //this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            //this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -625,16 +625,16 @@
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip1.Name = "Cmlist";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
-            this.toolStripMenuItem1.Text = "删除";
+            //this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            //this.toolStripMenuItem1});
+            //this.contextMenuStrip1.Name = "Cmlist";
+            //this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            //// 
+            //// toolStripMenuItem1
+            //// 
+            //this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            //this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            //this.toolStripMenuItem1.Text = "删除";
             // 
             // toolStrip1
             // 
