@@ -118,8 +118,6 @@ namespace 点餐系统
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
 
         }
 
@@ -129,20 +127,17 @@ namespace 点餐系统
             panel1.Visible = false;//商家首页显示（panel1）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
         }
         private void button5_Click(object sender, EventArgs e)//商家已完成（按钮）
         {
             i = 1;
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
         {
+            cbLX.SelectedIndex = 0;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
@@ -154,11 +149,9 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
         {
-            i = 1; count = 0;
+            //i = 1; count = 0;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void button3_Click(object sender, EventArgs e)//商家的菜品删除(按钮)
@@ -171,8 +164,6 @@ namespace 点餐系统
             Cmlist.Enabled = true;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
 
             listView2.ContextMenuStrip = Cmlist;
 
@@ -181,11 +172,9 @@ namespace 点餐系统
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
             i = 1;
-            count = 1;
+            //count = 1;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
 
             if (listView2.SelectedItems.Count == 0)//判断有没有选中菜品
             {
@@ -210,8 +199,6 @@ namespace 点餐系统
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
             i = 1; 
         }
 
@@ -219,8 +206,6 @@ namespace 点餐系统
         {
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            panel4.Visible = false;//商家接单（panel4）模糊订单
-            panel5.Visible = false;//商家接单（panel4）详细订单
             i = 1;
         }
 
@@ -228,8 +213,6 @@ namespace 点餐系统
         {
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
-            panel4.Visible = true;//商家接单（panel4）模糊订单
-            panel5.Visible = true;//商家接单（panel4）详细订单
             i = 1;
         }
 

@@ -261,9 +261,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(11, 458);
+            this.groupBox2.Location = new System.Drawing.Point(12, 458);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(292, 71);
+            this.groupBox2.Size = new System.Drawing.Size(294, 71);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
@@ -312,7 +312,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(192, 9);
+            this.button4.Location = new System.Drawing.Point(228, 9);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(63, 59);
             this.button4.TabIndex = 3;
@@ -396,7 +396,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(243, 388);
+            this.button7.Location = new System.Drawing.Point(240, 387);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 59);
             this.button7.TabIndex = 15;
@@ -666,7 +666,6 @@
         private System.Windows.Forms.Button btXZ;
         private System.Windows.Forms.Button btQX;
         private System.Windows.Forms.Button btQD;
-        private System.Windows.Forms.ComboBox cbLX;
         private System.Windows.Forms.TextBox txtMoney;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label14;
