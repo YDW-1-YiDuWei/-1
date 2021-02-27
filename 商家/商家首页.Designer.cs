@@ -52,6 +52,7 @@
             this.pbSJLJ = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listView2 = new System.Windows.Forms.ListView();
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,6 +80,9 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             this.button9 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.listView3 = new System.Windows.Forms.ListView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,6 +96,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -344,16 +350,31 @@
             // 
             // listView2
             // 
+            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView2.HideSelection = false;
             this.listView2.LargeImageList = this.imageList1;
             this.listView2.Location = new System.Drawing.Point(3, 0);
             this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(685, 478);
             this.listView2.Size = new System.Drawing.Size(685, 470);
             this.listView2.SmallImageList = this.imageList1;
             this.listView2.StateImageList = this.imageList1;
             this.listView2.TabIndex = 21;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.List;
+            // 
+            // contextMenuStrip1
+            // 
+            //this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            //this.删除ToolStripMenuItem});
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
             // 
             // imageList1
             // 
@@ -377,6 +398,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.txtCPName);
@@ -408,10 +430,9 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.listView1);
-            this.panel3.Location = new System.Drawing.Point(9, 83);
+            this.panel3.Location = new System.Drawing.Point(9, 85);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(225, 378);
+            this.panel3.Size = new System.Drawing.Size(228, 376);
             this.panel3.TabIndex = 27;
             // 
             // pbImage
@@ -539,6 +560,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(-6, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(226, 367);
             this.listView1.Location = new System.Drawing.Point(3, 5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(217, 370);
@@ -558,17 +582,18 @@
             // 
             // txtCPName
             // 
-            this.txtCPName.Location = new System.Drawing.Point(386, 16);
+            this.txtCPName.Location = new System.Drawing.Point(386, 18);
             this.txtCPName.Name = "txtCPName";
             this.txtCPName.Size = new System.Drawing.Size(244, 21);
             this.txtCPName.TabIndex = 24;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.listView2);
-            this.panel2.Location = new System.Drawing.Point(309, 56);
+            this.panel2.Location = new System.Drawing.Point(309, 45);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(690, 473);
+            this.panel2.Size = new System.Drawing.Size(690, 484);
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
             // 
@@ -627,6 +652,32 @@
             this.button9.Text = "刷新";
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.listView1);
+            this.panel5.Location = new System.Drawing.Point(9, 85);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(228, 373);
+            this.panel5.TabIndex = 25;
+            this.panel5.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.listView3);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(682, 478);
+            this.panel4.TabIndex = 25;
+            this.panel4.Visible = false;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(-6, -15);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(685, 490);
+            this.listView3.TabIndex = 0;
+            this.listView3.UseCompatibleStateImageBehavior = false;
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -665,6 +716,7 @@
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
