@@ -42,9 +42,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbTotal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -146,6 +146,17 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "菜品";
             // 
+            // lbTotal
+            // 
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbTotal.ForeColor = System.Drawing.Color.Maroon;
+            this.lbTotal.Location = new System.Drawing.Point(418, 483);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(85, 19);
+            this.lbTotal.TabIndex = 25;
+            this.lbTotal.Text = "总共：￥";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -167,18 +178,6 @@
             this.label3.Size = new System.Drawing.Size(47, 19);
             this.label3.TabIndex = 25;
             this.label3.Text = "数量";
-
-            // 
-            // lbTotal
-            // 
-            this.lbTotal.AutoSize = true;
-            this.lbTotal.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbTotal.ForeColor = System.Drawing.Color.Maroon;
-            this.lbTotal.Location = new System.Drawing.Point(418, 483);
-            this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(85, 19);
-            this.lbTotal.TabIndex = 25;
-            this.lbTotal.Text = "总共：￥";
             // 
             // 详细订单
             // 
@@ -214,8 +213,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.ImageList image;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -223,5 +220,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
