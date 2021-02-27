@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 商家首页1 : Form
     {
+
         public int i = 1;
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
@@ -164,13 +165,21 @@ namespace 点餐系统
                 }
                 else
                 {
-                    int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
-                    if (index > 0)
+                    if (Temp.index==1)//判断有没有重新选择图片
                     {
-                        MessageBox.Show("修改成功");
-                        Inquire(); Delete();
+                        int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
+                        if (index > 0)
+                        {
+                            MessageBox.Show("修改成功");
+                            Inquire(); Delete();
+                        }
+                        else { MessageBox.Show("修改失败"); }
                     }
-                    else { MessageBox.Show("修改失败"); }
+                    else 
+                    {
+                        MessageBox.Show("请重新选择图片");
+                    }
+                    Temp.index = 0;//把这个重新变成0好以后判断用
                 }
             }
         }
@@ -184,7 +193,6 @@ namespace 点餐系统
             Image[] asg = new Image[list.Count];//这里是图片的多少
             int i = 0;
 
-            //这个项目真的是多灾多难
             foreach (CuisineInformations item in list)
             {
 
@@ -237,7 +245,7 @@ namespace 点餐系统
             pbImage.Image = null;
         }
 
-        private void 商家首页1_Load(object sender, EventArgs e)
+        private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
@@ -245,6 +253,7 @@ namespace 点餐系统
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
             }
+            Inquire();
         }
 
         private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
@@ -255,6 +264,7 @@ namespace 点餐系统
                 //    //ofdLJ.FileName;//拿到图片的路径
                 //    //string name = ofdLJ.SafeFileName;//这里是可以拿到这个菜的名称
                 pbImage.Image = System.Drawing.Image.FromFile(ofdLJ.FileName);
+                Temp.index = 1;
             }
         }
 
@@ -265,7 +275,7 @@ namespace 点餐系统
         }
 
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)//计时器
         {
             if (i == 1)
             {
