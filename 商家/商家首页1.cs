@@ -94,6 +94,18 @@ namespace 点餐系统
             i = 1;
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+
+            ReservationManager rese = new ReservationManager();
+            int count = rese.PrintReservationService();
+            if (count > 0)
+            {
+                MessageBox.Show("打单成功 数量:" + count);
+            }
+            else
+            {
+                MessageBox.Show("你还没有订单哦~~~~~~");
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)//商家退单
