@@ -140,7 +140,7 @@ namespace 点餐系统
                     {
                         MessageBox.Show("请重新选择图片");
                     }
-                    Temp.index = 0;//把这个重新变成0
+                    Temp.index = 0;//把这个重新变成0好以后判断用
                 }
             }
         }
