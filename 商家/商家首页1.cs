@@ -113,6 +113,7 @@ namespace 点餐系统
 
         private void btQD_Click(object sender, EventArgs e)//确定按钮
         {
+            //1
             if (Check())//判断是否为空
             {
                 if (count == 0)
