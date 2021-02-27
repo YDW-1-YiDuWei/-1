@@ -51,5 +51,10 @@ namespace DianCanXiTongBLL
         {
             return cS.CuisinelnformationsAmend(canGuanBianHao, i);
         }
+
+        public int DeleteCuisinelnformationsAmend(int id)
+        {
+            return cS.DeleteCuisineInformations(id);
+        }
     }
 }
