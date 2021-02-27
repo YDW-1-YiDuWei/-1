@@ -56,6 +56,8 @@
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.btXZ = new System.Windows.Forms.Button();
@@ -72,6 +74,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.listView3 = new System.Windows.Forms.ListView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -88,9 +92,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Cmlist.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -371,6 +378,8 @@
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
             // Cmlist
             // 
             this.Cmlist.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -396,6 +405,24 @@
             this.panel1.Size = new System.Drawing.Size(997, 532);
             this.panel1.TabIndex = 25;
             this.panel1.Visible = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.listView1);
+            this.panel5.Location = new System.Drawing.Point(9, 85);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(228, 373);
+            this.panel5.TabIndex = 25;
+            this.panel5.Visible = false;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(3, 5);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(217, 374);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // panel3
             // 
@@ -565,6 +592,24 @@
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.listView3);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(682, 478);
+            this.panel4.TabIndex = 25;
+            this.panel4.Visible = false;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(-6, -15);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(685, 490);
+            this.listView3.TabIndex = 0;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
             // listView1
             // 
             this.listView1.HideSelection = false;
@@ -661,10 +706,12 @@
             this.Cmlist.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
