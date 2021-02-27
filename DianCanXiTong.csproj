@@ -62,11 +62,15 @@
     <Compile Include="商家\商家登入修改注册.Designer.cs">
       <DependentUpon>商家登入修改注册.cs</DependentUpon>
     </Compile>
-    <Compile Include="商家\商家首页.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="商家\商家首页.cs" />
     <Compile Include="商家\商家首页.Designer.cs">
       <DependentUpon>商家首页.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商家\商家首页1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商家\商家首页1.Designer.cs">
+      <DependentUpon>商家首页1.cs</DependentUpon>
     </Compile>
     <Compile Include="用户\模糊订单.cs">
       <SubType>Form</SubType>
@@ -144,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="商家\商家首页.resx">
       <DependentUpon>商家首页.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商家\商家首页1.resx">
+      <DependentUpon>商家首页1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="用户\模糊订单.resx">
       <DependentUpon>模糊订单.cs</DependentUpon>
