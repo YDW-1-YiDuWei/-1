@@ -928,7 +928,7 @@
             this.ClientSize = new System.Drawing.Size(775, 467);
             this.Controls.Add(this.peCPQD);
             this.Controls.Add(this.panel1);
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
             this.Name = "点餐";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
