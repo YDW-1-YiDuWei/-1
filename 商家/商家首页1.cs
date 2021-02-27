@@ -25,38 +25,58 @@ namespace 点餐系统
         private void toolStripLabel2_Click_1(object sender, EventArgs e)//商家首页
         {
             i = 1;
+            #region 隐藏窗口
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
 
             i = 1;
+            #region 隐藏窗口
             panel1.Visible = false;//商家首页显示（panel1）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button5_Click(object sender, EventArgs e)//商家已完成
         {
             i = 1;
+            #region 隐藏窗口
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
             i = 1; count = 0;
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button3_Click(object sender, EventArgs e)//商家菜品删除
         {
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
             i = 0;
             if (listView2.SelectedIndices.Count == 0)
             {
@@ -70,8 +90,12 @@ namespace 点餐系统
         {
             i = 1;
             count = 1;
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
 
             if (listView2.SelectedItems.Count == 0)//判断有没有选中菜品
             {
@@ -92,21 +116,35 @@ namespace 点餐系统
         private void button7_Click(object sender, EventArgs e)//商家客户打单
         {
             i = 1;
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
+            #region 隐藏窗口
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
             i = 1;
         }
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            #region 隐藏窗口
+            //panel2.Visible = false;//商家的菜品查询（panel2）
+            //panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = true;//商家模糊接单查询
+            panel5.Visible = true;//商家详细接单查询
+            #endregion
+
+            
             i = 1;
         }
 
