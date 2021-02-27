@@ -14,7 +14,6 @@ namespace 点餐系统
 {
     public partial class 商家首页 : Form
     {
-
         public int i = 1;
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
@@ -224,7 +223,7 @@ namespace 点餐系统
             i = 1;
         }
 
-        private void button1_Click(object sender, EventArgs e)//商家接单
+        private void button1_Click(object sender, EventArgs e)//商家接单按钮
         {
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
