@@ -105,7 +105,7 @@
             this.textBox2.Font = new System.Drawing.Font("方正粗黑宋简体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox2.Location = new System.Drawing.Point(84, 84);
             this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
+            this.textBox2.PasswordChar = '✯';
             this.textBox2.Size = new System.Drawing.Size(166, 22);
             this.textBox2.TabIndex = 2;
             // 
