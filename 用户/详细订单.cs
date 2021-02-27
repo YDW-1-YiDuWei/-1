@@ -39,12 +39,11 @@ namespace 点餐系统
 
             int j = 0;
             Image asg =null;//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
-            int ima = 0;
 
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
                 asg = System.Drawing.Image.FromFile(Temp.pathCG + dr[0].ToString());//已经把拿到的图片保存到了这里面
-                lvOrder.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"]+"/元)",j);//这里是关键!!!!!!!!!倒
+                lvOrder.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"]+"/元)x1",j);//这里是关键!!!!!!!!!倒
 
                 image.Images.Add(asg);//添加图片到上面去
                 j++;
