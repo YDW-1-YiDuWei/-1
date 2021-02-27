@@ -17,25 +17,25 @@ namespace DianCanXiTongDAL
         DBHelper db = new DBHelper();
         public DataTable InquireReservation(string yHID) //查询详细订单信息
         {
-            string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id where ClientId='"+ yHID + "'";
+            string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id where ClientId='" + yHID + "'";
             return db.GetTable(sql, "Reservation");
         }
         public object InquireReservationJG() //返回这个订单总共多少钱
         {
             string sql = "select sum(ci.CuisinePrice) from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
-            
+
             return db.ExecuteScalar(sql);
         }
         public void SelectReservation()//查询订单
         {
-            string sql = " "; 
+            string sql = " ";
         }
         /// <summary>
         /// 订单增加
         /// </summary>
         /// <returns></returns> 325
         /// 
-        public int AddReservationService(string clientId,string money,string cuisineInformationId)
+        public int AddReservationService(string clientId, string money, string cuisineInformationId)
         {
             string sql = "insert into Reservation(ClientId, Money, CuisineInformationId)values(@ClientId, @Money, @CuisineInformationId)";
             SqlParameter[] sp =
@@ -44,7 +44,13 @@ namespace DianCanXiTongDAL
                 new SqlParameter("@Money",money),
                 new SqlParameter("@CuisineInformationId",cuisineInformationId),
             };
-            return db.ExecuteNonQuery(sql,sp);
+            return db.ExecuteNonQuery(sql, sp);
+        }
+
+        public void AD()
+        {
+            string sql = "select r.Id,c.Name, Money, s.CuisineName from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
+
         }
     }
 }

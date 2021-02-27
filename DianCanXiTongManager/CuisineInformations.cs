@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DianCanXiTongManager
 {
+    [Serializable]
     public class CuisineInformations
     {
         public int id { get; set; }
