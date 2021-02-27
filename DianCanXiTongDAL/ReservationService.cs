@@ -8,7 +8,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using System.Xml.Serialization;
 
 namespace DianCanXiTongDAL
 {
@@ -50,10 +49,12 @@ namespace DianCanXiTongDAL
             return db.ExecuteNonQuery(sql, sp);
         }
 
+        /// <summary>
+        /// 打印订单
+        /// </summary>
+        /// <returns>序列化操作</returns>
         public int PrintReservationService()
         {
-            List<Reservation> list = new List<Reservation>();
-
             DBHelper db = new DBHelper();
 
             string sql = "select r.Id,c.Name, Money, s.CuisineName,c.Phone,c.Address from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
@@ -77,11 +78,11 @@ namespace DianCanXiTongDAL
                     sw.WriteLine("收货地址：   " + address);
                     sw.WriteLine("联系电话：   " + phone);
                     sw.WriteLine("  收货人：   " + name);
-                    sw.WriteLine("* **************************");
+                    sw.WriteLine("****************************");
                     sw.Close();
                 } 
             }
             return 1;
-        }
+        }//打印订单
     }
 }
