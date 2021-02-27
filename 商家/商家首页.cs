@@ -15,8 +15,9 @@ namespace 点餐系统
     public partial class 商家首页 : Form
     {
 
-        public int i = 0;
-        CuisineInformationsManager cIM = new CuisineInformationsManager();
+        public int i = 1;
+        int count = 0;
+        public CuisineInformationsManager cIM = new CuisineInformationsManager();
         public List<Restaurant> list = null;
 
         public 商家首页()
@@ -26,6 +27,7 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
+
             if (count == 0)
             {
                 if (Check())//判断是否为空
@@ -39,9 +41,9 @@ namespace 点餐系统
                     else { MessageBox.Show("增加失败"); }
                 }
             }
-            else 
+            else
             {
-                int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag,txtName.Text,cbLX.SelectedIndex,decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
+                int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
                 if (index > 0)
                 {
                     MessageBox.Show("修改成功");
@@ -52,7 +54,7 @@ namespace 点餐系统
         }
         public void Inquire() //查询菜品图片
         {
-            
+
             listView2.Items.Clear();//清除
             imageList1.Images.Clear();
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim());
@@ -63,7 +65,7 @@ namespace 点餐系统
             //这个项目真的是多灾多难
             foreach (CuisineInformations item in list)
             {
-                
+
                 //item.CuisineImagePath//图片路径
                 string name = item.CuisineTypeId.id == 1 ? "小菜" : item.CuisineTypeId.id == 2 ? "炒菜" : "主食";
 
@@ -137,7 +139,7 @@ namespace 点餐系统
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
             }
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)//商家的菜品增加(按钮)
@@ -159,7 +161,7 @@ namespace 点餐系统
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
 
             listView2.ContextMenuStrip = Cmlist;
-            int a = (int)listView2.SelectedItems[0].Tag;
+
 
         }
 
@@ -169,13 +171,13 @@ namespace 点餐系统
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
-            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID,(int)listView2.SelectedItems[0].Tag);
+            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID, (int)listView2.SelectedItems[0].Tag);
             foreach (CuisineInformations item in list)
             {
                 txtName.Text = item.CuisineName;
                 txtMoney.Text = item.CuisinePrice;
                 cbLX.SelectedIndex = item.CuisineTypeId.id;
-                pbImage.Image= System.Drawing.Image.FromFile(Temp.pathCG+item.CuisineImagePath);
+                pbImage.Image = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);
             }
         }
 
@@ -233,12 +235,26 @@ namespace 点餐系统
 
         private void Timer1_Tick_1(object sender, EventArgs e)
         {
-            if (i==1)
+            if (i == 1)
             {
                 listView2.ContextMenuStrip = null;
             }
             label3.Text = DateTime.Now.ToString("t");
             label2.Text = DateTime.Now.ToString("g");
+        }
+
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = (int)listView2.SelectedItems[0].Tag;
+            int count = cIM.DeleteCuisinelnformationsAmend(a);
+            if (count > 0)
+            {
+                MessageBox.Show("删除成功");
+            }
+            else
+            {
+                MessageBox.Show("删除失败");
+            }
         }
     }
 }
