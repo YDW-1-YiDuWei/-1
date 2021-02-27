@@ -26,6 +26,7 @@ namespace 点餐系统
 
         private void button9_Click(object sender, EventArgs e)//确定按钮
         {
+
             if (Check())//判断是否为空
             {
                 if (count == 0)
