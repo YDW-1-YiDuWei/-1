@@ -26,7 +26,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -84,16 +84,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel1.SuspendLayout();
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 576);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "label2";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-5, 561);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(994, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -395,7 +394,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(240, 387);
+            this.button7.Location = new System.Drawing.Point(240, 390);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 59);
             this.button7.TabIndex = 15;
@@ -446,6 +445,7 @@
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
             this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem.Text = "删除";
+            //this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -468,21 +468,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.pbImage);
-            this.panel3.Controls.Add(this.btXZ);
-            this.panel3.Controls.Add(this.btQX);
-            this.panel3.Controls.Add(this.btQD);
-            this.panel3.Controls.Add(this.txtMoney);
-            this.panel3.Controls.Add(this.txtName);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Location = new System.Drawing.Point(9, 85);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(228, 376);
-            this.panel3.TabIndex = 27;
+            this.timer1.Enabled = true;
             // 
             // label11
             // 
@@ -526,13 +512,12 @@
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(10, 280);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 12);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "菜品路径：";
+            this.panel2.Controls.Add(this.listView2);
+            this.panel2.Location = new System.Drawing.Point(309, 45);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(690, 484);
+            this.panel2.TabIndex = 23;
+            this.panel2.Visible = false;
             // 
             // txtName
             // 
@@ -584,7 +569,7 @@
             this.btXZ.Text = "选择";
             this.btXZ.UseVisualStyleBackColor = false;
             // 
-            // pbImage
+            // button9
             // 
             this.pbImage.Location = new System.Drawing.Point(72, 247);
             this.pbImage.Name = "pbImage";
@@ -636,6 +621,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            //this.timer1.Tick += new System.EventHandler(this.Timer1_Tick_1);
             // 
             // 商家首页
             // 
@@ -701,6 +687,7 @@
         private System.Windows.Forms.Button btXZ;
         private System.Windows.Forms.Button btQX;
         private System.Windows.Forms.Button btQD;
+        private System.Windows.Forms.ComboBox cbLX;
         private System.Windows.Forms.TextBox txtMoney;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label14;
