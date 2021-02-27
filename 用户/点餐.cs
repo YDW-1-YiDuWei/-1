@@ -17,16 +17,22 @@ namespace 点餐系统
         private CuisineInformationsManager cFM = new CuisineInformationsManager();
         private string cuisineInformationsLX = "";
         private string cuisineInformationsLXName = "";
+
         public ListView Uiop { get; set; }
         /// <summary>
         /// 餐馆ID
         /// </summary>
         public string CanGuanBianHao { get; set; }
+
+        //零售订单集合
         public List<Reservation> Li { get; set; }
+        //临时菜品集合
+        public List<CuisineInformations> cC { get; set; }
         public 点餐()
         {
             InitializeComponent();
             Li = new List<Reservation>();
+            cC = new List<CuisineInformations>();
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -34,11 +40,35 @@ namespace 点餐系统
             sy.Show();
         }
 
+        /// <summary>
+        /// 下单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
+            if (cC.Count == 0)
+            {
+                MessageBox.Show("尊敬的用户您没有点餐，请您点菜之后在进行下单");
+                return;
+            }
+               
+            
             付钱 fq = new 付钱();
+            foreach (CuisineInformations item in cC)
+            {
+                Reservation rv = new Reservation
+                {
+                    ClientId = int.Parse(User.khID),
+                    Money = int.Parse(item.CuisinePrice),
+                    CuisineInformationId = item.id
+                };
+                Li.Add(rv);
+            }
+
             fq.Li = Li;
             fq.Show();
+            Li = null;
             //this.Close();
         }
 
@@ -85,15 +115,10 @@ namespace 点餐系统
 
             MessageBox.Show("菜品已加入菜篮，谢谢您对本店的支持^.^！");
             CuisineInformations cuisine = (CuisineInformations)Uiop.Tag;
+            cC.Add(cuisine);
 
             lblJGS.Text = (int.Parse(cuisine.CuisinePrice) + int.Parse(lblJGS.Text.ToString())).ToString();
-            Reservation rv = new Reservation
-            {
-                ClientId = int.Parse(User.khID),
-                Money = int.Parse(cuisine.CuisinePrice),
-                CuisineInformationId = cuisine.id
-            };
-            Li.Add(rv);
+           
             Uiop = null;
         }
         /// <summary>
@@ -131,6 +156,61 @@ namespace 点餐系统
                     Uiop = lVRL;
                     break;
             }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            cMSDC.Items[1].Visible = true;
+            cMSDC.Items[0].Visible = false;
+
+            if (cC.Count==0)
+            {
+                dGVYDCP.Visible = false;
+                label3.Visible = false;
+            }
+
+
+            dGVYDCP.DataSource = new BindingList<CuisineInformations>(cC);
+            dGVYDCP.Tag = new BindingList<CuisineInformations>(cC);
+
+            peCPQD.Visible = true;
+        }
+
+        private void 点餐_Load(object sender, EventArgs e)
+        {
+            dGVYDCP.AutoGenerateColumns = false;
+        }
+
+        private void TSMDelete_Click(object sender, EventArgs e)
+        {
+            BindingList <CuisineInformations> a= (BindingList<CuisineInformations>)dGVYDCP.Tag;
+            foreach (CuisineInformations item in a)
+            {
+                if (item.id== int.Parse(dGVYDCP.SelectedRows[0].Cells[1].Value.ToString()))
+                {
+                    if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes) {
+                        cC.Remove(item);
+                       // Li.Remove(item);
+                        Button1_Click("", null);
+                        break;
+                    } else if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information)==DialogResult.No)
+                    {
+                        break;
+                    }
+                }
+            }
+            
+        }
+
+        private void Button4_Click_1(object sender, EventArgs e)
+        {
+            cMSDC.Items[1].Visible = false;
+            cMSDC.Items[0].Visible = true;
+
+
+            dGVYDCP.Visible = true;
+            label3.Visible = true;
+            peCPQD.Visible = false;
         }
     }
 }
