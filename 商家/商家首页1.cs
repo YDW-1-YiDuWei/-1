@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 商家首页1 : Form
     {
+
         public int i = 1;
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
@@ -25,38 +26,58 @@ namespace 点餐系统
         private void toolStripLabel2_Click_1(object sender, EventArgs e)//商家首页
         {
             i = 1;
+            #region 隐藏窗口
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
 
             i = 1;
+            #region 隐藏窗口
             panel1.Visible = false;//商家首页显示（panel1）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button5_Click(object sender, EventArgs e)//商家已完成
         {
             i = 1;
+            #region 隐藏窗口
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
             i = 1; count = 0;
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
         }
 
         private void button3_Click(object sender, EventArgs e)//商家菜品删除
         {
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
             i = 0;
             if (listView2.SelectedIndices.Count == 0)
             {
@@ -70,8 +91,12 @@ namespace 点餐系统
         {
             i = 1;
             count = 1;
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
 
             if (listView2.SelectedItems.Count == 0)//判断有没有选中菜品
             {
@@ -92,6 +117,7 @@ namespace 点餐系统
         private void button7_Click(object sender, EventArgs e)//商家客户打单
         {
             i = 1;
+            #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
 
@@ -110,15 +136,25 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
+            #region 隐藏窗口
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询
+            #endregion
             i = 1;
         }
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            panel2.Visible = false;//商家的菜品查询（panel2）
-            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            #region 隐藏窗口
+            //panel2.Visible = false;//商家的菜品查询（panel2）
+            //panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = true;//商家模糊接单查询
+            panel5.Visible = true;//商家详细接单查询
+            #endregion
+
+            
             i = 1;
         }
 
@@ -138,13 +174,21 @@ namespace 点餐系统
                 }
                 else
                 {
-                    int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
-                    if (index > 0)
+                    if (Temp.index==1)//判断有没有重新选择图片
                     {
-                        MessageBox.Show("修改成功");
-                        Inquire(); Delete();
+                        int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
+                        if (index > 0)
+                        {
+                            MessageBox.Show("修改成功");
+                            Inquire(); Delete();
+                        }
+                        else { MessageBox.Show("修改失败"); }
                     }
-                    else { MessageBox.Show("修改失败"); }
+                    else 
+                    {
+                        MessageBox.Show("请重新选择图片");
+                    }
+                    Temp.index = 0;//把这个重新变成0好以后判断用
                 }
             }
         }
@@ -158,7 +202,6 @@ namespace 点餐系统
             Image[] asg = new Image[list.Count];//这里是图片的多少
             int i = 0;
 
-            //这个项目真的是多灾多难
             foreach (CuisineInformations item in list)
             {
 
@@ -211,7 +254,7 @@ namespace 点餐系统
             pbImage.Image = null;
         }
 
-        private void 商家首页1_Load(object sender, EventArgs e)
+        private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
@@ -219,6 +262,7 @@ namespace 点餐系统
                 pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
             }
+            Inquire();
         }
 
         private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
@@ -229,6 +273,7 @@ namespace 点餐系统
                 //    //ofdLJ.FileName;//拿到图片的路径
                 //    //string name = ofdLJ.SafeFileName;//这里是可以拿到这个菜的名称
                 pbImage.Image = System.Drawing.Image.FromFile(ofdLJ.FileName);
+                Temp.index = 1;
             }
         }
 
@@ -239,7 +284,7 @@ namespace 点餐系统
         }
 
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)//计时器
         {
             if (i == 1)
             {
