@@ -80,9 +80,6 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             this.button9 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.listView3 = new System.Windows.Forms.ListView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -96,8 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -398,7 +393,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.txtCPName);
@@ -589,7 +583,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.listView2);
             this.panel2.Location = new System.Drawing.Point(309, 45);
             this.panel2.Name = "panel2";
@@ -654,30 +647,11 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.listView1);
-            this.panel5.Location = new System.Drawing.Point(9, 85);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(228, 373);
-            this.panel5.TabIndex = 25;
-            this.panel5.Visible = false;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.listView3);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(682, 478);
-            this.panel4.TabIndex = 25;
-            this.panel4.Visible = false;
-            // 
             // listView3
             // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(-6, -15);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(685, 490);
-            this.listView3.TabIndex = 0;
-            this.listView3.UseCompatibleStateImageBehavior = false;
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -716,7 +690,6 @@
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
