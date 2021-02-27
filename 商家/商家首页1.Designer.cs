@@ -89,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.Cmlist.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -169,7 +168,7 @@
             // 
             this.btQD.BackColor = System.Drawing.Color.White;
             this.btQD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btQD.Location = new System.Drawing.Point(17, 341);
+            this.btQD.Location = new System.Drawing.Point(11, 342);
             this.btQD.Name = "btQD";
             this.btQD.Size = new System.Drawing.Size(75, 23);
             this.btQD.TabIndex = 5;
@@ -185,21 +184,21 @@
             "小菜",
             "炒菜",
             "主食"});
-            this.cbLX.Location = new System.Drawing.Point(81, 212);
+            this.cbLX.Location = new System.Drawing.Point(81, 210);
             this.cbLX.Name = "cbLX";
             this.cbLX.Size = new System.Drawing.Size(125, 20);
             this.cbLX.TabIndex = 3;
             // 
             // txtMoney
             // 
-            this.txtMoney.Location = new System.Drawing.Point(81, 168);
+            this.txtMoney.Location = new System.Drawing.Point(81, 163);
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(125, 21);
             this.txtMoney.TabIndex = 2;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(81, 120);
+            this.txtName.Location = new System.Drawing.Point(81, 116);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(125, 21);
             this.txtName.TabIndex = 2;
@@ -218,7 +217,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(9, 215);
+            this.label13.Location = new System.Drawing.Point(9, 214);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 12);
             this.label13.TabIndex = 1;
@@ -228,7 +227,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(9, 171);
+            this.label12.Location = new System.Drawing.Point(9, 167);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 12);
             this.label12.TabIndex = 1;
@@ -238,9 +237,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label15.Location = new System.Drawing.Point(70, 61);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 12);
+            this.label15.Size = new System.Drawing.Size(65, 20);
             this.label15.TabIndex = 1;
             this.label15.Text = "菜品管理";
             // 
@@ -248,7 +248,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(10, 123);
+            this.label11.Location = new System.Drawing.Point(10, 120);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 12);
             this.label11.TabIndex = 1;
@@ -267,9 +267,9 @@
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(631, 15);
+            this.button8.Location = new System.Drawing.Point(677, 10);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(75, 21);
             this.button8.TabIndex = 25;
             this.button8.Text = "查询";
             this.button8.UseVisualStyleBackColor = true;
@@ -277,9 +277,9 @@
             // 
             // txtCPName
             // 
-            this.txtCPName.Location = new System.Drawing.Point(381, 17);
+            this.txtCPName.Location = new System.Drawing.Point(304, 10);
             this.txtCPName.Name = "txtCPName";
-            this.txtCPName.Size = new System.Drawing.Size(244, 21);
+            this.txtCPName.Size = new System.Drawing.Size(367, 21);
             this.txtCPName.TabIndex = 24;
             // 
             // panel2
@@ -318,9 +318,9 @@
             this.listView2.ContextMenuStrip = this.Cmlist;
             this.listView2.HideSelection = false;
             this.listView2.LargeImageList = this.imageList1;
-            this.listView2.Location = new System.Drawing.Point(3, 3);
+            this.listView2.Location = new System.Drawing.Point(3, 0);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(684, 478);
+            this.listView2.Size = new System.Drawing.Size(685, 470);
             this.listView2.SmallImageList = this.imageList1;
             this.listView2.StateImageList = this.imageList1;
             this.listView2.TabIndex = 21;
@@ -339,7 +339,6 @@
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
             this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem.Text = "删除";
-            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // imageList1
             // 
@@ -403,7 +402,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(238, 387);
+            this.button7.Location = new System.Drawing.Point(238, 390);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 59);
             this.button7.TabIndex = 15;
@@ -418,7 +417,7 @@
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(235, 294);
+            this.button6.Location = new System.Drawing.Point(235, 295);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(63, 59);
             this.button6.TabIndex = 16;
@@ -448,7 +447,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(235, 106);
+            this.button2.Location = new System.Drawing.Point(235, 105);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 59);
             this.button2.TabIndex = 18;
@@ -463,7 +462,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(235, 13);
+            this.button5.Location = new System.Drawing.Point(235, 10);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(63, 59);
             this.button5.TabIndex = 19;
@@ -481,7 +480,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(6, 457);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(292, 71);
+            this.groupBox2.Size = new System.Drawing.Size(295, 71);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
@@ -492,7 +491,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(104, 9);
+            this.button1.Location = new System.Drawing.Point(129, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 59);
             this.button1.TabIndex = 3;
@@ -507,7 +506,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(192, 9);
+            this.button4.Location = new System.Drawing.Point(232, 9);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(63, 59);
             this.button4.TabIndex = 3;
@@ -561,9 +560,9 @@
             this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pbSJLJ);
-            this.groupBox1.Location = new System.Drawing.Point(6, 3);
+            this.groupBox1.Location = new System.Drawing.Point(7, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(226, 78);
+            this.groupBox1.Size = new System.Drawing.Size(225, 78);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
@@ -646,7 +645,7 @@
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(994, 30);
+            this.toolStrip1.Size = new System.Drawing.Size(992, 30);
             this.toolStrip1.TabIndex = 35;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -689,12 +688,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 617);
+            this.ClientSize = new System.Drawing.Size(1068, 632);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "商家首页1";
             this.Text = "商家首页1";
             this.Load += new System.EventHandler(this.商家首页1_Load);
@@ -703,7 +704,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.Cmlist.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
