@@ -93,6 +93,8 @@ namespace 点餐系统
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
 
         }
 
@@ -101,11 +103,15 @@ namespace 点餐系统
             panel1.Visible = false;//商家首页显示（panel1）
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
         }
         private void button5_Click(object sender, EventArgs e)//商家已完成（按钮）
         {
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void 商家首页_Load(object sender, EventArgs e)//商家首页（窗口）
@@ -123,18 +129,24 @@ namespace 点餐系统
         {
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void button3_Click(object sender, EventArgs e)//商家的菜品删除(按钮)
         {
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void button6_Click(object sender, EventArgs e)//商家的   菜品修改按钮
         {
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
 
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), (int)listView2.Tag);
             foreach (CuisineInformations item in list)
@@ -149,20 +161,26 @@ namespace 点餐系统
 
         private void button7_Click(object sender, EventArgs e)//商家客户打单
         {
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = false;//商家接单（panel4）模糊订单
+            panel5.Visible = false;//商家接单（panel4）详细订单
         }
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            panel2.Visible = true;//商家的菜品查询（panel2）
-            panel3.Visible = true;//商家的菜品增加/修改（panel3）
+            panel2.Visible = false;//商家的菜品查询（panel2）
+            panel3.Visible = false;//商家的菜品增加/修改（panel3）
+            panel4.Visible = true;//商家接单（panel4）模糊订单
+            panel5.Visible = true;//商家接单（panel4）详细订单
         }
 
         private void button9_Click_1(object sender, EventArgs e)
