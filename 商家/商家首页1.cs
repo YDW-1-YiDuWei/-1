@@ -107,10 +107,10 @@ namespace 点餐系统
             List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID, (int)listView2.SelectedItems[0].Tag);
             foreach (CuisineInformations item in list)
             {
-                txtName.Text = item.CuisineName;
-                txtMoney.Text = item.CuisinePrice;
-                cbLX.SelectedIndex = item.CuisineTypeId.id;
-                pbImage.Image = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);
+                txtName.Text = item.CuisineName;//菜品名称
+                txtMoney.Text = item.CuisinePrice;//菜品价格
+                cbLX.SelectedIndex = item.CuisineTypeId.id;//下拉列表的选择
+                pbImage.Image = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//图片的地址
             }
         }
 
@@ -187,7 +187,7 @@ namespace 点餐系统
         {
 
             listView2.Items.Clear();//清除
-            imageList1.Images.Clear();
+            imageList1.Images.Clear();//清楚图片
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim());
 
             Image[] asg = new Image[list.Count];//这里是图片的多少
@@ -254,6 +254,7 @@ namespace 点餐系统
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
             }
             Inquire();
+            cbLX.SelectedIndex = 0;
         }
 
         private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
@@ -292,7 +293,7 @@ namespace 点餐系统
             if (count > 0)
             {
                 MessageBox.Show("删除成功");
-                Inquire();
+                Inquire();//刷新界面
             }
             else
             {
