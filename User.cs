@@ -22,5 +22,6 @@ namespace 点餐系统
         public static string restaUser = "";
         public static string restaPass = "";
         public static string restaKhID = "";
+        public static string path = "";
     }
 }
