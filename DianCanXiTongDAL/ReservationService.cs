@@ -55,6 +55,7 @@ namespace DianCanXiTongDAL
         /// <returns>序列化操作</returns>
         public int PrintReservationService()
         {
+            int i = 0;
             DBHelper db = new DBHelper();
 
             string sql = "select r.Id,c.Name, Money, s.CuisineName,c.Phone,c.Address from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
@@ -80,9 +81,11 @@ namespace DianCanXiTongDAL
                     sw.WriteLine("  收货人：   " + name);
                     sw.WriteLine("****************************");
                     sw.Close();
-                } 
+                    StreamReader sm = new StreamReader();
+                }
+                i++;
             }
-            return 1;
+            return i;
         }//打印订单
     }
 }
