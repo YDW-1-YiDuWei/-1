@@ -81,7 +81,6 @@ namespace DianCanXiTongDAL
                     sw.WriteLine("  收货人：   " + name);
                     sw.WriteLine("****************************");
                     sw.Close();
-                    StreamReader sm = new StreamReader();
                 }
                 i++;
             }
