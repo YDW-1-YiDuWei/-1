@@ -706,6 +706,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
             this.textBox1.Location = new System.Drawing.Point(510, 204);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(138, 21);
