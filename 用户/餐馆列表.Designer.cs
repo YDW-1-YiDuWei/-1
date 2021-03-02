@@ -40,33 +40,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(352, 12);
+            this.label2.Location = new System.Drawing.Point(469, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 12);
+            this.label2.Size = new System.Drawing.Size(127, 15);
             this.label2.TabIndex = 6;
             this.label2.Text = "（支持模糊查询）";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 12);
+            this.label1.Location = new System.Drawing.Point(47, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "搜索商家：";
             // 
             // txtSJ
             // 
-            this.txtSJ.Location = new System.Drawing.Point(106, 9);
+            this.txtSJ.Location = new System.Drawing.Point(141, 11);
+            this.txtSJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSJ.Name = "txtSJ";
-            this.txtSJ.Size = new System.Drawing.Size(240, 21);
+            this.txtSJ.Size = new System.Drawing.Size(319, 25);
             this.txtSJ.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(463, 9);
+            this.button1.Location = new System.Drawing.Point(617, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 9;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,9 +81,10 @@
             this.lvSJXX.FullRowSelect = true;
             this.lvSJXX.HideSelection = false;
             this.lvSJXX.LargeImageList = this.image;
-            this.lvSJXX.Location = new System.Drawing.Point(12, 54);
+            this.lvSJXX.Location = new System.Drawing.Point(16, 68);
+            this.lvSJXX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvSJXX.Name = "lvSJXX";
-            this.lvSJXX.Size = new System.Drawing.Size(666, 479);
+            this.lvSJXX.Size = new System.Drawing.Size(887, 598);
             this.lvSJXX.SmallImageList = this.image;
             this.lvSJXX.StateImageList = this.image;
             this.lvSJXX.TabIndex = 10;
@@ -95,14 +100,16 @@
             // 
             // 餐馆列表
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 544);
+            this.ClientSize = new System.Drawing.Size(920, 680);
             this.Controls.Add(this.lvSJXX);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSJ);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "餐馆列表";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "餐馆列表";
