@@ -158,7 +158,7 @@ namespace 点餐系统
             panel5.Visible = true;//商家详细接单查询
             #endregion
 
-            
+
             i = 1;
         }
 
@@ -179,7 +179,7 @@ namespace 点餐系统
                 }
                 else
                 {
-                    if (Temp.index==1)//判断有没有重新选择图片
+                    if (Temp.index == 1)//判断有没有重新选择图片
                     {
                         int index = cIM.AmendCuisineInformations((int)lvCPMessage.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
                         if (index > 0)
@@ -191,7 +191,7 @@ namespace 点餐系统
                         }
                         else { MessageBox.Show("修改失败"); }
                     }
-                    else 
+                    else
                     {
                         MessageBox.Show("请重新选择图片");
                     }
@@ -264,8 +264,10 @@ namespace 点餐系统
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
-                pbSJLJ.Image = Image.FromFile(@"C:\菜谱\" + list[0].RestaurantImage);
+                User.restaKhID = list[0].id.ToString();
+                pbSJLJ.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
+
             }
             Inquire();
             cbLX.SelectedIndex = 0;

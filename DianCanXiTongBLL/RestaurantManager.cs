@@ -27,5 +27,9 @@ namespace DianCanXiTongBLL
         {
             return restauranSer.Longin(uid, pwd);
         }
+        public List<Restaurant> Register(string uid, string pwd, string name, string address, string phone, string comment, string image)
+        {
+            return restauranSer.Register(uid,pwd,name,address,phone,comment,image);
+        }
     }
 }
