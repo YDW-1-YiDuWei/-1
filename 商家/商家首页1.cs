@@ -26,6 +26,7 @@ namespace 点餐系统
         {
             i = 1;
             Temp.index = 0;
+            button8.Visible = true;
             #region 隐藏窗口
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
@@ -39,6 +40,7 @@ namespace 点餐系统
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
             i = 1;
+            button8.Visible = false;
             #region 隐藏窗口
             panel7.Visible = true;
             //panel1.Visible = false;//商家首页显示（panel1）
@@ -216,7 +218,7 @@ namespace 点餐系统
 
                 asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
 
-                lvCPMessage.Items.Add(item.CuisineName + "  " + name + "  " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
+                lvCPMessage.Items.Add(item.CuisineName + "    " + name + "    " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
                 lvCPMessage.Items[i].Tag = item.id;
                 i++;
             }
