@@ -23,10 +23,15 @@ namespace DianCanXiTongBLL
             return clientservice.Alter(uid, pwd,id);
         }
 
-        public List<Client> AddClients(string uid, string pwd)
+        
+        public List<Client> AddClients(string uid, string pwd)//用户注册
         {
             return clientservice.AddClients(uid,pwd);
         }
 
+        public int CompileClientsMessage(string name, string sex, string phone, string address, string id)
+        {
+            return clientservice.CompileClientsMessage(name, sex, phone, address, id);
+        }
     }
 }

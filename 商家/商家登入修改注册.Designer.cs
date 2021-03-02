@@ -54,9 +54,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(573, 236);
+            this.label1.Location = new System.Drawing.Point(764, 295);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "商家名称：";
             // 
@@ -65,9 +66,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(573, 376);
+            this.label2.Location = new System.Drawing.Point(764, 470);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(82, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "商家地址：";
             // 
@@ -76,9 +78,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(597, 264);
+            this.label3.Location = new System.Drawing.Point(796, 330);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "账号：";
             // 
@@ -87,9 +90,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(597, 292);
+            this.label4.Location = new System.Drawing.Point(796, 365);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 12);
+            this.label4.Size = new System.Drawing.Size(52, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "密码：";
             // 
@@ -98,9 +102,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(573, 320);
+            this.label5.Location = new System.Drawing.Point(764, 400);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.Size = new System.Drawing.Size(82, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "确认密码：";
             // 
@@ -109,59 +114,67 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(573, 348);
+            this.label6.Location = new System.Drawing.Point(764, 435);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
+            this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 0;
             this.label6.Text = "商家电话：";
             // 
             // RestName
             // 
-            this.RestName.Location = new System.Drawing.Point(644, 234);
+            this.RestName.Location = new System.Drawing.Point(859, 292);
+            this.RestName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RestName.Name = "RestName";
-            this.RestName.Size = new System.Drawing.Size(166, 21);
+            this.RestName.Size = new System.Drawing.Size(220, 25);
             this.RestName.TabIndex = 1;
             // 
             // RestUid
             // 
-            this.RestUid.Location = new System.Drawing.Point(644, 262);
+            this.RestUid.Location = new System.Drawing.Point(859, 328);
+            this.RestUid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RestUid.Name = "RestUid";
-            this.RestUid.Size = new System.Drawing.Size(166, 21);
+            this.RestUid.Size = new System.Drawing.Size(220, 25);
             this.RestUid.TabIndex = 1;
             // 
             // RestPwd
             // 
-            this.RestPwd.Location = new System.Drawing.Point(644, 290);
+            this.RestPwd.Location = new System.Drawing.Point(859, 362);
+            this.RestPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RestPwd.Name = "RestPwd";
-            this.RestPwd.Size = new System.Drawing.Size(166, 21);
+            this.RestPwd.Size = new System.Drawing.Size(220, 25);
             this.RestPwd.TabIndex = 1;
             // 
             // RestPwds
             // 
-            this.RestPwds.Location = new System.Drawing.Point(644, 318);
+            this.RestPwds.Location = new System.Drawing.Point(859, 398);
+            this.RestPwds.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RestPwds.Name = "RestPwds";
-            this.RestPwds.Size = new System.Drawing.Size(166, 21);
+            this.RestPwds.Size = new System.Drawing.Size(220, 25);
             this.RestPwds.TabIndex = 1;
             // 
             // RestPhone
             // 
-            this.RestPhone.Location = new System.Drawing.Point(644, 346);
+            this.RestPhone.Location = new System.Drawing.Point(859, 432);
+            this.RestPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RestPhone.Name = "RestPhone";
-            this.RestPhone.Size = new System.Drawing.Size(166, 21);
+            this.RestPhone.Size = new System.Drawing.Size(220, 25);
             this.RestPhone.TabIndex = 1;
             // 
             // RestAddress
             // 
-            this.RestAddress.Location = new System.Drawing.Point(644, 374);
+            this.RestAddress.Location = new System.Drawing.Point(859, 468);
+            this.RestAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RestAddress.Name = "RestAddress";
-            this.RestAddress.Size = new System.Drawing.Size(166, 21);
+            this.RestAddress.Size = new System.Drawing.Size(220, 25);
             this.RestAddress.TabIndex = 1;
             // 
             // Pbthan
             // 
-            this.Pbthan.Location = new System.Drawing.Point(644, 151);
+            this.Pbthan.Location = new System.Drawing.Point(859, 189);
+            this.Pbthan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pbthan.Name = "Pbthan";
-            this.Pbthan.Size = new System.Drawing.Size(91, 73);
+            this.Pbthan.Size = new System.Drawing.Size(121, 91);
             this.Pbthan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pbthan.TabIndex = 2;
             this.Pbthan.TabStop = false;
@@ -171,17 +184,19 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(549, 180);
+            this.label7.Location = new System.Drawing.Point(732, 225);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 12);
+            this.label7.Size = new System.Drawing.Size(112, 15);
             this.label7.TabIndex = 0;
             this.label7.Text = "商家图片路径：";
             // 
             // Notarize
             // 
-            this.Notarize.Location = new System.Drawing.Point(589, 428);
+            this.Notarize.Location = new System.Drawing.Point(785, 535);
+            this.Notarize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Notarize.Name = "Notarize";
-            this.Notarize.Size = new System.Drawing.Size(75, 23);
+            this.Notarize.Size = new System.Drawing.Size(100, 29);
             this.Notarize.TabIndex = 3;
             this.Notarize.Text = "确认";
             this.Notarize.UseVisualStyleBackColor = true;
@@ -189,18 +204,20 @@
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(699, 428);
+            this.Cancel.Location = new System.Drawing.Point(932, 535);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(75, 23);
+            this.Cancel.Size = new System.Drawing.Size(100, 29);
             this.Cancel.TabIndex = 3;
             this.Cancel.Text = "取消";
             this.Cancel.UseVisualStyleBackColor = true;
             // 
             // Browse
             // 
-            this.Browse.Location = new System.Drawing.Point(750, 176);
+            this.Browse.Location = new System.Drawing.Point(1000, 220);
+            this.Browse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Browse.Name = "Browse";
-            this.Browse.Size = new System.Drawing.Size(75, 23);
+            this.Browse.Size = new System.Drawing.Size(100, 29);
             this.Browse.TabIndex = 4;
             this.Browse.Text = "浏览";
             this.Browse.UseVisualStyleBackColor = true;
@@ -208,10 +225,10 @@
             // 
             // 商家登入修改注册
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(842, 532);
+            this.ClientSize = new System.Drawing.Size(1123, 665);
             this.Controls.Add(this.Browse);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Notarize);
@@ -229,9 +246,12 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "商家登入修改注册";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
+            this.Load += new System.EventHandler(this.商家登入修改注册_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

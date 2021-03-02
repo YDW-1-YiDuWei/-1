@@ -24,11 +24,11 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            /*if (!RestCheck())
+            if (Pbthan.Image==null)
             {
+                MessageBox.Show("您没有选择图片");
                 return;
-            }*/
-
+            }
             if (jurisdiction == 0)
             {
                 List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path);
@@ -45,7 +45,19 @@ namespace 点餐系统
             }
             else
             {
-                RestUid.ReadOnly = true;
+             
+                int id = int.Parse(User.restaKhID);
+                List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path, jurisdiction, id);
+                if (list.Count > 0)
+                {
+                    User.restaPass = list[0].RestaurantNumberPwd;
+                    MessageBox.Show("修改成功");
+                }
+                else
+                {
+                    MessageBox.Show("修改失败");
+                }
+
             }
         }
 
@@ -65,7 +77,23 @@ namespace 点餐系统
             商家登录 sjdr = new 商家登录();
             sjdr.Show();
             this.Close();
-           
+
+        }
+
+        private void 商家登入修改注册_Load(object sender, EventArgs e)
+        {
+            if (jurisdiction == 1)
+            {
+                this.RestUid.ReadOnly = true;
+                List<Restaurant> list = rest.Longin(User.restaUser, User.restaPass);
+                RestName.Text = list[0].RestaurantName;
+                Pbthan.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                RestAddress.Text = list[0].RestaurantAddress;
+                RestPhone.Text = list[0].RestaurantPhone;
+                RestPwd.Text = list[0].RestaurantNumberPwd;
+                RestPwds.Text = list[0].RestaurantNumberPwd;
+                RestUid.Text = list[0].RestaurantNumber;
+            }
         }
     }
 }

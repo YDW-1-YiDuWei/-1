@@ -73,10 +73,12 @@ namespace 点餐系统
 
         private void Label3_Click(object sender, EventArgs e)
         {
-            登入修改 drsg = new 登入修改();
+            注册 zc = new 注册();
+            zc.Show();
+            /*登入修改 drsg = new 登入修改();
             drsg.a = 1;
             drsg.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void 登录界面_Load(object sender, EventArgs e)
