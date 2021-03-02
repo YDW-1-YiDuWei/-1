@@ -45,11 +45,11 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btInquireCP = new System.Windows.Forms.Button();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.lvOrder = new System.Windows.Forms.ListView();
             this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -263,16 +263,16 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
-            // button8
+            // btInquireCP
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(677, 10);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 21);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "查询";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btInquireCP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInquireCP.Location = new System.Drawing.Point(677, 10);
+            this.btInquireCP.Name = "btInquireCP";
+            this.btInquireCP.Size = new System.Drawing.Size(75, 21);
+            this.btInquireCP.TabIndex = 25;
+            this.btInquireCP.Text = "查询";
+            this.btInquireCP.UseVisualStyleBackColor = true;
+            this.btInquireCP.Click += new System.EventHandler(this.button8_Click);
             // 
             // txtCPName
             // 
@@ -293,21 +293,21 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.listView3);
+            this.panel5.Controls.Add(this.lvOrder);
             this.panel5.Location = new System.Drawing.Point(4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(678, 471);
             this.panel5.TabIndex = 22;
             this.panel5.Visible = false;
             // 
-            // listView3
+            // lvOrder
             // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(4, 3);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(674, 481);
-            this.listView3.TabIndex = 0;
-            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.lvOrder.HideSelection = false;
+            this.lvOrder.Location = new System.Drawing.Point(4, 3);
+            this.lvOrder.Name = "lvOrder";
+            this.lvOrder.Size = new System.Drawing.Size(674, 481);
+            this.lvOrder.TabIndex = 0;
+            this.lvOrder.UseCompatibleStateImageBehavior = false;
             // 
             // lvCPMessage
             // 
@@ -360,7 +360,7 @@
             // 
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btInquireCP);
             this.panel1.Controls.Add(this.txtCPName);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
@@ -726,7 +726,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btInquireCP;
         private System.Windows.Forms.TextBox txtCPName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListView lvCPMessage;
@@ -763,6 +763,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ListView lvCP;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView lvOrder;
     }
 }
