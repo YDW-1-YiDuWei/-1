@@ -350,6 +350,7 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.txtCPName);
@@ -655,7 +656,7 @@
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Controls.Add(this.button12);
-            this.panel7.Location = new System.Drawing.Point(0, 31);
+            this.panel7.Location = new System.Drawing.Point(3, -2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(993, 532);
             this.panel7.TabIndex = 2;
@@ -701,6 +702,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(510, 251);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(129, 21);
             this.textBox2.TabIndex = 2;
             // 
@@ -708,6 +710,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(510, 204);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(129, 21);
             this.textBox1.TabIndex = 2;
             // 
@@ -811,7 +814,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(992, 607);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox1);
@@ -907,12 +909,12 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
