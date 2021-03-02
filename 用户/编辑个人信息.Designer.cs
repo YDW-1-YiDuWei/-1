@@ -1,6 +1,6 @@
 ﻿namespace 点餐系统
 {
-    partial class 注册
+    partial class 编辑个人信息
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(注册));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(编辑个人信息));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -184,7 +184,7 @@
             this.panel1.Size = new System.Drawing.Size(159, 23);
             this.panel1.TabIndex = 5;
             // 
-            // 注册
+            // 编辑个人信息
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,7 +201,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
-            this.Name = "注册";
+            this.Name = "编辑个人信息";
             this.Text = "编辑个人信息";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
