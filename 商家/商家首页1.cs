@@ -26,6 +26,7 @@ namespace 点餐系统
         private void toolStripLabel2_Click_1(object sender, EventArgs e)//商家首页
         {
             i = 1;
+            Temp.index = 0;
             #region 隐藏窗口
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
@@ -37,7 +38,6 @@ namespace 点餐系统
 
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
-
             i = 1;
             #region 隐藏窗口
             panel1.Visible = false;//商家首页显示（panel1）
@@ -51,6 +51,7 @@ namespace 点餐系统
         private void button5_Click(object sender, EventArgs e)//商家已完成
         {
             i = 1;
+            Temp.index = 0;
             #region 隐藏窗口
             panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -62,6 +63,7 @@ namespace 点餐系统
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
             i = 1; count = 0;
+            Temp.index = 0;
             #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
@@ -78,6 +80,7 @@ namespace 点餐系统
             panel4.Visible = false;//商家模糊接单查询
             panel5.Visible = false;//商家详细接单查询
             #endregion
+            Temp.index = 0;
             i = 0;
             if (lvCPMessage.SelectedIndices.Count == 0)
             {
@@ -168,7 +171,8 @@ namespace 点餐系统
                     if (count > 0)
                     {
                         MessageBox.Show("增加成功");
-                        Inquire(); Delete();
+                        Inquire(); //刷新菜品信息
+                        Delete();//删除输入框里面的值
                     }
                     else { MessageBox.Show("增加失败"); }
                 }
@@ -179,8 +183,10 @@ namespace 点餐系统
                         int index = cIM.AmendCuisineInformations((int)lvCPMessage.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
                         if (index > 0)
                         {
+                            Temp.index = 0;//把这个重新变成0好以后判断用
                             MessageBox.Show("修改成功");
-                            Inquire(); Delete();
+                            Inquire(); //刷新菜品信息
+                            Delete();//删除输入框里面的值
                         }
                         else { MessageBox.Show("修改失败"); }
                     }
@@ -188,7 +194,6 @@ namespace 点餐系统
                     {
                         MessageBox.Show("请重新选择图片");
                     }
-                    Temp.index = 0;//把这个重新变成0好以后判断用
                 }
             }
         }
@@ -207,7 +212,6 @@ namespace 点餐系统
 
                 //item.CuisineImagePath//图片路径
                 string name = item.CuisineTypeId.id == 1 ? "小菜" : item.CuisineTypeId.id == 2 ? "炒菜" : "主食";
-
 
                 asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
 
@@ -278,7 +282,7 @@ namespace 点餐系统
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)//商家查询
+        private void button8_Click(object sender, EventArgs e)//商家查询按钮
         {
             i = 1;
             Inquire();
@@ -295,7 +299,7 @@ namespace 点餐系统
             label2.Text = DateTime.Now.ToString("g");
         }
 
-        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)//右击出现的删除选项
         {
             int a = (int)lvCPMessage.SelectedItems[0].Tag;
             int count = cIM.DeleteCuisinelnformationsAmend(a);
