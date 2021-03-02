@@ -208,7 +208,7 @@ namespace 点餐系统
             Image[] asg = new Image[list.Count];//这里是图片的多少
             int i = 0;
 
-            foreach (CuisineInformations item in list)
+            foreach (CuisineInformations item in list)//这里是吧数据库里面的图片和信息循环出来
             {
 
                 //item.CuisineImagePath//图片路径
