@@ -47,7 +47,7 @@ namespace DianCanXiTongBLL
         {
             return cS.AmendCuisineInformations(id,name,lxId,money,ptho);
         }
-        public List<CuisineInformations> CuisinelnformationsAmend(string canGuanBianHao, int i) //修改菜品的时候要用
+        public List<CuisineInformations> CuisinelnformationsAmend(string canGuanBianHao, int i) //修改菜品的时候要用     canGuanBianHao是餐馆id   i是菜品id
         {
             return cS.CuisinelnformationsAmend(canGuanBianHao, i);
         }
