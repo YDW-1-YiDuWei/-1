@@ -94,21 +94,21 @@
             // 
             // UserName
             // 
-            this.UserName.Location = new System.Drawing.Point(318, 282);
+            this.UserName.Location = new System.Drawing.Point(318, 280);
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(159, 21);
             this.UserName.TabIndex = 8;
             // 
             // UserPhone
             // 
-            this.UserPhone.Location = new System.Drawing.Point(318, 363);
+            this.UserPhone.Location = new System.Drawing.Point(318, 361);
             this.UserPhone.Name = "UserPhone";
             this.UserPhone.Size = new System.Drawing.Size(159, 21);
             this.UserPhone.TabIndex = 7;
             // 
             // UserAdders
             // 
-            this.UserAdders.Location = new System.Drawing.Point(318, 400);
+            this.UserAdders.Location = new System.Drawing.Point(318, 397);
             this.UserAdders.Name = "UserAdders";
             this.UserAdders.Size = new System.Drawing.Size(159, 21);
             this.UserAdders.TabIndex = 6;
