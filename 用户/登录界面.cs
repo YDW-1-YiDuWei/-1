@@ -76,6 +76,7 @@ namespace 点餐系统
             注册 zc = new 注册();
             zc.Show();
 
+
             /*登入修改 drsg = new 登入修改();
             drsg.a = 1;
             drsg.Show();
