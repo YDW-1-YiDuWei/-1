@@ -79,12 +79,12 @@ namespace 点餐系统
             panel5.Visible = false;//商家详细接单查询
             #endregion
             i = 0;
-            if (listView2.SelectedIndices.Count == 0)
+            if (lvCPMessage.SelectedIndices.Count == 0)
             {
                 return;
             }
             Cmlist.Enabled = true;
-            listView2.ContextMenuStrip = Cmlist;
+            lvCPMessage.ContextMenuStrip = Cmlist;
         }
 
         private void button6_Click(object sender, EventArgs e)//商家修改
@@ -98,13 +98,13 @@ namespace 点餐系统
             panel5.Visible = false;//商家详细接单查询
             #endregion
 
-            if (listView2.SelectedItems.Count == 0)//判断有没有选中菜品
+            if (lvCPMessage.SelectedItems.Count == 0)//判断有没有选中菜品
             {
                 MessageBox.Show("请选择你要修改的菜品");
                 return;
             }
 
-            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID, (int)listView2.SelectedItems[0].Tag);
+            List<CuisineInformations> list = cIM.CuisinelnformationsAmend(User.restaKhID, (int)lvCPMessage.SelectedItems[0].Tag);
             foreach (CuisineInformations item in list)
             {
                 txtName.Text = item.CuisineName;//菜品名称
@@ -176,7 +176,7 @@ namespace 点餐系统
                 {
                     if (Temp.index==1)//判断有没有重新选择图片
                     {
-                        int index = cIM.AmendCuisineInformations((int)listView2.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
+                        int index = cIM.AmendCuisineInformations((int)lvCPMessage.SelectedItems[0].Tag, txtName.Text, cbLX.SelectedIndex, decimal.Parse(txtMoney.Text), ofdLJ.SafeFileName);
                         if (index > 0)
                         {
                             MessageBox.Show("修改成功");
@@ -195,7 +195,7 @@ namespace 点餐系统
         public void Inquire() //查询菜品图片
         {
 
-            listView2.Items.Clear();//清除
+            lvCPMessage.Items.Clear();//清除
             imageList1.Images.Clear();//清楚图片
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim());
 
@@ -211,8 +211,8 @@ namespace 点餐系统
 
                 asg[i] = System.Drawing.Image.FromFile(Temp.pathCG + item.CuisineImagePath);//已经把拿到的图片保存到了这里面
 
-                listView2.Items.Add(item.CuisineName + "  " + name + "  " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
-                listView2.Items[i].Tag = item.id;
+                lvCPMessage.Items.Add(item.CuisineName + "  " + name + "  " + item.CuisinePrice, i);//这里是关键!!!!!!!!!把数据倒进lv里面
+                lvCPMessage.Items[i].Tag = item.id;
                 i++;
             }
             imageList1.Images.AddRange(asg);
@@ -289,7 +289,7 @@ namespace 点餐系统
         {
             if (i == 1)
             {
-                listView2.ContextMenuStrip = null;
+                lvCPMessage.ContextMenuStrip = null;
             }
             label3.Text = DateTime.Now.ToString("t");
             label2.Text = DateTime.Now.ToString("g");
@@ -297,7 +297,7 @@ namespace 点餐系统
 
         private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int a = (int)listView2.SelectedItems[0].Tag;
+            int a = (int)lvCPMessage.SelectedItems[0].Tag;
             int count = cIM.DeleteCuisinelnformationsAmend(a);
             if (count > 0)
             {
