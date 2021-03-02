@@ -17,6 +17,13 @@ namespace 点餐系统
             InitializeComponent();
         }
 
-       
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            商家登录 sjdr = new 商家登录();
+            sjdr.Show();
+            this.Close();
+           
+        }
     }
 }
