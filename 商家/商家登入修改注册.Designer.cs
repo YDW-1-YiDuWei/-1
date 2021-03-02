@@ -195,7 +195,7 @@
             this.Cancel.TabIndex = 3;
             this.Cancel.Text = "取消";
             this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.Button2_Click);
+            //this.Cancel.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Browse
             // 
@@ -232,7 +232,7 @@
             this.Name = "商家登入修改注册";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
-            this.Load += new System.EventHandler(this.商家登入修改注册_Load);
+            //this.Load += new System.EventHandler(this.商家登入修改注册_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

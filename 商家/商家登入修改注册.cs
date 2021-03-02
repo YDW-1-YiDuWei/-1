@@ -24,10 +24,10 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (!RestCheck())
+            /*if (!RestCheck())
             {
                 return;
-            }
+            }*/
 
             if (jurisdiction == 0)
             {
