@@ -35,18 +35,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.RestName = new System.Windows.Forms.TextBox();
+            this.RestUid = new System.Windows.Forms.TextBox();
+            this.RestPwd = new System.Windows.Forms.TextBox();
+            this.RestPwds = new System.Windows.Forms.TextBox();
+            this.RestPhone = new System.Windows.Forms.TextBox();
+            this.RestAddress = new System.Windows.Forms.TextBox();
+            this.Pbthan = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Notarize = new System.Windows.Forms.Button();
+            this.Cancel = new System.Windows.Forms.Button();
+            this.Browse = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,56 +115,56 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "商家电话：";
             // 
-            // textBox1
+            // RestName
             // 
-            this.textBox1.Location = new System.Drawing.Point(644, 233);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 21);
-            this.textBox1.TabIndex = 1;
+            this.RestName.Location = new System.Drawing.Point(107, 95);
+            this.RestName.Name = "RestName";
+            this.RestName.Size = new System.Drawing.Size(166, 21);
+            this.RestName.TabIndex = 1;
             // 
-            // textBox2
+            // RestUid
             // 
-            this.textBox2.Location = new System.Drawing.Point(644, 261);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(166, 21);
-            this.textBox2.TabIndex = 1;
+            this.RestUid.Location = new System.Drawing.Point(107, 123);
+            this.RestUid.Name = "RestUid";
+            this.RestUid.Size = new System.Drawing.Size(166, 21);
+            this.RestUid.TabIndex = 1;
             // 
-            // textBox3
+            // RestPwd
             // 
-            this.textBox3.Location = new System.Drawing.Point(644, 289);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 21);
-            this.textBox3.TabIndex = 1;
+            this.RestPwd.Location = new System.Drawing.Point(107, 151);
+            this.RestPwd.Name = "RestPwd";
+            this.RestPwd.Size = new System.Drawing.Size(166, 21);
+            this.RestPwd.TabIndex = 1;
             // 
-            // textBox4
+            // RestPwds
             // 
-            this.textBox4.Location = new System.Drawing.Point(644, 317);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 21);
-            this.textBox4.TabIndex = 1;
+            this.RestPwds.Location = new System.Drawing.Point(107, 179);
+            this.RestPwds.Name = "RestPwds";
+            this.RestPwds.Size = new System.Drawing.Size(166, 21);
+            this.RestPwds.TabIndex = 1;
             // 
-            // textBox5
+            // RestPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(644, 345);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 21);
-            this.textBox5.TabIndex = 1;
+            this.RestPhone.Location = new System.Drawing.Point(107, 207);
+            this.RestPhone.Name = "RestPhone";
+            this.RestPhone.Size = new System.Drawing.Size(166, 21);
+            this.RestPhone.TabIndex = 1;
             // 
-            // textBox6
+            // RestAddress
             // 
-            this.textBox6.Location = new System.Drawing.Point(644, 373);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(166, 21);
-            this.textBox6.TabIndex = 1;
+            this.RestAddress.Location = new System.Drawing.Point(107, 235);
+            this.RestAddress.Name = "RestAddress";
+            this.RestAddress.Size = new System.Drawing.Size(166, 21);
+            this.RestAddress.TabIndex = 1;
             // 
-            // pictureBox1
+            // Pbthan
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(644, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 73);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.Pbthan.Location = new System.Drawing.Point(107, 12);
+            this.Pbthan.Name = "Pbthan";
+            this.Pbthan.Size = new System.Drawing.Size(91, 73);
+            this.Pbthan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pbthan.TabIndex = 2;
+            this.Pbthan.TabStop = false;
             // 
             // label7
             // 
@@ -177,58 +177,51 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "商家图片路径：";
             // 
-            // button1
+            // Notarize
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(575, 427);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "确认";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Notarize.Location = new System.Drawing.Point(38, 289);
+            this.Notarize.Name = "Notarize";
+            this.Notarize.Size = new System.Drawing.Size(75, 23);
+            this.Notarize.TabIndex = 3;
+            this.Notarize.Text = "确认";
+            this.Notarize.UseVisualStyleBackColor = true;
+            this.Notarize.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // Cancel
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(699, 427);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "取消";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Cancel.Location = new System.Drawing.Point(162, 289);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(75, 23);
+            this.Cancel.TabIndex = 3;
+            this.Cancel.Text = "取消";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button3
+            // Browse
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(741, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "选择";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Browse.Location = new System.Drawing.Point(213, 37);
+            this.Browse.Name = "Browse";
+            this.Browse.Size = new System.Drawing.Size(75, 23);
+            this.Browse.TabIndex = 4;
+            this.Browse.Text = "浏览";
+            this.Browse.UseVisualStyleBackColor = true;
+            this.Browse.Click += new System.EventHandler(this.Button3_Click);
             // 
             // 商家登入修改注册
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(971, 536);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(300, 356);
+            this.Controls.Add(this.Browse);
+            this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.Notarize);
+            this.Controls.Add(this.Pbthan);
+            this.Controls.Add(this.RestAddress);
+            this.Controls.Add(this.RestPhone);
+            this.Controls.Add(this.RestPwds);
+            this.Controls.Add(this.RestPwd);
+            this.Controls.Add(this.RestUid);
+            this.Controls.Add(this.RestName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -237,8 +230,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "商家登入修改注册";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.商家登入修改注册_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,16 +247,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox RestName;
+        private System.Windows.Forms.TextBox RestUid;
+        private System.Windows.Forms.TextBox RestPwd;
+        private System.Windows.Forms.TextBox RestPwds;
+        private System.Windows.Forms.TextBox RestPhone;
+        private System.Windows.Forms.TextBox RestAddress;
+        private System.Windows.Forms.PictureBox Pbthan;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Notarize;
+        private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Button Browse;
     }
 }

@@ -16,7 +16,7 @@ namespace DianCanXiTongDAL
     /// </summary>
     public class ReservationService
     {
-        DBHelper db = new DBHelper();
+        private DBHelper db = new DBHelper();
         public DataTable InquireReservation(string yHID) //查询详细订单信息
         {
             string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id where ClientId='" + yHID + "'";
@@ -30,7 +30,7 @@ namespace DianCanXiTongDAL
         }
         public void SelectReservation()//查询订单
         {
-            string sql = " ";
+
         }
         /// <summary>
         /// 订单增加
@@ -69,7 +69,7 @@ namespace DianCanXiTongDAL
                 string phone = sdr["Phone"].ToString();
                 string address = sdr["Address"].ToString();
 
-                using (FileStream fs = new FileStream(""+name+".txt", FileMode.Create, FileAccess.Write))
+                using (FileStream fs = new FileStream("" + name + ".txt", FileMode.Create, FileAccess.Write))
                 {
                     StreamWriter sw = new StreamWriter(fs);
                     sw.WriteLine("***************************");
