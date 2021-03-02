@@ -56,43 +56,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DimGray;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(264, 170);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "账号:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(264, 205);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "密码:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(232, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "确认密码:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -131,45 +94,24 @@
             // 
             // UserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(314, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 21);
-            this.textBox1.TabIndex = 2;
+            this.UserName.Location = new System.Drawing.Point(318, 282);
+            this.UserName.Name = "UserName";
+            this.UserName.Size = new System.Drawing.Size(159, 21);
+            this.UserName.TabIndex = 8;
             // 
             // UserPhone
             // 
-            this.textBox2.Location = new System.Drawing.Point(314, 203);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 21);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(314, 242);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 21);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(314, 278);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 21);
-            this.textBox4.TabIndex = 2;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(314, 359);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 21);
-            this.textBox6.TabIndex = 2;
+            this.UserPhone.Location = new System.Drawing.Point(318, 363);
+            this.UserPhone.Name = "UserPhone";
+            this.UserPhone.Size = new System.Drawing.Size(159, 21);
+            this.UserPhone.TabIndex = 7;
             // 
             // UserAdders
             // 
-            this.textBox7.Location = new System.Drawing.Point(314, 397);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(163, 21);
-            this.textBox7.TabIndex = 2;
+            this.UserAdders.Location = new System.Drawing.Point(318, 400);
+            this.UserAdders.Name = "UserAdders";
+            this.UserAdders.Size = new System.Drawing.Size(159, 21);
+            this.UserAdders.TabIndex = 6;
             // 
             // button1
             // 
@@ -237,9 +179,9 @@
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(314, 321);
+            this.panel1.Location = new System.Drawing.Point(318, 321);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(163, 23);
+            this.panel1.Size = new System.Drawing.Size(159, 23);
             this.panel1.TabIndex = 5;
             // 
             // 注册
