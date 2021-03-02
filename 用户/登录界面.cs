@@ -24,7 +24,7 @@ namespace 点餐系统
         ClientManager client = new ClientManager();
         private void button1_Click(object sender, EventArgs e)
         {
-            //a();
+            //a();、、
             if (txtZH.Text.Trim() == "")
             {
                 MessageBox.Show("请你输入账号后再登录");
