@@ -60,7 +60,7 @@ namespace 点餐系统
 
         private void Button1_Click_1(object sender, EventArgs e)//确认按钮
         {
-            if (txtPwd2.Text.Trim() != txtPwd.Text.Trim())
+            if (txtPwd2.Text.Trim() != txtPwd.Text.Trim())//
             {
                 MessageBox.Show("密码不一致", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
