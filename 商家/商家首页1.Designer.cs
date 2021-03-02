@@ -381,9 +381,9 @@
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Controls.Add(this.button12);
-            this.panel7.Location = new System.Drawing.Point(3, -2);
+            this.panel7.Location = new System.Drawing.Point(3, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(993, 532);
+            this.panel7.Size = new System.Drawing.Size(993, 530);
             this.panel7.TabIndex = 2;
             // 
             // button13
@@ -455,7 +455,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(510, 67);
+            this.pictureBox2.Location = new System.Drawing.Point(510, 68);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 106);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
