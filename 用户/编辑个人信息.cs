@@ -14,7 +14,7 @@ namespace 点餐系统
 {
     public partial class 注册 : Form
     {
-        /
+        
         public 注册()
         {
             InitializeComponent();
