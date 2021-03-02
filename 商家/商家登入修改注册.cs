@@ -24,10 +24,10 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (!RestCheck())
+            /*if (!RestCheck())
             {
                 return;
-            }
+            }*/
 
             if (jurisdiction == 0)
             {
@@ -59,48 +59,13 @@ namespace 点餐系统
             }
         }
 
-        private void 商家登入修改注册_Load(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
+            商家登录 sjdr = new 商家登录();
+            sjdr.Show();
             this.Close();
-        }
-        public bool RestCheck()
-        {
-            if (Pbthan.Image == null)
-            {
-                MessageBox.Show("请选择商家图片");
-                return false;
-            }
-            else if (RestName.Text == "")
-            {
-                MessageBox.Show("商家名称不可为空，快给你的店铺取个好名字吧");
-                return false;
-            }
-            else if (RestUid.Text == "")
-            {
-                MessageBox.Show("账号不可以为空哦");
-                return false;
-            }
-            else if (RestPwd.Text == "")
-            {
-                MessageBox.Show("密码不可为空哦");
-                return false;
-            }
-            else if (RestPwds.Text == "" || RestPwd.Text != RestPwds.Text)
-            {
-                MessageBox.Show("密码不一致");
-                return false;
-            }
-            else if (RestPhone.Text==""||RestPhone.Text.Length<11||RestPhone.Text.Length>11)
-            {
-                MessageBox.Show("请输入正确的电话");
-                return false;
-            }
-            return true;
+           
         }
     }
 }

@@ -73,12 +73,10 @@ namespace 点餐系统
             }*/
             return true;
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
             商家登入修改注册 sjdrxgzc = new 商家登入修改注册();
             sjdrxgzc.Show();
-            this.Hide();
         }
     }
 }

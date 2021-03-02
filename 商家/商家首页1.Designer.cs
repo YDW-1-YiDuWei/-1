@@ -45,7 +45,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btInquireCP = new System.Windows.Forms.Button();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -55,6 +54,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lvCP = new System.Windows.Forms.ListView();
             this.button7 = new System.Windows.Forms.Button();
@@ -273,13 +273,6 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
-            // btInquireCP
-            // 
-            this.btInquireCP.Location = new System.Drawing.Point(0, 0);
-            this.btInquireCP.Name = "btInquireCP";
-            this.btInquireCP.Size = new System.Drawing.Size(75, 23);
-            this.btInquireCP.TabIndex = 28;
-            // 
             // txtCPName
             // 
             this.txtCPName.Location = new System.Drawing.Point(304, 10);
@@ -332,7 +325,7 @@
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
@@ -356,9 +349,9 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btInquireCP);
             this.panel1.Controls.Add(this.txtCPName);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
@@ -373,6 +366,19 @@
             this.panel1.Size = new System.Drawing.Size(997, 532);
             this.panel1.TabIndex = 30;
             this.panel1.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(678, 9);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 29;
+            this.button8.Text = "搜索";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // panel4
             // 
@@ -649,9 +655,9 @@
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Controls.Add(this.button12);
-            this.panel7.Location = new System.Drawing.Point(0, 29);
+            this.panel7.Location = new System.Drawing.Point(0, 31);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(993, 531);
+            this.panel7.Size = new System.Drawing.Size(993, 532);
             this.panel7.TabIndex = 2;
             // 
             // button13
@@ -684,7 +690,7 @@
             this.button10.BackColor = System.Drawing.Color.Transparent;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(525, 166);
+            this.button10.Location = new System.Drawing.Point(510, 167);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 3;
@@ -693,14 +699,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(497, 252);
+            this.textBox2.Location = new System.Drawing.Point(510, 251);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(138, 21);
             this.textBox2.TabIndex = 2;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(497, 205);
+            this.textBox1.Location = new System.Drawing.Point(510, 204);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(138, 21);
             this.textBox1.TabIndex = 2;
@@ -711,7 +717,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(421, 208);
+            this.label9.Location = new System.Drawing.Point(431, 209);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
             this.label9.TabIndex = 1;
@@ -723,7 +729,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(421, 256);
+            this.label4.Location = new System.Drawing.Point(432, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
             this.label4.TabIndex = 1;
@@ -731,7 +737,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(497, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(478, 51);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 106);
             this.pictureBox2.TabIndex = 0;
@@ -860,7 +866,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btInquireCP;
         private System.Windows.Forms.TextBox txtCPName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListView lvCPMessage;
@@ -908,5 +913,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button8;
     }
 }

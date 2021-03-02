@@ -316,19 +316,23 @@ namespace 点餐系统
                 MessageBox.Show("删除失败");
             }
         }
-
         private void button12_Click(object sender, EventArgs e)
         {
             商家登入修改注册 sjdlxgzc = new 商家登入修改注册();
             sjdlxgzc.Show();
-            this.Close();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            商家登入修改注册 sjdlxgzc = new 商家登入修改注册();
-            sjdlxgzc.Show();
+            商家登录 sjdl = new 商家登录();
+            sjdl.Show();
             this.Close();
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            i = 1;
+            Inquire();
         }
     }
 }
