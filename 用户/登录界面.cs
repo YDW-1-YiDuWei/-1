@@ -27,13 +27,13 @@ namespace 点餐系统
             //a();
             if (txtZH.Text.Trim() == "")
             {
-                MessageBox.Show("请输入账号");
+                MessageBox.Show("请你输入账号后再登录");
                 txtZH.Focus();
                 return;
             }
             if (txtPwd.Text.Trim() == "")
             {
-                MessageBox.Show("请输入账号");
+                MessageBox.Show("请你输入密码后再登录");
                 txtPwd.Focus();
                 return;
             }
@@ -61,6 +61,7 @@ namespace 点餐系统
         public void a()
         {
             首页 sy = new 首页();
+
             sy.Show();
             this.Hide();
         }
