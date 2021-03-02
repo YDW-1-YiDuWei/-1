@@ -17,7 +17,7 @@ namespace 点餐系统
 
 
         /// <summary>
-        /// 商家账号密码记录
+        /// 商家账号密码 商家图片路径记录
         /// </summary>
         public static string restaUser = "";
         public static string restaPass = "";

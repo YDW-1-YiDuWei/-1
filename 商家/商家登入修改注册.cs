@@ -24,13 +24,18 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
+            if (!RestCheck())
+            {
+                return;
+            }
+
             if (jurisdiction == 0)
             {
-                List<Restaurant> list = rest.Register(textBox2.Text, textBox3.Text, textBox1.Text, textBox6.Text, textBox5.Text, "", User.path);
+                List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path);
                 if (MessageBox.Show("是否登录该账号", "登录提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    User.restaUser = textBox2.Text;
-                    User.restaPass = textBox3.Text;
+                    User.restaUser = RestUid.Text;
+                    User.restaPass = RestPwd.Text;
 
                     商家首页1 resta = new 商家首页1();
                     resta.list = rest.Longin(User.restaUser, User.restaPass);
@@ -40,7 +45,7 @@ namespace 点餐系统
             }
             else
             {
-                textBox2.ReadOnly = true;
+                RestUid.ReadOnly = true;
             }
         }
 
@@ -50,13 +55,52 @@ namespace 点餐系统
             if (fd.ShowDialog() == DialogResult.OK)
             {
                 User.path = fd.SafeFileName;
-                pictureBox1.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
+                Pbthan.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
             }
         }
 
         private void 商家登入修改注册_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        public bool RestCheck()
+        {
+            if (Pbthan.Image == null)
+            {
+                MessageBox.Show("请选择商家图片");
+                return false;
+            }
+            else if (RestName.Text == "")
+            {
+                MessageBox.Show("商家名称不可为空，快给你的店铺取个好名字吧");
+                return false;
+            }
+            else if (RestUid.Text == "")
+            {
+                MessageBox.Show("账号不可以为空哦");
+                return false;
+            }
+            else if (RestPwd.Text == "")
+            {
+                MessageBox.Show("密码不可为空哦");
+                return false;
+            }
+            else if (RestPwds.Text == "" || RestPwd.Text != RestPwds.Text)
+            {
+                MessageBox.Show("密码不一致");
+                return false;
+            }
+            else if (RestPhone.Text==""||RestPhone.Text.Length<11||RestPhone.Text.Length>11)
+            {
+                MessageBox.Show("请输入正确的电话");
+                return false;
+            }
+            return true;
         }
     }
 }
