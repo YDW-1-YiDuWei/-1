@@ -232,6 +232,7 @@
             this.Name = "商家登入修改注册";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
+            this.Load += new System.EventHandler(this.商家登入修改注册_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

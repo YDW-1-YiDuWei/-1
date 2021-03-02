@@ -91,17 +91,27 @@ namespace DianCanXiTongDAL
         /// <param name="comment">餐馆评论</param>
         /// <param name="image">餐馆图片路径</param>
         /// <returns></returns>
-        public List<Restaurant> Register(string uid, string pwd,string name,string address,string phone,string comment,string image)
+        public List<Restaurant> Register(string uid, string pwd, string name, string address, string phone, string comment, string image= "OIP.jpg", int count = 0,int id=0)
         {
             SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
 
             List<Restaurant> list = new List<Restaurant>();
 
-            DBHelper db = new DBHelper();
 
             Restaurant rest = null;
-            string sql = "insert into Restaurant(RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage) values(@RestaurantNumber,@RestaurantNumberPwd,@RestaurantName,@RestaurantAddress,@RestaurantPhone,@RestaurantComment,@RestaurantImage)";
-
+            string sql="";
+            if (count == 0)
+            {
+                sql += "insert into Restaurant(RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage) values(@RestaurantNumber,@RestaurantNumberPwd,@RestaurantName,@RestaurantAddress,@RestaurantPhone,@RestaurantComment,@RestaurantImage)";
+            }
+            else if(count==1)
+            {
+                sql += "update Restaurant set RestaurantNumber=@RestaurantNumber, RestaurantNumberPwd=@RestaurantNumberPwd, RestaurantName=@RestaurantName, RestaurantAddress=@RestaurantAddress, RestaurantPhone=@RestaurantPhone, RestaurantComment=@RestaurantComment, RestaurantImage=@RestaurantImage where 1=1";
+            }
+            if (id != 0)
+            {
+                sql += " and Id=@Id ";
+            }
 
             SqlParameter[] sp =
             {
@@ -112,6 +122,7 @@ namespace DianCanXiTongDAL
                 new SqlParameter("@RestaurantPhone",phone),
                 new SqlParameter("@RestaurantComment",comment),
                 new SqlParameter("@RestaurantImage",image),
+                new SqlParameter("@Id",id)
             };
             coon.Open();
             SqlCommand cmd = new SqlCommand(sql, coon);
@@ -121,7 +132,7 @@ namespace DianCanXiTongDAL
             {
                 rest = new Restaurant
                 {
-                   
+
                     RestaurantNumber = uid,
                     RestaurantNumberPwd = pwd,
                     RestaurantName = name,
@@ -135,5 +146,6 @@ namespace DianCanXiTongDAL
             coon.Close();
             return list;
         }
+
     }
 }
