@@ -16,7 +16,7 @@ namespace 点餐系统
     {
         ClientManager client = new ClientManager();
         public int a = 0;
-       
+
 
         public 登入修改()
         {
@@ -38,7 +38,7 @@ namespace 点餐系统
             }
             if (txtPwd2.Text.Trim() == "")
             {
-                MessageBox.Show("请输入请输入确认密码");
+                MessageBox.Show("请输入确认密码");
                 txtPwd2.Focus();
                 return false;
             }
@@ -60,6 +60,20 @@ namespace 点餐系统
 
         private void Button1_Click_1(object sender, EventArgs e)//确认按钮
         {
+            /*if (txtZH.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入账号");
+                return;
+            }
+            if (txtPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入密码");
+                return;
+            }
+            if (txtPwd2.Text.Trim()=="")
+            {
+                MessageBox.Show("请输入二次密码");
+            }*/
             if (txtPwd2.Text.Trim() != txtPwd.Text.Trim())
             {
                 MessageBox.Show("密码不一致", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -88,7 +102,7 @@ namespace 点餐系统
                     MessageBox.Show("登录失败", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-            else if (a==1)
+            else if (a == 1)
             {
                 List<Client> list = client.AddClients(txtZH.Text, txtPwd.Text);
                 if (list.Count > 0)

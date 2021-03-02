@@ -51,7 +51,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1087, 695);
             this.pictureBox1.TabIndex = 0;
@@ -98,46 +98,25 @@
             // 
             // UserName
             // 
-            this.UserName.Location = new System.Drawing.Point(0, 0);
-            this.UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserName.Location = new System.Drawing.Point(431, 351);
+            this.UserName.Margin = new System.Windows.Forms.Padding(4);
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(132, 25);
             this.UserName.TabIndex = 8;
             // 
             // UserPhone
             // 
-            this.textBox2.Location = new System.Drawing.Point(314, 203);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 21);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(314, 242);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 21);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(314, 278);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 21);
-            this.textBox4.TabIndex = 2;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(314, 359);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 21);
-            this.textBox6.TabIndex = 2;
+            this.UserPhone.Location = new System.Drawing.Point(431, 452);
+            this.UserPhone.Name = "UserPhone";
+            this.UserPhone.Size = new System.Drawing.Size(100, 25);
+            this.UserPhone.TabIndex = 7;
             // 
             // UserAdders
             // 
-            this.textBox7.Location = new System.Drawing.Point(314, 397);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(163, 21);
-            this.textBox7.TabIndex = 2;
+            this.UserAdders.Location = new System.Drawing.Point(431, 494);
+            this.UserAdders.Name = "UserAdders";
+            this.UserAdders.Size = new System.Drawing.Size(100, 25);
+            this.UserAdders.TabIndex = 6;
             // 
             // button1
             // 
@@ -145,7 +124,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(369, 561);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 3;
@@ -159,7 +138,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(536, 561);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 3;
@@ -185,7 +164,7 @@
             this.radioButton1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(39, 4);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(40, 19);
             this.radioButton1.TabIndex = 4;
@@ -198,7 +177,7 @@
             this.radioButton2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.radioButton2.ForeColor = System.Drawing.Color.White;
             this.radioButton2.Location = new System.Drawing.Point(117, 4);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(40, 19);
             this.radioButton2.TabIndex = 4;
@@ -210,7 +189,7 @@
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(314, 321);
+            this.panel1.Location = new System.Drawing.Point(431, 404);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(163, 23);
             this.panel1.TabIndex = 5;
@@ -231,7 +210,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "注册";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
