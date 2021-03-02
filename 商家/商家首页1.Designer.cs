@@ -665,7 +665,7 @@
             this.button13.BackColor = System.Drawing.Color.Transparent;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(485, 440);
+            this.button13.Location = new System.Drawing.Point(507, 439);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(120, 21);
             this.button13.TabIndex = 4;
@@ -677,7 +677,7 @@
             this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(442, 317);
+            this.button11.Location = new System.Drawing.Point(464, 316);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 4;
@@ -748,7 +748,7 @@
             this.button12.BackColor = System.Drawing.Color.Transparent;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(568, 317);
+            this.button12.Location = new System.Drawing.Point(590, 316);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 4;
@@ -820,6 +820,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "商家首页1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家首页1";
             this.Load += new System.EventHandler(this.商家首页1_Load);
             this.panel3.ResumeLayout(false);
