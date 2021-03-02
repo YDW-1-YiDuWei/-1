@@ -269,6 +269,9 @@ namespace 点餐系统
                 User.restaKhID = list[0].id.ToString();
                 pbSJLJ.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
+                pictureBox2.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                textBox1.Text = list[0].RestaurantName;
+                textBox2.Text = User.restaUser;
 
             }
             Inquire();
@@ -321,6 +324,7 @@ namespace 点餐系统
         private void button12_Click(object sender, EventArgs e)
         {
             商家登入修改注册 sjdlxgzc = new 商家登入修改注册();
+            sjdlxgzc.jurisdiction = 1;
             sjdlxgzc.Show();
         }
 
@@ -336,5 +340,7 @@ namespace 点餐系统
             i = 1;
             Inquire();
         }
+
+       
     }
 }
