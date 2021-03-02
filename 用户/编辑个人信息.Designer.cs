@@ -106,19 +106,38 @@
             // 
             // UserPhone
             // 
-            this.UserPhone.Location = new System.Drawing.Point(0, 0);
-            this.UserPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.UserPhone.Name = "UserPhone";
-            this.UserPhone.Size = new System.Drawing.Size(132, 25);
-            this.UserPhone.TabIndex = 7;
+            this.textBox2.Location = new System.Drawing.Point(314, 203);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(163, 21);
+            this.textBox2.TabIndex = 2;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(314, 242);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(163, 21);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(314, 278);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(163, 21);
+            this.textBox4.TabIndex = 2;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(314, 359);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(163, 21);
+            this.textBox6.TabIndex = 2;
             // 
             // UserAdders
             // 
-            this.UserAdders.Location = new System.Drawing.Point(0, 0);
-            this.UserAdders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.UserAdders.Name = "UserAdders";
-            this.UserAdders.Size = new System.Drawing.Size(132, 25);
-            this.UserAdders.TabIndex = 6;
+            this.textBox7.Location = new System.Drawing.Point(314, 397);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(163, 21);
+            this.textBox7.TabIndex = 2;
             // 
             // button1
             // 
@@ -191,10 +210,9 @@
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(419, 401);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(314, 321);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 29);
+            this.panel1.Size = new System.Drawing.Size(163, 23);
             this.panel1.TabIndex = 5;
             // 
             // 注册
