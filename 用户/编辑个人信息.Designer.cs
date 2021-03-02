@@ -51,8 +51,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(815, 556);
+            this.pictureBox1.Size = new System.Drawing.Size(1087, 695);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -64,7 +65,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(264, 192);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.Size = new System.Drawing.Size(59, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "姓名:";
             // 
@@ -76,7 +77,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(264, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 16);
+            this.label5.Size = new System.Drawing.Size(59, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "性别:";
             // 
@@ -88,7 +89,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(264, 294);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 16);
+            this.label6.Size = new System.Drawing.Size(59, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "电话:";
             // 
@@ -120,7 +121,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(290, 428);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 3;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = false;
@@ -133,7 +134,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(402, 428);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 3;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = false;
@@ -146,7 +147,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(264, 359);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 16);
+            this.label7.Size = new System.Drawing.Size(59, 20);
             this.label7.TabIndex = 1;
             this.label7.Text = "地址:";
             // 
@@ -155,9 +156,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(29, 3);
+            this.radioButton1.Location = new System.Drawing.Point(39, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(35, 16);
+            this.radioButton1.Size = new System.Drawing.Size(40, 19);
             this.radioButton1.TabIndex = 4;
             this.radioButton1.Text = "男";
             this.radioButton1.UseVisualStyleBackColor = false;
@@ -167,9 +169,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(88, 3);
+            this.radioButton2.Location = new System.Drawing.Point(117, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(35, 16);
+            this.radioButton2.Size = new System.Drawing.Size(40, 19);
             this.radioButton2.TabIndex = 4;
             this.radioButton2.Text = "女";
             this.radioButton2.UseVisualStyleBackColor = false;
@@ -181,14 +184,14 @@
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Location = new System.Drawing.Point(314, 240);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(163, 23);
+            this.panel1.Size = new System.Drawing.Size(217, 29);
             this.panel1.TabIndex = 5;
             // 
             // 注册
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 558);
+            this.ClientSize = new System.Drawing.Size(1088, 698);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -200,6 +203,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "注册";
             this.Text = "编辑个人信息";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
