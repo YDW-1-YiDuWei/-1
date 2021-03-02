@@ -51,6 +51,7 @@
             this.label3.Size = new System.Drawing.Size(51, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "注册";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox1
             // 

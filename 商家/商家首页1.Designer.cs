@@ -45,19 +45,19 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btInquireCP = new System.Windows.Forms.Button();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvOrder = new System.Windows.Forms.ListView();
+            this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvCP = new System.Windows.Forms.ListView();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -263,16 +263,16 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
-            // button8
+            // btInquireCP
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(677, 10);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 21);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "查询";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btInquireCP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInquireCP.Location = new System.Drawing.Point(677, 10);
+            this.btInquireCP.Name = "btInquireCP";
+            this.btInquireCP.Size = new System.Drawing.Size(75, 21);
+            this.btInquireCP.TabIndex = 25;
+            this.btInquireCP.Text = "查询";
+            this.btInquireCP.UseVisualStyleBackColor = true;
+            this.btInquireCP.Click += new System.EventHandler(this.button8_Click);
             // 
             // txtCPName
             // 
@@ -284,7 +284,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.listView2);
+            this.panel2.Controls.Add(this.lvCPMessage);
             this.panel2.Location = new System.Drawing.Point(304, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(690, 484);
@@ -293,38 +293,38 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.listView3);
+            this.panel5.Controls.Add(this.lvOrder);
             this.panel5.Location = new System.Drawing.Point(4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(678, 471);
             this.panel5.TabIndex = 22;
             this.panel5.Visible = false;
             // 
-            // listView3
+            // lvOrder
             // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(4, 3);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(674, 481);
-            this.listView3.TabIndex = 0;
-            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.lvOrder.HideSelection = false;
+            this.lvOrder.Location = new System.Drawing.Point(4, 3);
+            this.lvOrder.Name = "lvOrder";
+            this.lvOrder.Size = new System.Drawing.Size(674, 481);
+            this.lvOrder.TabIndex = 0;
+            this.lvOrder.UseCompatibleStateImageBehavior = false;
             // 
-            // listView2
+            // lvCPMessage
             // 
-            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lvCPMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView2.ContextMenuStrip = this.Cmlist;
-            this.listView2.HideSelection = false;
-            this.listView2.LargeImageList = this.imageList1;
-            this.listView2.Location = new System.Drawing.Point(3, 0);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(685, 470);
-            this.listView2.SmallImageList = this.imageList1;
-            this.listView2.StateImageList = this.imageList1;
-            this.listView2.TabIndex = 21;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.List;
+            this.lvCPMessage.ContextMenuStrip = this.Cmlist;
+            this.lvCPMessage.HideSelection = false;
+            this.lvCPMessage.LargeImageList = this.imageList1;
+            this.lvCPMessage.Location = new System.Drawing.Point(3, 0);
+            this.lvCPMessage.Name = "lvCPMessage";
+            this.lvCPMessage.Size = new System.Drawing.Size(685, 470);
+            this.lvCPMessage.SmallImageList = this.imageList1;
+            this.lvCPMessage.StateImageList = this.imageList1;
+            this.lvCPMessage.TabIndex = 21;
+            this.lvCPMessage.UseCompatibleStateImageBehavior = false;
+            this.lvCPMessage.View = System.Windows.Forms.View.List;
             // 
             // Cmlist
             // 
@@ -360,7 +360,7 @@
             // 
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btInquireCP);
             this.panel1.Controls.Add(this.txtCPName);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
@@ -378,21 +378,21 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.listView1);
+            this.panel4.Controls.Add(this.lvCP);
             this.panel4.Location = new System.Drawing.Point(4, 84);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(228, 379);
             this.panel4.TabIndex = 9;
             this.panel4.Visible = false;
             // 
-            // listView1
+            // lvCP
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(4, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(221, 370);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvCP.HideSelection = false;
+            this.lvCP.Location = new System.Drawing.Point(4, 3);
+            this.lvCP.Name = "lvCP";
+            this.lvCP.Size = new System.Drawing.Size(221, 370);
+            this.lvCP.TabIndex = 0;
+            this.lvCP.UseCompatibleStateImageBehavior = false;
             // 
             // button7
             // 
@@ -726,10 +726,10 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btInquireCP;
         private System.Windows.Forms.TextBox txtCPName;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvCPMessage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button7;
@@ -761,8 +761,8 @@
         private System.Windows.Forms.ContextMenuStrip Cmlist;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvCP;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView lvOrder;
     }
 }
