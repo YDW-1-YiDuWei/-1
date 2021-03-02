@@ -144,11 +144,11 @@ namespace 点餐系统
 
         private void 登入修改_Load(object sender, EventArgs e)//加载事件
         {
-
+           txtZH.ReadOnly = false;
             if (a == 2)
             {
-
-                txtZH.Text = User.user;
+                txtZH.ReadOnly = true;
+               txtZH.Text = User.user;
                 txtPwd.Text = User.pass;
             }
         }
