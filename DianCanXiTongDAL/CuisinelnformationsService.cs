@@ -88,7 +88,7 @@ namespace DianCanXiTongDAL
             };
             return dB.ExecuteNonQuery(sql,sp);
         }
-        public List<CuisineInformations> CuisinelnformationsAmend(string canGuanBianHao, int i)//修改菜品的时候要用
+        public List<CuisineInformations> CuisinelnformationsAmend(string canGuanBianHao, int i)//修改菜品的时候要用   canGuanBianHao是餐馆id   i是菜品id
         {
             List<CuisineInformations> ls = new List<CuisineInformations>();
             string sql = "select a.Id, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join CuisineType b on a.CuisineTypeId=b.Id where RestaurantId=" + canGuanBianHao;
