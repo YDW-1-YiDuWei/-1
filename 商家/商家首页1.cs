@@ -31,8 +31,8 @@ namespace 点餐系统
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
             panel7.Visible = false;
-            panel4.Visible = false;//商家模糊接单查询
-            panel5.Visible = false;//商家详细接单查询
+            /*panel4.Visible = false;//商家模糊接单查询
+            panel5.Visible = false;//商家详细接单查询*/
             #endregion
         }
 
@@ -41,11 +41,11 @@ namespace 点餐系统
             i = 1;
             #region 隐藏窗口
             panel7.Visible = true;
-            panel1.Visible = false;//商家首页显示（panel1）
-            panel2.Visible = false;//商家的菜品查询（panel2）
+            //panel1.Visible = false;//商家首页显示（panel1）
+            /*panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
             panel4.Visible = false;//商家模糊接单查询
-            panel5.Visible = false;//商家详细接单查询
+            panel5.Visible = false;//商家详细接单查询*/
             #endregion
         }
 

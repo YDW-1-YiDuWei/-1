@@ -49,7 +49,7 @@
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lvOrder = new System.Windows.Forms.ListView();
+            //this.lvOrder = new System.Windows.Forms.ListView();
             this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -277,7 +277,7 @@
             // 
             // btInquireCP
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
+           /* this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(677, 10);
@@ -286,7 +286,7 @@
             this.button8.TabIndex = 25;
             this.button8.Text = "查询";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.button8_Click);*/
             // 
             // txtCPName
             // 
@@ -307,7 +307,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.lvOrder);
+            //this.panel5.Controls.Add(this.lvOrder);
             this.panel5.Location = new System.Drawing.Point(4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(678, 471);
@@ -316,12 +316,12 @@
             // 
             // lvOrder
             // 
-            this.lvOrder.HideSelection = false;
+           /* this.lvOrder.HideSelection = false;
             this.lvOrder.Location = new System.Drawing.Point(4, 3);
             this.lvOrder.Name = "lvOrder";
             this.lvOrder.Size = new System.Drawing.Size(674, 481);
             this.lvOrder.TabIndex = 0;
-            this.lvOrder.UseCompatibleStateImageBehavior = false;
+            this.lvOrder.UseCompatibleStateImageBehavior = false;*/
             // 
             // lvCPMessage
             // 
