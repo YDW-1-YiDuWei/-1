@@ -117,49 +117,49 @@
             // 
             // RestName
             // 
-            this.RestName.Location = new System.Drawing.Point(107, 95);
+            this.RestName.Location = new System.Drawing.Point(644, 234);
             this.RestName.Name = "RestName";
             this.RestName.Size = new System.Drawing.Size(166, 21);
             this.RestName.TabIndex = 1;
             // 
             // RestUid
             // 
-            this.RestUid.Location = new System.Drawing.Point(107, 123);
+            this.RestUid.Location = new System.Drawing.Point(644, 262);
             this.RestUid.Name = "RestUid";
             this.RestUid.Size = new System.Drawing.Size(166, 21);
             this.RestUid.TabIndex = 1;
             // 
             // RestPwd
             // 
-            this.RestPwd.Location = new System.Drawing.Point(107, 151);
+            this.RestPwd.Location = new System.Drawing.Point(644, 290);
             this.RestPwd.Name = "RestPwd";
             this.RestPwd.Size = new System.Drawing.Size(166, 21);
             this.RestPwd.TabIndex = 1;
             // 
             // RestPwds
             // 
-            this.RestPwds.Location = new System.Drawing.Point(107, 179);
+            this.RestPwds.Location = new System.Drawing.Point(644, 318);
             this.RestPwds.Name = "RestPwds";
             this.RestPwds.Size = new System.Drawing.Size(166, 21);
             this.RestPwds.TabIndex = 1;
             // 
             // RestPhone
             // 
-            this.RestPhone.Location = new System.Drawing.Point(107, 207);
+            this.RestPhone.Location = new System.Drawing.Point(644, 346);
             this.RestPhone.Name = "RestPhone";
             this.RestPhone.Size = new System.Drawing.Size(166, 21);
             this.RestPhone.TabIndex = 1;
             // 
             // RestAddress
             // 
-            this.RestAddress.Location = new System.Drawing.Point(107, 235);
+            this.RestAddress.Location = new System.Drawing.Point(644, 374);
             this.RestAddress.Name = "RestAddress";
             this.RestAddress.Size = new System.Drawing.Size(166, 21);
             this.RestAddress.TabIndex = 1;
             // 
             // Pbthan
             // 
-            this.Pbthan.Location = new System.Drawing.Point(107, 12);
+            this.Pbthan.Location = new System.Drawing.Point(644, 151);
             this.Pbthan.Name = "Pbthan";
             this.Pbthan.Size = new System.Drawing.Size(91, 73);
             this.Pbthan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,7 +179,7 @@
             // 
             // Notarize
             // 
-            this.Notarize.Location = new System.Drawing.Point(38, 289);
+            this.Notarize.Location = new System.Drawing.Point(589, 428);
             this.Notarize.Name = "Notarize";
             this.Notarize.Size = new System.Drawing.Size(75, 23);
             this.Notarize.TabIndex = 3;
@@ -189,17 +189,16 @@
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(162, 289);
+            this.Cancel.Location = new System.Drawing.Point(699, 428);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(75, 23);
             this.Cancel.TabIndex = 3;
             this.Cancel.Text = "取消";
             this.Cancel.UseVisualStyleBackColor = true;
-            //this.Cancel.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Browse
             // 
-            this.Browse.Location = new System.Drawing.Point(213, 37);
+            this.Browse.Location = new System.Drawing.Point(750, 176);
             this.Browse.Name = "Browse";
             this.Browse.Size = new System.Drawing.Size(75, 23);
             this.Browse.TabIndex = 4;
@@ -211,7 +210,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 356);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(842, 532);
             this.Controls.Add(this.Browse);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Notarize);
@@ -232,7 +232,6 @@
             this.Name = "商家登入修改注册";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
-            //this.Load += new System.EventHandler(this.商家登入修改注册_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
