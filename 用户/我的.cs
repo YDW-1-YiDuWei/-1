@@ -53,13 +53,14 @@ namespace 点餐系统
                 {
                     button1.Enabled = false;
                     button2.Enabled = true;
+                    buttonBjgrxx.Enabled = true;
                 }
             }
         }
 
         private void Button3_Click(object sender, EventArgs e)//退出登录
         {
-            if (label1.Text.Length < 4 || label2.Text.Length < 6)
+            if (label1.Text.Length < 4 && label2.Text.Length < 6)
             {
                 MessageBox.Show("您还未登录账号", "登录提示", MessageBoxButtons.OK);
                 return;
@@ -69,6 +70,7 @@ namespace 点餐系统
                 label1.Text = "名称:";
                 label2.Text = "电话号码:";
                 button1.Enabled = true;
+                buttonBjgrxx.Enabled = false;
                 User.user = "";
                 User.pass = "";
             }
@@ -81,6 +83,10 @@ namespace 点餐系统
             this.Close();
         }
 
-
+        private void buttonBjgrxx_Click(object sender, EventArgs e)
+        {
+            编辑个人信息 bjgrxx = new 编辑个人信息();
+            bjgrxx.Show();
+        }
     }
 }
