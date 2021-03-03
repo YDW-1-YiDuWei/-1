@@ -26,6 +26,11 @@ namespace 点餐系统
             if (count > 0)
             {
                 MessageBox.Show("信息提交成功");
+                List<Client> list = client.Login(User.user, User.pass);
+                我的 wo = new 我的();
+                wo.list = list;
+                wo.Show();
+                this.Close();
             }
             else
             {

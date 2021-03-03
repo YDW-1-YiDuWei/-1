@@ -89,6 +89,7 @@ namespace 点餐系统
         {
             编辑个人信息 bjgrxx = new 编辑个人信息();
             bjgrxx.Show();
+            this.Close();
         }
     }
 }
