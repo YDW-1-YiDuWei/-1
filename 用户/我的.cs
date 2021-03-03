@@ -40,9 +40,10 @@ namespace 点餐系统
             //没有登录账号修改控件就关了
             button2.Enabled = false;
             button1.Enabled = true;
+            buttonBjgrxx.Enabled = false;
 
             //判断登录集合是否为空（不为空肯定是已经登录储存了）
-            if (list != null)
+            if (list.Count != 0)
             {
                 foreach (var item in list)
                 {
@@ -71,6 +72,7 @@ namespace 点餐系统
                 label2.Text = "电话号码:";
                 button1.Enabled = true;
                 buttonBjgrxx.Enabled = false;
+                button2.Enabled = false;
                 User.user = "";
                 User.pass = "";
             }

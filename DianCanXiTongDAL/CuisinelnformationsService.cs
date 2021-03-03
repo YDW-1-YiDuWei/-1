@@ -23,7 +23,7 @@ namespace DianCanXiTongDAL
                 sql += " and b.CuisineTypeName='" + leix + "'";
             } else if (cuisineInformationsLXName.Trim()!="")
             {
-                sql += " and CuisineName like '"+ cuisineInformationsLXName + "%'";
+                sql += " and CuisineName like '%"+ cuisineInformationsLXName + "%'";
             }
             SqlDataReader cmd=dB.ExecuteReader(sql);
             while (cmd.Read())

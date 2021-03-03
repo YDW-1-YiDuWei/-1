@@ -335,7 +335,7 @@ namespace 点餐系统
             this.Close();
         }
 
-        private void button8_Click_1(object sender, EventArgs e)
+        private void button8_Click_1(object sender, EventArgs e)//查询按钮
         {
             i = 1;
             Inquire();

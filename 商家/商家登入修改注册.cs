@@ -87,6 +87,8 @@ namespace 点餐系统
                 if (list.Count > 0)
                 {
                     User.restaPass = list[0].RestaurantNumberPwd;
+                    string name = User.path;
+
                     MessageBox.Show("修改成功");
                 }
                 else
@@ -102,7 +104,10 @@ namespace 点餐系统
             OpenFileDialog fd = new OpenFileDialog();
             if (fd.ShowDialog() == DialogResult.OK)
             {
-                User.path = fd.SafeFileName;
+                if (fd.SafeFileName != "")
+                {
+                    User.path = fd.SafeFileName;
+                }
                 Pbthan.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
             }
         }
