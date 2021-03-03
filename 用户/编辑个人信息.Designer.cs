@@ -162,12 +162,14 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.radioButton1.Checked = true;
             this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(39, 4);
+            this.radioButton1.Location = new System.Drawing.Point(4, 2);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(40, 19);
             this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "男";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
@@ -176,7 +178,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(117, 4);
+            this.radioButton2.Location = new System.Drawing.Point(60, 2);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(40, 19);
@@ -212,7 +214,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "注册";
+            this.Name = "编辑个人信息";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "编辑个人信息";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
