@@ -398,7 +398,7 @@
             // 
             // txtCGnum
             // 
-            this.txtCGnum.Location = new System.Drawing.Point(505, 286);
+            this.txtCGnum.Location = new System.Drawing.Point(505, 283);
             this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGnum.Name = "txtCGnum";
             this.txtCGnum.ReadOnly = true;
@@ -407,7 +407,7 @@
             // 
             // txtCGname
             // 
-            this.txtCGname.Location = new System.Drawing.Point(505, 249);
+            this.txtCGname.Location = new System.Drawing.Point(505, 246);
             this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGname.Name = "txtCGname";
             this.txtCGname.ReadOnly = true;
@@ -420,7 +420,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(434, 248);
+            this.label9.Location = new System.Drawing.Point(426, 248);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
@@ -433,7 +433,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(435, 285);
+            this.label4.Location = new System.Drawing.Point(427, 285);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
