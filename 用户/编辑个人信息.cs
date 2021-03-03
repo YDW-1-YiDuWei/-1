@@ -22,7 +22,25 @@ namespace 点餐系统
         ClientManager client = new ClientManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            int count = client.CompileClientsMessage(UserName.Text,rbnan.Checked==true?"男":"女",UserPhone.Text,UserAdders.Text,User.khID);
+            if (UserName.Text.Trim() == "")//
+            {
+                MessageBox.Show("请输入姓名");
+                UserName.Focus();
+                return;
+            }
+            if (UserPhone.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入电话号码");
+                UserPhone.Focus();
+                return;
+            }
+            if (UserAdders.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入地址");
+                UserAdders.Focus();
+                return;
+            }
+            int count = client.CompileClientsMessage(UserName.Text, rbnan.Checked == true ? "男" : "女", UserPhone.Text, UserAdders.Text, User.khID);
             if (count > 0)
             {
                 MessageBox.Show("信息提交成功");
