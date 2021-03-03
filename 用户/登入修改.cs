@@ -153,7 +153,6 @@ namespace 点餐系统
             登录界面 wd = new 登录界面();
             wd.list = list;
             wd.Show();
-            this.Close();
 
         }
 

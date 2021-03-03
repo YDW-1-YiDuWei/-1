@@ -154,6 +154,18 @@
     <Compile Include="骑手\骑手登入.Designer.cs">
       <DependentUpon>骑手登入.cs</DependentUpon>
     </Compile>
+    <Compile Include="骑手\骑手注册修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="骑手\骑手注册修改.Designer.cs">
+      <DependentUpon>骑手注册修改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="骑手首页.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="骑手首页.Designer.cs">
+      <DependentUpon>骑手首页.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="商家\商家登录.resx">
       <DependentUpon>商家登录.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +225,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="骑手\骑手登入.resx">
       <DependentUpon>骑手登入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="骑手\骑手注册修改.resx">
+      <DependentUpon>骑手注册修改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="骑手首页.resx">
+      <DependentUpon>骑手首页.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
