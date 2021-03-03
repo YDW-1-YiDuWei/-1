@@ -52,7 +52,6 @@
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnsearch = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnquit = new System.Windows.Forms.Button();
             this.btnHandover = new System.Windows.Forms.Button();
@@ -91,6 +90,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSerach = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
@@ -346,7 +346,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.btnsearch);
+            this.panel1.Controls.Add(this.btnSerach);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -366,13 +366,6 @@
             this.panel1.TabIndex = 30;
             this.panel1.Visible = false;
             // 
-            // btnsearch
-            // 
-            this.btnsearch.Location = new System.Drawing.Point(0, 0);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(75, 23);
-            this.btnsearch.TabIndex = 0;
-            // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
@@ -384,38 +377,41 @@
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.pbpath);
             this.panel7.Controls.Add(this.btnUpdate);
-            this.panel7.Location = new System.Drawing.Point(4, 0);
+            this.panel7.Location = new System.Drawing.Point(4, -7);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1324, 662);
+            this.panel7.Size = new System.Drawing.Size(1324, 672);
             this.panel7.TabIndex = 2;
             // 
             // btnquit
             // 
-            this.btnquit.Location = new System.Drawing.Point(0, 0);
+            this.btnquit.Location = new System.Drawing.Point(516, 447);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(75, 23);
             this.btnquit.TabIndex = 0;
+            this.btnquit.Text = "退出登录";
             // 
             // btnHandover
             // 
-            this.btnHandover.Location = new System.Drawing.Point(0, 0);
+            this.btnHandover.Location = new System.Drawing.Point(445, 365);
             this.btnHandover.Name = "btnHandover";
             this.btnHandover.Size = new System.Drawing.Size(75, 23);
             this.btnHandover.TabIndex = 1;
+            this.btnHandover.Text = "切换";
+            this.btnHandover.Click += new System.EventHandler(this.btnHandover_Click);
             // 
             // txtCGnum
             // 
-            this.txtCGnum.Location = new System.Drawing.Point(0, 0);
+            this.txtCGnum.Location = new System.Drawing.Point(525, 256);
             this.txtCGnum.Name = "txtCGnum";
-            this.txtCGnum.Size = new System.Drawing.Size(100, 25);
+            this.txtCGnum.Size = new System.Drawing.Size(144, 25);
             this.txtCGnum.TabIndex = 2;
             // 
             // txtCGname
             // 
-            this.txtCGname.Location = new System.Drawing.Point(0, 0);
+            this.txtCGname.Location = new System.Drawing.Point(525, 210);
             this.txtCGname.Name = "txtCGname";
-            this.txtCGname.Size = new System.Drawing.Size(100, 25);
+            this.txtCGname.Size = new System.Drawing.Size(144, 25);
             this.txtCGname.TabIndex = 3;
             // 
             // label9
@@ -446,16 +442,19 @@
             // 
             this.pbpath.Location = new System.Drawing.Point(487, 44);
             this.pbpath.Name = "pbpath";
-            this.pbpath.Size = new System.Drawing.Size(157, 101);
+            this.pbpath.Size = new System.Drawing.Size(157, 131);
+            this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbpath.TabIndex = 4;
             this.pbpath.TabStop = false;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(0, 0);
+            this.btnUpdate.Location = new System.Drawing.Point(613, 365);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "修改";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel4
             // 
@@ -621,9 +620,9 @@
             this.label8.Location = new System.Drawing.Point(7, 41);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 36);
+            this.label8.Size = new System.Drawing.Size(51, 36);
             this.label8.TabIndex = 2;
-            this.label8.Text = "￥200";
+            this.label8.Text = "￥";
             // 
             // label7
             // 
@@ -817,6 +816,19 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "label2";
             // 
+            // btnSerach
+            // 
+            this.btnSerach.BackColor = System.Drawing.Color.Transparent;
+            this.btnSerach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSerach.ForeColor = System.Drawing.Color.White;
+            this.btnSerach.Location = new System.Drawing.Point(898, 10);
+            this.btnSerach.Name = "btnSerach";
+            this.btnSerach.Size = new System.Drawing.Size(75, 27);
+            this.btnSerach.TabIndex = 28;
+            this.btnSerach.Text = "搜索";
+            this.btnSerach.UseVisualStyleBackColor = false;
+            this.btnSerach.Click += new System.EventHandler(this.btnSerach_Click);
+            // 
             // 商家首页1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -921,9 +933,9 @@
         private System.Windows.Forms.PictureBox pbpath;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtCGname;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSerach;
     }
 }
