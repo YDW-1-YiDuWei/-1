@@ -24,11 +24,47 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (Pbthan.Image==null)
+            if (Pbthan.Image == null)
             {
                 MessageBox.Show("您没有选择图片");
                 return;
             }
+            /*if (RestName.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入名称");
+                RestName.Focus();
+                return;
+            }
+            if (RestUid.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入账号");
+                RestUid.Focus();
+                return;
+            }
+            if (RestPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入密码");
+                RestPwd.Focus();
+                return;
+            }
+            if (RestPwds.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入确认密码");
+                RestPwds.Focus();
+                return;
+            }
+            if (RestPhone.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入商家电话");
+                RestPhone.Focus();
+                return;
+            }
+            if (RestAddress.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入商家地址");
+                RestAddress.Focus();
+                return;
+            }*/
             if (jurisdiction == 0)
             {
                 List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path);
@@ -45,12 +81,14 @@ namespace 点餐系统
             }
             else
             {
-             
+
                 int id = int.Parse(User.restaKhID);
                 List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path, jurisdiction, id);
                 if (list.Count > 0)
                 {
                     User.restaPass = list[0].RestaurantNumberPwd;
+                    string name = User.path;
+
                     MessageBox.Show("修改成功");
                 }
                 else
@@ -66,7 +104,10 @@ namespace 点餐系统
             OpenFileDialog fd = new OpenFileDialog();
             if (fd.ShowDialog() == DialogResult.OK)
             {
-                User.path = fd.SafeFileName;
+                if (fd.SafeFileName != "")
+                {
+                    User.path = fd.SafeFileName;
+                }
                 Pbthan.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
             }
         }

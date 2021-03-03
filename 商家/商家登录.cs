@@ -38,6 +38,7 @@ namespace 点餐系统
                 User.restaUser = list[0].RestaurantNumber;
                 User.restaPass = list[0].RestaurantNumberPwd;
                 User.restaKhID = list[0].id.ToString();
+                User.path = list[0].RestaurantImage;
                 商家首页1 a = new 商家首页1();
                 a.list = list;
                 a.Show();

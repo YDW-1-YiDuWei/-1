@@ -40,9 +40,10 @@ namespace 点餐系统
             //没有登录账号修改控件就关了
             button2.Enabled = false;
             button1.Enabled = true;
+            buttonBjgrxx.Enabled = false;
 
             //判断登录集合是否为空（不为空肯定是已经登录储存了）
-            if (list != null)
+            if (list.Count != 0)
             {
                 foreach (var item in list)
                 {
@@ -53,13 +54,14 @@ namespace 点餐系统
                 {
                     button1.Enabled = false;
                     button2.Enabled = true;
+                    buttonBjgrxx.Enabled = true;
                 }
             }
         }
 
         private void Button3_Click(object sender, EventArgs e)//退出登录
         {
-            if (label1.Text.Length < 4 || label2.Text.Length < 6)
+            if (label1.Text.Length < 4 && label2.Text.Length < 6)
             {
                 MessageBox.Show("您还未登录账号", "登录提示", MessageBoxButtons.OK);
                 return;
@@ -69,6 +71,8 @@ namespace 点餐系统
                 label1.Text = "名称:";
                 label2.Text = "电话号码:";
                 button1.Enabled = true;
+                buttonBjgrxx.Enabled = false;
+                button2.Enabled = false;
                 User.user = "";
                 User.pass = "";
             }
