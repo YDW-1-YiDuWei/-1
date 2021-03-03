@@ -351,7 +351,7 @@
             this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(678, 9);
+            this.button8.Location = new System.Drawing.Point(677, 9);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 29;
@@ -380,7 +380,7 @@
             this.button13.BackColor = System.Drawing.Color.Transparent;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(500, 439);
+            this.button13.Location = new System.Drawing.Point(497, 439);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(120, 21);
             this.button13.TabIndex = 4;
@@ -392,7 +392,7 @@
             this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(456, 316);
+            this.button11.Location = new System.Drawing.Point(453, 316);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 4;
@@ -402,7 +402,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(500, 251);
+            this.textBox2.Location = new System.Drawing.Point(497, 251);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(129, 21);
@@ -412,7 +412,7 @@
             // 
             this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.textBox1.Location = new System.Drawing.Point(500, 206);
+            this.textBox1.Location = new System.Drawing.Point(497, 206);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(129, 21);
@@ -424,7 +424,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(421, 209);
+            this.label9.Location = new System.Drawing.Point(418, 209);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
             this.label9.TabIndex = 1;
@@ -436,7 +436,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(422, 255);
+            this.label4.Location = new System.Drawing.Point(419, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
             this.label4.TabIndex = 1;
@@ -444,7 +444,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(500, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(497, 72);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 106);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -456,7 +456,7 @@
             this.button12.BackColor = System.Drawing.Color.Transparent;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(582, 316);
+            this.button12.Location = new System.Drawing.Point(579, 316);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 4;
