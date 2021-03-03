@@ -63,7 +63,7 @@
             // 
             // button3
             // 
-            this.btnreturn.BackColor = System.Drawing.Color.Transparent;
+            /*this.btnreturn.BackColor = System.Drawing.Color.Transparent;
             this.btnreturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnreturn.Location = new System.Drawing.Point(25, 0);
             this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
@@ -72,7 +72,7 @@
             this.btnreturn.TabIndex = 21;
             this.btnreturn.Text = "返回";
             this.btnreturn.UseVisualStyleBackColor = false;
-            this.btnreturn.Click += new System.EventHandler(this.button3_Click);
+            this.btnreturn.Click += new System.EventHandler(this.button3_Click);*/
             // 
             // pictureBox3
             // 

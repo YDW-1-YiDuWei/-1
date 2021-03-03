@@ -68,12 +68,6 @@
     <Compile Include="商家\商家首页1.Designer.cs">
       <DependentUpon>商家首页1.cs</DependentUpon>
     </Compile>
-    <Compile Include="用户\编辑个人信息.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="用户\编辑个人信息.Designer.cs">
-      <DependentUpon>编辑个人信息.cs</DependentUpon>
-    </Compile>
     <Compile Include="用户\模糊订单.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +136,12 @@
     <Compile Include="用户\首页.Designer.cs">
       <DependentUpon>首页.cs</DependentUpon>
     </Compile>
+    <Compile Include="用户\编辑个人信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户\编辑个人信息.Designer.cs">
+      <DependentUpon>编辑个人信息.cs</DependentUpon>
+    </Compile>
     <Compile Include="骑手\骑手我的.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,10 +160,10 @@
     <Compile Include="骑手\骑手注册修改.Designer.cs">
       <DependentUpon>骑手注册修改.cs</DependentUpon>
     </Compile>
-    <Compile Include="骑手首页.cs">
+    <Compile Include="骑手\骑手首页.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="骑手首页.Designer.cs">
+    <Compile Include="骑手\骑手首页.Designer.cs">
       <DependentUpon>骑手首页.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="商家\商家登录.resx">
@@ -174,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="商家\商家首页1.resx">
       <DependentUpon>商家首页1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="用户\编辑个人信息.resx">
-      <DependentUpon>编辑个人信息.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="用户\模糊订单.resx">
       <DependentUpon>模糊订单.cs</DependentUpon>
@@ -220,6 +217,9 @@
     <EmbeddedResource Include="用户\首页.resx">
       <DependentUpon>首页.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="用户\编辑个人信息.resx">
+      <DependentUpon>编辑个人信息.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="骑手\骑手我的.resx">
       <DependentUpon>骑手我的.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,7 +229,7 @@
     <EmbeddedResource Include="骑手\骑手注册修改.resx">
       <DependentUpon>骑手注册修改.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="骑手首页.resx">
+    <EmbeddedResource Include="骑手\骑手首页.resx">
       <DependentUpon>骑手首页.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

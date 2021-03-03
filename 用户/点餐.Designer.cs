@@ -259,13 +259,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(686, 435);
+           /* this.button4.Location = new System.Drawing.Point(686, 435);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 1;
             this.button4.Text = "关闭";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click_1);
+            this.button4.Click += new System.EventHandler(this.Button4_Click_1);*/
             // 
             // lblJGS
             // 
