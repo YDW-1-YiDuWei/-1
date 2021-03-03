@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 商家首页1 : Form
     {
+        public int a = 0;
         public int i = 1;
         int count = 0;
         public CuisineInformationsManager cIM = new CuisineInformationsManager();
@@ -24,6 +25,11 @@ namespace 点餐系统
         }
         private void toolStripLabel2_Click_1(object sender, EventArgs e)//商家首页
         {
+            if (a == 1)
+            {
+                MessageBox.Show("请您先登录账号","登录提示",MessageBoxButtons.OK);
+                return;
+            }
             i = 1;
             Temp.index = 0;
             btnSerach.Visible = true;
@@ -263,6 +269,8 @@ namespace 点餐系统
 
         private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
+            btnquit.Enabled = true;
+            btnUpdate.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
@@ -348,5 +356,17 @@ namespace 点餐系统
             Inquire();
         }
 
+        private void Btnquit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                a = 1;
+                txtCGname.Text = "";
+                txtCGnum.Text = "";
+                btnquit.Enabled = false;
+                btnUpdate.Enabled = false;
+                pbpath.Image = null;
+            }
+        }
     }
 }
