@@ -114,7 +114,7 @@
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.ForeColor = System.Drawing.Color.White;
             this.btnrefresh.Location = new System.Drawing.Point(1216, 719);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnrefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(100, 29);
             this.btnrefresh.TabIndex = 33;
@@ -137,7 +137,7 @@
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Location = new System.Drawing.Point(5, 105);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(304, 470);
             this.panel3.TabIndex = 27;
@@ -145,7 +145,7 @@
             // pbImage
             // 
             this.pbImage.Location = new System.Drawing.Point(96, 309);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(104, 96);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -157,7 +157,7 @@
             this.btXZ.BackColor = System.Drawing.Color.White;
             this.btXZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btXZ.Location = new System.Drawing.Point(208, 350);
-            this.btXZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btXZ.Margin = new System.Windows.Forms.Padding(4);
             this.btXZ.Name = "btXZ";
             this.btXZ.Size = new System.Drawing.Size(67, 29);
             this.btXZ.TabIndex = 7;
@@ -170,7 +170,7 @@
             this.btQX.BackColor = System.Drawing.Color.White;
             this.btQX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQX.Location = new System.Drawing.Point(175, 428);
-            this.btQX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btQX.Margin = new System.Windows.Forms.Padding(4);
             this.btQX.Name = "btQX";
             this.btQX.Size = new System.Drawing.Size(100, 29);
             this.btQX.TabIndex = 5;
@@ -182,7 +182,7 @@
             this.btQD.BackColor = System.Drawing.Color.White;
             this.btQD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQD.Location = new System.Drawing.Point(15, 428);
-            this.btQD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btQD.Margin = new System.Windows.Forms.Padding(4);
             this.btQD.Name = "btQD";
             this.btQD.Size = new System.Drawing.Size(100, 29);
             this.btQD.TabIndex = 5;
@@ -199,7 +199,7 @@
             "炒菜",
             "主食"});
             this.cbLX.Location = new System.Drawing.Point(108, 262);
-            this.cbLX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLX.Margin = new System.Windows.Forms.Padding(4);
             this.cbLX.Name = "cbLX";
             this.cbLX.Size = new System.Drawing.Size(165, 23);
             this.cbLX.TabIndex = 3;
@@ -207,7 +207,7 @@
             // txtMoney
             // 
             this.txtMoney.Location = new System.Drawing.Point(108, 204);
-            this.txtMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(165, 25);
             this.txtMoney.TabIndex = 2;
@@ -215,7 +215,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(108, 145);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(165, 25);
             this.txtName.TabIndex = 2;
@@ -279,7 +279,7 @@
             // txtCPName
             // 
             this.txtCPName.Location = new System.Drawing.Point(405, 12);
-            this.txtCPName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCPName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCPName.Name = "txtCPName";
             this.txtCPName.Size = new System.Drawing.Size(488, 25);
             this.txtCPName.TabIndex = 24;
@@ -289,7 +289,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.lvCPMessage);
             this.panel2.Location = new System.Drawing.Point(405, 55);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(920, 605);
             this.panel2.TabIndex = 23;
@@ -298,7 +298,7 @@
             // panel5
             // 
             this.panel5.Location = new System.Drawing.Point(5, 5);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(904, 589);
             this.panel5.TabIndex = 22;
@@ -313,7 +313,7 @@
             this.lvCPMessage.HideSelection = false;
             this.lvCPMessage.LargeImageList = this.imageList1;
             this.lvCPMessage.Location = new System.Drawing.Point(4, 0);
-            this.lvCPMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvCPMessage.Margin = new System.Windows.Forms.Padding(4);
             this.lvCPMessage.Name = "lvCPMessage";
             this.lvCPMessage.Size = new System.Drawing.Size(912, 586);
             this.lvCPMessage.SmallImageList = this.imageList1;
@@ -360,7 +360,7 @@
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(-5, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1329, 665);
             this.panel1.TabIndex = 30;
@@ -368,16 +368,10 @@
             // 
             // btnsearch
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(678, 9);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 29;
-            this.button8.Text = "搜索";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            this.btnsearch.Location = new System.Drawing.Point(0, 0);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 0;
             // 
             // panel7
             // 
@@ -391,53 +385,38 @@
             this.panel7.Controls.Add(this.pbpath);
             this.panel7.Controls.Add(this.btnUpdate);
             this.panel7.Location = new System.Drawing.Point(4, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1324, 662);
             this.panel7.TabIndex = 2;
             // 
             // btnquit
             // 
-            this.button13.BackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(510, 439);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(120, 21);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "退出登入";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnquit.Location = new System.Drawing.Point(0, 0);
+            this.btnquit.Name = "btnquit";
+            this.btnquit.Size = new System.Drawing.Size(75, 23);
+            this.btnquit.TabIndex = 0;
             // 
             // btnHandover
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(466, 316);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "切换";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.btnHandover.Location = new System.Drawing.Point(0, 0);
+            this.btnHandover.Name = "btnHandover";
+            this.btnHandover.Size = new System.Drawing.Size(75, 23);
+            this.btnHandover.TabIndex = 1;
             // 
-            // textBox1
+            // txtCGnum
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.textBox1.Location = new System.Drawing.Point(510, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(129, 21);
-            this.textBox1.TabIndex = 2;
+            this.txtCGnum.Location = new System.Drawing.Point(0, 0);
+            this.txtCGnum.Name = "txtCGnum";
+            this.txtCGnum.Size = new System.Drawing.Size(100, 25);
+            this.txtCGnum.TabIndex = 2;
             // 
-            // textBox2
+            // txtCGname
             // 
-            this.textBox2.Location = new System.Drawing.Point(510, 251);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(129, 21);
-            this.textBox2.TabIndex = 2;
+            this.txtCGname.Location = new System.Drawing.Point(0, 0);
+            this.txtCGname.Name = "txtCGname";
+            this.txtCGname.Size = new System.Drawing.Size(100, 25);
+            this.txtCGname.TabIndex = 3;
             // 
             // label9
             // 
@@ -465,31 +444,24 @@
             // 
             // pbpath
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(493, 68);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 106);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pbpath.Location = new System.Drawing.Point(487, 44);
+            this.pbpath.Name = "pbpath";
+            this.pbpath.Size = new System.Drawing.Size(157, 101);
+            this.pbpath.TabIndex = 4;
+            this.pbpath.TabStop = false;
             // 
             // btnUpdate
             // 
-            this.button12.BackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(592, 316);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 4;
-            this.button12.Text = "修改";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.btnUpdate.Location = new System.Drawing.Point(0, 0);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 5;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.lvCP);
             this.panel4.Location = new System.Drawing.Point(5, 105);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(304, 474);
             this.panel4.TabIndex = 9;
@@ -499,7 +471,7 @@
             // 
             this.lvCP.HideSelection = false;
             this.lvCP.Location = new System.Drawing.Point(5, 4);
-            this.lvCP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvCP.Margin = new System.Windows.Forms.Padding(4);
             this.lvCP.Name = "lvCP";
             this.lvCP.Size = new System.Drawing.Size(293, 462);
             this.lvCP.TabIndex = 0;
@@ -514,7 +486,7 @@
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(317, 488);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(84, 74);
             this.button7.TabIndex = 15;
@@ -531,7 +503,7 @@
             this.button6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(313, 369);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(84, 74);
             this.button6.TabIndex = 16;
@@ -548,7 +520,7 @@
             this.button3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(313, 250);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 74);
             this.button3.TabIndex = 17;
@@ -565,7 +537,7 @@
             this.button2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(313, 131);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 74);
             this.button2.TabIndex = 18;
@@ -582,7 +554,7 @@
             this.button5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(313, 12);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(84, 74);
             this.button5.TabIndex = 19;
@@ -600,9 +572,9 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(8, 571);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(393, 89);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -616,7 +588,7 @@
             this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(172, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 74);
             this.button1.TabIndex = 3;
@@ -633,7 +605,7 @@
             this.button4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(309, 11);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 74);
             this.button4.TabIndex = 3;
@@ -697,9 +669,9 @@
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pbSJLJ);
             this.groupBox1.Location = new System.Drawing.Point(9, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(300, 98);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
@@ -743,7 +715,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(191, 32);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(24, 21);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -754,7 +726,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(96, 32);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 21);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -764,7 +736,7 @@
             // pbSJLJ
             // 
             this.pbSJLJ.Location = new System.Drawing.Point(0, 14);
-            this.pbSJLJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbSJLJ.Margin = new System.Windows.Forms.Padding(4);
             this.pbSJLJ.Name = "pbSJLJ";
             this.pbSJLJ.Size = new System.Drawing.Size(85, 80);
             this.pbSJLJ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -825,7 +797,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 705);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1325, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -857,7 +829,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "商家首页1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
