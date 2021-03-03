@@ -62,6 +62,7 @@ namespace DianCanXiTongDAL
         /// <returns>序列化操作</returns>
         public int PrintReservationService()
         {
+            int i = 0;
             DBHelper db = new DBHelper();
 
             string sql = "select r.Id,c.Name, Money, s.CuisineName,c.Phone,c.Address from Reservation r  join Client c on c.Id = r.ClientId join CuisineInformations s on s.Id = r.CuisineInformationId";
@@ -75,7 +76,7 @@ namespace DianCanXiTongDAL
                 string phone = sdr["Phone"].ToString();
                 string address = sdr["Address"].ToString();
 
-                using (FileStream fs = new FileStream(""+name+".txt", FileMode.Create, FileAccess.Write))
+                using (FileStream fs = new FileStream("" + name + ".txt", FileMode.Create, FileAccess.Write))
                 {
                     StreamWriter sw = new StreamWriter(fs);
                     sw.WriteLine("***************************");
@@ -87,9 +88,10 @@ namespace DianCanXiTongDAL
                     sw.WriteLine("  收货人：   " + name);
                     sw.WriteLine("****************************");
                     sw.Close();
-                } 
+                }
+                i++;
             }
-            return 1;
+            return i;
         }//打印订单
         /// <summary>
         /// 详细订单删除，数据层

@@ -68,16 +68,84 @@ namespace DianCanXiTongDAL
                     id = (int)sdr["Id"],
                     RestaurantNumber = sdr["RestaurantNumber"].ToString(),
                     RestaurantNumberPwd = sdr["RestaurantNumberPwd"].ToString(),
-                    RestaurantName=sdr["RestaurantName"].ToString(),
-                    RestaurantAddress=sdr["RestaurantAddress"].ToString(),
-                    RestaurantPhone=sdr["RestaurantPhone"].ToString(),
-                    RestaurantComment=sdr["RestaurantComment"].ToString(),
-                    RestaurantImage=sdr["RestaurantImage"].ToString()
+                    RestaurantName = sdr["RestaurantName"].ToString(),
+                    RestaurantAddress = sdr["RestaurantAddress"].ToString(),
+                    RestaurantPhone = sdr["RestaurantPhone"].ToString(),
+                    RestaurantComment = sdr["RestaurantComment"].ToString(),
+                    RestaurantImage = sdr["RestaurantImage"].ToString()
                 };
                 list.Add(rest);
             }
             coon.Close();
             return list;
         }
+
+        /// <summary>
+        /// 餐馆注册
+        /// </summary>
+        /// <param name="uid">餐馆账号</param>
+        /// <param name="pwd">餐馆密码</param>
+        /// <param name="name">餐馆姓名</param>
+        /// <param name="address">餐馆地址</param>
+        /// <param name="phone">餐馆电话</param>
+        /// <param name="comment">餐馆评论</param>
+        /// <param name="image">餐馆图片路径</param>
+        /// <returns></returns>
+        public List<Restaurant> Register(string uid, string pwd, string name, string address, string phone, string comment, string image= "OIP.jpg", int count = 0,int id=0)
+        {
+            SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
+
+            List<Restaurant> list = new List<Restaurant>();
+
+
+            Restaurant rest = null;
+            string sql="";
+            if (count == 0)
+            {
+                sql += "insert into Restaurant(RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage) values(@RestaurantNumber,@RestaurantNumberPwd,@RestaurantName,@RestaurantAddress,@RestaurantPhone,@RestaurantComment,@RestaurantImage)";
+            }
+            else if(count==1)
+            {
+                sql += "update Restaurant set RestaurantNumber=@RestaurantNumber, RestaurantNumberPwd=@RestaurantNumberPwd, RestaurantName=@RestaurantName, RestaurantAddress=@RestaurantAddress, RestaurantPhone=@RestaurantPhone, RestaurantComment=@RestaurantComment, RestaurantImage=@RestaurantImage where 1=1";
+            }
+            if (id != 0)
+            {
+                sql += " and Id=@Id ";
+            }
+
+            SqlParameter[] sp =
+            {
+                new SqlParameter("@RestaurantNumber", uid),
+                new SqlParameter("@RestaurantNumberPwd", pwd),
+                new SqlParameter("@RestaurantName",name),
+                new SqlParameter("@RestaurantAddress",address),
+                new SqlParameter("@RestaurantPhone",phone),
+                new SqlParameter("@RestaurantComment",comment),
+                new SqlParameter("@RestaurantImage",image),
+                new SqlParameter("@Id",id)
+            };
+            coon.Open();
+            SqlCommand cmd = new SqlCommand(sql, coon);
+            cmd.Parameters.AddRange(sp);
+            int sdr = cmd.ExecuteNonQuery();
+            if (sdr > 0)
+            {
+                rest = new Restaurant
+                {
+
+                    RestaurantNumber = uid,
+                    RestaurantNumberPwd = pwd,
+                    RestaurantName = name,
+                    RestaurantAddress = address,
+                    RestaurantPhone = phone,
+                    RestaurantComment = comment,
+                    RestaurantImage = image
+                };
+                list.Add(rest);
+            }
+            coon.Close();
+            return list;
+        }
+
     }
 }

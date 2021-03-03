@@ -113,6 +113,27 @@ namespace DianCanXiTongDAL
             }
             return list;
         }
+        public int CompileClientsMessage(string name,string sex,string phone,string address,string id)//编辑用户信息1
+        {
+            DBHelper db = new DBHelper();
+
+            string sql = "update Client set  Name=@Name, Sex=@Sex,Phone=@Phone, Address=@Address where Id=@Id";
+
+            SqlParameter[] sp =
+            {
+                new SqlParameter("@Name",name),
+                new SqlParameter("@Sex",sex),
+                new SqlParameter("@Phone",phone),
+                new SqlParameter("@Address",address),
+                new SqlParameter("@Id",id),
+            };
+            int count = db.ExecuteNonQuery(sql, sp);
+            if (count > 0)
+            {
+                return count;
+            }
+            return count;
+        }
 
     }
 }

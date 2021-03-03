@@ -63,22 +63,24 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(19, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 28);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "返回";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnreturn.BackColor = System.Drawing.Color.Transparent;
+            this.btnreturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnreturn.Location = new System.Drawing.Point(25, 0);
+            this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnreturn.Name = "btnreturn";
+            this.btnreturn.Size = new System.Drawing.Size(67, 35);
+            this.btnreturn.TabIndex = 21;
+            this.btnreturn.Text = "返回";
+            this.btnreturn.UseVisualStyleBackColor = false;
+            this.btnreturn.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(66, 28);
+            this.pictureBox3.Size = new System.Drawing.Size(88, 35);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
@@ -129,7 +131,7 @@
             // 
             // 模糊订单
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 517);
             this.Controls.Add(this.label1);

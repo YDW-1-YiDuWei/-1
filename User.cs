@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace 点餐系统
 {
-     static class User
+    public static class User
     {
        /// <summary>
         /// 用户账号密码记录
@@ -31,5 +31,6 @@ namespace 点餐系统
         public static string restaUser = "";
         public static string restaPass = "";
         public static string restaKhID = "";
+        public static string path = "";
     }
 }

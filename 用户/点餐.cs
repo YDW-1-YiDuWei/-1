@@ -70,8 +70,9 @@ namespace 点餐系统
         private void TabControl1_Click(object sender, EventArgs e)
         {
             cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
-            DIanCaiFangFa();
-            Uiop.Items.Clear();
+            DIanCaiFangFa();//判断菜品类型
+            Uiop.Items.Clear();//清除项
+            image.Images.Clear();//清除图片
 
             int j = 0;
             Image asg = null;

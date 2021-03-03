@@ -28,147 +28,231 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(商家登入修改注册));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.RestName = new System.Windows.Forms.TextBox();
+            this.RestUid = new System.Windows.Forms.TextBox();
+            this.RestPwd = new System.Windows.Forms.TextBox();
+            this.RestPwds = new System.Windows.Forms.TextBox();
+            this.RestPhone = new System.Windows.Forms.TextBox();
+            this.RestAddress = new System.Windows.Forms.TextBox();
+            this.Pbpath = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Notarize = new System.Windows.Forms.Button();
+            this.Cancel = new System.Windows.Forms.Button();
+            this.Browse = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbpath)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(764, 295);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "商家名称：";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 370);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(764, 470);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(82, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "商家地址：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 63);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(796, 330);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "账号：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 116);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(796, 365);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 12);
+            this.label4.Size = new System.Drawing.Size(52, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "密码：";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(404, 167);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(764, 400);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.Size = new System.Drawing.Size(82, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "确认密码：";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(117, 319);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(764, 435);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
+            this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 0;
             this.label6.Text = "商家电话：";
             // 
-            // textBox1
+            // RestName
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(356, 21);
-            this.textBox1.TabIndex = 1;
+            this.RestName.Location = new System.Drawing.Point(859, 292);
+            this.RestName.Margin = new System.Windows.Forms.Padding(4);
+            this.RestName.Name = "RestName";
+            this.RestName.Size = new System.Drawing.Size(220, 25);
+            this.RestName.TabIndex = 1;
             // 
-            // textBox2
+            // RestUid
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(356, 21);
-            this.textBox2.TabIndex = 1;
+            this.RestUid.Location = new System.Drawing.Point(859, 328);
+            this.RestUid.Margin = new System.Windows.Forms.Padding(4);
+            this.RestUid.Name = "RestUid";
+            this.RestUid.Size = new System.Drawing.Size(220, 25);
+            this.RestUid.TabIndex = 1;
             // 
-            // textBox3
+            // RestPwd
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(356, 21);
-            this.textBox3.TabIndex = 1;
+            this.RestPwd.Location = new System.Drawing.Point(859, 362);
+            this.RestPwd.Margin = new System.Windows.Forms.Padding(4);
+            this.RestPwd.Name = "RestPwd";
+            this.RestPwd.Size = new System.Drawing.Size(220, 25);
+            this.RestPwd.TabIndex = 1;
             // 
-            // textBox4
+            // RestPwds
             // 
-            this.textBox4.Location = new System.Drawing.Point(68, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(316, 21);
-            this.textBox4.TabIndex = 1;
+            this.RestPwds.Location = new System.Drawing.Point(859, 398);
+            this.RestPwds.Margin = new System.Windows.Forms.Padding(4);
+            this.RestPwds.Name = "RestPwds";
+            this.RestPwds.Size = new System.Drawing.Size(220, 25);
+            this.RestPwds.TabIndex = 1;
             // 
-            // textBox5
+            // RestPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(243, 312);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 21);
-            this.textBox5.TabIndex = 1;
+            this.RestPhone.Location = new System.Drawing.Point(859, 432);
+            this.RestPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.RestPhone.Name = "RestPhone";
+            this.RestPhone.Size = new System.Drawing.Size(220, 25);
+            this.RestPhone.TabIndex = 1;
             // 
-            // textBox6
+            // RestAddress
             // 
-            this.textBox6.Location = new System.Drawing.Point(243, 367);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(155, 21);
-            this.textBox6.TabIndex = 1;
+            this.RestAddress.Location = new System.Drawing.Point(859, 468);
+            this.RestAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.RestAddress.Name = "RestAddress";
+            this.RestAddress.Size = new System.Drawing.Size(220, 25);
+            this.RestAddress.TabIndex = 1;
             // 
-            // pictureBox1
+            // Pbpath
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(475, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 73);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.Pbpath.Location = new System.Drawing.Point(859, 188);
+            this.Pbpath.Margin = new System.Windows.Forms.Padding(4);
+            this.Pbpath.Name = "Pbpath";
+            this.Pbpath.Size = new System.Drawing.Size(121, 91);
+            this.Pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pbpath.TabIndex = 2;
+            this.Pbpath.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(732, 225);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "商家图片路径：";
+            // 
+            // Notarize
+            // 
+            this.Notarize.Location = new System.Drawing.Point(785, 535);
+            this.Notarize.Margin = new System.Windows.Forms.Padding(4);
+            this.Notarize.Name = "Notarize";
+            this.Notarize.Size = new System.Drawing.Size(100, 29);
+            this.Notarize.TabIndex = 3;
+            this.Notarize.Text = "确认";
+            this.Notarize.UseVisualStyleBackColor = true;
+            this.Notarize.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // Cancel
+            // 
+            this.Cancel.Location = new System.Drawing.Point(932, 535);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(100, 29);
+            this.Cancel.TabIndex = 3;
+            this.Cancel.Text = "取消";
+            this.Cancel.UseVisualStyleBackColor = true;
+            // 
+            // Browse
+            // 
+            this.Browse.Location = new System.Drawing.Point(1000, 220);
+            this.Browse.Margin = new System.Windows.Forms.Padding(4);
+            this.Browse.Name = "Browse";
+            this.Browse.Size = new System.Drawing.Size(100, 29);
+            this.Browse.TabIndex = 4;
+            this.Browse.Text = "浏览";
+            this.Browse.UseVisualStyleBackColor = true;
+            this.Browse.Click += new System.EventHandler(this.Button3_Click);
             // 
             // 商家登入修改注册
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 528);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1123, 665);
+            this.Controls.Add(this.Browse);
+            this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.Notarize);
+            this.Controls.Add(this.Pbpath);
+            this.Controls.Add(this.RestAddress);
+            this.Controls.Add(this.RestPhone);
+            this.Controls.Add(this.RestPwds);
+            this.Controls.Add(this.RestPwd);
+            this.Controls.Add(this.RestUid);
+            this.Controls.Add(this.RestName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "商家登入修改注册";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.商家登入修改注册_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Pbpath)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,12 +266,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox RestName;
+        private System.Windows.Forms.TextBox RestUid;
+        private System.Windows.Forms.TextBox RestPwd;
+        private System.Windows.Forms.TextBox RestPwds;
+        private System.Windows.Forms.TextBox RestPhone;
+        private System.Windows.Forms.TextBox RestAddress;
+        private System.Windows.Forms.PictureBox Pbpath;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Notarize;
+        private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Button Browse;
     }
 }
