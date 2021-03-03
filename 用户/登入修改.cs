@@ -54,7 +54,7 @@ namespace 点餐系统
         {
             if (Check())
             {
-              
+
             }
         }
 
@@ -150,20 +150,20 @@ namespace 点餐系统
         private void button3_Click(object sender, EventArgs e)
         {
             List<Client> list = client.Login(User.user, User.pass);
-            登录界面 wd = new 登录界面();
-            wd.list = list;
-            wd.Show();
+            我的 wo = new 我的();
+            wo.list = list;
+            wo.Show();
             this.Close();
 
         }
 
         private void 登入修改_Load(object sender, EventArgs e)//加载事件
         {
-           txtZH.ReadOnly = false;
+            txtZH.ReadOnly = false;
             if (a == 2)
             {
                 txtZH.ReadOnly = true;
-               txtZH.Text = User.user;
+                txtZH.Text = User.user;
                 txtPwd.Text = User.pass;
             }
         }
