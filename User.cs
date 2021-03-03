@@ -8,17 +8,26 @@ namespace 点餐系统
 {
     public static class User
     {
-        /// <summary>
+       /// <summary>
         /// 用户账号密码记录
         /// </summary>
-        public static string user = "";
-        public static string pass = "";
-        public static string khID = "";
+       public static string user = "";
+       public static string pass="";
+       public static string khID = "";
 
 
-        /// <summary>
-        /// 商家账号密码 商家图片路径记录
+       /// <summary>
+        /// 总价格
         /// </summary>
+       public static string TotalPrices = "";
+       /// <summary>
+        /// 餐馆ID
+        /// </summary>
+       public static string RestaurantId = "";
+
+       /// <summary>
+       /// 商家账号密码记录
+       /// </summary>
         public static string restaUser = "";
         public static string restaPass = "";
         public static string restaKhID = "";

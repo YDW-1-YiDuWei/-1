@@ -1,14 +1,10 @@
-﻿using System;
+﻿using DianCanXiTongBLL;
+using DianCanXiTongManager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DianCanXiTongBLL;
-using DianCanXiTongManager;
 
 namespace 点餐系统
 {
@@ -52,8 +48,8 @@ namespace 点餐系统
                 MessageBox.Show("尊敬的用户您没有点餐，请您点菜之后在进行下单");
                 return;
             }
-               
-            
+
+            User.TotalPrices = lblJGS.Text;
             付钱 fq = new 付钱();
             foreach (CuisineInformations item in cC)
             {
@@ -61,19 +57,18 @@ namespace 点餐系统
                 {
                     ClientId = int.Parse(User.khID),
                     Money = int.Parse(item.CuisinePrice),
-                    CuisineInformationId = item.id
+                    CuisineInformationId = item.id,
+                    VegetableQuantity = item.VegetableQuantity
                 };
                 Li.Add(rv);
             }
 
             fq.Li = Li;
             fq.Show();
-            Li = null;
-            //this.Close();
         }
 
         private void TabControl1_Click(object sender, EventArgs e)
-        {      
+        {
             cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
             DIanCaiFangFa();//判断菜品类型
             Uiop.Items.Clear();//清除项
@@ -82,17 +77,17 @@ namespace 点餐系统
             int j = 0;
             Image asg = null;
 
-            foreach (CuisineInformations dr in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName))
+            foreach (CuisineInformations dr in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName, ""))
             {
-                asg= System.Drawing.Image.FromFile(Temp.pathCG + dr.CuisineImagePath);
+                asg = System.Drawing.Image.FromFile(Temp.pathCG + dr.CuisineImagePath);
+                Uiop.Items.Add(dr.id.ToString(), dr.CuisineName, j);//这里是关键!!!!!!!!!倒
+
                 Uiop.Tag = dr;
-                Uiop.Items.Add(dr.CuisineName,j);//这里是关键!!!!!!!!!倒
-                
                 //添加图片到上面去
                 image.Images.Add(asg);
                 j++;
             }
-          
+
 
             Uiop = null;
         }
@@ -115,11 +110,28 @@ namespace 点餐系统
             }
 
             MessageBox.Show("菜品已加入菜篮，谢谢您对本店的支持^.^！");
-            CuisineInformations cuisine = (CuisineInformations)Uiop.Tag;
-            cC.Add(cuisine);
 
-            lblJGS.Text = (int.Parse(cuisine.CuisinePrice) + int.Parse(lblJGS.Text.ToString())).ToString();
+            string abb = Uiop.SelectedItems[0].Name;
+            List<CuisineInformations> cm = cFM.CuisinelnformationsSelectManager(CanGuanBianHao, "", "", abb);
+            CuisineInformations cfo = cm[0];
+
+            lblJGS.Text = (int.Parse(cfo.CuisinePrice) + int.Parse(lblJGS.Text.ToString())).ToString();
+
+            foreach (CuisineInformations item in cC)
+            {
+                if (int.Parse(abb) == item.id)
+                {
+                    item.VegetableQuantity++;
+                    item.CuisinePrice = (int.Parse(item.CuisinePrice)+ int.Parse(cfo.CuisinePrice)).ToString();
+                    cm.Remove(cfo);
+                    return;
+                }
+            }
+
+            cC.Add(cfo);
            
+
+            cm.Remove(cfo);
             Uiop = null;
         }
         /// <summary>
@@ -164,7 +176,7 @@ namespace 点餐系统
             cMSDC.Items[1].Visible = true;
             cMSDC.Items[0].Visible = false;
 
-            if (cC.Count==0)
+            if (cC.Count == 0)
             {
                 dGVYDCP.Visible = false;
                 label3.Visible = false;
@@ -184,25 +196,46 @@ namespace 点餐系统
 
         private void TSMDelete_Click(object sender, EventArgs e)
         {
-            BindingList <CuisineInformations> a= (BindingList<CuisineInformations>)dGVYDCP.Tag;
+            BindingList<CuisineInformations> a = (BindingList<CuisineInformations>)dGVYDCP.Tag;
             foreach (CuisineInformations item in a)
             {
-                if (item.id== int.Parse(dGVYDCP.SelectedRows[0].Cells[1].Value.ToString()))
+                if (item.id == int.Parse(dGVYDCP.SelectedRows[0].Cells[1].Value.ToString()))
                 {
-                    if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes) {
+                    if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        int add = int.Parse(dGVYDCP.SelectedRows[0].Cells[3].Value.ToString());
+                        int shdna = int.Parse(dGVYDCP.SelectedRows[0].Cells[2].Value.ToString()) / add;
+                        if (add >1)
+                        { 
+                            dGVYDCP.SelectedRows[0].Cells[3].Value = add - 1;
+
+                            dGVYDCP.SelectedRows[0].Cells[2].Value = shdna * int.Parse(dGVYDCP.SelectedRows[0].Cells[3].Value.ToString());
+                            FangFa(int.Parse(lblJGS.Text), shdna);
+
+                            Button1_Click("",null);
+                            return;
+                        }
+                        FangFa(int.Parse(lblJGS.Text), shdna);
                         cC.Remove(item);
-                       // Li.Remove(item);
+
                         Button1_Click("", null);
                         break;
-                    } else if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information)==DialogResult.No)
+                    }
+                    else if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.No)
                     {
                         break;
                     }
                 }
             }
-            
         }
 
+        /// <summary>
+        /// 订单计算
+        /// </summary>
+        public void FangFa(int yuanJia,int jianJian)
+        {
+            lblJGS.Text = (yuanJia - jianJian).ToString();
+        }
         private void Button4_Click_1(object sender, EventArgs e)
         {
             cMSDC.Items[1].Visible = false;

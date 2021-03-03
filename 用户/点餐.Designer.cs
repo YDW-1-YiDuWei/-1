@@ -128,6 +128,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.lblJGS);
+            this.panel1.Controls.Add(this.peCPQD);
             this.panel1.Controls.Add(this.bTSS);
             this.panel1.Controls.Add(this.lkbWEI);
             this.panel1.Controls.Add(this.lkbTop);
@@ -174,12 +175,10 @@
             this.Column2,
             this.Column3});
             this.dGVYDCP.ContextMenuStrip = this.cMSDC;
-            this.dGVYDCP.Location = new System.Drawing.Point(20, 60);
-            this.dGVYDCP.Margin = new System.Windows.Forms.Padding(4);
+            this.dGVYDCP.Location = new System.Drawing.Point(15, 48);
             this.dGVYDCP.Name = "dGVYDCP";
             this.dGVYDCP.ReadOnly = true;
             this.dGVYDCP.RowHeadersVisible = false;
-            this.dGVYDCP.RowHeadersWidth = 51;
             this.dGVYDCP.RowTemplate.Height = 23;
             this.dGVYDCP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGVYDCP.Size = new System.Drawing.Size(746, 378);
@@ -189,7 +188,6 @@
             // 
             this.Column1.DataPropertyName = "CuisineName";
             this.Column1.HeaderText = "菜品名称";
-            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
@@ -197,7 +195,6 @@
             // 
             this.Column4.DataPropertyName = "id";
             this.Column4.HeaderText = "iD";
-            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             this.Column4.Visible = false;
@@ -206,21 +203,19 @@
             // 
             this.Column2.DataPropertyName = "CuisinePrice";
             this.Column2.HeaderText = "菜品价格";
-            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "VegetableQuantity";
             this.Column3.HeaderText = "菜品数量";
-            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.ToolTipText = "1";
             // 
             // cMSDC
             // 
-            this.cMSDC.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cMSDC.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.加入菜篮ToolStripMenuItem,
             this.tSMDelete});
@@ -262,16 +257,15 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "已点菜单清单,可以根据右击删除";
             // 
-            // btnclose
+            // button4
             // 
-            this.btnclose.Location = new System.Drawing.Point(915, 544);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(100, 29);
-            this.btnclose.TabIndex = 1;
-            this.btnclose.Text = "关闭";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.Button4_Click_1);
+            this.button4.Location = new System.Drawing.Point(686, 435);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "关闭";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click_1);
             // 
             // lblJGS
             // 
@@ -969,7 +963,7 @@
             this.MinimizeBox = false;
             this.Name = "点餐";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "点餐";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.点餐_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
