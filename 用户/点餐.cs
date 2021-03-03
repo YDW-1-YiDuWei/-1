@@ -76,8 +76,8 @@ namespace 点餐系统
         {      
             cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
             DIanCaiFangFa();
-            Uiop.Items.Clear();
-            image.Images.Clear();
+            Uiop.Items.Clear();//清除项
+            image.Images.Clear();//清除图片
 
 
             int j = 0;
