@@ -379,7 +379,7 @@
             // 
             // btnquit
             // 
-            this.btnquit.Location = new System.Drawing.Point(527, 385);
+            this.btnquit.Location = new System.Drawing.Point(531, 385);
             this.btnquit.Margin = new System.Windows.Forms.Padding(2);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(56, 25);
