@@ -379,7 +379,7 @@
             // 
             // btnquit
             // 
-            this.btnquit.Location = new System.Drawing.Point(516, 389);
+            this.btnquit.Location = new System.Drawing.Point(527, 385);
             this.btnquit.Margin = new System.Windows.Forms.Padding(2);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(56, 25);
@@ -389,7 +389,7 @@
             // 
             // btnHandover
             // 
-            this.btnHandover.Location = new System.Drawing.Point(463, 323);
+            this.btnHandover.Location = new System.Drawing.Point(468, 319);
             this.btnHandover.Margin = new System.Windows.Forms.Padding(2);
             this.btnHandover.Name = "btnHandover";
             this.btnHandover.Size = new System.Drawing.Size(56, 29);
@@ -399,7 +399,7 @@
             // 
             // txtCGnum
             // 
-            this.txtCGnum.Location = new System.Drawing.Point(526, 236);
+            this.txtCGnum.Location = new System.Drawing.Point(503, 238);
             this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGnum.Name = "txtCGnum";
             this.txtCGnum.ReadOnly = true;
@@ -408,7 +408,7 @@
             // 
             // txtCGname
             // 
-            this.txtCGname.Location = new System.Drawing.Point(526, 199);
+            this.txtCGname.Location = new System.Drawing.Point(503, 201);
             this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGname.Name = "txtCGname";
             this.txtCGname.ReadOnly = true;
@@ -421,7 +421,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(452, 198);
+            this.label9.Location = new System.Drawing.Point(429, 200);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
@@ -434,7 +434,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(453, 235);
+            this.label4.Location = new System.Drawing.Point(430, 237);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
@@ -443,7 +443,7 @@
             // 
             // pbpath
             // 
-            this.pbpath.Location = new System.Drawing.Point(494, 66);
+            this.pbpath.Location = new System.Drawing.Point(503, 66);
             this.pbpath.Margin = new System.Windows.Forms.Padding(2);
             this.pbpath.Name = "pbpath";
             this.pbpath.Size = new System.Drawing.Size(118, 105);
@@ -453,7 +453,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(589, 323);
+            this.btnUpdate.Location = new System.Drawing.Point(594, 319);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(56, 29);
