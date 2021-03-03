@@ -79,7 +79,7 @@
             this.btnquit.Margin = new System.Windows.Forms.Padding(4);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(100, 29);
-            this.btnquit.TabIndex = 0;
+            this.btnquit.TabIndex = 3;
             this.btnquit.Text = "退出";
             this.btnquit.Click += new System.EventHandler(this.btnquit_Click);
             // 
@@ -89,7 +89,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(100, 29);
-            this.btnLogin.TabIndex = 1;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "登录";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -99,7 +99,7 @@
             this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(180, 24);
-            this.txtPwd.TabIndex = 2;
+            this.txtPwd.TabIndex = 1;
             // 
             // txtNum
             // 
@@ -107,7 +107,7 @@
             this.txtNum.Margin = new System.Windows.Forms.Padding(4);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(180, 24);
-            this.txtNum.TabIndex = 3;
+            this.txtNum.TabIndex = 0;
             // 
             // label2
             // 
@@ -139,7 +139,7 @@
             this.lblZC.Location = new System.Drawing.Point(186, 253);
             this.lblZC.Name = "lblZC";
             this.lblZC.Size = new System.Drawing.Size(49, 20);
-            this.lblZC.TabIndex = 3;
+            this.lblZC.TabIndex = 4;
             this.lblZC.Text = "注册";
             this.lblZC.Click += new System.EventHandler(this.lblZC_Click);
             // 
