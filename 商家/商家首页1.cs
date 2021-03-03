@@ -304,7 +304,6 @@ namespace 点餐系统
             Inquire();
         }
 
-
         private void timer1_Tick(object sender, EventArgs e)//计时器
         {
             if (i == 1)
