@@ -353,7 +353,7 @@
             this.btnSerach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSerach.ForeColor = System.Drawing.Color.White;
             this.btnSerach.Location = new System.Drawing.Point(674, 8);
-            this.btnSerach.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSerach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSerach.Name = "btnSerach";
             this.btnSerach.Size = new System.Drawing.Size(56, 22);
             this.btnSerach.TabIndex = 28;
@@ -379,17 +379,18 @@
             // 
             // btnquit
             // 
-            this.btnquit.Location = new System.Drawing.Point(525, 439);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnquit.Location = new System.Drawing.Point(387, 358);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(56, 18);
             this.btnquit.TabIndex = 0;
             this.btnquit.Text = "退出登录";
+            this.btnquit.Click += new System.EventHandler(this.Btnquit_Click);
             // 
             // btnHandover
             // 
-            this.btnHandover.Location = new System.Drawing.Point(472, 373);
-            this.btnHandover.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHandover.Location = new System.Drawing.Point(334, 292);
+            this.btnHandover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHandover.Name = "btnHandover";
             this.btnHandover.Size = new System.Drawing.Size(56, 18);
             this.btnHandover.TabIndex = 1;
@@ -398,20 +399,20 @@
             // 
             // txtCGnum
             // 
-            this.txtCGnum.Location = new System.Drawing.Point(505, 283);
+            this.txtCGnum.Location = new System.Drawing.Point(397, 205);
             this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGnum.Name = "txtCGnum";
             this.txtCGnum.ReadOnly = true;
-            this.txtCGnum.Size = new System.Drawing.Size(118, 21);
+            this.txtCGnum.Size = new System.Drawing.Size(109, 21);
             this.txtCGnum.TabIndex = 2;
             // 
             // txtCGname
             // 
-            this.txtCGname.Location = new System.Drawing.Point(505, 246);
-            this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCGname.Location = new System.Drawing.Point(394, 168);
+            this.txtCGname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCGname.Name = "txtCGname";
             this.txtCGname.ReadOnly = true;
-            this.txtCGname.Size = new System.Drawing.Size(118, 21);
+            this.txtCGname.Size = new System.Drawing.Size(109, 21);
             this.txtCGname.TabIndex = 3;
             // 
             // label9
@@ -420,7 +421,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(426, 248);
+            this.label9.Location = new System.Drawing.Point(323, 167);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
@@ -433,7 +434,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(427, 285);
+            this.label4.Location = new System.Drawing.Point(324, 204);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
@@ -442,8 +443,8 @@
             // 
             // pbpath
             // 
-            this.pbpath.Location = new System.Drawing.Point(505, 117);
-            this.pbpath.Margin = new System.Windows.Forms.Padding(2);
+            this.pbpath.Location = new System.Drawing.Point(365, 35);
+            this.pbpath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbpath.Name = "pbpath";
             this.pbpath.Size = new System.Drawing.Size(118, 105);
             this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -452,8 +453,8 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(598, 373);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(460, 292);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(56, 18);
             this.btnUpdate.TabIndex = 5;
@@ -800,7 +801,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(992, 607);
+            this.ClientSize = new System.Drawing.Size(992, 599);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btnrefresh);

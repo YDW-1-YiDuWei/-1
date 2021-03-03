@@ -171,7 +171,7 @@
             // 
             // Pbpath
             // 
-            this.Pbpath.Location = new System.Drawing.Point(859, 189);
+            this.Pbpath.Location = new System.Drawing.Point(859, 188);
             this.Pbpath.Margin = new System.Windows.Forms.Padding(4);
             this.Pbpath.Name = "Pbpath";
             this.Pbpath.Size = new System.Drawing.Size(121, 91);

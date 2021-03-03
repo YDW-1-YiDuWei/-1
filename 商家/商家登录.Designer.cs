@@ -64,10 +64,10 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(126, 140);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.groupBox1.Location = new System.Drawing.Point(22, 58);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox1.Size = new System.Drawing.Size(354, 208);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -75,36 +75,39 @@
             // 
             // btnquit
             // 
+            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquit.ForeColor = System.Drawing.Color.Black;
             this.btnquit.Location = new System.Drawing.Point(202, 164);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(100, 29);
-            this.btnquit.TabIndex = 0;
+            this.btnquit.TabIndex = 3;
             this.btnquit.Text = "退出";
             this.btnquit.Click += new System.EventHandler(this.btnquit_Click);
             // 
             // btnLogin
             // 
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(65, 164);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(100, 29);
-            this.btnLogin.TabIndex = 1;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "登录";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(122, 110);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(180, 21);
-            this.txtPwd.TabIndex = 2;
+            this.txtPwd.TabIndex = 1;
             // 
             // txtNum
             // 
             this.txtNum.Location = new System.Drawing.Point(122, 47);
-            this.txtNum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(180, 21);
             this.txtNum.TabIndex = 3;
@@ -134,7 +137,7 @@
             this.lblZC.AutoSize = true;
             this.lblZC.BackColor = System.Drawing.Color.Transparent;
             this.lblZC.Font = new System.Drawing.Font("宋体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblZC.Location = new System.Drawing.Point(274, 353);
+            this.lblZC.Location = new System.Drawing.Point(185, 270);
             this.lblZC.Name = "lblZC";
             this.lblZC.Size = new System.Drawing.Size(42, 17);
             this.lblZC.TabIndex = 3;
@@ -146,11 +149,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(935, 480);
+            this.ClientSize = new System.Drawing.Size(932, 458);
             this.Controls.Add(this.lblZC);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.Name = "商家登录";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -167,12 +170,12 @@
 
         private System.Windows.Forms.Label lblregister;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnquit;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblZC;
+        internal System.Windows.Forms.Button btnquit;
     }
 }
