@@ -347,5 +347,6 @@ namespace 点餐系统
             i = 1;
             Inquire();
         }
+
     }
 }
