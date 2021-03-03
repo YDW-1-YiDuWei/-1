@@ -79,6 +79,7 @@ namespace 点餐系统
             Uiop.Items.Clear();
             image.Images.Clear();
 
+
             int j = 0;
             Image asg = null;
 
