@@ -353,7 +353,7 @@
             this.btnSerach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSerach.ForeColor = System.Drawing.Color.White;
             this.btnSerach.Location = new System.Drawing.Point(674, 8);
-            this.btnSerach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSerach.Margin = new System.Windows.Forms.Padding(2);
             this.btnSerach.Name = "btnSerach";
             this.btnSerach.Size = new System.Drawing.Size(56, 22);
             this.btnSerach.TabIndex = 28;
@@ -380,7 +380,7 @@
             // btnquit
             // 
             this.btnquit.Location = new System.Drawing.Point(387, 358);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(2);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(56, 18);
             this.btnquit.TabIndex = 0;
@@ -389,7 +389,7 @@
             // btnHandover
             // 
             this.btnHandover.Location = new System.Drawing.Point(334, 292);
-            this.btnHandover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHandover.Margin = new System.Windows.Forms.Padding(2);
             this.btnHandover.Name = "btnHandover";
             this.btnHandover.Size = new System.Drawing.Size(56, 18);
             this.btnHandover.TabIndex = 1;
@@ -399,7 +399,7 @@
             // txtCGnum
             // 
             this.txtCGnum.Location = new System.Drawing.Point(394, 205);
-            this.txtCGnum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGnum.Name = "txtCGnum";
             this.txtCGnum.Size = new System.Drawing.Size(109, 21);
             this.txtCGnum.TabIndex = 2;
@@ -407,7 +407,7 @@
             // txtCGname
             // 
             this.txtCGname.Location = new System.Drawing.Point(0, 0);
-            this.txtCGname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGname.Name = "txtCGname";
             this.txtCGname.Size = new System.Drawing.Size(76, 21);
             this.txtCGname.TabIndex = 3;
@@ -441,7 +441,7 @@
             // pbpath
             // 
             this.pbpath.Location = new System.Drawing.Point(0, 0);
-            this.pbpath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbpath.Margin = new System.Windows.Forms.Padding(2);
             this.pbpath.Name = "pbpath";
             this.pbpath.Size = new System.Drawing.Size(75, 40);
             this.pbpath.TabIndex = 4;
@@ -450,7 +450,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(460, 292);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(56, 18);
             this.btnUpdate.TabIndex = 5;
