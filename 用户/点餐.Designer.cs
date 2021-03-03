@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(点餐));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblJGS = new System.Windows.Forms.Label();
             this.peCPQD = new System.Windows.Forms.Panel();
             this.dGVYDCP = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
+            this.lblJGS = new System.Windows.Forms.Label();
             this.bTSS = new System.Windows.Forms.Button();
             this.lkbWEI = new System.Windows.Forms.LinkLabel();
             this.lkbTop = new System.Windows.Forms.LinkLabel();
@@ -127,7 +127,6 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.peCPQD);
             this.panel1.Controls.Add(this.lblJGS);
             this.panel1.Controls.Add(this.bTSS);
             this.panel1.Controls.Add(this.lkbWEI);
@@ -150,31 +149,16 @@
             this.panel1.Size = new System.Drawing.Size(771, 467);
             this.panel1.TabIndex = 8;
             // 
-            // lblJGS
-            // 
-            this.lblJGS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblJGS.AutoSize = true;
-            this.lblJGS.BackColor = System.Drawing.Color.Transparent;
-            this.lblJGS.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblJGS.ForeColor = System.Drawing.Color.Black;
-            this.lblJGS.Location = new System.Drawing.Point(653, 25);
-            this.lblJGS.Name = "lblJGS";
-            this.lblJGS.Size = new System.Drawing.Size(19, 20);
-            this.lblJGS.TabIndex = 26;
-            this.lblJGS.Text = "0";
-            // 
             // peCPQD
             // 
             this.peCPQD.Controls.Add(this.dGVYDCP);
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
             this.peCPQD.Controls.Add(this.btnclose);
-            this.peCPQD.Location = new System.Drawing.Point(0, 2);
+            this.peCPQD.Location = new System.Drawing.Point(5, 4);
             this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
             this.peCPQD.Name = "peCPQD";
-            this.peCPQD.Size = new System.Drawing.Size(771, 467);
+            this.peCPQD.Size = new System.Drawing.Size(421, 218);
             this.peCPQD.TabIndex = 28;
             this.peCPQD.Visible = false;
             // 
@@ -288,6 +272,21 @@
             this.btnclose.Text = "关闭";
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.Button4_Click_1);
+            // 
+            // lblJGS
+            // 
+            this.lblJGS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblJGS.AutoSize = true;
+            this.lblJGS.BackColor = System.Drawing.Color.Transparent;
+            this.lblJGS.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblJGS.ForeColor = System.Drawing.Color.Black;
+            this.lblJGS.Location = new System.Drawing.Point(653, 25);
+            this.lblJGS.Name = "lblJGS";
+            this.lblJGS.Size = new System.Drawing.Size(19, 20);
+            this.lblJGS.TabIndex = 26;
+            this.lblJGS.Text = "0";
             // 
             // bTSS
             // 
@@ -487,6 +486,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.peCPQD);
             this.tabPage1.Controls.Add(this.lvwQB);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
