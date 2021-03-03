@@ -398,7 +398,7 @@
             // 
             // txtCGnum
             // 
-            this.txtCGnum.Location = new System.Drawing.Point(394, 205);
+            this.txtCGnum.Location = new System.Drawing.Point(397, 205);
             this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGnum.Name = "txtCGnum";
             this.txtCGnum.Size = new System.Drawing.Size(109, 21);
