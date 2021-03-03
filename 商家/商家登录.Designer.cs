@@ -64,7 +64,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(168, 175);
+            this.groupBox1.Location = new System.Drawing.Point(30, 72);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -78,7 +78,7 @@
             this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnquit.ForeColor = System.Drawing.Color.Transparent;
             this.btnquit.Location = new System.Drawing.Point(269, 205);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(5);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(133, 36);
             this.btnquit.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(87, 205);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(133, 36);
             this.btnLogin.TabIndex = 2;
@@ -99,16 +99,15 @@
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(163, 138);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(5);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(239, 24);
             this.txtPwd.TabIndex = 1;
-            //this.txtPwd.TextChanged += new System.EventHandler(this.txtPwd_TextChanged);
             // 
             // txtNum
             // 
             this.txtNum.Location = new System.Drawing.Point(163, 59);
-            this.txtNum.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNum.Margin = new System.Windows.Forms.Padding(5);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(239, 24);
             this.txtNum.TabIndex = 3;
@@ -140,7 +139,7 @@
             this.lblZC.AutoSize = true;
             this.lblZC.BackColor = System.Drawing.Color.Transparent;
             this.lblZC.Font = new System.Drawing.Font("宋体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblZC.Location = new System.Drawing.Point(380, 441);
+            this.lblZC.Location = new System.Drawing.Point(247, 338);
             this.lblZC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblZC.Name = "lblZC";
             this.lblZC.Size = new System.Drawing.Size(49, 20);
@@ -153,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1247, 600);
+            this.ClientSize = new System.Drawing.Size(1242, 572);
             this.Controls.Add(this.lblZC);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
