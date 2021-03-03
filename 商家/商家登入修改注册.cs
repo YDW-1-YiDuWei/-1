@@ -24,7 +24,7 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (Pbthan.Image==null)
+            if (Pbthan.Image == null)
             {
                 MessageBox.Show("您没有选择图片");
                 return;
@@ -45,12 +45,14 @@ namespace 点餐系统
             }
             else
             {
-             
+
                 int id = int.Parse(User.restaKhID);
                 List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path, jurisdiction, id);
                 if (list.Count > 0)
                 {
                     User.restaPass = list[0].RestaurantNumberPwd;
+                    string name = User.path;
+
                     MessageBox.Show("修改成功");
                 }
                 else
@@ -66,7 +68,10 @@ namespace 点餐系统
             OpenFileDialog fd = new OpenFileDialog();
             if (fd.ShowDialog() == DialogResult.OK)
             {
-                User.path = fd.SafeFileName;
+                if (fd.SafeFileName != "")
+                {
+                    User.path = fd.SafeFileName;
+                }
                 Pbthan.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
             }
         }
