@@ -51,7 +51,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(675, 579);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -61,27 +61,26 @@
             // txtPwd2
             // 
             this.txtPwd2.Location = new System.Drawing.Point(268, 269);
-            this.txtPwd2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPwd2.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd2.Name = "txtPwd2";
             this.txtPwd2.Size = new System.Drawing.Size(231, 25);
-            this.txtPwd2.TabIndex = 21;
+            this.txtPwd2.TabIndex = 2;
             // 
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(268, 231);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(231, 25);
-            this.txtPwd.TabIndex = 22;
+            this.txtPwd.TabIndex = 1;
             // 
             // txtZH
             // 
             this.txtZH.Location = new System.Drawing.Point(268, 190);
-            this.txtZH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtZH.Margin = new System.Windows.Forms.Padding(4);
             this.txtZH.Name = "txtZH";
-            this.txtZH.ReadOnly = true;
             this.txtZH.Size = new System.Drawing.Size(231, 25);
-            this.txtZH.TabIndex = 23;
+            this.txtZH.TabIndex = 0;
             // 
             // label3
             // 
@@ -124,11 +123,11 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(385, 360);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(384, 359);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 29);
-            this.button2.TabIndex = 16;
+            this.button2.TabIndex = 4;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -139,10 +138,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(208, 360);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 3;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click_1);
@@ -153,10 +152,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(31, 1);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 42);
-            this.button3.TabIndex = 25;
+            this.button3.TabIndex = 5;
             this.button3.Text = "返回";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -165,7 +164,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(9, 5);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(88, 35);
             this.pictureBox2.TabIndex = 24;
@@ -188,7 +187,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "登入修改";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

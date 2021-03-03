@@ -29,6 +29,42 @@ namespace 点餐系统
                 MessageBox.Show("您没有选择图片");
                 return;
             }
+            /*if (RestName.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入名称");
+                RestName.Focus();
+                return;
+            }
+            if (RestUid.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入账号");
+                RestUid.Focus();
+                return;
+            }
+            if (RestPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入密码");
+                RestPwd.Focus();
+                return;
+            }
+            if (RestPwds.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入确认密码");
+                RestPwds.Focus();
+                return;
+            }
+            if (RestPhone.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入商家电话");
+                RestPhone.Focus();
+                return;
+            }
+            if (RestAddress.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入商家地址");
+                RestAddress.Focus();
+                return;
+            }*/
             if (jurisdiction == 0)
             {
                 List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path);
