@@ -110,7 +110,7 @@
             this.txtNum.Margin = new System.Windows.Forms.Padding(5);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(239, 24);
-            this.txtNum.TabIndex = 3;
+            this.txtNum.TabIndex = 0;
             // 
             // label2
             // 

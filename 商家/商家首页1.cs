@@ -348,5 +348,9 @@ namespace 点餐系统
             Inquire();
         }
 
+        private void btnquit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
