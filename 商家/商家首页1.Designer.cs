@@ -401,6 +401,7 @@
             this.txtCGnum.Location = new System.Drawing.Point(505, 286);
             this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGnum.Name = "txtCGnum";
+            this.txtCGnum.ReadOnly = true;
             this.txtCGnum.Size = new System.Drawing.Size(118, 21);
             this.txtCGnum.TabIndex = 2;
             // 
@@ -409,6 +410,7 @@
             this.txtCGname.Location = new System.Drawing.Point(505, 249);
             this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
             this.txtCGname.Name = "txtCGname";
+            this.txtCGname.ReadOnly = true;
             this.txtCGname.Size = new System.Drawing.Size(118, 21);
             this.txtCGname.TabIndex = 3;
             // 
