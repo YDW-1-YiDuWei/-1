@@ -98,7 +98,7 @@
             this.txtPwd.Location = new System.Drawing.Point(122, 110);
             this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Size = new System.Drawing.Size(180, 24);
+            this.txtPwd.Size = new System.Drawing.Size(180, 21);
             this.txtPwd.TabIndex = 2;
             // 
             // txtNum
@@ -106,14 +106,14 @@
             this.txtNum.Location = new System.Drawing.Point(122, 47);
             this.txtNum.Margin = new System.Windows.Forms.Padding(4);
             this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(180, 24);
+            this.txtNum.Size = new System.Drawing.Size(180, 21);
             this.txtNum.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("仿宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(39, 89);
+            this.label2.Location = new System.Drawing.Point(66, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 14);
             this.label2.TabIndex = 1;
@@ -123,7 +123,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("仿宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(37, 38);
+            this.label1.Location = new System.Drawing.Point(62, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 14);
             this.label1.TabIndex = 0;
@@ -136,7 +136,7 @@
             this.lblZC.Font = new System.Drawing.Font("宋体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblZC.Location = new System.Drawing.Point(186, 253);
             this.lblZC.Name = "lblZC";
-            this.lblZC.Size = new System.Drawing.Size(49, 20);
+            this.lblZC.Size = new System.Drawing.Size(42, 17);
             this.lblZC.TabIndex = 3;
             this.lblZC.Text = "注册";
             this.lblZC.Click += new System.EventHandler(this.lblZC_Click);
