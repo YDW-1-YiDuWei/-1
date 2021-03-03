@@ -128,6 +128,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.lblJGS);
+            this.panel1.Controls.Add(this.peCPQD);
             this.panel1.Controls.Add(this.bTSS);
             this.panel1.Controls.Add(this.lkbWEI);
             this.panel1.Controls.Add(this.lkbTop);
@@ -157,8 +158,8 @@
             this.lblJGS.AutoSize = true;
             this.lblJGS.BackColor = System.Drawing.Color.Transparent;
             this.lblJGS.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblJGS.ForeColor = System.Drawing.Color.White;
-            this.lblJGS.Location = new System.Drawing.Point(589, 20);
+            this.lblJGS.ForeColor = System.Drawing.Color.Black;
+            this.lblJGS.Location = new System.Drawing.Point(653, 25);
             this.lblJGS.Name = "lblJGS";
             this.lblJGS.Size = new System.Drawing.Size(19, 20);
             this.lblJGS.TabIndex = 26;
@@ -170,7 +171,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bTSS.BackColor = System.Drawing.Color.White;
-            this.bTSS.Location = new System.Drawing.Point(593, 24);
+            this.bTSS.Location = new System.Drawing.Point(506, 25);
             this.bTSS.Margin = new System.Windows.Forms.Padding(4);
             this.bTSS.Name = "bTSS";
             this.bTSS.Size = new System.Drawing.Size(75, 23);
@@ -316,8 +317,8 @@
             this.lblJG.AutoSize = true;
             this.lblJG.BackColor = System.Drawing.Color.Transparent;
             this.lblJG.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblJG.ForeColor = System.Drawing.Color.White;
-            this.lblJG.Location = new System.Drawing.Point(535, 22);
+            this.lblJG.ForeColor = System.Drawing.Color.Black;
+            this.lblJG.Location = new System.Drawing.Point(599, 27);
             this.lblJG.Name = "lblJG";
             this.lblJG.Size = new System.Drawing.Size(56, 16);
             this.lblJG.TabIndex = 17;
@@ -363,7 +364,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.lvwQB);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(757, 359);
@@ -441,7 +442,7 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.lVlC);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(757, 359);
@@ -489,7 +490,7 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.lVRC);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(757, 359);
@@ -537,7 +538,7 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.lVRL);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(757, 359);
@@ -585,7 +586,7 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.lVHX);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(757, 359);
@@ -633,7 +634,7 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.lVZS);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(757, 359);
@@ -681,7 +682,7 @@
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.lVT);
-            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(757, 359);
@@ -729,7 +730,7 @@
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.lVJS);
-            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(757, 359);
@@ -777,7 +778,7 @@
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.lVTD);
-            this.tabPage10.Location = new System.Drawing.Point(4, 25);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(757, 359);
@@ -827,7 +828,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(166, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 17);
@@ -849,8 +850,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(84, 24);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(141, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 12);
             this.label1.TabIndex = 12;
@@ -862,7 +863,7 @@
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
             this.peCPQD.Controls.Add(this.btnclose);
-            this.peCPQD.Location = new System.Drawing.Point(1, 0);
+            this.peCPQD.Location = new System.Drawing.Point(0, 0);
             this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
             this.peCPQD.Name = "peCPQD";
             this.peCPQD.Size = new System.Drawing.Size(771, 467);
@@ -961,7 +962,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 467);
-            this.Controls.Add(this.peCPQD);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
