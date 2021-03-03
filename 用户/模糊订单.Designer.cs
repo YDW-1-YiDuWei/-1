@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(模糊订单));
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnreturn = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,18 +54,18 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // button3
+            // btnreturn
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(25, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 35);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "返回";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnreturn.BackColor = System.Drawing.Color.Transparent;
+            this.btnreturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnreturn.Location = new System.Drawing.Point(25, 0);
+            this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnreturn.Name = "btnreturn";
+            this.btnreturn.Size = new System.Drawing.Size(67, 35);
+            this.btnreturn.TabIndex = 21;
+            this.btnreturn.Text = "返回";
+            this.btnreturn.UseVisualStyleBackColor = false;
+            this.btnreturn.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox3
             // 
@@ -151,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 646);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnreturn);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listView1);
@@ -172,7 +172,7 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnreturn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
