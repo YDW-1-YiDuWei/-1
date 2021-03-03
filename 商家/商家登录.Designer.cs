@@ -134,6 +134,7 @@
             // lblZC
             // 
             this.lblZC.AutoSize = true;
+            this.lblZC.BackColor = System.Drawing.Color.Transparent;
             this.lblZC.Font = new System.Drawing.Font("宋体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblZC.Location = new System.Drawing.Point(186, 253);
             this.lblZC.Name = "lblZC";
