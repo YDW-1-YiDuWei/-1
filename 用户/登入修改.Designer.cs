@@ -64,7 +64,7 @@
             this.txtPwd2.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd2.Name = "txtPwd2";
             this.txtPwd2.Size = new System.Drawing.Size(231, 25);
-            this.txtPwd2.TabIndex = 21;
+            this.txtPwd2.TabIndex = 2;
             // 
             // txtPwd
             // 
@@ -72,7 +72,7 @@
             this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(231, 25);
-            this.txtPwd.TabIndex = 22;
+            this.txtPwd.TabIndex = 1;
             // 
             // txtZH
             // 
@@ -80,7 +80,7 @@
             this.txtZH.Margin = new System.Windows.Forms.Padding(4);
             this.txtZH.Name = "txtZH";
             this.txtZH.Size = new System.Drawing.Size(231, 25);
-            this.txtZH.TabIndex = 23;
+            this.txtZH.TabIndex = 0;
             // 
             // label3
             // 
@@ -127,7 +127,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 29);
-            this.button2.TabIndex = 16;
+            this.button2.TabIndex = 4;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -141,7 +141,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 3;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click_1);
@@ -155,7 +155,7 @@
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 42);
-            this.button3.TabIndex = 25;
+            this.button3.TabIndex = 5;
             this.button3.Text = "返回";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);

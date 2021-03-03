@@ -60,7 +60,7 @@ namespace 点餐系统
 
         private void Button1_Click_1(object sender, EventArgs e)//确认按钮
         {
-            /*if (txtZH.Text.Trim() == "")
+            if (txtZH.Text.Trim() == "")
             {
                 MessageBox.Show("请输入账号");
                 return;
@@ -70,10 +70,11 @@ namespace 点餐系统
                 MessageBox.Show("请输入密码");
                 return;
             }
-            if (txtPwd2.Text.Trim()=="")
+            if (txtPwd2.Text.Trim() == "")
             {
                 MessageBox.Show("请输入二次密码");
-            }*/
+                return;
+            }
             if (txtPwd2.Text.Trim() != txtPwd.Text.Trim())
             {
                 MessageBox.Show("密码不一致", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
