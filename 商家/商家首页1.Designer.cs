@@ -56,8 +56,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -380,7 +380,7 @@
             this.button13.BackColor = System.Drawing.Color.Transparent;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(510, 439);
+            this.button13.Location = new System.Drawing.Point(500, 439);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(120, 21);
             this.button13.TabIndex = 4;
@@ -392,7 +392,7 @@
             this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(466, 316);
+            this.button11.Location = new System.Drawing.Point(456, 316);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 4;
@@ -400,23 +400,23 @@
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.textBox1.Location = new System.Drawing.Point(510, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(129, 21);
-            this.textBox1.TabIndex = 2;
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(510, 251);
+            this.textBox2.Location = new System.Drawing.Point(500, 251);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(129, 21);
             this.textBox2.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
+            this.textBox1.Location = new System.Drawing.Point(500, 206);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(129, 21);
+            this.textBox1.TabIndex = 2;
             // 
             // label9
             // 
@@ -424,7 +424,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(431, 209);
+            this.label9.Location = new System.Drawing.Point(421, 209);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 16);
             this.label9.TabIndex = 1;
@@ -436,7 +436,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(432, 255);
+            this.label4.Location = new System.Drawing.Point(422, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
             this.label4.TabIndex = 1;
@@ -444,7 +444,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(493, 68);
+            this.pictureBox2.Location = new System.Drawing.Point(500, 72);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 106);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -456,7 +456,7 @@
             this.button12.BackColor = System.Drawing.Color.Transparent;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(592, 316);
+            this.button12.Location = new System.Drawing.Point(582, 316);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 4;
