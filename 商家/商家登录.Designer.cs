@@ -78,7 +78,7 @@
             this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnquit.ForeColor = System.Drawing.Color.Black;
             this.btnquit.Location = new System.Drawing.Point(269, 205);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(5);
             this.btnquit.Name = "btnquit";
             this.btnquit.Size = new System.Drawing.Size(133, 36);
             this.btnquit.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(87, 205);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(133, 36);
             this.btnLogin.TabIndex = 2;
@@ -99,7 +99,7 @@
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(163, 138);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(5);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '★';
             this.txtPwd.Size = new System.Drawing.Size(239, 24);
@@ -108,7 +108,7 @@
             // txtNum
             // 
             this.txtNum.Location = new System.Drawing.Point(163, 59);
-            this.txtNum.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNum.Margin = new System.Windows.Forms.Padding(5);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(239, 24);
             this.txtNum.TabIndex = 0;
@@ -140,7 +140,7 @@
             this.lblZC.AutoSize = true;
             this.lblZC.BackColor = System.Drawing.Color.Transparent;
             this.lblZC.Font = new System.Drawing.Font("宋体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblZC.Location = new System.Drawing.Point(247, 338);
+            this.lblZC.Location = new System.Drawing.Point(248, 338);
             this.lblZC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblZC.Name = "lblZC";
             this.lblZC.Size = new System.Drawing.Size(49, 20);
