@@ -368,17 +368,16 @@
             // 
             // btnsearch
             // 
-            this.btnsearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsearch.ForeColor = System.Drawing.Color.White;
-            this.btnsearch.Location = new System.Drawing.Point(904, 11);
-            this.btnsearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(100, 29);
-            this.btnsearch.TabIndex = 29;
-            this.btnsearch.Text = "搜索";
-            this.btnsearch.UseVisualStyleBackColor = false;
-            this.btnsearch.Click += new System.EventHandler(this.button8_Click_1);
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(678, 9);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 29;
+            this.button8.Text = "搜索";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // panel7
             // 
@@ -399,50 +398,46 @@
             // 
             // btnquit
             // 
-            this.btnquit.BackColor = System.Drawing.Color.Transparent;
-            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnquit.ForeColor = System.Drawing.Color.White;
-            this.btnquit.Location = new System.Drawing.Point(680, 549);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnquit.Name = "btnquit";
-            this.btnquit.Size = new System.Drawing.Size(160, 26);
-            this.btnquit.TabIndex = 4;
-            this.btnquit.Text = "退出登入";
-            this.btnquit.UseVisualStyleBackColor = false;
+            this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(510, 439);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(120, 21);
+            this.button13.TabIndex = 4;
+            this.button13.Text = "退出登入";
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // btnHandover
             // 
-            this.btnHandover.BackColor = System.Drawing.Color.Transparent;
-            this.btnHandover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHandover.ForeColor = System.Drawing.Color.Transparent;
-            this.btnHandover.Location = new System.Drawing.Point(621, 395);
-            this.btnHandover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnHandover.Name = "btnHandover";
-            this.btnHandover.Size = new System.Drawing.Size(100, 29);
-            this.btnHandover.TabIndex = 4;
-            this.btnHandover.Text = "切换";
-            this.btnHandover.UseVisualStyleBackColor = false;
-            this.btnHandover.Click += new System.EventHandler(this.button11_Click);
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.Transparent;
+            this.button11.Location = new System.Drawing.Point(466, 316);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "切换";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // txtCGnum
+            // textBox1
             // 
-            this.txtCGnum.Location = new System.Drawing.Point(680, 314);
-            this.txtCGnum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCGnum.Name = "txtCGnum";
-            this.txtCGnum.ReadOnly = true;
-            this.txtCGnum.Size = new System.Drawing.Size(171, 25);
-            this.txtCGnum.TabIndex = 2;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
+            this.textBox1.Location = new System.Drawing.Point(510, 206);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(129, 21);
+            this.textBox1.TabIndex = 2;
             // 
-            // txtCGname
+            // textBox2
             // 
-            this.txtCGname.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.txtCGname.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.txtCGname.Location = new System.Drawing.Point(680, 258);
-            this.txtCGname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCGname.Name = "txtCGname";
-            this.txtCGname.ReadOnly = true;
-            this.txtCGname.Size = new System.Drawing.Size(171, 25);
-            this.txtCGname.TabIndex = 2;
+            this.textBox2.Location = new System.Drawing.Point(510, 251);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(129, 21);
+            this.textBox2.TabIndex = 2;
             // 
             // label9
             // 
@@ -450,8 +445,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(575, 261);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(431, 209);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(109, 20);
             this.label9.TabIndex = 1;
@@ -463,8 +457,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(576, 319);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(432, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 20);
             this.label4.TabIndex = 1;
@@ -472,27 +465,25 @@
             // 
             // pbpath
             // 
-            this.pbpath.Location = new System.Drawing.Point(657, 85);
-            this.pbpath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbpath.Name = "pbpath";
-            this.pbpath.Size = new System.Drawing.Size(171, 132);
-            this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbpath.TabIndex = 0;
-            this.pbpath.TabStop = false;
+            this.pictureBox2.Location = new System.Drawing.Point(493, 68);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(128, 106);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(789, 395);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 29);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "修改";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.button12_Click);
+            this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(592, 316);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 4;
+            this.button12.Text = "修改";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // panel4
             // 
