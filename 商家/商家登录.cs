@@ -31,7 +31,7 @@ namespace 点餐系统
             {
                 return;
             }
-            List<Restaurant> list = restaurant.Longin(textBox1.Text, textBox2.Text);
+            List<Restaurant> list = restaurant.Longin(txtNum.Text, txtPwd.Text);
             if (list.Count > 0)
             {
                 MessageBox.Show("登录成功", "登录提示", MessageBoxButtons.OK);
@@ -52,12 +52,12 @@ namespace 点餐系统
 
         public bool LoninCheck()
         {
-            if (textBox1.Text.Trim() == "")
+            if (txtNum.Text.Trim() == "")
             {
                 MessageBox.Show("请您输入账号", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
-            else if (textBox2.Text.Trim() == "")
+            else if (txtPwd.Text.Trim() == "")
             {
                 MessageBox.Show("请您输入密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;

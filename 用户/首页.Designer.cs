@@ -29,70 +29,70 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(首页));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblmy = new System.Windows.Forms.Label();
+            this.lblindent = new System.Windows.Forms.Label();
+            this.lblreturn = new System.Windows.Forms.Label();
+            this.lblexit = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnbegin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblmy
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(464, 140);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "我的";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblmy.AutoSize = true;
+            this.lblmy.BackColor = System.Drawing.Color.White;
+            this.lblmy.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblmy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblmy.Location = new System.Drawing.Point(464, 140);
+            this.lblmy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblmy.Name = "lblmy";
+            this.lblmy.Size = new System.Drawing.Size(73, 30);
+            this.lblmy.TabIndex = 1;
+            this.lblmy.Text = "我的";
+            this.lblmy.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblindent
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(249, 304);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 30);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "订单";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
+            this.lblindent.AutoSize = true;
+            this.lblindent.BackColor = System.Drawing.Color.White;
+            this.lblindent.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblindent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblindent.Location = new System.Drawing.Point(249, 304);
+            this.lblindent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblindent.Name = "lblindent";
+            this.lblindent.Size = new System.Drawing.Size(73, 30);
+            this.lblindent.TabIndex = 2;
+            this.lblindent.Text = "订单";
+            this.lblindent.Click += new System.EventHandler(this.Label2_Click);
             // 
-            // label4
+            // lblreturn
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(464, 531);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 30);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "返回";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblreturn.AutoSize = true;
+            this.lblreturn.BackColor = System.Drawing.Color.White;
+            this.lblreturn.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblreturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblreturn.Location = new System.Drawing.Point(464, 531);
+            this.lblreturn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblreturn.Name = "lblreturn";
+            this.lblreturn.Size = new System.Drawing.Size(73, 30);
+            this.lblreturn.TabIndex = 4;
+            this.lblreturn.Text = "返回";
+            this.lblreturn.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblexit
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(700, 304);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 30);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "退出";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lblexit.AutoSize = true;
+            this.lblexit.BackColor = System.Drawing.Color.White;
+            this.lblexit.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblexit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblexit.Location = new System.Drawing.Point(700, 304);
+            this.lblexit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblexit.Name = "lblexit";
+            this.lblexit.Size = new System.Drawing.Size(73, 30);
+            this.lblexit.TabIndex = 3;
+            this.lblexit.Text = "退出";
+            this.lblexit.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -108,28 +108,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnbegin
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(391, 318);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 62);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnbegin.BackColor = System.Drawing.Color.Transparent;
+            this.btnbegin.Image = ((System.Drawing.Image)(resources.GetObject("btnbegin.Image")));
+            this.btnbegin.Location = new System.Drawing.Point(391, 318);
+            this.btnbegin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnbegin.Name = "btnbegin";
+            this.btnbegin.Size = new System.Drawing.Size(240, 62);
+            this.btnbegin.TabIndex = 0;
+            this.btnbegin.UseVisualStyleBackColor = false;
+            this.btnbegin.Click += new System.EventHandler(this.button1_Click);
             // 
             // 首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 676);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnbegin);
+            this.Controls.Add(this.lblexit);
+            this.Controls.Add(this.lblreturn);
+            this.Controls.Add(this.lblindent);
+            this.Controls.Add(this.lblmy);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -144,11 +144,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblmy;
+        private System.Windows.Forms.Label lblindent;
+        private System.Windows.Forms.Label lblreturn;
+        private System.Windows.Forms.Label lblexit;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnbegin;
     }
 }

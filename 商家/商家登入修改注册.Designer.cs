@@ -41,12 +41,12 @@
             this.RestPwds = new System.Windows.Forms.TextBox();
             this.RestPhone = new System.Windows.Forms.TextBox();
             this.RestAddress = new System.Windows.Forms.TextBox();
-            this.Pbthan = new System.Windows.Forms.PictureBox();
+            this.Pbpath = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Notarize = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Browse = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbpath)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -124,7 +124,7 @@
             // RestName
             // 
             this.RestName.Location = new System.Drawing.Point(859, 292);
-            this.RestName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RestName.Margin = new System.Windows.Forms.Padding(4);
             this.RestName.Name = "RestName";
             this.RestName.Size = new System.Drawing.Size(220, 25);
             this.RestName.TabIndex = 1;
@@ -132,7 +132,7 @@
             // RestUid
             // 
             this.RestUid.Location = new System.Drawing.Point(859, 328);
-            this.RestUid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RestUid.Margin = new System.Windows.Forms.Padding(4);
             this.RestUid.Name = "RestUid";
             this.RestUid.Size = new System.Drawing.Size(220, 25);
             this.RestUid.TabIndex = 1;
@@ -140,7 +140,7 @@
             // RestPwd
             // 
             this.RestPwd.Location = new System.Drawing.Point(859, 362);
-            this.RestPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RestPwd.Margin = new System.Windows.Forms.Padding(4);
             this.RestPwd.Name = "RestPwd";
             this.RestPwd.Size = new System.Drawing.Size(220, 25);
             this.RestPwd.TabIndex = 1;
@@ -148,7 +148,7 @@
             // RestPwds
             // 
             this.RestPwds.Location = new System.Drawing.Point(859, 398);
-            this.RestPwds.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RestPwds.Margin = new System.Windows.Forms.Padding(4);
             this.RestPwds.Name = "RestPwds";
             this.RestPwds.Size = new System.Drawing.Size(220, 25);
             this.RestPwds.TabIndex = 1;
@@ -156,7 +156,7 @@
             // RestPhone
             // 
             this.RestPhone.Location = new System.Drawing.Point(859, 432);
-            this.RestPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RestPhone.Margin = new System.Windows.Forms.Padding(4);
             this.RestPhone.Name = "RestPhone";
             this.RestPhone.Size = new System.Drawing.Size(220, 25);
             this.RestPhone.TabIndex = 1;
@@ -164,20 +164,20 @@
             // RestAddress
             // 
             this.RestAddress.Location = new System.Drawing.Point(859, 468);
-            this.RestAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RestAddress.Margin = new System.Windows.Forms.Padding(4);
             this.RestAddress.Name = "RestAddress";
             this.RestAddress.Size = new System.Drawing.Size(220, 25);
             this.RestAddress.TabIndex = 1;
             // 
-            // Pbthan
+            // Pbpath
             // 
-            this.Pbthan.Location = new System.Drawing.Point(859, 189);
-            this.Pbthan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Pbthan.Name = "Pbthan";
-            this.Pbthan.Size = new System.Drawing.Size(121, 91);
-            this.Pbthan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pbthan.TabIndex = 2;
-            this.Pbthan.TabStop = false;
+            this.Pbpath.Location = new System.Drawing.Point(859, 189);
+            this.Pbpath.Margin = new System.Windows.Forms.Padding(4);
+            this.Pbpath.Name = "Pbpath";
+            this.Pbpath.Size = new System.Drawing.Size(121, 91);
+            this.Pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pbpath.TabIndex = 2;
+            this.Pbpath.TabStop = false;
             // 
             // label7
             // 
@@ -194,7 +194,7 @@
             // Notarize
             // 
             this.Notarize.Location = new System.Drawing.Point(785, 535);
-            this.Notarize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Notarize.Margin = new System.Windows.Forms.Padding(4);
             this.Notarize.Name = "Notarize";
             this.Notarize.Size = new System.Drawing.Size(100, 29);
             this.Notarize.TabIndex = 3;
@@ -205,7 +205,7 @@
             // Cancel
             // 
             this.Cancel.Location = new System.Drawing.Point(932, 535);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(100, 29);
             this.Cancel.TabIndex = 3;
@@ -215,7 +215,7 @@
             // Browse
             // 
             this.Browse.Location = new System.Drawing.Point(1000, 220);
-            this.Browse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Browse.Margin = new System.Windows.Forms.Padding(4);
             this.Browse.Name = "Browse";
             this.Browse.Size = new System.Drawing.Size(100, 29);
             this.Browse.TabIndex = 4;
@@ -232,7 +232,7 @@
             this.Controls.Add(this.Browse);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Notarize);
-            this.Controls.Add(this.Pbthan);
+            this.Controls.Add(this.Pbpath);
             this.Controls.Add(this.RestAddress);
             this.Controls.Add(this.RestPhone);
             this.Controls.Add(this.RestPwds);
@@ -246,13 +246,13 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "商家登入修改注册";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "商家登入修改注册";
             this.Load += new System.EventHandler(this.商家登入修改注册_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Pbthan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbpath)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,7 +272,7 @@
         private System.Windows.Forms.TextBox RestPwds;
         private System.Windows.Forms.TextBox RestPhone;
         private System.Windows.Forms.TextBox RestAddress;
-        private System.Windows.Forms.PictureBox Pbthan;
+        private System.Windows.Forms.PictureBox Pbpath;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Notarize;
         private System.Windows.Forms.Button Cancel;

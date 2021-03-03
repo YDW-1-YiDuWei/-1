@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSJ = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnquery = new System.Windows.Forms.Button();
             this.lvSJXX = new System.Windows.Forms.ListView();
             this.image = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
@@ -60,21 +60,21 @@
             // txtSJ
             // 
             this.txtSJ.Location = new System.Drawing.Point(141, 11);
-            this.txtSJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSJ.Margin = new System.Windows.Forms.Padding(4);
             this.txtSJ.Name = "txtSJ";
             this.txtSJ.Size = new System.Drawing.Size(319, 25);
             this.txtSJ.TabIndex = 5;
             // 
-            // button1
+            // btnquery
             // 
-            this.button1.Location = new System.Drawing.Point(617, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnquery.Location = new System.Drawing.Point(617, 11);
+            this.btnquery.Margin = new System.Windows.Forms.Padding(4);
+            this.btnquery.Name = "btnquery";
+            this.btnquery.Size = new System.Drawing.Size(100, 29);
+            this.btnquery.TabIndex = 9;
+            this.btnquery.Text = "查询";
+            this.btnquery.UseVisualStyleBackColor = true;
+            this.btnquery.Click += new System.EventHandler(this.button1_Click);
             // 
             // lvSJXX
             // 
@@ -82,7 +82,7 @@
             this.lvSJXX.HideSelection = false;
             this.lvSJXX.LargeImageList = this.image;
             this.lvSJXX.Location = new System.Drawing.Point(16, 68);
-            this.lvSJXX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvSJXX.Margin = new System.Windows.Forms.Padding(4);
             this.lvSJXX.Name = "lvSJXX";
             this.lvSJXX.Size = new System.Drawing.Size(887, 598);
             this.lvSJXX.SmallImageList = this.image;
@@ -104,11 +104,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 680);
             this.Controls.Add(this.lvSJXX);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnquery);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSJ);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "餐馆列表";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -123,7 +123,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSJ;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnquery;
         private System.Windows.Forms.ListView lvSJXX;
         private System.Windows.Forms.ImageList image;
     }

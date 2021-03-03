@@ -22,7 +22,7 @@ namespace 点餐系统
         ClientManager client = new ClientManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            int count = client.CompileClientsMessage(UserName.Text,radioButton1.Checked==true?"男":"女",UserPhone.Text,UserAdders.Text,User.khID);
+            int count = client.CompileClientsMessage(UserName.Text,rbnan.Checked==true?"男":"女",UserPhone.Text,UserAdders.Text,User.khID);
             if (count > 0)
             {
                 MessageBox.Show("信息提交成功");

@@ -26,7 +26,7 @@ namespace 点餐系统
         {
             i = 1;
             Temp.index = 0;
-            button8.Visible = true;
+            btnsearch.Visible = true;
             #region 隐藏窗口
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
@@ -40,7 +40,7 @@ namespace 点餐系统
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
             i = 1;
-            button8.Visible = false;
+            btnsearch.Visible = false;
             #region 隐藏窗口
             panel7.Visible = true;
             //panel1.Visible = false;//商家首页显示（panel1）
@@ -269,9 +269,9 @@ namespace 点餐系统
                 User.restaKhID = list[0].id.ToString();
                 pbSJLJ.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
-                pictureBox2.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
-                textBox1.Text = list[0].RestaurantName;
-                textBox2.Text = User.restaUser;
+                pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                txtCGname.Text = list[0].RestaurantName;
+                txtCGnum.Text = User.restaUser;
 
             }
             Inquire();
