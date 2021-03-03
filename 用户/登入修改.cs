@@ -150,7 +150,7 @@ namespace 点餐系统
         private void button3_Click(object sender, EventArgs e)
         {
             List<Client> list = client.Login(User.user, User.pass);
-            我的 wd = new 我的();
+            登录界面 wd = new 登录界面();
             wd.list = list;
             wd.Show();
             this.Close();
