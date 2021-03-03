@@ -142,16 +142,16 @@
     <Compile Include="用户\首页.Designer.cs">
       <DependentUpon>首页.cs</DependentUpon>
     </Compile>
-    <Compile Include="骑手我的.cs">
+    <Compile Include="骑手\骑手我的.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="骑手我的.Designer.cs">
+    <Compile Include="骑手\骑手我的.Designer.cs">
       <DependentUpon>骑手我的.cs</DependentUpon>
     </Compile>
-    <Compile Include="骑手登入.cs">
+    <Compile Include="骑手\骑手登入.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="骑手登入.Designer.cs">
+    <Compile Include="骑手\骑手登入.Designer.cs">
       <DependentUpon>骑手登入.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="商家\商家登录.resx">
@@ -208,10 +208,10 @@
     <EmbeddedResource Include="用户\首页.resx">
       <DependentUpon>首页.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="骑手我的.resx">
+    <EmbeddedResource Include="骑手\骑手我的.resx">
       <DependentUpon>骑手我的.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="骑手登入.resx">
+    <EmbeddedResource Include="骑手\骑手登入.resx">
       <DependentUpon>骑手登入.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
