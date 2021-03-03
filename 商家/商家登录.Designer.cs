@@ -64,7 +64,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 40);
+            this.groupBox1.Location = new System.Drawing.Point(112, 140);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
@@ -134,7 +134,7 @@
             this.lblZC.AutoSize = true;
             this.lblZC.BackColor = System.Drawing.Color.Transparent;
             this.lblZC.Font = new System.Drawing.Font("宋体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblZC.Location = new System.Drawing.Point(186, 253);
+            this.lblZC.Location = new System.Drawing.Point(274, 353);
             this.lblZC.Name = "lblZC";
             this.lblZC.Size = new System.Drawing.Size(42, 17);
             this.lblZC.TabIndex = 3;
@@ -146,7 +146,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1230, 574);
+            this.ClientSize = new System.Drawing.Size(935, 480);
             this.Controls.Add(this.lblZC);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
