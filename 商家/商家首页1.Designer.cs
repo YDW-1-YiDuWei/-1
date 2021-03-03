@@ -352,7 +352,7 @@
             this.btnSerach.BackColor = System.Drawing.Color.Transparent;
             this.btnSerach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSerach.ForeColor = System.Drawing.Color.White;
-            this.btnSerach.Location = new System.Drawing.Point(674, 8);
+            this.btnSerach.Location = new System.Drawing.Point(675, 8);
             this.btnSerach.Margin = new System.Windows.Forms.Padding(2);
             this.btnSerach.Name = "btnSerach";
             this.btnSerach.Size = new System.Drawing.Size(56, 22);
