@@ -127,6 +127,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.peCPQD);
             this.panel1.Controls.Add(this.lblJGS);
             this.panel1.Controls.Add(this.bTSS);
             this.panel1.Controls.Add(this.lkbWEI);
@@ -170,7 +171,7 @@
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
             this.peCPQD.Controls.Add(this.btnclose);
-            this.peCPQD.Location = new System.Drawing.Point(1, 0);
+            this.peCPQD.Location = new System.Drawing.Point(0, 2);
             this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
             this.peCPQD.Name = "peCPQD";
             this.peCPQD.Size = new System.Drawing.Size(771, 467);
@@ -961,7 +962,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 467);
-            this.Controls.Add(this.peCPQD);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
