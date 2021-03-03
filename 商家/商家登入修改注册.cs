@@ -24,7 +24,7 @@ namespace 点餐系统
         RestaurantManager rest = new RestaurantManager();
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (Pbthan.Image == null)
+            if (Pbpath.Image == null)
             {
                 MessageBox.Show("您没有选择图片");
                 return;
@@ -108,7 +108,7 @@ namespace 点餐系统
                 {
                     User.path = fd.SafeFileName;
                 }
-                Pbthan.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
+                Pbpath.Image = Image.FromFile(Temp.pathCG + fd.SafeFileName);
             }
         }
 
@@ -128,7 +128,7 @@ namespace 点餐系统
                 this.RestUid.ReadOnly = true;
                 List<Restaurant> list = rest.Longin(User.restaUser, User.restaPass);
                 RestName.Text = list[0].RestaurantName;
-                Pbthan.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                Pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
                 RestAddress.Text = list[0].RestaurantAddress;
                 RestPhone.Text = list[0].RestaurantPhone;
                 RestPwd.Text = list[0].RestaurantNumberPwd;

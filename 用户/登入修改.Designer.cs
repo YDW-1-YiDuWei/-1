@@ -36,9 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnconfirm = new System.Windows.Forms.Button();
+            this.btnreturn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -117,48 +117,48 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "账号：";
             // 
-            // button2
+            // btncancel
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(384, 359);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 29);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "取消";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btncancel.FlatAppearance.BorderSize = 0;
+            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancel.ForeColor = System.Drawing.Color.White;
+            this.btncancel.Location = new System.Drawing.Point(384, 359);
+            this.btncancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(100, 29);
+            this.btncancel.TabIndex = 4;
+            this.btncancel.Text = "取消";
+            this.btncancel.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnconfirm
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(208, 360);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "确定";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            this.btnconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnconfirm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnconfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconfirm.ForeColor = System.Drawing.Color.White;
+            this.btnconfirm.Location = new System.Drawing.Point(208, 360);
+            this.btnconfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnconfirm.Name = "btnconfirm";
+            this.btnconfirm.Size = new System.Drawing.Size(100, 29);
+            this.btnconfirm.TabIndex = 3;
+            this.btnconfirm.Text = "确定";
+            this.btnconfirm.UseVisualStyleBackColor = false;
+            this.btnconfirm.Click += new System.EventHandler(this.Button1_Click_1);
             // 
-            // button3
+            // btnreturn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(31, 1);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 42);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "返回";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnreturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnreturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreturn.ForeColor = System.Drawing.Color.White;
+            this.btnreturn.Location = new System.Drawing.Point(31, 1);
+            this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnreturn.Name = "btnreturn";
+            this.btnreturn.Size = new System.Drawing.Size(67, 42);
+            this.btnreturn.TabIndex = 5;
+            this.btnreturn.Text = "返回";
+            this.btnreturn.UseVisualStyleBackColor = false;
+            this.btnreturn.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox2
             // 
@@ -176,7 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(673, 579);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnreturn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtPwd2);
             this.Controls.Add(this.txtPwd);
@@ -184,8 +184,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.btnconfirm);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -209,9 +209,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnconfirm;
+        private System.Windows.Forms.Button btnreturn;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

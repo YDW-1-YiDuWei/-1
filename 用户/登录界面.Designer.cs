@@ -34,8 +34,8 @@
             this.txtZH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPwd = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnenter = new System.Windows.Forms.Button();
+            this.lblregister = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,9 +46,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(851, 571);
+            this.pictureBox1.Size = new System.Drawing.Size(1135, 714);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -62,9 +63,10 @@
             this.label1.BackColor = System.Drawing.Color.Maroon;
             this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(299, 204);
+            this.label1.Location = new System.Drawing.Point(399, 255);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 19);
+            this.label1.Size = new System.Drawing.Size(82, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "账号：";
             // 
@@ -73,9 +75,10 @@
             this.txtZH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtZH.Location = new System.Drawing.Point(375, 204);
+            this.txtZH.Location = new System.Drawing.Point(500, 255);
+            this.txtZH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtZH.Name = "txtZH";
-            this.txtZH.Size = new System.Drawing.Size(121, 21);
+            this.txtZH.Size = new System.Drawing.Size(160, 25);
             this.txtZH.TabIndex = 0;
             // 
             // label2
@@ -87,9 +90,10 @@
             this.label2.BackColor = System.Drawing.Color.Maroon;
             this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(299, 269);
+            this.label2.Location = new System.Drawing.Point(399, 336);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 19);
+            this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "密码：";
             // 
@@ -100,55 +104,59 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPwd.AutoCompleteCustomSource.AddRange(new string[] {
             "."});
-            this.txtPwd.Location = new System.Drawing.Point(375, 269);
+            this.txtPwd.Location = new System.Drawing.Point(500, 336);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(121, 21);
+            this.txtPwd.Size = new System.Drawing.Size(160, 25);
             this.txtPwd.TabIndex = 1;
             this.txtPwd.Tag = "";
             // 
-            // button1
+            // btnenter
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnenter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(390, 330);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "登入";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnenter.Image = ((System.Drawing.Image)(resources.GetObject("btnenter.Image")));
+            this.btnenter.Location = new System.Drawing.Point(520, 412);
+            this.btnenter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnenter.Name = "btnenter";
+            this.btnenter.Size = new System.Drawing.Size(100, 29);
+            this.btnenter.TabIndex = 2;
+            this.btnenter.Text = "登入";
+            this.btnenter.UseVisualStyleBackColor = false;
+            this.btnenter.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label3
+            // lblregister
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(282, 370);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "注册";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
+            this.lblregister.AutoSize = true;
+            this.lblregister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblregister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblregister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblregister.Location = new System.Drawing.Point(376, 462);
+            this.lblregister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblregister.Name = "lblregister";
+            this.lblregister.Size = new System.Drawing.Size(49, 20);
+            this.lblregister.TabIndex = 3;
+            this.lblregister.Text = "注册";
+            this.lblregister.Click += new System.EventHandler(this.Label3_Click);
             // 
             // 登录界面
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 571);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1137, 714);
+            this.Controls.Add(this.lblregister);
+            this.Controls.Add(this.btnenter);
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtZH);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "登录界面";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -167,7 +175,7 @@
         private System.Windows.Forms.TextBox txtZH;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPwd;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnenter;
+        private System.Windows.Forms.Label lblregister;
     }
 }

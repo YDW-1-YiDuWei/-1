@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(我的));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnlogOut = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btncut = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnreturn = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.buttonBjgrxx = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,54 +51,54 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(747, 479);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnlogOut
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(335, 398);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 29);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "退出登入";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.btnlogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnlogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogOut.ForeColor = System.Drawing.Color.White;
+            this.btnlogOut.Location = new System.Drawing.Point(335, 398);
+            this.btnlogOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnlogOut.Name = "btnlogOut";
+            this.btnlogOut.Size = new System.Drawing.Size(159, 29);
+            this.btnlogOut.TabIndex = 11;
+            this.btnlogOut.Text = "退出登入";
+            this.btnlogOut.UseVisualStyleBackColor = false;
+            this.btnlogOut.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(589, 90);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 29);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "修改";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.Location = new System.Drawing.Point(589, 90);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(100, 29);
+            this.btnupdate.TabIndex = 15;
+            this.btnupdate.Text = "修改";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btncut
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(589, 54);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "切换";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btncut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btncut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncut.ForeColor = System.Drawing.Color.White;
+            this.btncut.Location = new System.Drawing.Point(589, 54);
+            this.btncut.Margin = new System.Windows.Forms.Padding(4);
+            this.btncut.Name = "btncut";
+            this.btncut.Size = new System.Drawing.Size(100, 29);
+            this.btncut.TabIndex = 16;
+            this.btncut.Text = "切换";
+            this.btncut.UseVisualStyleBackColor = false;
+            this.btncut.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label2
             // 
@@ -128,32 +128,32 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(215, 52);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(105, 105);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
-            // button4
+            // btnreturn
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(35, 1);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 39);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "返回";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnreturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnreturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreturn.ForeColor = System.Drawing.Color.White;
+            this.btnreturn.Location = new System.Drawing.Point(35, 1);
+            this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnreturn.Name = "btnreturn";
+            this.btnreturn.Size = new System.Drawing.Size(67, 39);
+            this.btnreturn.TabIndex = 21;
+            this.btnreturn.Text = "返回";
+            this.btnreturn.UseVisualStyleBackColor = false;
+            this.btnreturn.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(13, 5);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(88, 35);
             this.pictureBox3.TabIndex = 20;
@@ -165,7 +165,7 @@
             this.buttonBjgrxx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBjgrxx.ForeColor = System.Drawing.Color.White;
             this.buttonBjgrxx.Location = new System.Drawing.Point(589, 126);
-            this.buttonBjgrxx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonBjgrxx.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBjgrxx.Name = "buttonBjgrxx";
             this.buttonBjgrxx.Size = new System.Drawing.Size(111, 29);
             this.buttonBjgrxx.TabIndex = 15;
@@ -178,17 +178,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 484);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnreturn);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.buttonBjgrxx);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btncut);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnlogOut);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "我的";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -205,13 +205,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnlogOut;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btncut;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnreturn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button buttonBjgrxx;
     }

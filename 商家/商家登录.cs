@@ -25,13 +25,39 @@ namespace 点餐系统
         }
 
         RestaurantManager restaurant = new RestaurantManager();
-        private void button1_Click(object sender, EventArgs e)//登录按钮
+
+        public bool LoninCheck()//商家登录判断
+        {
+            if (txtNum.Text.Trim() == "")
+            {
+                MessageBox.Show("请您输入账号", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            else if (txtPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请您输入密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            /*else if (textBox1.Text.Length < 5|| textBox1.Text.Length > 15)
+            {
+                MessageBox.Show("请您输入正确的账号","登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            else if (textBox2.Text.Length<5||textBox2.Text.Length>15)
+            {
+                MessageBox.Show("请您输入正确的密码","登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }*/
+            return true;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)//商家登录按钮
         {
             if (!LoninCheck())
             {
                 return;
             }
-            List<Restaurant> list = restaurant.Longin(textBox1.Text, textBox2.Text);
+            List<Restaurant> list = restaurant.Longin(txtNum.Text, txtPwd.Text);
             if (list.Count > 0)
             {
                 MessageBox.Show("登录成功", "登录提示", MessageBoxButtons.OK);
@@ -50,31 +76,15 @@ namespace 点餐系统
             }
         }
 
-        public bool LoninCheck()
+        private void btnquit_Click(object sender, EventArgs e)//商家登录   退出（按钮）
         {
-            if (textBox1.Text.Trim() == "")
+            if (MessageBox.Show("是否退出", "退出提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("请您输入账号", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return false;
+                this.Close();
             }
-            else if (textBox2.Text.Trim() == "")
-            {
-                MessageBox.Show("请您输入密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return false;
-            }
-            /*else if (textBox1.Text.Length < 5|| textBox1.Text.Length > 15)
-            {
-                MessageBox.Show("请您输入正确的账号","登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return false;
-            }
-            else if (textBox2.Text.Length<5||textBox2.Text.Length>15)
-            {
-                MessageBox.Show("请您输入正确的密码","登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return false;
-            }*/
-            return true;
         }
-        private void label3_Click(object sender, EventArgs e)
+
+        private void lblZC_Click(object sender, EventArgs e)//商家登录界面  注册（按钮）
         {
             商家登入修改注册 sjdrxgzc = new 商家登入修改注册();
             sjdrxgzc.Show();

@@ -104,7 +104,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -144,7 +144,7 @@
             this.panel1.Controls.Add(this.txtDishName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1028, 584);
             this.panel1.TabIndex = 8;
@@ -172,7 +172,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bTSS.BackColor = System.Drawing.Color.White;
             this.bTSS.Location = new System.Drawing.Point(593, 24);
-            this.bTSS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bTSS.Margin = new System.Windows.Forms.Padding(4);
             this.bTSS.Name = "bTSS";
             this.bTSS.Size = new System.Drawing.Size(100, 29);
             this.bTSS.TabIndex = 25;
@@ -276,7 +276,7 @@
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button3.Location = new System.Drawing.Point(35, 21);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 30);
             this.button3.TabIndex = 19;
@@ -291,7 +291,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(13, 22);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(88, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -306,7 +306,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(905, 549);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 31);
             this.button2.TabIndex = 15;
@@ -337,7 +337,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(905, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 31);
             this.button1.TabIndex = 15;
@@ -360,7 +360,7 @@
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
             this.tabControl1.Location = new System.Drawing.Point(4, 60);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1020, 481);
@@ -371,7 +371,7 @@
             // 
             this.tabPage1.Controls.Add(this.lvwQB);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(1012, 452);
             this.tabPage1.TabIndex = 0;
@@ -393,7 +393,7 @@
             this.lvwQB.HideSelection = false;
             this.lvwQB.LargeImageList = this.image;
             this.lvwQB.Location = new System.Drawing.Point(4, 4);
-            this.lvwQB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvwQB.Margin = new System.Windows.Forms.Padding(4);
             this.lvwQB.Name = "lvwQB";
             this.lvwQB.Size = new System.Drawing.Size(1000, 440);
             this.lvwQB.SmallImageList = this.image;
@@ -449,7 +449,7 @@
             // 
             this.tabPage3.Controls.Add(this.lVlC);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1012, 452);
             this.tabPage3.TabIndex = 2;
@@ -471,7 +471,7 @@
             this.lVlC.HideSelection = false;
             this.lVlC.LargeImageList = this.image;
             this.lVlC.Location = new System.Drawing.Point(4, 4);
-            this.lVlC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVlC.Margin = new System.Windows.Forms.Padding(4);
             this.lVlC.Name = "lVlC";
             this.lVlC.Size = new System.Drawing.Size(1000, 440);
             this.lVlC.SmallImageList = this.image;
@@ -497,7 +497,7 @@
             // 
             this.tabPage4.Controls.Add(this.lVRC);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1012, 452);
             this.tabPage4.TabIndex = 3;
@@ -519,7 +519,7 @@
             this.lVRC.HideSelection = false;
             this.lVRC.LargeImageList = this.image;
             this.lVRC.Location = new System.Drawing.Point(4, 4);
-            this.lVRC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVRC.Margin = new System.Windows.Forms.Padding(4);
             this.lVRC.Name = "lVRC";
             this.lVRC.Size = new System.Drawing.Size(1000, 440);
             this.lVRC.SmallImageList = this.image;
@@ -545,7 +545,7 @@
             // 
             this.tabPage5.Controls.Add(this.lVRL);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1012, 452);
             this.tabPage5.TabIndex = 4;
@@ -567,7 +567,7 @@
             this.lVRL.HideSelection = false;
             this.lVRL.LargeImageList = this.image;
             this.lVRL.Location = new System.Drawing.Point(4, 4);
-            this.lVRL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVRL.Margin = new System.Windows.Forms.Padding(4);
             this.lVRL.Name = "lVRL";
             this.lVRL.Size = new System.Drawing.Size(1000, 440);
             this.lVRL.SmallImageList = this.image;
@@ -593,7 +593,7 @@
             // 
             this.tabPage6.Controls.Add(this.lVHX);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(1012, 452);
             this.tabPage6.TabIndex = 5;
@@ -615,7 +615,7 @@
             this.lVHX.HideSelection = false;
             this.lVHX.LargeImageList = this.image;
             this.lVHX.Location = new System.Drawing.Point(4, 4);
-            this.lVHX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVHX.Margin = new System.Windows.Forms.Padding(4);
             this.lVHX.Name = "lVHX";
             this.lVHX.Size = new System.Drawing.Size(1000, 440);
             this.lVHX.SmallImageList = this.image;
@@ -641,7 +641,7 @@
             // 
             this.tabPage7.Controls.Add(this.lVZS);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(1012, 452);
             this.tabPage7.TabIndex = 6;
@@ -663,7 +663,7 @@
             this.lVZS.HideSelection = false;
             this.lVZS.LargeImageList = this.image;
             this.lVZS.Location = new System.Drawing.Point(4, 4);
-            this.lVZS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVZS.Margin = new System.Windows.Forms.Padding(4);
             this.lVZS.Name = "lVZS";
             this.lVZS.Size = new System.Drawing.Size(1000, 440);
             this.lVZS.SmallImageList = this.image;
@@ -689,7 +689,7 @@
             // 
             this.tabPage8.Controls.Add(this.lVT);
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(1012, 452);
             this.tabPage8.TabIndex = 7;
@@ -711,7 +711,7 @@
             this.lVT.HideSelection = false;
             this.lVT.LargeImageList = this.image;
             this.lVT.Location = new System.Drawing.Point(4, 4);
-            this.lVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVT.Margin = new System.Windows.Forms.Padding(4);
             this.lVT.Name = "lVT";
             this.lVT.Size = new System.Drawing.Size(1000, 440);
             this.lVT.SmallImageList = this.image;
@@ -737,7 +737,7 @@
             // 
             this.tabPage9.Controls.Add(this.lVJS);
             this.tabPage9.Location = new System.Drawing.Point(4, 25);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(1012, 452);
             this.tabPage9.TabIndex = 8;
@@ -759,7 +759,7 @@
             this.lVJS.HideSelection = false;
             this.lVJS.LargeImageList = this.image;
             this.lVJS.Location = new System.Drawing.Point(4, 4);
-            this.lVJS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVJS.Margin = new System.Windows.Forms.Padding(4);
             this.lVJS.Name = "lVJS";
             this.lVJS.Size = new System.Drawing.Size(1000, 440);
             this.lVJS.SmallImageList = this.image;
@@ -785,7 +785,7 @@
             // 
             this.tabPage10.Controls.Add(this.lVTD);
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(1012, 452);
             this.tabPage10.TabIndex = 9;
@@ -807,7 +807,7 @@
             this.lVTD.HideSelection = false;
             this.lVTD.LargeImageList = this.image;
             this.lVTD.Location = new System.Drawing.Point(4, 4);
-            this.lVTD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lVTD.Margin = new System.Windows.Forms.Padding(4);
             this.lVTD.Name = "lVTD";
             this.lVTD.Size = new System.Drawing.Size(1000, 440);
             this.lVTD.SmallImageList = this.image;
@@ -848,7 +848,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDishName.Location = new System.Drawing.Point(225, 25);
-            this.txtDishName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDishName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDishName.Name = "txtDishName";
             this.txtDishName.Size = new System.Drawing.Size(359, 25);
             this.txtDishName.TabIndex = 13;
@@ -870,9 +870,9 @@
             this.peCPQD.Controls.Add(this.dGVYDCP);
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
-            this.peCPQD.Controls.Add(this.button4);
+            this.peCPQD.Controls.Add(this.btnclose);
             this.peCPQD.Location = new System.Drawing.Point(1, 0);
-            this.peCPQD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
             this.peCPQD.Name = "peCPQD";
             this.peCPQD.Size = new System.Drawing.Size(1028, 584);
             this.peCPQD.TabIndex = 28;
@@ -891,7 +891,7 @@
             this.Column3});
             this.dGVYDCP.ContextMenuStrip = this.cMSDC;
             this.dGVYDCP.Location = new System.Drawing.Point(20, 60);
-            this.dGVYDCP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dGVYDCP.Margin = new System.Windows.Forms.Padding(4);
             this.dGVYDCP.Name = "dGVYDCP";
             this.dGVYDCP.ReadOnly = true;
             this.dGVYDCP.RowHeadersVisible = false;
@@ -956,16 +956,16 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "已点菜单清单,可以根据右击删除";
             // 
-            // button4
+            // btnclose
             // 
-            this.button4.Location = new System.Drawing.Point(915, 544);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 29);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "关闭";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click_1);
+            this.btnclose.Location = new System.Drawing.Point(915, 544);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(100, 29);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "关闭";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.Button4_Click_1);
             // 
             // 点餐
             // 
@@ -975,7 +975,7 @@
             this.Controls.Add(this.peCPQD);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "点餐";
@@ -1074,7 +1074,7 @@
         private System.Windows.Forms.DataGridView dGVYDCP;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

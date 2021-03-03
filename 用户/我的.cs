@@ -38,8 +38,8 @@ namespace 点餐系统
         private void 我的_Load(object sender, EventArgs e)//我的加载事件
         {
             //没有登录账号修改控件就关了
-            button2.Enabled = false;
-            button1.Enabled = true;
+            btnupdate.Enabled = false;
+            btncut.Enabled = true;
             buttonBjgrxx.Enabled = false;
 
             //判断登录集合是否为空（不为空肯定是已经登录储存了）
@@ -52,8 +52,8 @@ namespace 点餐系统
                 }
                 if (label1.Text.Length > 4 || label2.Text.Length > 6)
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = true;
+                    btncut.Enabled = false;
+                    btnupdate.Enabled = true;
                     buttonBjgrxx.Enabled = true;
                 }
             }
@@ -70,9 +70,9 @@ namespace 点餐系统
             {
                 label1.Text = "名称:";
                 label2.Text = "电话号码:";
-                button1.Enabled = true;
+                btncut.Enabled = true;
                 buttonBjgrxx.Enabled = false;
-                button2.Enabled = false;
+                btnupdate.Enabled = false;
                 User.user = "";
                 User.pass = "";
             }
