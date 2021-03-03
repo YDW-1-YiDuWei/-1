@@ -46,7 +46,7 @@ namespace 点餐系统
             }
             else
             {
-                MessageBox.Show("登录失败", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("账号或密码错误", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
