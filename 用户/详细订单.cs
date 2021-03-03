@@ -16,6 +16,11 @@ namespace 点餐系统
     {
         ClientManager cm = new ClientManager();
         ReservationManager reservationService = new ReservationManager();
+        public string keyValuePairs = null;
+        /// <summary>
+        /// 订单编号
+        /// </summary>
+        public string id { get; set; }
         public 详细订单()
         {
             InitializeComponent();
@@ -35,39 +40,20 @@ namespace 点餐系统
         }
         public void Inquire() //查询订单信息
         {
-            DataTable dt = reservationService.InquireReservation(User.khID);
+            DataTable dt = reservationService.InquireReservation(User.khID, id);
 
             int j = 0;
             Image asg =null;//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
 
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
-                asg = System.Drawing.Image.FromFile(Temp.pathCG + dr[0].ToString());//已经把拿到的图片保存到了这里面
-                lvOrder.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"]+"/元)x1",j);//这里是关键!!!!!!!!!倒
+                asg = System.Drawing.Image.FromFile(Temp.pathCG + dr["CuisineImagePath"].ToString());//已经把拿到的图片保存到了这里面
+                lvOrder.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"]+"/元)x"+ dr["VegetableQuantity"], j);//这里是关键!!!!!!!!!倒
 
                 image.Images.Add(asg);//添加图片到上面去
                 j++;
             }
-            lbTotal.Text = Convert.ToString("总共：" + reservationService.InquireReservationJG() + " 元");//计算总价
+            lbTotal.Text = Convert.ToString("总共：" + keyValuePairs + " 元");//计算总价
         }
-
-        private void lvOrder_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)//鼠标悬浮在上面的时候   还没完成
-        {
-            //失败品  还是不知道怎么写
-
-           /* if (e.Item.Text!=""){ MessageBox.Show("123"); }
-            else {  }
-            System.Drawing.Size a = new Size();//把图片变大
-            a.Width = 90;
-            a.Height = 90;
-
-            //e.Item.ImageList.ImageSize = a;//这里也是测试的也是跟下面一样的
-            for (int i = 0; i < image.Images.Count; i++)//全都会变大而且还多加了一个
-            {
-                image.ImageSize = a;
-            }
-            Inquire();*/
-        }
-
     }
 }

@@ -17,5 +17,9 @@ namespace DianCanXiTongManager
         public CuisineComment CuisineCommentId { get; set; }
         public int CuisineCount { get; set; }
         public string CuisineImagePath { get; set; }
+        /// <summary>
+        /// 菜品数量
+        /// </summary>
+        public int VegetableQuantity { get; set; }
     }
 }

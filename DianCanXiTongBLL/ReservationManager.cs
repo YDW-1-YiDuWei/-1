@@ -12,9 +12,9 @@ namespace DianCanXiTongBLL
     public class ReservationManager//订单业务层
     {
         ReservationService reservationService = new ReservationService();
-        public DataTable InquireReservation(string yHId) //查询详细订单
+        public DataTable InquireReservation(string yHId, string orderListId) //查询详细订单
         {
-            return reservationService.InquireReservation(yHId);
+            return reservationService.InquireReservation(yHId, orderListId);
         }
         public object InquireReservationJG() //查询这个订单总共多少钱
         {
@@ -24,9 +24,9 @@ namespace DianCanXiTongBLL
         /// 订单增加 业务层
         /// </summary>
         /// <returns></returns>
-        public int AddReservationManager(string clientId, string money, string cuisineInformationId)
+        public int AddReservationManager(string clientId, string money, string cuisineInformationId, string orderListId, string vegetableQuantity)
         {
-            return reservationService.AddReservationService(clientId, money, cuisineInformationId);
+            return reservationService.AddReservationService(clientId, money, cuisineInformationId, orderListId, vegetableQuantity);
         }
 
         /// <summary>
@@ -36,6 +36,14 @@ namespace DianCanXiTongBLL
         public int PrintReservationService()
         {
             return reservationService.PrintReservationService();
+        }
+        /// <summary>
+        /// 详细订单删除，业务层
+        /// </summary>
+        /// <returns></returns>
+        public int DeleteReservationManager(string orderListId)
+        {
+            return reservationService.DeleteReservationService(orderListId);
         }
     }
 }

@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderForm.cs" />
+    <Compile Include="OrderStatus.cs" />
     <Compile Include="Rider.cs" />
     <Compile Include="Restaurant.cs" />
     <Compile Include="Reservation.cs" />

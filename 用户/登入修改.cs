@@ -16,7 +16,7 @@ namespace 点餐系统
     {
         ClientManager client = new ClientManager();
         public int a = 0;
-        string Loin = "";
+        //string Loin = "";
         string pass = "";
 
         public 登入修改()

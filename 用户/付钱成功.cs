@@ -14,31 +14,35 @@ namespace 点餐系统
 {
     public partial class 付钱成功 : Form
     {
-        public List<Reservation> Li { get; set; }
+        public List<Reservation> Li = null;
+        private OrderFormManager ofm = new OrderFormManager();
         public 付钱成功()
         {
             InitializeComponent();
-            Li = new List<Reservation>();
         }
 
         private void button1_Click(object sender, EventArgs e)//提交按钮
         {
+            int b=ofm.AddOrderFormManager(User.RestaurantId, User.TotalPrices, User.khID, "1");
+            List<OrderForm> ls= ofm.SelectOrderFormManager("","","1");
+
             ReservationManager reservation = new ReservationManager();
             提交 tj = new 提交();
+
             int a = 0;
             foreach (Reservation item in Li)
             {
-                a=reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString());
+                a =reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString(), ls[0].IdName.ToString(), item.VegetableQuantity.ToString());
             }
-            if (a > 0)
-            {
-                tj.Show();
-            }
-            else
+            
+            tj.Show();
+            if (a ==0&& b==0)
             {
                 MessageBox.Show("下单失败");
             }
-            Li = null;
+
+            Li.RemoveRange(0, Li.Count);
+           
             this.Close();
         }
 

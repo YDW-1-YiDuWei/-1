@@ -15,9 +15,9 @@ namespace DianCanXiTongBLL
         /// 点餐查询，业务层
         /// </summary>
         /// <param name="leix"></param>
-        public List<CuisineInformations> CuisinelnformationsSelectManager(string canGuanBianHao, string leix,string cuisineInformationsLXName)
+        public List<CuisineInformations> CuisinelnformationsSelectManager(string canGuanBianHao, string leix,string cuisineInformationsLXName,string Id)
         {
-            return cS.CuisinelnformationsSelectService(canGuanBianHao,leix, cuisineInformationsLXName);
+            return cS.CuisinelnformationsSelectService(canGuanBianHao,leix, cuisineInformationsLXName,Id);
         }
         /// <summary>
         /// 增加菜品方法
