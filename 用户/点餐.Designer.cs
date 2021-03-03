@@ -32,6 +32,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(点餐));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblJGS = new System.Windows.Forms.Label();
+            this.peCPQD = new System.Windows.Forms.Panel();
+            this.dGVYDCP = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMSDC = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.加入菜篮ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tSMDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnclose = new System.Windows.Forms.Button();
             this.bTSS = new System.Windows.Forms.Button();
             this.lkbWEI = new System.Windows.Forms.LinkLabel();
             this.lkbTop = new System.Windows.Forms.LinkLabel();
@@ -49,9 +61,6 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cMSDC = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.加入菜篮ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tSMDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.image = new System.Windows.Forms.ImageList(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lVlC = new System.Windows.Forms.ListView();
@@ -96,20 +105,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtDishName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.peCPQD = new System.Windows.Forms.Panel();
-            this.dGVYDCP = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.peCPQD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVYDCP)).BeginInit();
+            this.cMSDC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.cMSDC.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -118,8 +120,6 @@
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
             this.tabPage10.SuspendLayout();
-            this.peCPQD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVYDCP)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -128,7 +128,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.lblJGS);
-            this.panel1.Controls.Add(this.peCPQD);
             this.panel1.Controls.Add(this.bTSS);
             this.panel1.Controls.Add(this.lkbWEI);
             this.panel1.Controls.Add(this.lkbTop);
@@ -164,6 +163,130 @@
             this.lblJGS.Size = new System.Drawing.Size(19, 20);
             this.lblJGS.TabIndex = 26;
             this.lblJGS.Text = "0";
+            // 
+            // peCPQD
+            // 
+            this.peCPQD.Controls.Add(this.dGVYDCP);
+            this.peCPQD.Controls.Add(this.label4);
+            this.peCPQD.Controls.Add(this.label3);
+            this.peCPQD.Controls.Add(this.btnclose);
+            this.peCPQD.Location = new System.Drawing.Point(1, 0);
+            this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
+            this.peCPQD.Name = "peCPQD";
+            this.peCPQD.Size = new System.Drawing.Size(771, 467);
+            this.peCPQD.TabIndex = 28;
+            this.peCPQD.Visible = false;
+            // 
+            // dGVYDCP
+            // 
+            this.dGVYDCP.AllowUserToAddRows = false;
+            this.dGVYDCP.AllowUserToDeleteRows = false;
+            this.dGVYDCP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dGVYDCP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVYDCP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column4,
+            this.Column2,
+            this.Column3});
+            this.dGVYDCP.ContextMenuStrip = this.cMSDC;
+            this.dGVYDCP.Location = new System.Drawing.Point(20, 60);
+            this.dGVYDCP.Margin = new System.Windows.Forms.Padding(4);
+            this.dGVYDCP.Name = "dGVYDCP";
+            this.dGVYDCP.ReadOnly = true;
+            this.dGVYDCP.RowHeadersVisible = false;
+            this.dGVYDCP.RowHeadersWidth = 51;
+            this.dGVYDCP.RowTemplate.Height = 23;
+            this.dGVYDCP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dGVYDCP.Size = new System.Drawing.Size(746, 378);
+            this.dGVYDCP.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "CuisineName";
+            this.Column1.HeaderText = "菜品名称";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "id";
+            this.Column4.HeaderText = "iD";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "CuisinePrice";
+            this.Column2.HeaderText = "菜品价格";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "菜品数量";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.ToolTipText = "1";
+            // 
+            // cMSDC
+            // 
+            this.cMSDC.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cMSDC.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.加入菜篮ToolStripMenuItem,
+            this.tSMDelete});
+            this.cMSDC.Name = "cMSDC";
+            this.cMSDC.Size = new System.Drawing.Size(125, 48);
+            // 
+            // 加入菜篮ToolStripMenuItem
+            // 
+            this.加入菜篮ToolStripMenuItem.Name = "加入菜篮ToolStripMenuItem";
+            this.加入菜篮ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.加入菜篮ToolStripMenuItem.Text = "加入菜篮";
+            this.加入菜篮ToolStripMenuItem.Click += new System.EventHandler(this.加入菜篮ToolStripMenuItem_Click);
+            // 
+            // tSMDelete
+            // 
+            this.tSMDelete.Name = "tSMDelete";
+            this.tSMDelete.Size = new System.Drawing.Size(124, 22);
+            this.tSMDelete.Text = "删除菜品";
+            this.tSMDelete.Visible = false;
+            this.tSMDelete.Click += new System.EventHandler(this.TSMDelete_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(241, 195);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(332, 27);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "尊敬的用户您暂时没有添加任何菜品";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(11, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(238, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "已点菜单清单,可以根据右击删除";
+            // 
+            // btnclose
+            // 
+            this.btnclose.Location = new System.Drawing.Point(915, 544);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(100, 29);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "关闭";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.Button4_Click_1);
             // 
             // bTSS
             // 
@@ -408,30 +531,6 @@
             // 
             this.columnHeader4.Text = "价格";
             this.columnHeader4.Width = 212;
-            // 
-            // cMSDC
-            // 
-            this.cMSDC.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.cMSDC.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.加入菜篮ToolStripMenuItem,
-            this.tSMDelete});
-            this.cMSDC.Name = "cMSDC";
-            this.cMSDC.Size = new System.Drawing.Size(125, 48);
-            // 
-            // 加入菜篮ToolStripMenuItem
-            // 
-            this.加入菜篮ToolStripMenuItem.Name = "加入菜篮ToolStripMenuItem";
-            this.加入菜篮ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.加入菜篮ToolStripMenuItem.Text = "加入菜篮";
-            this.加入菜篮ToolStripMenuItem.Click += new System.EventHandler(this.加入菜篮ToolStripMenuItem_Click);
-            // 
-            // tSMDelete
-            // 
-            this.tSMDelete.Name = "tSMDelete";
-            this.tSMDelete.Size = new System.Drawing.Size(124, 22);
-            this.tSMDelete.Text = "删除菜品";
-            this.tSMDelete.Visible = false;
-            this.tSMDelete.Click += new System.EventHandler(this.TSMDelete_Click);
             // 
             // image
             // 
@@ -857,111 +956,12 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "搜索商品名称";
             // 
-            // peCPQD
-            // 
-            this.peCPQD.Controls.Add(this.dGVYDCP);
-            this.peCPQD.Controls.Add(this.label4);
-            this.peCPQD.Controls.Add(this.label3);
-            this.peCPQD.Controls.Add(this.btnclose);
-            this.peCPQD.Location = new System.Drawing.Point(0, 0);
-            this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
-            this.peCPQD.Name = "peCPQD";
-            this.peCPQD.Size = new System.Drawing.Size(771, 467);
-            this.peCPQD.TabIndex = 28;
-            this.peCPQD.Visible = false;
-            // 
-            // dGVYDCP
-            // 
-            this.dGVYDCP.AllowUserToAddRows = false;
-            this.dGVYDCP.AllowUserToDeleteRows = false;
-            this.dGVYDCP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dGVYDCP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVYDCP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column4,
-            this.Column2,
-            this.Column3});
-            this.dGVYDCP.ContextMenuStrip = this.cMSDC;
-            this.dGVYDCP.Location = new System.Drawing.Point(20, 60);
-            this.dGVYDCP.Margin = new System.Windows.Forms.Padding(4);
-            this.dGVYDCP.Name = "dGVYDCP";
-            this.dGVYDCP.ReadOnly = true;
-            this.dGVYDCP.RowHeadersVisible = false;
-            this.dGVYDCP.RowHeadersWidth = 51;
-            this.dGVYDCP.RowTemplate.Height = 23;
-            this.dGVYDCP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dGVYDCP.Size = new System.Drawing.Size(746, 378);
-            this.dGVYDCP.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "CuisineName";
-            this.Column1.HeaderText = "菜品名称";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "id";
-            this.Column4.HeaderText = "iD";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "CuisinePrice";
-            this.Column2.HeaderText = "菜品价格";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "菜品数量";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.ToolTipText = "1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(241, 195);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(332, 27);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "尊敬的用户您暂时没有添加任何菜品";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(11, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "已点菜单清单,可以根据右击删除";
-            // 
-            // btnclose
-            // 
-            this.btnclose.Location = new System.Drawing.Point(915, 544);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(100, 29);
-            this.btnclose.TabIndex = 1;
-            this.btnclose.Text = "关闭";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.Button4_Click_1);
-            // 
             // 点餐
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 467);
+            this.Controls.Add(this.peCPQD);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -973,10 +973,13 @@
             this.Load += new System.EventHandler(this.点餐_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.peCPQD.ResumeLayout(false);
+            this.peCPQD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVYDCP)).EndInit();
+            this.cMSDC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.cMSDC.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
@@ -985,9 +988,6 @@
             this.tabPage8.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
-            this.peCPQD.ResumeLayout(false);
-            this.peCPQD.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVYDCP)).EndInit();
             this.ResumeLayout(false);
 
         }
