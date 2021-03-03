@@ -26,7 +26,7 @@ namespace 点餐系统
         {
             i = 1;
             Temp.index = 0;
-            btnsearch.Visible = true;
+            btnSerach.Visible = true;
             #region 隐藏窗口
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
@@ -40,7 +40,7 @@ namespace 点餐系统
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
             i = 1;
-            btnsearch.Visible = false;
+            btnSerach.Visible = false;
             #region 隐藏窗口
             panel7.Visible = true;
             //panel1.Visible = false;//商家首页显示（panel1）
@@ -321,19 +321,6 @@ namespace 点餐系统
                 MessageBox.Show("删除失败");
             }
         }
-        private void button12_Click(object sender, EventArgs e)
-        {
-            商家登入修改注册 sjdlxgzc = new 商家登入修改注册();
-            sjdlxgzc.jurisdiction = 1;
-            sjdlxgzc.Show();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            商家登录 sjdl = new 商家登录();
-            sjdl.Show();
-            this.Close();
-        }
 
         private void button8_Click_1(object sender, EventArgs e)//查询按钮
         {
@@ -341,6 +328,24 @@ namespace 点餐系统
             Inquire();
         }
 
-       
+        private void btnUpdate_Click(object sender, EventArgs e)//商家我的修改（按钮）
+        {
+            商家登入修改注册 sjdlxgzc = new 商家登入修改注册();
+            sjdlxgzc.jurisdiction = 1;
+            sjdlxgzc.Show();
+        }
+
+        private void btnHandover_Click(object sender, EventArgs e)//商家我的切换（按钮）
+        {
+            商家登录 sjdl = new 商家登录();
+            sjdl.Show();
+            this.Close();
+        }
+
+        private void btnSerach_Click(object sender, EventArgs e)//商家首页1 搜索（按钮）
+        {
+            i = 1;
+            Inquire();
+        }
     }
 }
