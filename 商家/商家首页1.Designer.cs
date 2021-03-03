@@ -412,7 +412,7 @@
             // 
             this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.textBox1.Location = new System.Drawing.Point(497, 206);
+            this.textBox1.Location = new System.Drawing.Point(497, 204);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(129, 21);
@@ -444,7 +444,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(497, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(498, 72);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 106);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
