@@ -46,9 +46,10 @@
             this.lVMHB.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lVMHB.HideSelection = false;
             this.lVMHB.LargeImageList = this.images;
-            this.lVMHB.Location = new System.Drawing.Point(3, 34);
+            this.lVMHB.Location = new System.Drawing.Point(2, 27);
+            this.lVMHB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lVMHB.Name = "lVMHB";
-            this.lVMHB.Size = new System.Drawing.Size(743, 484);
+            this.lVMHB.Size = new System.Drawing.Size(558, 388);
             this.lVMHB.TabIndex = 0;
             this.lVMHB.UseCompatibleStateImageBehavior = false;
             this.lVMHB.View = System.Windows.Forms.View.Tile;
@@ -63,33 +64,29 @@
             // 
             // button3
             // 
-            this.btnreturn.BackColor = System.Drawing.Color.Transparent;
-            this.btnreturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnreturn.Location = new System.Drawing.Point(25, 0);
-            this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
-            this.btnreturn.Name = "btnreturn";
-            this.btnreturn.Size = new System.Drawing.Size(67, 35);
-            this.btnreturn.TabIndex = 21;
-            this.btnreturn.Text = "返回";
-            this.btnreturn.UseVisualStyleBackColor = false;
-            this.btnreturn.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Location = new System.Drawing.Point(25, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(56, 27);
+            this.button3.TabIndex = 23;
+            this.button3.Text = "返回";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(88, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(66, 28);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
             // bttZaiLeiYiDan
             // 
             this.bttZaiLeiYiDan.ForeColor = System.Drawing.Color.Red;
-            this.bttZaiLeiYiDan.Location = new System.Drawing.Point(658, 482);
+            this.bttZaiLeiYiDan.Location = new System.Drawing.Point(494, 386);
+            this.bttZaiLeiYiDan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bttZaiLeiYiDan.Name = "bttZaiLeiYiDan";
-            this.bttZaiLeiYiDan.Size = new System.Drawing.Size(75, 23);
+            this.bttZaiLeiYiDan.Size = new System.Drawing.Size(56, 18);
             this.bttZaiLeiYiDan.TabIndex = 4;
             this.bttZaiLeiYiDan.Text = "再来一单";
             this.bttZaiLeiYiDan.UseVisualStyleBackColor = true;
@@ -99,7 +96,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(323, 7);
+            this.label1.Location = new System.Drawing.Point(242, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 21);
             this.label1.TabIndex = 22;
@@ -108,9 +106,10 @@
             // bttDelete
             // 
             this.bttDelete.ForeColor = System.Drawing.Color.Red;
-            this.bttDelete.Location = new System.Drawing.Point(577, 482);
+            this.bttDelete.Location = new System.Drawing.Point(433, 386);
+            this.bttDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bttDelete.Name = "bttDelete";
-            this.bttDelete.Size = new System.Drawing.Size(75, 23);
+            this.bttDelete.Size = new System.Drawing.Size(56, 18);
             this.bttDelete.TabIndex = 4;
             this.bttDelete.Text = "删除订单";
             this.bttDelete.UseVisualStyleBackColor = true;
@@ -120,9 +119,10 @@
             // bttQD
             // 
             this.bttQD.ForeColor = System.Drawing.Color.Red;
-            this.bttQD.Location = new System.Drawing.Point(577, 482);
+            this.bttQD.Location = new System.Drawing.Point(433, 386);
+            this.bttQD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bttQD.Name = "bttQD";
-            this.bttQD.Size = new System.Drawing.Size(75, 23);
+            this.bttQD.Size = new System.Drawing.Size(56, 18);
             this.bttQD.TabIndex = 4;
             this.bttQD.Text = "确定到餐";
             this.bttQD.UseVisualStyleBackColor = true;
@@ -131,9 +131,9 @@
             // 
             // 模糊订单
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 517);
+            this.ClientSize = new System.Drawing.Size(561, 414);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bttQD);
             this.Controls.Add(this.bttDelete);
@@ -141,6 +141,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lVMHB);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "模糊订单";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -82,11 +82,11 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
-            bttJD.Enabled = false;
+            //bttJD.Enabled = false;
             bttTD.Enabled = false;
 
             txtCPName.Enabled = true;
-            bttCX.Enabled = true;
+            //bttCX.Enabled = true;
             i = 1; count = 0;
             Temp.index = 0;
             #region 隐藏窗口
@@ -164,11 +164,11 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            if (lVOrders.SelectedItems.Count == 0)
+           /* if (lVOrders.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要拒绝的订单");
                 return;
-            }
+            }*/
 
             if (of.UpdateOrderFormManager("3", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
             button1_Click("", null);
@@ -178,12 +178,12 @@ namespace 点餐系统
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
             txtCPName.Enabled = false;
-            bttCX.Enabled = false;
+            //bttCX.Enabled = false;
 
-            bttJD.Enabled = true;
+            //bttJD.Enabled = true;
             bttTD.Enabled = true;
 
-            lVOrders.Items.Clear();
+            //lVOrders.Items.Clear();
             
             foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID,""))
             {
@@ -193,7 +193,7 @@ namespace 点餐系统
                 ListViewItem lv = new ListViewItem(st);
 
                 lv.Tag = item;
-                lVOrders.Items.Add(lv);
+                //lVOrders.Items.Add(lv);
             }
             #region 隐藏窗口
             //panel2.Visible = false;//商家的菜品查询（panel2）
@@ -244,8 +244,8 @@ namespace 点餐系统
         public void Inquire() //查询菜品图片
         {
 
-            listView2.Items.Clear();//清除
-            image.Images.Clear();
+            //listView2.Items.Clear();//清除
+            //image.Images.Clear();
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(),"");
 
             Image[] asg = new Image[list.Count];//这里是图片的多少
@@ -263,7 +263,7 @@ namespace 点餐系统
                 lvCPMessage.Items[i].Tag = item.id;
                 i++;
             }
-            image.Images.AddRange(asg);
+            //image.Images.AddRange(asg);
         }
         public bool Check() //判断是否为空
         {
@@ -366,46 +366,46 @@ namespace 点餐系统
 
         private void LVOrders_Click_1(object sender, EventArgs e)
         {
-            lVDetailedOrders.Items.Clear();
+            //lVDetailedOrders.Items.Clear();
 
-            this.dt = rm.InquireReservation(User.khID, lVOrders.SelectedItems[0].Text);
+            //this.dt = rm.InquireReservation(User.khID, lVOrders.SelectedItems[0].Text);
             int j = 0;
             Image asg = null;//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
 
             foreach (DataRow dr in dt.Rows)//循环表里的行
             {
                 asg = System.Drawing.Image.FromFile(Temp.pathCG + dr["CuisineImagePath"].ToString());//已经把拿到的图片保存到了这里面
-                lVDetailedOrders.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"] + "/元)x"+ dr["VegetableQuantity"], j);//这里是关键!!!!!!!!!
+                //lVDetailedOrders.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"] + "/元)x"+ dr["VegetableQuantity"], j);//这里是关键!!!!!!!!!
 
                 image.Images.Add(asg);//添加图片到上面去
                 j++;
             }
 
 
-            OrderForm of=(OrderForm)lVOrders.SelectedItems[0].Tag;
-            lblJG.Text = of.TotalPrices.ToString ();
+            //OrderForm of=(OrderForm)lVOrders.SelectedItems[0].Tag;
+            //lblJG.Text = of.TotalPrices.ToString ();
         }
 
         private void Button10_Click(object sender, EventArgs e)
         {
 
-            if (lVOrders.SelectedItems.Count == 0)
+            /*if (lVOrders.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要接收的订单");
                 return;
-            }
+            }*/
 
-            OrderForm odf=(OrderForm)lVOrders.SelectedItems[0].Tag;
+            //OrderForm odf=(OrderForm)lVOrders.SelectedItems[0].Tag;
 
-            if (odf.StatusId != 1)
+            /*if (odf.StatusId != 1)
             {
                 MessageBox.Show("你以下点，请耐心等待骑手接单，也可进行退单");
                 return;
-            }
+            }*/
 
             if (of.UpdateOrderFormManager("1003", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
 
-            using (FileStream fs = new FileStream(@"d:\"+ odf .StatusId.ToString()+ "txt", FileMode.Append, FileAccess.Write))
+            /*using (FileStream fs = new FileStream(@"d:\"+ odf .StatusId.ToString()+ "txt", FileMode.Append, FileAccess.Write))
             {
 
                 StreamWriter writer = new StreamWriter(fs);
@@ -418,7 +418,7 @@ namespace 点餐系统
                 writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name+"*************");
                 writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
                 writer.Flush();//刷新缓存，且输入信息
-            }
+            }*/
 
             button1_Click("", null);
         }

@@ -50,7 +50,7 @@
             this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            //this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSerach = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -70,7 +70,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bttJD = new System.Windows.Forms.Button();
+            //this.bttJD = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.bttTD = new System.Windows.Forms.Button();
             this.lblJG = new System.Windows.Forms.Label();
@@ -313,13 +313,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvCPMessage.ContextMenuStrip = this.Cmlist;
             this.lvCPMessage.HideSelection = false;
-            this.lvCPMessage.LargeImageList = this.imageList1;
+            //this.lvCPMessage.LargeImageList = this.imageList1;
             this.lvCPMessage.Location = new System.Drawing.Point(4, 0);
             this.lvCPMessage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lvCPMessage.Name = "lvCPMessage";
             this.lvCPMessage.Size = new System.Drawing.Size(912, 586);
-            this.lvCPMessage.SmallImageList = this.imageList1;
-            this.lvCPMessage.StateImageList = this.imageList1;
+            /*this.lvCPMessage.SmallImageList = this.imageList1;
+            this.lvCPMessage.StateImageList = this.imageList1;*/
             this.lvCPMessage.TabIndex = 21;
             this.lvCPMessage.UseCompatibleStateImageBehavior = false;
             this.lvCPMessage.View = System.Windows.Forms.View.List;
@@ -341,9 +341,9 @@
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            /*this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(80, 80);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;*/
             // 
             // panel1
             // 
@@ -617,7 +617,7 @@
             // 
             // bttJD
             // 
-            this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            /*this.bttJD.BackColor = System.Drawing.Color.Transparent;
             this.bttJD.Enabled = false;
             this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
             this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
@@ -629,7 +629,7 @@
             this.bttJD.TabIndex = 3;
             this.bttJD.Text = "接单\r\n(+)";
             this.bttJD.UseVisualStyleBackColor = false;
-            this.bttJD.Click += new System.EventHandler(this.Button10_Click);
+            this.bttJD.Click += new System.EventHandler(this.Button10_Click);*/
             // 
             // button1
             // 
@@ -650,7 +650,7 @@
             // 
             // bttTD
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
+           /* this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -663,11 +663,11 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "退单\r\n(-)";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.button4_Click);*/
             // 
             // lblJG
             // 
-            this.label8.AutoSize = true;
+           /* this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.ForeColor = System.Drawing.Color.DarkRed;
             this.label8.Location = new System.Drawing.Point(7, 41);
@@ -675,7 +675,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 36);
             this.label8.TabIndex = 2;
-            this.label8.Text = "￥";
+            this.label8.Text = "￥";*/
             // 
             // label7
             // 

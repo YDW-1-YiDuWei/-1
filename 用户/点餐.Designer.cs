@@ -43,7 +43,7 @@
             this.tSMDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            //this.button4 = new System.Windows.Forms.Button();
             this.bTSS = new System.Windows.Forms.Button();
             this.lkbWEI = new System.Windows.Forms.LinkLabel();
             this.lkbTop = new System.Windows.Forms.LinkLabel();
@@ -171,7 +171,7 @@
             this.peCPQD.Controls.Add(this.dGVYDCP);
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
-            this.peCPQD.Controls.Add(this.button4);
+            //this.peCPQD.Controls.Add(this.button4);
             this.peCPQD.Location = new System.Drawing.Point(0, 0);
             this.peCPQD.Name = "peCPQD";
             this.peCPQD.Size = new System.Drawing.Size(771, 467);
@@ -274,13 +274,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(686, 435);
+            /*this.button4.Location = new System.Drawing.Point(686, 435);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 1;
             this.button4.Text = "关闭";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click_1);
+            this.button4.Click += new System.EventHandler(this.Button4_Click_1);*/
             // 
             // bTSS
             // 
