@@ -142,6 +142,7 @@
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "注册";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // 骑手登入
             // 

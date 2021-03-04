@@ -183,13 +183,13 @@ namespace 点餐系统
             //bttJD.Enabled = true;
             bttTD.Enabled = true;
 
-            //lVOrders.Items.Clear();
-            
-            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID,""))
+            lVOrders.Items.Clear();
+
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, ""))
             {
                 if (item.StatusId != 1) continue;
 
-                string[] st = { item.IdName.ToString(),item.ClientId.Name,item.ClientId.Phone};
+                string[] st = { item.IdName.ToString(), item.ClientId.Name, item.ClientId.Phone };
                 ListViewItem lv = new ListViewItem(st);
 
                 lv.Tag = item;
@@ -245,7 +245,7 @@ namespace 点餐系统
         {
 
             //listView2.Items.Clear();//清除
-            //image.Images.Clear();
+            image.Images.Clear();
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(),"");
 
             Image[] asg = new Image[list.Count];//这里是图片的多少
@@ -366,7 +366,7 @@ namespace 点餐系统
 
         private void LVOrders_Click_1(object sender, EventArgs e)
         {
-            //lVDetailedOrders.Items.Clear();
+            /*lVDetailedOrders.Items.Clear();
 
             //this.dt = rm.InquireReservation(User.khID, lVOrders.SelectedItems[0].Text);
             int j = 0;
@@ -383,7 +383,7 @@ namespace 点餐系统
 
 
             //OrderForm of=(OrderForm)lVOrders.SelectedItems[0].Tag;
-            //lblJG.Text = of.TotalPrices.ToString ();
+            lblJG.Text = of.TotalPrices.ToString ();*/
         }
 
         private void Button10_Click(object sender, EventArgs e)
@@ -420,7 +420,7 @@ namespace 点餐系统
                 writer.Flush();//刷新缓存，且输入信息
             }*/
 
-            button1_Click("", null);
+            button1_Click("", null);*/
         }
 
         private void button8_Click_1(object sender, EventArgs e)//查询按钮

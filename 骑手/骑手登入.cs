@@ -16,5 +16,11 @@ namespace 点餐系统
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            骑手注册修改 qszcxg = new 骑手注册修改();
+            qszcxg.Show();
+        }
     }
 }

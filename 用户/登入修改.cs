@@ -16,49 +16,11 @@ namespace 点餐系统
     {
         ClientManager client = new ClientManager();
         public int a = 0;
-
-
         public 登入修改()
         {
             InitializeComponent();
         }
-        public bool Check() //判断输入的
-        {
-            if (txtZH.Text.Trim() == "")
-            {
-                MessageBox.Show("请输入账号");
-                txtZH.Focus();
-                return false;
-            }
-            if (txtPwd.Text.Trim() == "")
-            {
-                MessageBox.Show("请输入新密码");
-                txtPwd.Focus();
-                return false;
-            }
-            if (txtPwd2.Text.Trim() == "")
-            {
-                MessageBox.Show("请输入确认密码");
-                txtPwd2.Focus();
-                return false;
-            }
-            if (txtPwd.Text.Trim() != txtPwd2.Text.Trim())
-            {
-                MessageBox.Show("新密码跟确认密码不正确");
-                txtPwd2.Focus();
-                return false;
-            }
-            return true;
-        }
-        private void button1_Click(object sender, EventArgs e)//确认按钮（黑鬼乱写的）
-        {
-            if (Check())
-            {
-
-            }
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)//确认按钮
+        private void Button1_Click_1(object sender, EventArgs e)//用户登入修改  确认（按钮）
         {
             if (txtZH.Text.Trim() == "")
             {
@@ -150,13 +112,11 @@ namespace 点餐系统
         private void button3_Click(object sender, EventArgs e)
         {
             List<Client> list = client.Login(User.user, User.pass);
-            我的 wo = new 我的();
-            wo.list = list;
-            wo.Show();
-            this.Close();
+            登录界面 wd = new 登录界面();
+            wd.list = list;
+            wd.Show();
 
         }
-
         private void 登入修改_Load(object sender, EventArgs e)//加载事件
         {
             txtZH.ReadOnly = false;
@@ -166,6 +126,38 @@ namespace 点餐系统
                 txtZH.Text = User.user;
                 txtPwd.Text = User.pass;
             }
+        }
+        private void btncancel_Click(object sender, EventArgs e)//用户登入修改  取消（按钮）
+        {
+
+        }
+        public bool Check() //判断输入的
+        {
+            if (txtZH.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入账号");
+                txtZH.Focus();
+                return false;
+            }
+            if (txtPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入新密码");
+                txtPwd.Focus();
+                return false;
+            }
+            if (txtPwd2.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入确认密码");
+                txtPwd2.Focus();
+                return false;
+            }
+            if (txtPwd.Text.Trim() != txtPwd2.Text.Trim())
+            {
+                MessageBox.Show("新密码跟确认密码不正确");
+                txtPwd2.Focus();
+                return false;
+            }
+            return true;
         }
     }
 }

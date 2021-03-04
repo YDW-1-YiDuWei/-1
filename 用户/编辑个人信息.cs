@@ -12,17 +12,16 @@ using DianCanXiTongManager;
 
 namespace 点餐系统
 {
-    public partial class 编辑个人信息 : Form
+    public partial class 编辑个人信息1 : Form
     {
-        public 编辑个人信息()
+        public 编辑个人信息1()
         {
             InitializeComponent();
         }
-
         ClientManager client = new ClientManager();
-        private void Button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//用户编辑个人信息  确认（按钮）
         {
-            if (UserName.Text.Trim() == "")//
+            if (UserName.Text.Trim() == "")
             {
                 MessageBox.Show("请输入姓名");
                 UserName.Focus();
