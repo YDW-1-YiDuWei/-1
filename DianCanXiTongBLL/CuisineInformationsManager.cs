@@ -29,9 +29,9 @@ namespace DianCanXiTongBLL
         /// <param name="a">菜品评论</param>//删除了评论
         /// <param name="b">菜品次数</param>
         /// <param name="ptho">菜品图片路径</param>
-        public int AddCuisineInformations(string name, int cgId, int lxId, decimal money, int b, string ptho) 
+        public int AddCuisineInformations(string name, int cgId, int lxId, decimal money, int b, string ptho,int count) 
         {
-            return cS.AddCuisineInformations(name,cgId,lxId,money,b,ptho);
+            return cS.AddCuisineInformations(name,cgId,lxId,money,b,ptho,count);
         }
         /// <summary>
         /// 修改菜品

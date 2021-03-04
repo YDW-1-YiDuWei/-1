@@ -81,14 +81,15 @@
             this.textBox1.Location = new System.Drawing.Point(80, 143);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 21);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(80, 180);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '⭐';
             this.textBox2.Size = new System.Drawing.Size(169, 21);
-            this.textBox2.TabIndex = 2;
+            this.textBox2.TabIndex = 1;
             // 
             // button1
             // 
@@ -98,9 +99,10 @@
             this.button1.Location = new System.Drawing.Point(33, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 28);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 2;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -140,7 +142,7 @@
             this.label3.Location = new System.Drawing.Point(506, 407);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 5;
+            this.label3.TabIndex = 4;
             this.label3.Text = "注册";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 

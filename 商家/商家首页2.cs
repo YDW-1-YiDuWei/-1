@@ -144,7 +144,7 @@ namespace 点餐系统
             {
                 if (count == 0)
                 {
-                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
+                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName,1);
                     if (count > 0)
                     {
                         MessageBox.Show("增加成功");
@@ -225,7 +225,7 @@ namespace 点餐系统
         public void Inquire() //查询菜品图片
         {
 
-            //listView2.Items.Clear();//清除
+            lvCPMessage.Items.Clear();//清除
             image.Images.Clear();
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim(), "");
 
@@ -250,6 +250,27 @@ namespace 点餐系统
         {
             i = 1;
             Inquire();
+        }
+
+        private void 商家首页2_Load(object sender, EventArgs e)//显示窗体的时候
+        {
+            cbLX.SelectedIndex = 0;
+            Inquire();
+        }
+
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)//删除选项
+        {
+            int a = (int)lvCPMessage.SelectedItems[0].Tag;
+            int count = cIM.DeleteCuisinelnformationsAmend(a);
+            if (count > 0)
+            {
+                MessageBox.Show("删除成功");
+                Inquire();//刷新界面
+            }
+            else
+            {
+                MessageBox.Show("删除失败");
+            }
         }
     }
 }
