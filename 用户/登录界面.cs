@@ -22,9 +22,8 @@ namespace 点餐系统
         RestaurantManager restaurantManager = new RestaurantManager();
 
         ClientManager client = new ClientManager();
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//用户登入界面  登入（按钮）
         {
-            //a();、、
             if (txtZH.Text.Trim() == "")
             {
                 MessageBox.Show("请你输入账号后再登录");
@@ -37,7 +36,6 @@ namespace 点餐系统
                 txtPwd.Focus();
                 return;
             }
-
             //调用业务层的登录方法
             List<Client> list = client.Login(txtZH.Text, txtPwd.Text);
             if (list.Count > 0)
@@ -48,41 +46,21 @@ namespace 点餐系统
                 User.user = txtZH.Text;
                 User.pass = txtPwd.Text;
                 User.khID = avv.Id.ToString();
-
-
             }
             else
             {
                 MessageBox.Show("账号或密码错误", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
         }
-        public void a()
+        private void Label3_Click(object sender, EventArgs e)//用户登入界面 注册（按钮）
         {
-            首页 sy = new 首页();
-
-            sy.Show();
-            this.Hide();
-        }
-
-        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
-        {
-            登入修改 drsg = new 登入修改();
-            drsg.Show();
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-            /*编辑个人信息 zc = new 编辑个人信息();
-            zc.Show();*/
             登入修改 drsg = new 登入修改();
             drsg.a = 1;
             drsg.Show();
             this.Hide();
         }
 
-        private void 登录界面_Load(object sender, EventArgs e)
+        private void 登录界面_Load(object sender, EventArgs e)////用户登入界面
         {
             if (list != null)
             {
@@ -96,6 +74,19 @@ namespace 点餐系统
                     MessageBox.Show("请您点击登录即可进入点餐", "登录提示", MessageBoxButtons.OK);
                 }
             }
+        }
+        public void a()
+        {
+            首页 sy = new 首页();
+
+            sy.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            登入修改 drsg = new 登入修改();
+            drsg.Show();
         }
     }
 }

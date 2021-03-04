@@ -16,35 +16,42 @@ namespace DianCanXiTongDAL
     /// </summary>
     public class ReservationService
     {
-        private DBHelper db = new DBHelper();
-        public DataTable InquireReservation(string yHID) //查询详细订单信息
+        DBHelper db = new DBHelper();
+        public DataTable InquireReservation(string yHID,string orderListId) //查询详细订单信息
         {
-            string sql = "select ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,1 from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id where ClientId='" + yHID + "'";
+            string sql = "select  r.CuisineInformationId,r.ClientId,r.Money,r.OrderListId,ci.CuisineImagePath,ci.CuisineName,ci.CuisinePrice,r.VegetableQuantity from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id where 1=1 ";
+
+            if (yHID .Trim ()!="")sql+= "  and ClientId = '" + yHID + "'";
+            if (orderListId.Trim() != "")sql+=" and OrderListId = '" + orderListId + "'"; 
+
             return db.GetTable(sql, "Reservation");
         }
-        public object InquireReservationJG() //返回这个订单总共多少钱
+
+        /// <summary>
+        /// 返回这个订单总共多少钱
+        /// </summary>
+        /// <returns></returns>
+        public object InquireReservationJG() 
         {
             string sql = "select sum(ci.CuisinePrice) from Reservation r inner join Client c on c.Id=r.ClientId inner join CuisineInformations ci on r.CuisineInformationId=ci.Id";
 
             return db.ExecuteScalar(sql);
-        }
-        public void SelectReservation()//查询订单
-        {
-
         }
         /// <summary>
         /// 订单增加
         /// </summary>
         /// <returns></returns> 325
         /// 
-        public int AddReservationService(string clientId, string money, string cuisineInformationId)
+        public int AddReservationService(string clientId, string money, string cuisineInformationId,string orderListId,string vegetableQuantity)
         {
-            string sql = "insert into Reservation(ClientId, Money, CuisineInformationId)values(@ClientId, @Money, @CuisineInformationId)";
+            string sql = "insert into Reservation(ClientId, Money, CuisineInformationId,OrderListId,VegetableQuantity)values(@ClientId, @Money, @CuisineInformationId,@OrderListId,@VegetableQuantity)";
             SqlParameter[] sp =
             {
                 new SqlParameter("@ClientId",clientId),
                 new SqlParameter("@Money",money),
                 new SqlParameter("@CuisineInformationId",cuisineInformationId),
+                new SqlParameter("@OrderListId",orderListId),
+                new SqlParameter("@VegetableQuantity",vegetableQuantity),
             };
             return db.ExecuteNonQuery(sql, sp);
         }
@@ -86,5 +93,14 @@ namespace DianCanXiTongDAL
             }
             return i;
         }//打印订单
+        /// <summary>
+        /// 详细订单删除，数据层
+        /// </summary>
+        /// <returns></returns>
+        public int DeleteReservationService(string orderListId)
+        {
+            string sql = "delete Reservation where OrderListId='"+orderListId+"'";
+            return db.ExecuteNonQuery(sql);
+        }
     }
 }

@@ -23,5 +23,11 @@ namespace 点餐系统
             骑手登入 qsdr = new 骑手登入();
             qsdr.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            骑手注册修改 qsdrxg = new 骑手注册修改();
+            qsdrxg.Show();
+        }
     }
 }

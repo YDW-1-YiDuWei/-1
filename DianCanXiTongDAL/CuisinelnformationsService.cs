@@ -14,18 +14,16 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 菜品查询
         /// </summary>
-        public List<CuisineInformations> CuisinelnformationsSelectService(string canGuanBianHao,string leix,string cuisineInformationsLXName)
+        public List<CuisineInformations> CuisinelnformationsSelectService(string canGuanBianHao,string leix,string cuisineInformationsLXName,string Id)
         {
             List<CuisineInformations> ls = new List<CuisineInformations>();
-            string sql = "select a.Id, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join CuisineType b on a.CuisineTypeId=b.Id where RestaurantId="+canGuanBianHao;
-            if (leix.Trim() != "")
-            {
-                sql += " and b.CuisineTypeName='" + leix + "'";
-            } else if (cuisineInformationsLXName.Trim()!="")
-            {
-                sql += " and CuisineName like '%"+ cuisineInformationsLXName + "%'";
-            }
-            SqlDataReader cmd = dB.ExecuteReader(sql);
+            string sql = "select a.Id,VegetableQuantity, CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCommentId, CuisineCount, CuisineImagePath from CuisineInformations a join CuisineType b on a.CuisineTypeId=b.Id where RestaurantId=" + canGuanBianHao;
+
+            if (leix.Trim() != "")sql += " and b.CuisineTypeName='" + leix + "'";
+            if (cuisineInformationsLXName.Trim() != "")sql += " and CuisineName like '" + cuisineInformationsLXName + "%'";
+            if (Id.Trim() != "") sql += " and a.Id='" + Id + "'";
+
+            SqlDataReader cmd=dB.ExecuteReader(sql);
             while (cmd.Read())
             {
                 CuisineInformations cuisine = new CuisineInformations()
@@ -35,7 +33,8 @@ namespace DianCanXiTongDAL
                     CuisineTypeId = new CuisineType() {id= int.Parse(cmd["CuisineTypeId"].ToString()) },//邪 加的菜品类型id
                     CuisinePrice = cmd["CuisinePrice"].ToString(),
                     CuisineImagePath= cmd["CuisineImagePath"].ToString(),
-                    CuisineCount =int.Parse(cmd["CuisineCount"].ToString())
+                    CuisineCount =int.Parse(cmd["CuisineCount"].ToString()),
+                    VegetableQuantity = int.Parse(cmd["VegetableQuantity"].ToString())
                 };
                 ls.Add(cuisine);
             }

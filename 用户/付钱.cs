@@ -13,11 +13,10 @@ namespace 点餐系统
 {
     public partial class 付钱 : Form
     {
-        public List<Reservation> Li { get; set; }
+        public List<Reservation> Li = null;
         public 付钱()
         {
             InitializeComponent();
-            Li = new List<Reservation>();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

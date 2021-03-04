@@ -73,6 +73,7 @@ namespace 点餐系统
 
                 点餐 frm = new 点餐();
                 frm.CanGuanBianHao = (string)lvSJXX.SelectedItems[0].Tag;
+                User.RestaurantId = (string)lvSJXX.SelectedItems[0].Tag;
                 frm.Show();
                 this.Hide();
             }
