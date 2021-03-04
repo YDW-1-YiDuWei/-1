@@ -12,9 +12,9 @@ using DianCanXiTongManager;
 
 namespace 点餐系统
 {
-    public partial class 首页 : Form
+    public partial class 商家首页 : Form
     {
-        public 首页()
+        public 商家首页()
         {
             InitializeComponent();
         }

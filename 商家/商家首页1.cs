@@ -45,10 +45,10 @@ namespace 点餐系统
             Temp.index = 0;
             btnSerach.Visible = true;
             #region 隐藏窗口
-            panel1.Visible = true;//商家首页显示（panel1）
+           /* panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            panel7.Visible = false;
+            panel7.Visible = false;*/
             //panel4.Visible = false;//商家模糊接单查询
             //panel5.Visible = false;//商家详细接单查询
             #endregion
@@ -59,7 +59,7 @@ namespace 点餐系统
             i = 1;
             btnSerach.Visible = false;
             #region 隐藏窗口
-            panel7.Visible = true;
+            //panel7.Visible = true;
             //panel1.Visible = false;//商家首页显示（panel1）
             /*panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -82,13 +82,13 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
-            bttJD.Enabled = false;
+           /* bttJD.Enabled = false;
             bttTD.Enabled = false;
 
             txtCPName.Enabled = true;
             bttCX.Enabled = true;
             i = 1; count = 0;
-            Temp.index = 0;
+            Temp.index = 0;*/
             #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
@@ -164,11 +164,11 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            if (lVOrders.SelectedItems.Count == 0)
+           /* if (lVOrders.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要拒绝的订单");
                 return;
-            }
+            }*/
 
             if (of.UpdateOrderFormManager("3", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
             button1_Click("", null);
@@ -177,7 +177,7 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            txtCPName.Enabled = false;
+           /* txtCPName.Enabled = false;
             bttCX.Enabled = false;
 
             bttJD.Enabled = true;
@@ -194,7 +194,7 @@ namespace 点餐系统
 
                 lv.Tag = item;
                 lVOrders.Items.Add(lv);
-            }
+            }*/
             #region 隐藏窗口
             //panel2.Visible = false;//商家的菜品查询（panel2）
             //panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -304,7 +304,7 @@ namespace 点餐系统
 
         private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            btnquit.Enabled = true;
+           /* btnquit.Enabled = true;
             btnUpdate.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
@@ -318,7 +318,7 @@ namespace 点餐系统
 
             }
             Inquire();
-            cbLX.SelectedIndex = 0;
+            cbLX.SelectedIndex = 0;*/
         }
 
         private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
@@ -326,8 +326,6 @@ namespace 点餐系统
             i = 1;
             if (DialogResult.OK == ofdLJ.ShowDialog())
             {
-                //    //ofdLJ.FileName;//拿到图片的路径
-                //    //string name = ofdLJ.SafeFileName;//这里是可以拿到这个菜的名称
                 pbImage.Image = System.Drawing.Image.FromFile(ofdLJ.FileName);
                 Temp.index = 1;
             }
@@ -451,7 +449,7 @@ namespace 点餐系统
 
         private void Btnquit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            /*if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 a = 1;
                 txtCGname.Text = "";
@@ -459,7 +457,17 @@ namespace 点餐系统
                 btnquit.Enabled = false;
                 btnUpdate.Enabled = false;
                 pbpath.Image = null;
-            }
+            }*/
+        }
+
+        private void bttTD_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btQX_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

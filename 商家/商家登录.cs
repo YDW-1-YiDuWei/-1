@@ -38,16 +38,16 @@ namespace 点餐系统
                 MessageBox.Show("请您输入密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
-            else if (textBox1.Text.Length < 5 || textBox1.Text.Length > 15)
+           /* else if (txtNum.Text.Length < 5 || txtNum.Text.Length > 15)
             {
                 MessageBox.Show("请您输入正确的账号", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
-            else if (textBox2.Text.Length < 5 || textBox2.Text.Length > 15)
+            else if (txtPwd.Text.Length < 5 || txtPwd.Text.Length > 15)
             {
                 MessageBox.Show("请您输入正确的密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
-            }
+            }*/
             return true;
         }
 
@@ -65,7 +65,7 @@ namespace 点餐系统
                 User.restaPass = list[0].RestaurantNumberPwd;
                 User.restaKhID = list[0].id.ToString();
                 User.path = list[0].RestaurantImage;
-                商家首页1 a = new 商家首页1();
+                商家首页2 a = new 商家首页2();
                 a.list = list;
                 a.Show();
                 this.Hide();
