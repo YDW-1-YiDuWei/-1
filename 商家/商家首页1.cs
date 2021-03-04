@@ -213,7 +213,7 @@ namespace 点餐系统
             {
                 if (count == 0)
                 {
-                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
+                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName,1);
                     if (count > 0)
                     {
                         MessageBox.Show("增加成功");

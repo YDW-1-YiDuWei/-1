@@ -89,7 +89,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
+            //this.panel5.SuspendLayout();
             this.Cmlist.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -287,13 +287,13 @@
             // 
             // lVUDD
             // 
-            this.panel5.Controls.Add(this.panel4);
+           /* this.panel5.Controls.Add(this.panel4);
             this.panel5.Location = new System.Drawing.Point(278, 250);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(404, 225);
             this.panel5.TabIndex = 22;
-            this.panel5.Visible = false;
+            this.panel5.Visible = false;*/
             // 
             // images
             // 
@@ -391,7 +391,7 @@
             this.lvCP.TabIndex = 0;
             this.lvCP.UseCompatibleStateImageBehavior = false;
             this.lvCP.View = System.Windows.Forms.View.Details;
-            this.lvCP.Click += new System.EventHandler(this.LvCP_Click);
+            //this.lvCP.Click += new System.EventHandler(this.LvCP_Click);
             // 
             // columnHeader1
             // 
@@ -525,7 +525,7 @@
             this.bttJD.TabIndex = 3;
             this.bttJD.Text = "接单";
             this.bttJD.UseVisualStyleBackColor = false;
-            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
+            //this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
             // 
             // lblZJG
             // 
@@ -776,7 +776,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            //this.panel5.ResumeLayout(false);
             this.Cmlist.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
