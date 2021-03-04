@@ -81,7 +81,7 @@
             this.textBox1.Location = new System.Drawing.Point(80, 143);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 21);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -101,6 +101,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -110,7 +111,7 @@
             this.button2.Location = new System.Drawing.Point(153, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 28);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 4;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -152,7 +153,10 @@
             this.ClientSize = new System.Drawing.Size(986, 558);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "骑手登入";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "骑手登入";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

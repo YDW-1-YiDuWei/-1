@@ -14,6 +14,7 @@ namespace 点餐系统
     public partial class 付钱 : Form
     {
         public List<Reservation> Li = null;
+        public 模糊订单 Get = null;
         public 付钱()
         {
             InitializeComponent();
@@ -49,7 +50,7 @@ namespace 点餐系统
             付钱成功 fqcg = new 付钱成功();
             FangFa(fqcg);
             fqcg.Show();
-          
+            
             this.Close();
         }
 
@@ -60,6 +61,7 @@ namespace 点餐系统
         public void FangFa(付钱成功 fqcg)
         {
             fqcg.Li = Li;
+            fqcg.Get = this.Get;
         }
     }
 }

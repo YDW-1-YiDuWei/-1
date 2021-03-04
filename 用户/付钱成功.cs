@@ -16,6 +16,7 @@ namespace 点餐系统
     {
         public List<Reservation> Li = null;
         private OrderFormManager ofm = new OrderFormManager();
+        public 模糊订单 Get = null;
         public 付钱成功()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace 点餐系统
             {
                 a =reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString(), ls[0].IdName.ToString(), item.VegetableQuantity.ToString());
             }
-            
+            Get.DDSX();
             tj.Show();
             if (a ==0&& b==0)
             {

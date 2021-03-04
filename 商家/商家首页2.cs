@@ -66,6 +66,15 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家首页2  菜品添加（按钮）
         {
+            bttTD.Enabled = false;
+            bttJD.Enabled = false;
+
+            txtCPName.Enabled = true;
+            btnSerach.Enabled = true;
+
+            lvCP.Visible = false;
+            lVUDD.Visible = false;
+
             panel2.Visible = true;
             panel3.Visible = true;
             /*bttJD.Enabled = false;                                                                                            唐梦石
@@ -254,6 +263,130 @@ namespace 点餐系统
         private void 商家首页2_Load(object sender, EventArgs e)//显示窗体的时候
         {
             Inquire();
+        }
+        /// <summary>
+        /// 订单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private void BttDD_Click(object sender, EventArgs e)
+        {
+            lvCP.Visible = true;
+            lVUDD.Visible = true;
+
+            txtCPName.Enabled = false;
+            btnSerach.Enabled = false;
+
+            bttTD.Enabled = true;
+            bttJD.Enabled = true;
+
+            lvCP.Items.Clear();
+
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, ""))
+            {
+                if (item.StatusId != 1)
+                {
+                    continue;
+                }
+                string[] st = { item.IdName.ToString(), item.ClientId.Name, item.ClientId.Phone };
+                ListViewItem lv = new ListViewItem(st);
+
+                lv.Tag = item;
+                lvCP.Items.Add(lv);
+            }
+        }
+
+        /// <summary>
+        /// 接单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BttJD_Click(object sender, EventArgs e)
+        {
+            if (lvCP.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("您没有选择，要接收的订单");
+                return;
+            }
+
+            OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
+
+            if (odf.StatusId != 1)
+            {
+                MessageBox.Show("你以下点，请耐心等待骑手接单，也可进行退单");
+                return;
+            }
+
+            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString()) > 0)
+            {
+                BttDD_Click("", null);
+                MessageBox.Show("订单已发送，等待骑手接单");
+
+                using (FileStream fs = new FileStream(@"d:\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
+                {
+
+                    StreamWriter writer = new StreamWriter(fs);
+                    writer.Write("**********************订单" + odf.IdName.ToString() + " **********************\n点餐有：");//换行输入
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        writer.Write(item["CuisineName"] + "(" + item["CuisinePrice"] + "/元)x" + item["VegetableQuantity"] + ", ");
+                    }
+
+                    writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name + "*************");
+                    writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
+                    writer.Flush();//刷新缓存，且输入信息
+                }
+            }
+        }
+        /// <summary>
+        /// 退单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BttTD_Click(object sender, EventArgs e)
+        {
+            if (lvCP.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("您没有选择，要退的订单");
+                return;
+            }
+
+            if (MessageBox.Show("你确定要拒收此订单？","温馨提示",MessageBoxButtons.YesNo ,MessageBoxIcon.Information)==DialogResult.Yes) {
+                OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
+                if (of.UpdateOrderFormManager("3", odf.IdName.ToString()) > 0)
+                {
+                    BttDD_Click("", null);
+                    MessageBox.Show("订单已拒绝");
+                }
+            }
+        }
+        /// <summary>
+        /// 商家详细订单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LvCP_Click(object sender, EventArgs e)
+        {
+            image.Images.Clear();
+            lVUDD.Items.Clear();
+
+            this.dt = rm.InquireReservation(User.khID, lvCP.SelectedItems[0].Text);
+            //这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
+
+            int j = 0;
+            foreach (DataRow dr in dt.Rows)//循环表里的行
+            {
+
+                Image asg = System.Drawing.Image.FromFile(Temp.pathCG + dr["CuisineImagePath"].ToString());//已经把拿到的图片保存到了这里面
+
+                lVUDD.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"] + "/元)x" + dr["VegetableQuantity"], j);//这里是关键!!!!!!!!!
+                j++;
+                image.Images.Add(asg);//添加图片到上面去
+            }
+
+            OrderForm of = (OrderForm)lvCP.SelectedItems[0].Tag;
+            lblZJG.Text = of.TotalPrices.ToString();
         }
     }
 }

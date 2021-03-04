@@ -87,7 +87,7 @@ namespace 点餐系统
 
             txtCPName.Enabled = true;
             i = 1; count = 0;
-            Temp.index = 0;*/
+            Temp.index = 0;
             #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
@@ -194,8 +194,8 @@ namespace 点餐系统
                 ListViewItem lv = new ListViewItem(st);
 
                 lv.Tag = item;
-                lVOrders.Items.Add(lv);
-            }*/
+                //lVOrders.Items.Add(lv);
+            }
             #region 隐藏窗口
             //panel2.Visible = false;//商家的菜品查询（panel2）
             //panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -422,33 +422,6 @@ namespace 点餐系统
                 pbpath.Image = null;
             }*/
         }
-
-        private void bttTD_Click(object sender, EventArgs e)
-        {
-
-        }
-
-            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString()) > 0)
-            {
-                button1_Click("", null);
-                MessageBox.Show("订单已发送，等待骑手接单");
-               
-                using (FileStream fs = new FileStream(@"d:\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
-                {
-
-                    StreamWriter writer = new StreamWriter(fs);
-                    writer.Write("**********************订单" + odf.IdName.ToString() + " **********************\n点餐有：");//换行输入
-                    foreach (DataRow item in dt.Rows)
-                    {
-                        writer.Write(item["CuisineName"] + "(" + item["CuisinePrice"] + "/元)x" + item["VegetableQuantity"] + ", ");
-                    }
-
-                    writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name + "*************");
-                    writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
-                    writer.Flush();//刷新缓存，且输入信息
-                }
-            } 
-        }
         /// <summary>
         /// 退单
         /// </summary>
@@ -480,6 +453,39 @@ namespace 点餐系统
         private void LvCP_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BttJD_Click(object sender, EventArgs e)
+        {
+
+            if (lvCP.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("您没有选择，要接收的订单");
+                return;
+            }
+
+            OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
+
+            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString()) > 0)
+            {
+                button1_Click("", null);
+                MessageBox.Show("订单已发送，等待骑手接单");
+
+                using (FileStream fs = new FileStream(@"d:\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
+                {
+
+                    StreamWriter writer = new StreamWriter(fs);
+                    writer.Write("**********************订单" + odf.IdName.ToString() + " **********************\n点餐有：");//换行输入
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        writer.Write(item["CuisineName"] + "(" + item["CuisinePrice"] + "/元)x" + item["VegetableQuantity"] + ", ");
+                    }
+
+                    writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name + "*************");
+                    writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
+                    writer.Flush();//刷新缓存，且输入信息
+                }
+            }
         }
     }
 }
