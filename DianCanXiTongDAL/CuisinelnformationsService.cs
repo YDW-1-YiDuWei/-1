@@ -25,7 +25,7 @@ namespace DianCanXiTongDAL
             {
                 sql += " and CuisineName like '%"+ cuisineInformationsLXName + "%'";
             }
-            SqlDataReader cmd=dB.ExecuteReader(sql);
+            SqlDataReader cmd = dB.ExecuteReader(sql);
             while (cmd.Read())
             {
                 CuisineInformations cuisine = new CuisineInformations()

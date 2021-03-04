@@ -209,7 +209,7 @@ namespace 点餐系统
         public void Inquire() //查询菜品图片
         {
 
-            lvCPMessage.Items.Clear();//清除
+            lvCPMessage.Items.Clear();//清除项
             imageList1.Images.Clear();//清楚图片
             List<CuisineInformations> list = cIM.CuisinelnformationsSelectManager(User.restaKhID, "", txtCPName.Text.Trim());
 
