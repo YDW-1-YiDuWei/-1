@@ -46,7 +46,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.lVUDD = new System.Windows.Forms.ListView();
+            this.images = new System.Windows.Forms.ImageList(this.components);
             this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,15 +55,19 @@
             this.btnSerach = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lvCP = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bttJD = new System.Windows.Forms.Button();
+            this.lblZJG = new System.Windows.Forms.Label();
             this.bttTD = new System.Windows.Forms.Button();
-            this.lblJG = new System.Windows.Forms.Label();
+            this.bttDD = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -271,7 +276,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.lVUDD);
             this.panel2.Controls.Add(this.lvCPMessage);
             this.panel2.Location = new System.Drawing.Point(304, 44);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
@@ -280,7 +285,7 @@
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
             // 
-            // panel5
+            // lVUDD
             // 
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Location = new System.Drawing.Point(278, 250);
@@ -289,6 +294,12 @@
             this.panel5.Size = new System.Drawing.Size(404, 225);
             this.panel5.TabIndex = 22;
             this.panel5.Visible = false;
+            // 
+            // images
+            // 
+            this.images.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.images.ImageSize = new System.Drawing.Size(100, 100);
+            this.images.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // lvCPMessage
             // 
@@ -367,6 +378,11 @@
             // 
             // lvCP
             // 
+            this.lvCP.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvCP.FullRowSelect = true;
             this.lvCP.HideSelection = false;
             this.lvCP.Location = new System.Drawing.Point(75, 181);
             this.lvCP.Margin = new System.Windows.Forms.Padding(4);
@@ -374,6 +390,22 @@
             this.lvCP.Size = new System.Drawing.Size(150, 192);
             this.lvCP.TabIndex = 0;
             this.lvCP.UseCompatibleStateImageBehavior = false;
+            this.lvCP.View = System.Windows.Forms.View.Details;
+            this.lvCP.Click += new System.EventHandler(this.LvCP_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "订单";
+            this.columnHeader1.Width = 36;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "客户姓名";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "电话";
+            this.columnHeader3.Width = 121;
             // 
             // button7
             // 
@@ -463,9 +495,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.bttJD);
+            this.groupBox2.Controls.Add(this.lblZJG);
             this.groupBox2.Controls.Add(this.bttTD);
-            this.groupBox2.Controls.Add(this.lblJG);
+            this.groupBox2.Controls.Add(this.bttDD);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -477,22 +510,34 @@
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
-            // button1
+            // bttJD
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(129, 9);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 59);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "订单\r\n";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
+            this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttJD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bttJD.ForeColor = System.Drawing.Color.White;
+            this.bttJD.Location = new System.Drawing.Point(158, 9);
+            this.bttJD.Margin = new System.Windows.Forms.Padding(4);
+            this.bttJD.Name = "bttJD";
+            this.bttJD.Size = new System.Drawing.Size(63, 59);
+            this.bttJD.TabIndex = 3;
+            this.bttJD.Text = "接单";
+            this.bttJD.UseVisualStyleBackColor = false;
+            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
+            // 
+            // lblZJG
+            // 
+            this.lblZJG.AutoSize = true;
+            this.lblZJG.BackColor = System.Drawing.Color.Transparent;
+            this.lblZJG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblZJG.ForeColor = System.Drawing.Color.White;
+            this.lblZJG.Location = new System.Drawing.Point(43, 48);
+            this.lblZJG.Name = "lblZJG";
+            this.lblZJG.Size = new System.Drawing.Size(11, 12);
+            this.lblZJG.TabIndex = 36;
+            this.lblZJG.Text = "0";
             // 
             // bttTD
             // 
@@ -500,27 +545,36 @@
             this.bttTD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.bttTD.ForeColor = System.Drawing.Color.White;
             this.bttTD.Location = new System.Drawing.Point(229, 9);
-            this.bttTD.Margin = new System.Windows.Forms.Padding(2);
+            this.bttTD.Margin = new System.Windows.Forms.Padding(4);
             this.bttTD.Name = "bttTD";
             this.bttTD.Size = new System.Drawing.Size(63, 59);
             this.bttTD.TabIndex = 4;
             this.bttTD.Text = "退单";
             this.bttTD.Click += new System.EventHandler(this.bttTD_Click);
             // 
-            // lblJG
+            // bttDD
             // 
-            this.lblJG.Location = new System.Drawing.Point(0, 0);
-            this.lblJG.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblJG.Name = "lblJG";
-            this.lblJG.Size = new System.Drawing.Size(75, 18);
-            this.lblJG.TabIndex = 5;
+            this.bttDD.BackColor = System.Drawing.Color.Transparent;
+            this.bttDD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
+            this.bttDD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.bttDD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttDD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bttDD.ForeColor = System.Drawing.Color.White;
+            this.bttDD.Location = new System.Drawing.Point(87, 9);
+            this.bttDD.Margin = new System.Windows.Forms.Padding(4);
+            this.bttDD.Name = "bttDD";
+            this.bttDD.Size = new System.Drawing.Size(63, 59);
+            this.bttDD.TabIndex = 3;
+            this.bttDD.Text = "订单\r\n";
+            this.bttDD.UseVisualStyleBackColor = false;
+            this.bttDD.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(53, 9);
+            this.label7.Location = new System.Drawing.Point(3, 46);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 14);
             this.label7.TabIndex = 1;
@@ -532,7 +586,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(-2, 9);
+            this.label6.Location = new System.Drawing.Point(3, 14);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 14);
             this.label6.TabIndex = 1;
@@ -768,9 +822,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button bttTD;
-        private System.Windows.Forms.Label lblJG;
+        private System.Windows.Forms.Button bttDD;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -791,11 +843,18 @@
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ListView lvCP;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSerach;
+        private System.Windows.Forms.Button bttJD;
+        private System.Windows.Forms.Button bttTD;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ListView lVUDD;
+        private System.Windows.Forms.ImageList images;
+        private System.Windows.Forms.Label lblZJG;
     }
 }
