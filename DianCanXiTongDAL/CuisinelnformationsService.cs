@@ -10,7 +10,7 @@ namespace DianCanXiTongDAL
 {
     public class CuisinelnformationsService//菜品数据层
     {
-        private DBHelper dB = new DBHelper();
+        private DBHelper dB = new DBHelper();//
         /// <summary>
         /// 菜品查询
         /// </summary>
@@ -51,9 +51,9 @@ namespace DianCanXiTongDAL
         /// <param name="a">菜品评论</param>//删除了评论
         /// <param name="b">菜品次数</param>
         /// <param name="ptho">菜品图片路径</param>
-        public int AddCuisineInformations(string name,int cgId, int lxId, decimal money,int b,string ptho) 
+        public int AddCuisineInformations(string name,int cgId, int lxId, decimal money,int b,string ptho,int count) 
         {
-            string sql = "  insert  into  CuisineInformations(CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCount, CuisineImagePath ) values(@CuisineName, @RestaurantId, @CuisineTypeId, @CuisinePrice, @CuisineCount, @CuisineImagePath)";
+            string sql = "  insert  into  CuisineInformations(CuisineName, RestaurantId, CuisineTypeId, CuisinePrice, CuisineCount, CuisineImagePath, VegetableQuantity) values(@CuisineName, @RestaurantId, @CuisineTypeId, @CuisinePrice, @CuisineCount, @CuisineImagePath,@VegetableQuantity)";
             SqlParameter[] sp = new SqlParameter[] 
             {
             new SqlParameter("@CuisineName",name),
@@ -61,7 +61,8 @@ namespace DianCanXiTongDAL
             new SqlParameter("@CuisineTypeId",lxId),
             new SqlParameter("@CuisinePrice",money),
             new SqlParameter("@CuisineCount",b),
-            new SqlParameter("@CuisineImagePath",ptho)
+            new SqlParameter("@CuisineImagePath",ptho),
+            new SqlParameter("@VegetableQuantity",count)
             };
             return dB.ExecuteNonQuery(sql,sp);
         }
