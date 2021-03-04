@@ -28,7 +28,7 @@ namespace 点餐系统
 
         public bool LoninCheck()//商家登录判断
         {
-            if (txtNum.Text.Trim() == "")
+          /*  if (txtNum.Text.Trim() == "")
             {
                 MessageBox.Show("请您输入账号", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
@@ -47,7 +47,7 @@ namespace 点餐系统
             {
                 MessageBox.Show("请您输入正确的密码", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
-            }
+            }*/
             return true;
         }
 

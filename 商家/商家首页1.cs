@@ -48,7 +48,7 @@ namespace 点餐系统
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            panel7.Visible = false;
+            //panel7.Visible = false;
             //panel4.Visible = false;//商家模糊接单查询
             //panel5.Visible = false;//商家详细接单查询
             #endregion
@@ -59,7 +59,7 @@ namespace 点餐系统
             i = 1;
             btnSerach.Visible = false;
             #region 隐藏窗口
-            panel7.Visible = true;
+            //panel7.Visible = true;
             //panel1.Visible = false;//商家首页显示（panel1）
             /*panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -183,7 +183,7 @@ namespace 点餐系统
             //bttJD.Enabled = true;
             bttTD.Enabled = true;
 
-            lVOrders.Items.Clear();
+            //lVOrders.Items.Clear();
 
             foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, ""))
             {
@@ -304,7 +304,7 @@ namespace 点餐系统
 
         private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            btnquit.Enabled = true;
+            /*btnquit.Enabled = true;
             btnUpdate.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
@@ -318,7 +318,7 @@ namespace 点餐系统
 
             }
             Inquire();
-            cbLX.SelectedIndex = 0;
+            cbLX.SelectedIndex = 0;*/
         }
 
         private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
@@ -393,19 +393,19 @@ namespace 点餐系统
             {
                 MessageBox.Show("您没有选择，要接收的订单");
                 return;
-            }*/
+            }*//*
 
             //OrderForm odf=(OrderForm)lVOrders.SelectedItems[0].Tag;
 
-            /*if (odf.StatusId != 1)
+            *//*if (odf.StatusId != 1)
             {
                 MessageBox.Show("你以下点，请耐心等待骑手接单，也可进行退单");
                 return;
-            }*/
+            }*//*
 
             if (of.UpdateOrderFormManager("1003", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
 
-            /*using (FileStream fs = new FileStream(@"d:\"+ odf .StatusId.ToString()+ "txt", FileMode.Append, FileAccess.Write))
+            *//*using (FileStream fs = new FileStream(@"d:\"+ odf .StatusId.ToString()+ "txt", FileMode.Append, FileAccess.Write))
             {
 
                 StreamWriter writer = new StreamWriter(fs);
@@ -418,7 +418,7 @@ namespace 点餐系统
                 writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name+"*************");
                 writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
                 writer.Flush();//刷新缓存，且输入信息
-            }*/
+            }*//*
 
             button1_Click("", null);*/
         }
@@ -454,11 +454,11 @@ namespace 点餐系统
             if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 a = 1;
-                txtCGname.Text = "";
+                /*txtCGname.Text = "";
                 txtCGnum.Text = "";
                 btnquit.Enabled = false;
                 btnUpdate.Enabled = false;
-                pbpath.Image = null;
+                pbpath.Image = null;*/
             }
         }
     }

@@ -67,39 +67,6 @@ namespace 点餐系统
             fq.Show();
         }
 
-        private void TabControl1_Click(object sender, EventArgs e)
-        {
-            cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
-            DIanCaiFangFa();//判断菜品类型
-            Uiop.Items.Clear();//清除项
-            image.Images.Clear();//清除图片
-
-            int j = 0;
-            Image asg = null;
-
-            foreach (CuisineInformations dr in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName, ""))
-            {
-                asg = System.Drawing.Image.FromFile(Temp.pathCG + dr.CuisineImagePath);
-                Uiop.Items.Add(dr.id.ToString(), dr.CuisineName, j);//这里是关键!!!!!!!!!倒
-
-                Uiop.Tag = dr;
-                //添加图片到上面去
-                image.Images.Add(asg);
-                j++;
-            }
-
-
-            Uiop = null;
-        }
-
-        private void BTSS_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedIndex = 0;
-            cuisineInformationsLXName = txtDishName.Text;
-            TabControl1_Click("", null);
-            cuisineInformationsLXName = "";
-        }
-
         private void 加入菜篮ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DIanCaiFangFa();
@@ -142,7 +109,7 @@ namespace 点餐系统
             switch (cuisineInformationsLX)
             {
                 case "":
-                    Uiop = lvwQB;
+                    Uiop = lvWQB;
                     break;
                 case "冷菜":
                     Uiop = lVlC;
@@ -245,6 +212,98 @@ namespace 点餐系统
             dGVYDCP.Visible = true;
             label3.Visible = true;
             peCPQD.Visible = false;
+        }
+
+        /// <summary>
+        /// 关闭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button5_Click_1(object sender, EventArgs e)
+        {
+            peCPQD.Visible = false;
+        }
+
+        private void TabControl1_Click_1(object sender, EventArgs e)
+        {
+            cuisineInformationsLX = tabControl1.SelectedTab.Text == "全部" ? "" : tabControl1.SelectedTab.Text;
+            DIanCaiFangFa();//判断菜品类型
+            Uiop.Items.Clear();//清除项
+            image.Images.Clear();//清除图片
+
+            int j = 0;
+            Image asg = null;
+
+            foreach (CuisineInformations dr in cFM.CuisinelnformationsSelectManager(CanGuanBianHao, cuisineInformationsLX, cuisineInformationsLXName, ""))
+            {
+                asg = System.Drawing.Image.FromFile(Temp.pathCG + dr.CuisineImagePath);
+                Uiop.Items.Add(dr.id.ToString(), dr.CuisineName, j);//这里是关键!!!!!!!!!倒
+
+                Uiop.Tag = dr;
+                //添加图片到上面去
+                image.Images.Add(asg);
+                j++;
+            }
+
+
+            Uiop = null;
+        }
+        /// <summary>
+        ///一点菜品
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button4_Click_2(object sender, EventArgs e)
+        {
+            bttXD.Visible = false;
+            加入菜篮ToolStripMenuItem.Visible = false;
+            tSMDelete.Visible = true;
+
+            peCPQD.Visible = true;
+            dGVYDCP.DataSource = new BindingList<CuisineInformations>(cC);
+            dGVYDCP.Tag = new BindingList<CuisineInformations>(cC);
+        }
+        /// <summary>
+        /// 搜索
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BTSS_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+            cuisineInformationsLXName = txtDishName.Text;
+            TabControl1_Click_1("", null);
+            cuisineInformationsLXName = "";
+        }
+        /// <summary>
+        /// 下单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BttXD_Click(object sender, EventArgs e)
+        {
+            if (cC.Count == 0)
+            {
+                MessageBox.Show("尊敬的用户您没有点餐，请您点菜之后在进行下单");
+                return;
+            }
+
+            User.TotalPrices = lblJGS.Text;
+            付钱 fq = new 付钱();
+            foreach (CuisineInformations item in cC)
+            {
+                Reservation rv = new Reservation
+                {
+                    ClientId = int.Parse(User.khID),
+                    Money = int.Parse(item.CuisinePrice),
+                    CuisineInformationId = item.id,
+                    VegetableQuantity = item.VegetableQuantity
+                };
+                Li.Add(rv);
+            }
+
+            fq.Li = Li;
+            fq.Show();
         }
     }
 }
