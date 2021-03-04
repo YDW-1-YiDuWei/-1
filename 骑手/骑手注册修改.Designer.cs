@@ -161,6 +161,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -195,6 +196,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "骑手注册修改";
             this.Text = "骑手注册修改";
+            this.Load += new System.EventHandler(this.骑手注册修改_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

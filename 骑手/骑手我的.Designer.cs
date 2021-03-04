@@ -153,6 +153,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "退出登入";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // 骑手我的
             // 
@@ -163,6 +164,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "骑手我的";
             this.Text = "骑手我的";
+            this.Load += new System.EventHandler(this.骑手我的_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

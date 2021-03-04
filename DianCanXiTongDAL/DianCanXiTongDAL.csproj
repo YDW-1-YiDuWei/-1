@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservationService.cs" />
     <Compile Include="RestaurantService.cs" />
+    <Compile Include="RiderService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DianCanXiTongManager\DianCanXiTongModel.csproj">
