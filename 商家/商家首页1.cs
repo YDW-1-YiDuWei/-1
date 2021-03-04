@@ -94,6 +94,7 @@ namespace 点餐系统
             panel4.Visible = false;//商家模糊接单查询
             //panel5.Visible = false;//商家详细接单查询
             #endregion
+            //panel5.Visible = false;//商家详细接单查询
         }
 
         private void button3_Click(object sender, EventArgs e)//商家菜品删除
@@ -313,9 +314,9 @@ namespace 点餐系统
                 User.restaKhID = list[0].id.ToString();
                 pbSJLJ.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
-                pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
-                txtCGname.Text = list[0].RestaurantName;
-                txtCGnum.Text = User.restaUser;
+                //pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                //txtCGname.Text = list[0].RestaurantName;
+               // txtCGnum.Text = User.restaUser;
 
             }
             Inquire();

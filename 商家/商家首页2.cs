@@ -262,6 +262,7 @@ namespace 点餐系统
 
         private void 商家首页2_Load(object sender, EventArgs e)//显示窗体的时候
         {
+            cbLX.SelectedIndex = 0;
             Inquire();
         }
         /// <summary>
