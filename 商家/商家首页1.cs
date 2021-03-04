@@ -48,7 +48,7 @@ namespace 点餐系统
             panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            panel7.Visible = false;
+            //panel7.Visible = false;
             //panel4.Visible = false;//商家模糊接单查询
             //panel5.Visible = false;//商家详细接单查询
             #endregion
@@ -59,7 +59,7 @@ namespace 点餐系统
             i = 1;
             btnSerach.Visible = false;
             #region 隐藏窗口
-            panel7.Visible = true;
+            //panel7.Visible = true;
             //panel1.Visible = false;//商家首页显示（panel1）
             /*panel2.Visible = false;//商家的菜品查询（panel2）
             panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -82,7 +82,7 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
-            bttJD.Enabled = false;
+           /* bttJD.Enabled = false;
             bttTD.Enabled = false;
 
             txtCPName.Enabled = true;
@@ -94,7 +94,7 @@ namespace 点餐系统
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
             panel4.Visible = false;//商家模糊接单查询
             panel5.Visible = false;//商家详细接单查询
-            #endregion
+            #endregion*/
         }
 
         private void button3_Click(object sender, EventArgs e)//商家菜品删除
@@ -164,12 +164,12 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            if (lVOrders.SelectedItems.Count == 0)
+            /*if (lVOrders.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要拒绝的订单");
                 return;
             }
-
+*/
             if (of.UpdateOrderFormManager("3", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
             button1_Click("", null);
             i = 1;
@@ -177,13 +177,13 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            txtCPName.Enabled = false;
+            /*txtCPName.Enabled = false;
             bttCX.Enabled = false;
 
             bttJD.Enabled = true;
-            bttTD.Enabled = true;
+            bttTD.Enabled = true;*/
 
-            lVOrders.Items.Clear();
+            //lVOrders.Items.Clear();
 
             foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, ""))
             {
@@ -193,7 +193,7 @@ namespace 点餐系统
                 ListViewItem lv = new ListViewItem(st);
 
                 lv.Tag = item;
-                lVOrders.Items.Add(lv);
+                //lVOrders.Items.Add(lv);
             }
             #region 隐藏窗口
             //panel2.Visible = false;//商家的菜品查询（panel2）
@@ -304,17 +304,17 @@ namespace 点餐系统
 
         private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            btnquit.Enabled = true;
-            btnUpdate.Enabled = true;
+           // btnquit.Enabled = true;
+           // btnUpdate.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 User.restaKhID = list[0].id.ToString();
                 pbSJLJ.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
                 lbSJName.Text = "商家的名称：" + list[0].RestaurantName;
-                pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
-                txtCGname.Text = list[0].RestaurantName;
-                txtCGnum.Text = User.restaUser;
+                //pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                //txtCGname.Text = list[0].RestaurantName;
+               // txtCGnum.Text = User.restaUser;
 
             }
             Inquire();
@@ -453,12 +453,12 @@ namespace 点餐系统
         {
             if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                a = 1;
+               /* a = 1;
                 txtCGname.Text = "";
                 txtCGnum.Text = "";
                 btnquit.Enabled = false;
                 btnUpdate.Enabled = false;
-                pbpath.Image = null;
+                pbpath.Image = null;*/
             }
         }
     }

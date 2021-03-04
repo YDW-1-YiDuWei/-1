@@ -101,6 +101,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
