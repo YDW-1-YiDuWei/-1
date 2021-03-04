@@ -253,7 +253,23 @@ namespace 点餐系统
 
         private void 商家首页2_Load(object sender, EventArgs e)//显示窗体的时候
         {
+            cbLX.SelectedIndex = 0;
             Inquire();
+        }
+
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)//删除选项
+        {
+            int a = (int)lvCPMessage.SelectedItems[0].Tag;
+            int count = cIM.DeleteCuisinelnformationsAmend(a);
+            if (count > 0)
+            {
+                MessageBox.Show("删除成功");
+                Inquire();//刷新界面
+            }
+            else
+            {
+                MessageBox.Show("删除失败");
+            }
         }
     }
 }
