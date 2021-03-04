@@ -10,7 +10,7 @@ namespace DianCanXiTongDAL
 {
     public class CuisinelnformationsService//菜品数据层
     {
-        private DBHelper dB = new DBHelper();
+        private DBHelper dB = new DBHelper();//
         /// <summary>
         /// 菜品查询
         /// </summary>
