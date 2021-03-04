@@ -34,7 +34,7 @@ namespace 点餐系统
                 User.riderPwd = list[0].RiderNumberPwd;
                 User.riderKhId = list[0].RiderId.ToString();
                 MessageBox.Show("登录成功", "登录提示");
-
+                //登录成功显示骑手首页
                 骑手首页 frm = new 骑手首页();
                 frm.Show();
                 this.Hide();//隐藏用户
