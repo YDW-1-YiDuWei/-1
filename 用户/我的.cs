@@ -80,7 +80,7 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)
         {
-            首页 sy = new 首页();
+            商家首页 sy = new 商家首页();
             sy.Show();
             this.Close();
         }

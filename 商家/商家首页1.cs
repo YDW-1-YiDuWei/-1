@@ -45,10 +45,10 @@ namespace 点餐系统
             Temp.index = 0;
             btnSerach.Visible = true;
             #region 隐藏窗口
-            panel1.Visible = true;//商家首页显示（panel1）
+           /* panel1.Visible = true;//商家首页显示（panel1）
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
-            //panel7.Visible = false;
+            panel7.Visible = false;*/
             //panel4.Visible = false;//商家模糊接单查询
             //panel5.Visible = false;//商家详细接单查询
             #endregion
@@ -87,7 +87,7 @@ namespace 点餐系统
 
             txtCPName.Enabled = true;
             i = 1; count = 0;
-            Temp.index = 0;
+            Temp.index = 0;*/
             #region 隐藏窗口
             panel2.Visible = true;//商家的菜品查询（panel2）
             panel3.Visible = true;//商家的菜品增加/修改（panel3）
@@ -194,8 +194,8 @@ namespace 点餐系统
                 ListViewItem lv = new ListViewItem(st);
 
                 lv.Tag = item;
-                lvCP.Items.Add(lv);
-            }
+                lVOrders.Items.Add(lv);
+            }*/
             #region 隐藏窗口
             //panel2.Visible = false;//商家的菜品查询（panel2）
             //panel3.Visible = false;//商家的菜品增加/修改（panel3）
@@ -212,7 +212,7 @@ namespace 点餐系统
             {
                 if (count == 0)
                 {
-                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName);
+                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName,1);
                     if (count > 0)
                     {
                         MessageBox.Show("增加成功");
@@ -305,7 +305,7 @@ namespace 点餐系统
 
         private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            /*btnquit.Enabled = true;
+           /* btnquit.Enabled = true;
             btnUpdate.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
@@ -327,8 +327,6 @@ namespace 点餐系统
             i = 1;
             if (DialogResult.OK == ofdLJ.ShowDialog())
             {
-                //    //ofdLJ.FileName;//拿到图片的路径
-                //    //string name = ofdLJ.SafeFileName;//这里是可以拿到这个菜的名称
                 pbImage.Image = System.Drawing.Image.FromFile(ofdLJ.FileName);
                 Temp.index = 1;
             }
@@ -414,38 +412,21 @@ namespace 点餐系统
 
         private void Btnquit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            /*if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 a = 1;
                 /*txtCGname.Text = "";
                 txtCGnum.Text = "";
                 btnquit.Enabled = false;
                 btnUpdate.Enabled = false;
-                pbpath.Image = null;*/
-            }
+                pbpath.Image = null;
+            }*/
         }
 
-        /// <summary>
-        /// 接单
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BttJD_Click(object sender, EventArgs e)
+        private void bttTD_Click(object sender, EventArgs e)
         {
-           
-            if (lvCP.SelectedItems.Count == 0)
-            {
-                MessageBox.Show("您没有选择，要接收的订单");
-                return;
-            }
 
-            OrderForm odf=(OrderForm)lvCP.SelectedItems[0].Tag;
-
-            if (odf.StatusId !=1)
-            {
-                MessageBox.Show("你以下点，请耐心等待骑手接单，也可进行退单");
-                return;
-            }
+        }
 
             if (of.UpdateOrderFormManager("1003", odf.IdName.ToString()) > 0)
             {
@@ -498,25 +479,7 @@ namespace 点餐系统
         /// <param name="e"></param>
         private void LvCP_Click(object sender, EventArgs e)
         {
-            images.Images.Clear();
-            lVUDD.Items.Clear();
 
-            this.dt = rm.InquireReservation(User.khID, lvCP.SelectedItems[0].Text);
-            //这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
-
-            int j = 0;
-            foreach (DataRow dr in dt.Rows)//循环表里的行
-            {
-                
-                Image asg= System.Drawing.Image.FromFile(Temp.pathCG + dr["CuisineImagePath"].ToString());//已经把拿到的图片保存到了这里面
-
-                lVUDD.Items.Add(dr["CuisineName"] + "(" + dr["CuisinePrice"] + "/元)x" + dr["VegetableQuantity"], j);//这里是关键!!!!!!!!!
-                j++;
-                images.Images.Add(asg);//添加图片到上面去
-            }
-
-            OrderForm of = (OrderForm)lvCP.SelectedItems[0].Tag;
-            lblZJG.Text = of.TotalPrices.ToString();          
         }
     }
 }

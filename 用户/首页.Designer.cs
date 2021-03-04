@@ -1,6 +1,6 @@
 ﻿namespace 点餐系统
 {
-    partial class 首页
+    partial class 商家首页
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(首页));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(商家首页));
             this.lblmy = new System.Windows.Forms.Label();
             this.lblindent = new System.Windows.Forms.Label();
             this.lblreturn = new System.Windows.Forms.Label();

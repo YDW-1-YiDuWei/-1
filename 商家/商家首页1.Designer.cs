@@ -89,6 +89,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
+            //this.panel5.SuspendLayout();
             this.Cmlist.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -169,6 +170,7 @@
             this.btQX.TabIndex = 5;
             this.btQX.Text = "取消";
             this.btQX.UseVisualStyleBackColor = false;
+            this.btQX.Click += new System.EventHandler(this.btQX_Click);
             // 
             // btQD
             // 
@@ -285,14 +287,13 @@
             // 
             // lVUDD
             // 
-            this.lVUDD.HideSelection = false;
-            this.lVUDD.LargeImageList = this.images;
-            this.lVUDD.Location = new System.Drawing.Point(0, 0);
-            this.lVUDD.Name = "lVUDD";
-            this.lVUDD.Size = new System.Drawing.Size(690, 488);
-            this.lVUDD.SmallImageList = this.images;
-            this.lVUDD.TabIndex = 22;
-            this.lVUDD.UseCompatibleStateImageBehavior = false;
+           /* this.panel5.Controls.Add(this.panel4);
+            this.panel5.Location = new System.Drawing.Point(278, 250);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(404, 225);
+            this.panel5.TabIndex = 22;
+            this.panel5.Visible = false;*/
             // 
             // images
             // 
@@ -334,7 +335,6 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnSerach);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.txtCPName);
             this.panel1.Controls.Add(this.panel2);
@@ -369,10 +369,10 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.lvCP);
-            this.panel4.Location = new System.Drawing.Point(4, 84);
+            this.panel4.Location = new System.Drawing.Point(193, 97);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(228, 379);
+            this.panel4.Size = new System.Drawing.Size(170, 272);
             this.panel4.TabIndex = 9;
             this.panel4.Visible = false;
             // 
@@ -384,14 +384,14 @@
             this.columnHeader3});
             this.lvCP.FullRowSelect = true;
             this.lvCP.HideSelection = false;
-            this.lvCP.Location = new System.Drawing.Point(4, 3);
+            this.lvCP.Location = new System.Drawing.Point(75, 181);
             this.lvCP.Margin = new System.Windows.Forms.Padding(4);
             this.lvCP.Name = "lvCP";
-            this.lvCP.Size = new System.Drawing.Size(221, 370);
+            this.lvCP.Size = new System.Drawing.Size(150, 192);
             this.lvCP.TabIndex = 0;
             this.lvCP.UseCompatibleStateImageBehavior = false;
             this.lvCP.View = System.Windows.Forms.View.Details;
-            this.lvCP.Click += new System.EventHandler(this.LvCP_Click);
+            //this.lvCP.Click += new System.EventHandler(this.LvCP_Click);
             // 
             // columnHeader1
             // 
@@ -526,7 +526,7 @@
             this.bttJD.TabIndex = 3;
             this.bttJD.Text = "接单";
             this.bttJD.UseVisualStyleBackColor = false;
-            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
+            //this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
             // 
             // lblZJG
             // 
@@ -553,10 +553,9 @@
             this.bttTD.Margin = new System.Windows.Forms.Padding(4);
             this.bttTD.Name = "bttTD";
             this.bttTD.Size = new System.Drawing.Size(63, 59);
-            this.bttTD.TabIndex = 3;
+            this.bttTD.TabIndex = 4;
             this.bttTD.Text = "退单";
-            this.bttTD.UseVisualStyleBackColor = false;
-            this.bttTD.Click += new System.EventHandler(this.BttTD_Click_1);
+            this.bttTD.Click += new System.EventHandler(this.bttTD_Click);
             // 
             // bttDD
             // 
@@ -782,6 +781,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
+            //this.panel5.ResumeLayout(false);
             this.Cmlist.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
