@@ -222,6 +222,9 @@ namespace 点餐系统
         private void Button5_Click_1(object sender, EventArgs e)
         {
             peCPQD.Visible = false;
+            tSMDelete.Visible = false;
+            加入菜篮ToolStripMenuItem.Visible = true;
+            bttXD.Visible = true;
         }
 
         private void TabControl1_Click_1(object sender, EventArgs e)
@@ -255,6 +258,10 @@ namespace 点餐系统
         /// <param name="e"></param>
         private void Button4_Click_2(object sender, EventArgs e)
         {
+            if (cC.Count == 0)
+            {
+                dGVYDCP.Visible = false;
+            }
             bttXD.Visible = false;
             加入菜篮ToolStripMenuItem.Visible = false;
             tSMDelete.Visible = true;

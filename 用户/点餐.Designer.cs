@@ -148,7 +148,7 @@
             this.peCPQD.Controls.Add(this.dGVYDCP);
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
-            this.peCPQD.Location = new System.Drawing.Point(0, 50);
+            this.peCPQD.Location = new System.Drawing.Point(0, 0);
             this.peCPQD.Name = "peCPQD";
             this.peCPQD.Size = new System.Drawing.Size(859, 512);
             this.peCPQD.TabIndex = 28;
