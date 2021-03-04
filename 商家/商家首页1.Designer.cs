@@ -513,6 +513,7 @@
             // bttJD
             // 
             this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            this.bttJD.Enabled = false;
             this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
             this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -542,6 +543,7 @@
             // bttTD
             // 
             this.bttTD.BackColor = System.Drawing.Color.Transparent;
+            this.bttTD.Enabled = false;
             this.bttTD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
             this.bttTD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.bttTD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

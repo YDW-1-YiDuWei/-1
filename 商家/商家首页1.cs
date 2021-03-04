@@ -82,11 +82,10 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
-            //bttJD.Enabled = false;
+            bttJD.Enabled = false;
             bttTD.Enabled = false;
 
             txtCPName.Enabled = true;
-            //bttCX.Enabled = true;
             i = 1; count = 0;
             Temp.index = 0;
             #region 隐藏窗口
@@ -177,6 +176,9 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
+            bttJD.Enabled = true;
+            bttTD.Enabled = true;
+
             txtCPName.Enabled = false;
             bttTD.Enabled = true;
 
@@ -477,6 +479,15 @@ namespace 点餐系统
             {
                 MessageBox.Show("您没有选择，要退的订单");
                 return;
+            }
+
+            if (MessageBox .Show("你确定要拒绝此订单？","温馨提示",MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.Yes ) {
+                OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
+                if (of.UpdateOrderFormManager("3", odf.IdName.ToString()) > 0)
+                {
+                    MessageBox.Show("订单已退单");
+                    button1_Click("", null);
+                }
             }
         }
 
