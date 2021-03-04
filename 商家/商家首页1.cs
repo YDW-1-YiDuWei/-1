@@ -82,11 +82,11 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
-           /* bttJD.Enabled = false;
+            //bttJD.Enabled = false;
             bttTD.Enabled = false;
 
             txtCPName.Enabled = true;
-            bttCX.Enabled = true;
+            //bttCX.Enabled = true;
             i = 1; count = 0;
             Temp.index = 0;
             #region 隐藏窗口
@@ -164,12 +164,12 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            /*if (lVOrders.SelectedItems.Count == 0)
+           /* if (lVOrders.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要拒绝的订单");
                 return;
-            }
-*/
+            }*/
+
             if (of.UpdateOrderFormManager("3", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
             button1_Click("", null);
             i = 1;
@@ -177,11 +177,11 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-            /*txtCPName.Enabled = false;
-            bttCX.Enabled = false;
+            txtCPName.Enabled = false;
+            //bttCX.Enabled = false;
 
-            bttJD.Enabled = true;
-            bttTD.Enabled = true;*/
+            //bttJD.Enabled = true;
+            bttTD.Enabled = true;
 
             //lVOrders.Items.Clear();
 
@@ -263,7 +263,7 @@ namespace 点餐系统
                 lvCPMessage.Items[i].Tag = item.id;
                 i++;
             }
-            image.Images.AddRange(asg);
+            //image.Images.AddRange(asg);
         }
         public bool Check() //判断是否为空
         {
@@ -304,8 +304,8 @@ namespace 点餐系统
 
         private void 商家首页1_Load(object sender, EventArgs e)//显示窗体的时候
         {
-           // btnquit.Enabled = true;
-           // btnUpdate.Enabled = true;
+            /*btnquit.Enabled = true;
+            btnUpdate.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
@@ -318,7 +318,7 @@ namespace 点餐系统
 
             }
             Inquire();
-            cbLX.SelectedIndex = 0;
+            cbLX.SelectedIndex = 0;*/
         }
 
         private void btXZ_Click(object sender, EventArgs e)//商家的  菜品选择
@@ -368,7 +368,7 @@ namespace 点餐系统
         {
             /*lVDetailedOrders.Items.Clear();
 
-            this.dt = rm.InquireReservation(User.khID, lVOrders.SelectedItems[0].Text);
+            //this.dt = rm.InquireReservation(User.khID, lVOrders.SelectedItems[0].Text);
             int j = 0;
             Image asg = null;//这里你要知道有几个菜  我只是随便弄了2个因为数据库里面有两个数据
 
@@ -393,19 +393,19 @@ namespace 点餐系统
             {
                 MessageBox.Show("您没有选择，要接收的订单");
                 return;
-            }*/
+            }*//*
 
             //OrderForm odf=(OrderForm)lVOrders.SelectedItems[0].Tag;
 
-            /*if (odf.StatusId != 1)
+            *//*if (odf.StatusId != 1)
             {
                 MessageBox.Show("你以下点，请耐心等待骑手接单，也可进行退单");
                 return;
-            }
+            }*//*
 
             if (of.UpdateOrderFormManager("1003", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
 
-            using (FileStream fs = new FileStream(@"d:\"+ odf .StatusId.ToString()+ "txt", FileMode.Append, FileAccess.Write))
+            *//*using (FileStream fs = new FileStream(@"d:\"+ odf .StatusId.ToString()+ "txt", FileMode.Append, FileAccess.Write))
             {
 
                 StreamWriter writer = new StreamWriter(fs);
@@ -418,7 +418,7 @@ namespace 点餐系统
                 writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name+"*************");
                 writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
                 writer.Flush();//刷新缓存，且输入信息
-            }
+            }*//*
 
             button1_Click("", null);*/
         }
@@ -453,8 +453,8 @@ namespace 点餐系统
         {
             if (MessageBox.Show("是否退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-               /* a = 1;
-                txtCGname.Text = "";
+                a = 1;
+                /*txtCGname.Text = "";
                 txtCGnum.Text = "";
                 btnquit.Enabled = false;
                 btnUpdate.Enabled = false;
