@@ -52,15 +52,6 @@
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSerach = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnquit = new System.Windows.Forms.Button();
-            this.btnHandover = new System.Windows.Forms.Button();
-            this.txtCGnum = new System.Windows.Forms.TextBox();
-            this.txtCGname = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pbpath = new System.Windows.Forms.PictureBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lvCP = new System.Windows.Forms.ListView();
             this.button7 = new System.Windows.Forms.Button();
@@ -95,8 +86,6 @@
             this.panel2.SuspendLayout();
             this.Cmlist.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -113,7 +102,7 @@
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.ForeColor = System.Drawing.Color.White;
             this.btnrefresh.Location = new System.Drawing.Point(912, 575);
-            this.btnrefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnrefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(75, 23);
             this.btnrefresh.TabIndex = 33;
@@ -136,7 +125,7 @@
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Location = new System.Drawing.Point(4, 84);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(228, 376);
             this.panel3.TabIndex = 27;
@@ -144,7 +133,7 @@
             // pbImage
             // 
             this.pbImage.Location = new System.Drawing.Point(72, 247);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(78, 77);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,7 +145,7 @@
             this.btXZ.BackColor = System.Drawing.Color.White;
             this.btXZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btXZ.Location = new System.Drawing.Point(156, 280);
-            this.btXZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btXZ.Margin = new System.Windows.Forms.Padding(4);
             this.btXZ.Name = "btXZ";
             this.btXZ.Size = new System.Drawing.Size(50, 23);
             this.btXZ.TabIndex = 7;
@@ -169,7 +158,7 @@
             this.btQX.BackColor = System.Drawing.Color.White;
             this.btQX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQX.Location = new System.Drawing.Point(131, 342);
-            this.btQX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btQX.Margin = new System.Windows.Forms.Padding(4);
             this.btQX.Name = "btQX";
             this.btQX.Size = new System.Drawing.Size(75, 23);
             this.btQX.TabIndex = 5;
@@ -181,7 +170,7 @@
             this.btQD.BackColor = System.Drawing.Color.White;
             this.btQD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQD.Location = new System.Drawing.Point(11, 342);
-            this.btQD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btQD.Margin = new System.Windows.Forms.Padding(4);
             this.btQD.Name = "btQD";
             this.btQD.Size = new System.Drawing.Size(75, 23);
             this.btQD.TabIndex = 5;
@@ -198,7 +187,7 @@
             "炒菜",
             "主食"});
             this.cbLX.Location = new System.Drawing.Point(81, 210);
-            this.cbLX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLX.Margin = new System.Windows.Forms.Padding(4);
             this.cbLX.Name = "cbLX";
             this.cbLX.Size = new System.Drawing.Size(125, 20);
             this.cbLX.TabIndex = 3;
@@ -206,7 +195,7 @@
             // txtMoney
             // 
             this.txtMoney.Location = new System.Drawing.Point(81, 163);
-            this.txtMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(125, 21);
             this.txtMoney.TabIndex = 2;
@@ -214,7 +203,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(81, 116);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(125, 21);
             this.txtName.TabIndex = 2;
@@ -273,7 +262,7 @@
             // txtCPName
             // 
             this.txtCPName.Location = new System.Drawing.Point(304, 10);
-            this.txtCPName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCPName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCPName.Name = "txtCPName";
             this.txtCPName.Size = new System.Drawing.Size(367, 21);
             this.txtCPName.TabIndex = 24;
@@ -283,7 +272,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.lvCPMessage);
             this.panel2.Location = new System.Drawing.Point(304, 44);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(690, 484);
             this.panel2.TabIndex = 23;
@@ -292,7 +281,7 @@
             // panel5
             // 
             this.panel5.Location = new System.Drawing.Point(4, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(678, 471);
             this.panel5.TabIndex = 22;
@@ -306,7 +295,7 @@
             this.lvCPMessage.ContextMenuStrip = this.Cmlist;
             this.lvCPMessage.HideSelection = false;
             this.lvCPMessage.Location = new System.Drawing.Point(3, 0);
-            this.lvCPMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvCPMessage.Margin = new System.Windows.Forms.Padding(4);
             this.lvCPMessage.Name = "lvCPMessage";
             this.lvCPMessage.Size = new System.Drawing.Size(685, 470);
             this.lvCPMessage.TabIndex = 21;
@@ -332,7 +321,6 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnSerach);
-            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.txtCPName);
@@ -345,7 +333,7 @@
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(-4, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(997, 532);
             this.panel1.TabIndex = 30;
@@ -357,7 +345,7 @@
             this.btnSerach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSerach.ForeColor = System.Drawing.Color.White;
             this.btnSerach.Location = new System.Drawing.Point(674, 8);
-            this.btnSerach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSerach.Margin = new System.Windows.Forms.Padding(2);
             this.btnSerach.Name = "btnSerach";
             this.btnSerach.Size = new System.Drawing.Size(56, 22);
             this.btnSerach.TabIndex = 28;
@@ -365,124 +353,11 @@
             this.btnSerach.UseVisualStyleBackColor = false;
             this.btnSerach.Click += new System.EventHandler(this.btnSerach_Click);
             // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Controls.Add(this.btnquit);
-            this.panel7.Controls.Add(this.btnHandover);
-            this.panel7.Controls.Add(this.txtCGnum);
-            this.panel7.Controls.Add(this.txtCGname);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.pbpath);
-            this.panel7.Controls.Add(this.btnUpdate);
-            this.panel7.Location = new System.Drawing.Point(176, 145);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(820, 387);
-            this.panel7.TabIndex = 2;
-            // 
-            // btnquit
-            // 
-            this.btnquit.BackColor = System.Drawing.Color.Transparent;
-            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnquit.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnquit.Location = new System.Drawing.Point(387, 358);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnquit.Name = "btnquit";
-            this.btnquit.Size = new System.Drawing.Size(56, 25);
-            this.btnquit.TabIndex = 0;
-            this.btnquit.Text = "退出登录";
-            this.btnquit.UseVisualStyleBackColor = false;
-            this.btnquit.Click += new System.EventHandler(this.Btnquit_Click);
-            // 
-            // btnHandover
-            // 
-            this.btnHandover.BackColor = System.Drawing.Color.Transparent;
-            this.btnHandover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHandover.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnHandover.Location = new System.Drawing.Point(464, 363);
-            this.btnHandover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnHandover.Name = "btnHandover";
-            this.btnHandover.Size = new System.Drawing.Size(56, 29);
-            this.btnHandover.TabIndex = 1;
-            this.btnHandover.Text = "切换";
-            this.btnHandover.UseVisualStyleBackColor = false;
-            this.btnHandover.Click += new System.EventHandler(this.btnHandover_Click);
-            // 
-            // txtCGnum
-            // 
-            this.txtCGnum.Location = new System.Drawing.Point(504, 266);
-            this.txtCGnum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtCGnum.Name = "txtCGnum";
-            this.txtCGnum.ReadOnly = true;
-            this.txtCGnum.Size = new System.Drawing.Size(117, 21);
-            this.txtCGnum.TabIndex = 2;
-            // 
-            // txtCGname
-            // 
-            this.txtCGname.Location = new System.Drawing.Point(503, 229);
-            this.txtCGname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtCGname.Name = "txtCGname";
-            this.txtCGname.ReadOnly = true;
-            this.txtCGname.Size = new System.Drawing.Size(118, 21);
-            this.txtCGname.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(421, 230);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 16);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "餐馆名称：";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(422, 267);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "餐馆账号：";
-            // 
-            // pbpath
-            // 
-            this.pbpath.Location = new System.Drawing.Point(503, 90);
-            this.pbpath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pbpath.Name = "pbpath";
-            this.pbpath.Size = new System.Drawing.Size(118, 105);
-            this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbpath.TabIndex = 4;
-            this.pbpath.TabStop = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnUpdate.Location = new System.Drawing.Point(460, 292);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(56, 18);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "修改";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.lvCP);
             this.panel4.Location = new System.Drawing.Point(4, 84);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(228, 379);
             this.panel4.TabIndex = 9;
@@ -492,7 +367,7 @@
             // 
             this.lvCP.HideSelection = false;
             this.lvCP.Location = new System.Drawing.Point(4, 3);
-            this.lvCP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvCP.Margin = new System.Windows.Forms.Padding(4);
             this.lvCP.Name = "lvCP";
             this.lvCP.Size = new System.Drawing.Size(221, 370);
             this.lvCP.TabIndex = 0;
@@ -506,8 +381,8 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(238, 390);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Location = new System.Drawing.Point(235, 390);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 59);
             this.button7.TabIndex = 15;
@@ -524,7 +399,7 @@
             this.button6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(235, 295);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(63, 59);
             this.button6.TabIndex = 16;
@@ -541,7 +416,7 @@
             this.button3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(235, 200);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(63, 59);
             this.button3.TabIndex = 17;
@@ -558,7 +433,7 @@
             this.button2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(235, 105);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 59);
             this.button2.TabIndex = 18;
@@ -575,7 +450,7 @@
             this.button5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(235, 10);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(63, 59);
             this.button5.TabIndex = 19;
@@ -593,9 +468,9 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(6, 457);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(295, 71);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -609,7 +484,7 @@
             this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(129, 9);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 59);
             this.button1.TabIndex = 3;
@@ -619,10 +494,10 @@
             // 
             // bttTD
             // 
-            this.bttTD.Location = new System.Drawing.Point(0, 0);
-            this.bttTD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttTD.Location = new System.Drawing.Point(229, 9);
+            this.bttTD.Margin = new System.Windows.Forms.Padding(2);
             this.bttTD.Name = "bttTD";
-            this.bttTD.Size = new System.Drawing.Size(56, 18);
+            this.bttTD.Size = new System.Drawing.Size(63, 59);
             this.bttTD.TabIndex = 4;
             // 
             // lblJG
@@ -674,9 +549,9 @@
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pbSJLJ);
             this.groupBox1.Location = new System.Drawing.Point(7, 3);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(225, 78);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
@@ -717,7 +592,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(143, 26);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(18, 17);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -728,7 +603,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(72, 26);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(18, 17);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -738,7 +613,7 @@
             // pbSJLJ
             // 
             this.pbSJLJ.Location = new System.Drawing.Point(0, 11);
-            this.pbSJLJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbSJLJ.Margin = new System.Windows.Forms.Padding(4);
             this.pbSJLJ.Name = "pbSJLJ";
             this.pbSJLJ.Size = new System.Drawing.Size(64, 64);
             this.pbSJLJ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -799,7 +674,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 564);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(994, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -830,7 +705,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "商家首页1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -843,9 +718,6 @@
             this.Cmlist.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).EndInit();
             this.panel4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -913,17 +785,8 @@
         private System.Windows.Forms.ListView lvCP;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnquit;
-        private System.Windows.Forms.Button btnHandover;
-        private System.Windows.Forms.TextBox txtCGnum;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pbpath;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtCGname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSerach;
     }

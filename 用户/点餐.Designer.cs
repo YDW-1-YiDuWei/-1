@@ -43,13 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
-            this.lblJGS = new System.Windows.Forms.Label();
             this.bTSS = new System.Windows.Forms.Button();
-            this.lkbWEI = new System.Windows.Forms.LinkLabel();
-            this.lkbTop = new System.Windows.Forms.LinkLabel();
-            this.lbYs = new System.Windows.Forms.Label();
-            this.lkbX = new System.Windows.Forms.LinkLabel();
-            this.lkbS = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -105,6 +99,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtDishName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.lblJGS = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.peCPQD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVYDCP)).BeginInit();
@@ -127,19 +128,14 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.lblJGS);
             this.panel1.Controls.Add(this.peCPQD);
             this.panel1.Controls.Add(this.bTSS);
-            this.panel1.Controls.Add(this.lkbWEI);
-            this.panel1.Controls.Add(this.lkbTop);
-            this.panel1.Controls.Add(this.lbYs);
-            this.panel1.Controls.Add(this.lkbX);
-            this.panel1.Controls.Add(this.lkbS);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.lblJG);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtDishName);
@@ -147,19 +143,19 @@
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(771, 467);
+            this.panel1.Size = new System.Drawing.Size(800, 470);
             this.panel1.TabIndex = 8;
             // 
             // peCPQD
             // 
+            this.peCPQD.Controls.Add(this.lblJGS);
             this.peCPQD.Controls.Add(this.dGVYDCP);
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
-            this.peCPQD.Controls.Add(this.btnclose);
-            this.peCPQD.Location = new System.Drawing.Point(5, 4);
+            this.peCPQD.Location = new System.Drawing.Point(2, 2);
             this.peCPQD.Margin = new System.Windows.Forms.Padding(4);
             this.peCPQD.Name = "peCPQD";
-            this.peCPQD.Size = new System.Drawing.Size(421, 218);
+            this.peCPQD.Size = new System.Drawing.Size(796, 466);
             this.peCPQD.TabIndex = 28;
             this.peCPQD.Visible = false;
             // 
@@ -175,13 +171,13 @@
             this.Column2,
             this.Column3});
             this.dGVYDCP.ContextMenuStrip = this.cMSDC;
-            this.dGVYDCP.Location = new System.Drawing.Point(15, 48);
+            this.dGVYDCP.Location = new System.Drawing.Point(1, 48);
             this.dGVYDCP.Name = "dGVYDCP";
             this.dGVYDCP.ReadOnly = true;
             this.dGVYDCP.RowHeadersVisible = false;
             this.dGVYDCP.RowTemplate.Height = 23;
             this.dGVYDCP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dGVYDCP.Size = new System.Drawing.Size(746, 378);
+            this.dGVYDCP.Size = new System.Drawing.Size(794, 417);
             this.dGVYDCP.TabIndex = 3;
             // 
             // Column1
@@ -251,134 +247,38 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(11, 14);
+            this.label3.Location = new System.Drawing.Point(18, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(238, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "已点菜单清单,可以根据右击删除";
             // 
-            // button4
+            // btnclose
             // 
-           /* this.button4.Location = new System.Drawing.Point(686, 435);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "关闭";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click_1);*/
-            // 
-            // lblJGS
-            // 
-            this.lblJGS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblJGS.AutoSize = true;
-            this.lblJGS.BackColor = System.Drawing.Color.Transparent;
-            this.lblJGS.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblJGS.ForeColor = System.Drawing.Color.Black;
-            this.lblJGS.Location = new System.Drawing.Point(653, 25);
-            this.lblJGS.Name = "lblJGS";
-            this.lblJGS.Size = new System.Drawing.Size(19, 20);
-            this.lblJGS.TabIndex = 26;
-            this.lblJGS.Text = "0";
+            this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnclose.Location = new System.Drawing.Point(715, 475);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(79, 23);
+            this.btnclose.TabIndex = 4;
+            this.btnclose.Text = "完成（几）";
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // bTSS
             // 
             this.bTSS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bTSS.BackColor = System.Drawing.Color.White;
-            this.bTSS.Location = new System.Drawing.Point(506, 25);
+            this.bTSS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bTSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTSS.Location = new System.Drawing.Point(528, 24);
             this.bTSS.Margin = new System.Windows.Forms.Padding(4);
             this.bTSS.Name = "bTSS";
-            this.bTSS.Size = new System.Drawing.Size(75, 23);
+            this.bTSS.Size = new System.Drawing.Size(78, 26);
             this.bTSS.TabIndex = 25;
             this.bTSS.Text = "搜索";
             this.bTSS.UseVisualStyleBackColor = false;
             this.bTSS.Click += new System.EventHandler(this.BTSS_Click);
-            // 
-            // lkbWEI
-            // 
-            this.lkbWEI.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbWEI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbWEI.AutoSize = true;
-            this.lkbWEI.BackColor = System.Drawing.Color.Transparent;
-            this.lkbWEI.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbWEI.LinkColor = System.Drawing.Color.White;
-            this.lkbWEI.Location = new System.Drawing.Point(504, 446);
-            this.lkbWEI.Name = "lkbWEI";
-            this.lkbWEI.Size = new System.Drawing.Size(29, 12);
-            this.lkbWEI.TabIndex = 24;
-            this.lkbWEI.TabStop = true;
-            this.lkbWEI.Text = "尾页";
-            // 
-            // lkbTop
-            // 
-            this.lkbTop.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbTop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbTop.AutoSize = true;
-            this.lkbTop.BackColor = System.Drawing.Color.Transparent;
-            this.lkbTop.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbTop.LinkColor = System.Drawing.Color.White;
-            this.lkbTop.Location = new System.Drawing.Point(288, 446);
-            this.lkbTop.Name = "lkbTop";
-            this.lkbTop.Size = new System.Drawing.Size(29, 12);
-            this.lkbTop.TabIndex = 23;
-            this.lkbTop.TabStop = true;
-            this.lkbTop.Text = "首页";
-            // 
-            // lbYs
-            // 
-            this.lbYs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbYs.AutoSize = true;
-            this.lbYs.BackColor = System.Drawing.Color.Transparent;
-            this.lbYs.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbYs.ForeColor = System.Drawing.Color.White;
-            this.lbYs.Location = new System.Drawing.Point(396, 446);
-            this.lbYs.Name = "lbYs";
-            this.lbYs.Size = new System.Drawing.Size(29, 12);
-            this.lbYs.TabIndex = 22;
-            this.lbYs.Text = "1/10";
-            // 
-            // lkbX
-            // 
-            this.lkbX.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbX.AutoSize = true;
-            this.lkbX.BackColor = System.Drawing.Color.Transparent;
-            this.lkbX.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbX.LinkColor = System.Drawing.Color.White;
-            this.lkbX.Location = new System.Drawing.Point(442, 446);
-            this.lkbX.Name = "lkbX";
-            this.lkbX.Size = new System.Drawing.Size(41, 12);
-            this.lkbX.TabIndex = 20;
-            this.lkbX.TabStop = true;
-            this.lkbX.Text = "下一页";
-            // 
-            // lkbS
-            // 
-            this.lkbS.ActiveLinkColor = System.Drawing.Color.Yellow;
-            this.lkbS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkbS.AutoSize = true;
-            this.lkbS.BackColor = System.Drawing.Color.Transparent;
-            this.lkbS.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lkbS.LinkColor = System.Drawing.Color.White;
-            this.lkbS.Location = new System.Drawing.Point(334, 446);
-            this.lkbS.Name = "lkbS";
-            this.lkbS.Size = new System.Drawing.Size(41, 12);
-            this.lkbS.TabIndex = 21;
-            this.lkbS.TabStop = true;
-            this.lkbS.Text = "上一页";
             // 
             // button3
             // 
@@ -390,7 +290,7 @@
             this.button3.Location = new System.Drawing.Point(35, 21);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 24);
+            this.button3.Size = new System.Drawing.Size(79, 27);
             this.button3.TabIndex = 19;
             this.button3.Text = "返回";
             this.button3.UseVisualStyleBackColor = false;
@@ -405,7 +305,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(13, 22);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 21);
+            this.pictureBox1.Size = new System.Drawing.Size(95, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -420,7 +320,7 @@
             this.button2.Location = new System.Drawing.Point(905, 549);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 25);
+            this.button2.Size = new System.Drawing.Size(120, 28);
             this.button2.TabIndex = 15;
             this.button2.Text = "下单";
             this.button2.UseVisualStyleBackColor = true;
@@ -432,14 +332,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblJG.AutoSize = true;
-            this.lblJG.BackColor = System.Drawing.Color.Transparent;
-            this.lblJG.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblJG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblJG.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblJG.ForeColor = System.Drawing.Color.Black;
-            this.lblJG.Location = new System.Drawing.Point(599, 27);
+            this.lblJG.Location = new System.Drawing.Point(611, 28);
             this.lblJG.Name = "lblJG";
-            this.lblJG.Size = new System.Drawing.Size(56, 16);
+            this.lblJG.Size = new System.Drawing.Size(67, 19);
             this.lblJG.TabIndex = 17;
-            this.lblJG.Text = "合计：";
+            this.lblJG.Text = "合计:$";
             // 
             // button1
             // 
@@ -447,10 +347,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(905, 20);
+            this.button1.Location = new System.Drawing.Point(934, 20);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 25);
+            this.button1.Size = new System.Drawing.Size(91, 28);
             this.button1.TabIndex = 15;
             this.button1.Text = "已点菜品";
             this.button1.UseVisualStyleBackColor = true;
@@ -474,18 +374,17 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(765, 385);
+            this.tabControl1.Size = new System.Drawing.Size(794, 410);
             this.tabControl1.TabIndex = 11;
             this.tabControl1.Click += new System.EventHandler(this.TabControl1_Click);
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.peCPQD);
             this.tabPage1.Controls.Add(this.lvwQB);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(757, 359);
+            this.tabPage1.Size = new System.Drawing.Size(786, 384);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "全部";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -507,7 +406,7 @@
             this.lvwQB.Location = new System.Drawing.Point(4, 4);
             this.lvwQB.Margin = new System.Windows.Forms.Padding(4);
             this.lvwQB.Name = "lvwQB";
-            this.lvwQB.Size = new System.Drawing.Size(751, 353);
+            this.lvwQB.Size = new System.Drawing.Size(778, 376);
             this.lvwQB.SmallImageList = this.image;
             this.lvwQB.TabIndex = 0;
             this.lvwQB.UseCompatibleStateImageBehavior = false;
@@ -937,7 +836,7 @@
             this.txtDishName.Location = new System.Drawing.Point(225, 25);
             this.txtDishName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDishName.Name = "txtDishName";
-            this.txtDishName.Size = new System.Drawing.Size(270, 21);
+            this.txtDishName.Size = new System.Drawing.Size(299, 21);
             this.txtDishName.TabIndex = 13;
             // 
             // label1
@@ -951,12 +850,98 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "搜索商品名称";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(332, 479);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 19);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "首页";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(385, 479);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 19);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "下一页";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(457, 479);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 19);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "1/10";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Location = new System.Drawing.Point(512, 479);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(66, 19);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "上一页";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(584, 479);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 19);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "尾页";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(684, 25);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(90, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "已点菜（几）";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // lblJGS
+            // 
+            this.lblJGS.AutoSize = true;
+            this.lblJGS.Location = new System.Drawing.Point(698, 22);
+            this.lblJGS.Name = "lblJGS";
+            this.lblJGS.Size = new System.Drawing.Size(11, 12);
+            this.lblJGS.TabIndex = 4;
+            this.lblJGS.Text = "0";
+            // 
             // 点餐
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 467);
+            this.ClientSize = new System.Drawing.Size(813, 512);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnclose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -983,6 +968,7 @@
             this.tabPage9.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1012,14 +998,8 @@
         private System.Windows.Forms.Button bTSS;
         private System.Windows.Forms.ContextMenuStrip cMSDC;
         private System.Windows.Forms.ToolStripMenuItem 加入菜篮ToolStripMenuItem;
-        private System.Windows.Forms.Label lblJGS;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.LinkLabel lkbWEI;
-        private System.Windows.Forms.LinkLabel lkbTop;
-        private System.Windows.Forms.Label lbYs;
-        private System.Windows.Forms.LinkLabel lkbX;
-        private System.Windows.Forms.LinkLabel lkbS;
         private System.Windows.Forms.ListView lVlC;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
@@ -1062,6 +1042,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label lblJGS;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
 

@@ -87,7 +87,7 @@ namespace 点餐系统
 
         private void buttonBjgrxx_Click(object sender, EventArgs e)
         {
-            编辑个人信息 bjgrxx = new 编辑个人信息();
+            编辑个人信息1 bjgrxx = new 编辑个人信息1();
             bjgrxx.Show();
             this.Close();
         }

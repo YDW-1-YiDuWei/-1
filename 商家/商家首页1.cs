@@ -82,11 +82,11 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家菜品增加
         {
-            /*bttJD.Enabled = false;
+            bttJD.Enabled = false;
             bttTD.Enabled = false;
 
             txtCPName.Enabled = true;
-            bttCX.Enabled = true;*/
+            bttCX.Enabled = true;
             i = 1; count = 0;
             Temp.index = 0;
             #region 隐藏窗口
@@ -164,7 +164,7 @@ namespace 点餐系统
 
         private void button4_Click(object sender, EventArgs e)//商家退单
         {
-            /*if (lVOrders.SelectedItems.Count == 0)
+            if (lVOrders.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要拒绝的订单");
                 return;
@@ -172,24 +172,24 @@ namespace 点餐系统
 
             if (of.UpdateOrderFormManager("3", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
             button1_Click("", null);
-            i = 1;*/
+            i = 1;
         }
 
         private void button1_Click(object sender, EventArgs e)//商家接单
         {
-/*            txtCPName.Enabled = false;
+            txtCPName.Enabled = false;
             bttCX.Enabled = false;
 
             bttJD.Enabled = true;
             bttTD.Enabled = true;
 
             lVOrders.Items.Clear();
-            
-            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID,""))
+
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, ""))
             {
                 if (item.StatusId != 1) continue;
 
-                string[] st = { item.IdName.ToString(),item.ClientId.Name,item.ClientId.Phone};
+                string[] st = { item.IdName.ToString(), item.ClientId.Name, item.ClientId.Phone };
                 ListViewItem lv = new ListViewItem(st);
 
                 lv.Tag = item;
@@ -201,7 +201,7 @@ namespace 点餐系统
             panel4.Visible = true;//商家模糊接单查询
             panel5.Visible = true;//商家详细接单查询
             #endregion
-*/
+
             i = 1;
         }
 
