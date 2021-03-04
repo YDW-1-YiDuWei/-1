@@ -78,6 +78,7 @@ namespace 点餐系统
         private void button3_Click(object sender, EventArgs e)//商家首页2  菜品删除（按钮）
         {
             panel2.Visible = true;
+            panel3.Visible = false;
             Temp.index = 0;
             i = 0;
             if (lvCPMessage.SelectedIndices.Count == 0)
