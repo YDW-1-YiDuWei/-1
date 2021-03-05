@@ -38,8 +38,10 @@ namespace 点餐系统
         private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页2  首页（按键）
         {
             panel1.Visible = true;
+
             panel2.Visible = true;
             panel3.Visible = true;
+            panel7.Visible = false;
 
             if (a == 1)
             {
@@ -54,8 +56,7 @@ namespace 点餐系统
         private void toolStripLabel3_Click(object sender, EventArgs e)//商家首页2  我的（按键）
         {
             i = 1;
-            btnSerach.Visible = false;
-            panel1.Visible = false;//商家首页显示（panel1）
+            panel7.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)//商家首页2  已完成（按钮）

@@ -15,6 +15,8 @@ namespace 点餐系统
     public partial class 骑手首页 : Form
     {
         public 骑手登入 Get = null;
+        public List<Rider> list = null;
+
         public 骑手首页()
         {
             InitializeComponent();
