@@ -46,6 +46,16 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnquit = new System.Windows.Forms.Button();
+            this.btnHandover = new System.Windows.Forms.Button();
+            this.txtCGnum = new System.Windows.Forms.TextBox();
+            this.txtCGname = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pbpath = new System.Windows.Forms.PictureBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.bttJD = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lvCP = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -72,7 +82,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bttJD = new System.Windows.Forms.Button();
             this.lblZJG = new System.Windows.Forms.Label();
             this.bttTD = new System.Windows.Forms.Button();
             this.bttDD = new System.Windows.Forms.Button();
@@ -86,20 +95,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnquit = new System.Windows.Forms.Button();
-            this.btnHandover = new System.Windows.Forms.Button();
-            this.txtCGnum = new System.Windows.Forms.TextBox();
-            this.txtCGname = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pbpath = new System.Windows.Forms.PictureBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.Cmlist.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -107,8 +109,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -276,6 +276,137 @@
             this.panel1.Size = new System.Drawing.Size(997, 539);
             this.panel1.TabIndex = 29;
             this.panel1.Visible = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.Controls.Add(this.btnquit);
+            this.panel7.Controls.Add(this.btnHandover);
+            this.panel7.Controls.Add(this.txtCGnum);
+            this.panel7.Controls.Add(this.txtCGname);
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.label10);
+            this.panel7.Controls.Add(this.pbpath);
+            this.panel7.Controls.Add(this.btnUpdate);
+            this.panel7.Location = new System.Drawing.Point(0, 5);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(997, 537);
+            this.panel7.TabIndex = 24;
+            // 
+            // btnquit
+            // 
+            this.btnquit.BackColor = System.Drawing.Color.Transparent;
+            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquit.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnquit.Location = new System.Drawing.Point(503, 360);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnquit.Name = "btnquit";
+            this.btnquit.Size = new System.Drawing.Size(74, 25);
+            this.btnquit.TabIndex = 0;
+            this.btnquit.Text = "退出登录";
+            this.btnquit.UseVisualStyleBackColor = false;
+            this.btnquit.Click += new System.EventHandler(this.Btnquit_Click);
+            // 
+            // btnHandover
+            // 
+            this.btnHandover.BackColor = System.Drawing.Color.Transparent;
+            this.btnHandover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHandover.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHandover.Location = new System.Drawing.Point(453, 304);
+            this.btnHandover.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHandover.Name = "btnHandover";
+            this.btnHandover.Size = new System.Drawing.Size(56, 27);
+            this.btnHandover.TabIndex = 1;
+            this.btnHandover.Text = "切换";
+            this.btnHandover.UseVisualStyleBackColor = false;
+            this.btnHandover.Click += new System.EventHandler(this.BtnHandover_Click);
+            // 
+            // txtCGnum
+            // 
+            this.txtCGnum.Location = new System.Drawing.Point(504, 266);
+            this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCGnum.Name = "txtCGnum";
+            this.txtCGnum.ReadOnly = true;
+            this.txtCGnum.Size = new System.Drawing.Size(117, 21);
+            this.txtCGnum.TabIndex = 2;
+            // 
+            // txtCGname
+            // 
+            this.txtCGname.Location = new System.Drawing.Point(503, 229);
+            this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCGname.Name = "txtCGname";
+            this.txtCGname.ReadOnly = true;
+            this.txtCGname.Size = new System.Drawing.Size(118, 21);
+            this.txtCGname.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(421, 230);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 16);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "餐馆名称：";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(422, 267);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 16);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "餐馆账号：";
+            // 
+            // pbpath
+            // 
+            this.pbpath.Location = new System.Drawing.Point(503, 90);
+            this.pbpath.Margin = new System.Windows.Forms.Padding(2);
+            this.pbpath.Name = "pbpath";
+            this.pbpath.Size = new System.Drawing.Size(118, 105);
+            this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbpath.TabIndex = 4;
+            this.pbpath.TabStop = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnUpdate.Location = new System.Drawing.Point(565, 304);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(56, 27);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "修改";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
+            // bttJD
+            // 
+            this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            this.bttJD.Enabled = false;
+            this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
+            this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttJD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bttJD.ForeColor = System.Drawing.Color.White;
+            this.bttJD.Location = new System.Drawing.Point(236, 395);
+            this.bttJD.Margin = new System.Windows.Forms.Padding(4);
+            this.bttJD.Name = "bttJD";
+            this.bttJD.Size = new System.Drawing.Size(63, 59);
+            this.bttJD.TabIndex = 39;
+            this.bttJD.Text = "接单";
+            this.bttJD.UseVisualStyleBackColor = false;
+            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
             // 
             // panel3
             // 
@@ -578,24 +709,6 @@
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
-            // bttJD
-            // 
-            this.bttJD.BackColor = System.Drawing.Color.Transparent;
-            this.bttJD.Enabled = false;
-            this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
-            this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttJD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.bttJD.ForeColor = System.Drawing.Color.White;
-            this.bttJD.Location = new System.Drawing.Point(236, 395);
-            this.bttJD.Margin = new System.Windows.Forms.Padding(4);
-            this.bttJD.Name = "bttJD";
-            this.bttJD.Size = new System.Drawing.Size(63, 59);
-            this.bttJD.TabIndex = 39;
-            this.bttJD.Text = "接单";
-            this.bttJD.UseVisualStyleBackColor = false;
-            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
-            // 
             // lblZJG
             // 
             this.lblZJG.AutoSize = true;
@@ -736,116 +849,6 @@
             // 
             this.ofdLJ.FileName = "openFileDialog1";
             // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Controls.Add(this.btnquit);
-            this.panel7.Controls.Add(this.btnHandover);
-            this.panel7.Controls.Add(this.txtCGnum);
-            this.panel7.Controls.Add(this.txtCGname);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.label10);
-            this.panel7.Controls.Add(this.pbpath);
-            this.panel7.Controls.Add(this.btnUpdate);
-            this.panel7.Location = new System.Drawing.Point(0, 5);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(997, 537);
-            this.panel7.TabIndex = 24;
-            // 
-            // btnquit
-            // 
-            this.btnquit.BackColor = System.Drawing.Color.Transparent;
-            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnquit.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnquit.Location = new System.Drawing.Point(503, 360);
-            this.btnquit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnquit.Name = "btnquit";
-            this.btnquit.Size = new System.Drawing.Size(74, 25);
-            this.btnquit.TabIndex = 0;
-            this.btnquit.Text = "退出登录";
-            this.btnquit.UseVisualStyleBackColor = false;
-            // 
-            // btnHandover
-            // 
-            this.btnHandover.BackColor = System.Drawing.Color.Transparent;
-            this.btnHandover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHandover.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnHandover.Location = new System.Drawing.Point(453, 304);
-            this.btnHandover.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHandover.Name = "btnHandover";
-            this.btnHandover.Size = new System.Drawing.Size(56, 27);
-            this.btnHandover.TabIndex = 1;
-            this.btnHandover.Text = "切换";
-            this.btnHandover.UseVisualStyleBackColor = false;
-            // 
-            // txtCGnum
-            // 
-            this.txtCGnum.Location = new System.Drawing.Point(504, 266);
-            this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCGnum.Name = "txtCGnum";
-            this.txtCGnum.ReadOnly = true;
-            this.txtCGnum.Size = new System.Drawing.Size(117, 21);
-            this.txtCGnum.TabIndex = 2;
-            // 
-            // txtCGname
-            // 
-            this.txtCGname.Location = new System.Drawing.Point(503, 229);
-            this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCGname.Name = "txtCGname";
-            this.txtCGname.ReadOnly = true;
-            this.txtCGname.Size = new System.Drawing.Size(118, 21);
-            this.txtCGname.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(421, 230);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 16);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "餐馆名称：";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(422, 267);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 16);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "餐馆账号：";
-            // 
-            // pbpath
-            // 
-            this.pbpath.Location = new System.Drawing.Point(503, 90);
-            this.pbpath.Margin = new System.Windows.Forms.Padding(2);
-            this.pbpath.Name = "pbpath";
-            this.pbpath.Size = new System.Drawing.Size(118, 105);
-            this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbpath.TabIndex = 4;
-            this.pbpath.TabStop = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnUpdate.Location = new System.Drawing.Point(565, 304);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(56, 27);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "修改";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
             // 商家首页2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -869,6 +872,9 @@
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
@@ -879,9 +885,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

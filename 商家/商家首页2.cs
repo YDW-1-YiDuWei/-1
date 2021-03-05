@@ -266,17 +266,17 @@ namespace 点餐系统
             cbLX.SelectedIndex = 0;
             Inquire();
 
-           // btnquit.Enabled = true;
-         //   btnUpdate.Enabled = true;
+            btnUpdate.Enabled = true;
+            btnquit.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 User.restaKhID = list[0].id.ToString();
                 label1.Text = "商家的名称：" + list[0].RestaurantName;
                 pictureBox3.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
-                 txtCGname.Text = list[0].RestaurantName;
-                 txtCGnum.Text = User.restaUser;
-                pbpath.Image= Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                txtCGname.Text = list[0].RestaurantName;
+                txtCGnum.Text = User.restaUser;
+                pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
             }
 
         }
@@ -324,7 +324,7 @@ namespace 点餐系统
 
             lvCP.Items.Clear();
 
-            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "",""))
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "", ""))
             {
                 if (item.StatusId != 1)
                 {
@@ -393,7 +393,8 @@ namespace 点餐系统
                 return;
             }
 
-            if (MessageBox.Show("你确定要拒收此订单？","温馨提示",MessageBoxButtons.YesNo ,MessageBoxIcon.Information)==DialogResult.Yes) {
+            if (MessageBox.Show("你确定要拒收此订单？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
                 OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
                 if (of.UpdateOrderFormManager("3", odf.IdName.ToString()) > 0)
                 {
@@ -428,6 +429,31 @@ namespace 点餐系统
 
             OrderForm of = (OrderForm)lvCP.SelectedItems[0].Tag;
             lblZJG.Text = of.TotalPrices.ToString();
+        }
+
+        private void Btnquit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("是否退出登录", "登录提示", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                btnUpdate.Enabled = false;
+                btnquit.Enabled = false;
+                txtCGname.Text = "";
+                txtCGnum.Text = "";
+            }
+        }
+
+        private void BtnHandover_Click(object sender, EventArgs e)
+        {
+            商家登录 sa = new 商家登录();
+            sa.Show();
+            this.Close;
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            商家登入修改注册 sa = new 商家登入修改注册();
+            sa.jurisdiction = 1;
+            sa.Show();
         }
     }
 }
