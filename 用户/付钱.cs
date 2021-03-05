@@ -13,6 +13,7 @@ namespace 点餐系统
 {
     public partial class 付钱 : Form
     {
+        public 点餐 name = null;
         public List<Reservation> Li = null;
         public 模糊订单 Get = null;
         public 付钱()
@@ -66,8 +67,8 @@ namespace 点餐系统
 
         private void btnreturn_Click(object sender, EventArgs e)
         {
-            点餐 dc = new 点餐();
-            dc.Show();
+           
+            name.Show();
             this.Close();
         }
     }
