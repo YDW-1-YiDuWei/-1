@@ -112,7 +112,7 @@
             this.button2.Location = new System.Drawing.Point(153, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 28);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 4;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -154,7 +154,10 @@
             this.ClientSize = new System.Drawing.Size(986, 558);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "骑手登入";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "骑手登入";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
