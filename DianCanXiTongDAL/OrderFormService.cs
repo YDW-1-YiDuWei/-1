@@ -25,7 +25,7 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 数据层，订单查询表
         /// </summary>
-        public List<OrderForm> SelectOrderFormService(string clientId,string restaurant ,string hQ,string sJ)
+        public List<OrderForm> SelectOrderFormService(string clientId,string restaurant ,string hQ,string sJ,string riderId,string statusId)
         {
             List<OrderForm> ls = new List<OrderForm>();
             string sql = "Select IdName, RestaurantId, TotalPrices, ClientId, StatusId,b.Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage, c.Id, Number, Name, Sex, Phone, Password, Address,d.OrderStatusId, d.StatusName From OrderForm a join Restaurant b on b.Id =a.RestaurantId join Client c on ClientId=c.Id join OrderStatus d on d.OrderStatusId=a.StatusId where 1=1";
@@ -46,6 +46,11 @@ namespace DianCanXiTongDAL
             {
                 sql = " select top 1 *, NewID() as random from OrderForm order by random";
             }
+            if (riderId.Trim()!="")
+            {
+                sql += " and a.RiderId='"+ riderId + "'";
+            }
+
             SqlDataReader sdr=dB.ExecuteReader(sql);
             while (sdr.Read())
             {
@@ -83,9 +88,13 @@ namespace DianCanXiTongDAL
         /// 订单,状态，更改
         /// </summary>
         /// <returns></returns>
-        public int UpdateOrderFormService(string statusId, string idName)
+        public int UpdateOrderFormService(string statusId, string idName,string qSQD)
         {
             string sql = "update OrderForm set StatusId = '"+statusId+ "' where IdName ='"+idName+"'";
+            if (qSQD.Trim()!="")
+            {
+                sql = "update OrderForm set StatusId = '" + statusId + "', RiderId='"+qSQD+"'  where IdName ='" + idName + "'";
+            }
             return dB.ExecuteNonQuery(sql);
         }
         /// <summary>

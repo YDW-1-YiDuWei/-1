@@ -17,17 +17,17 @@ namespace DianCanXiTongBLL
         /// <summary>
         /// 业务层，订单增加方法
         /// </summary>
-        public List<OrderForm> SelectOrderFormManager(string clientId, string restaurant,string a, string sJ)
+        public List<OrderForm> SelectOrderFormManager(string clientId, string restaurant,string a, string sJ, string riderId, string statusId)
         {
-            return ofs.SelectOrderFormService(clientId, restaurant,a, sJ);
+            return ofs.SelectOrderFormService(clientId, restaurant,a, sJ, riderId, statusId);
         }
         /// <summary>
         /// 订单状态修改，业务层
         /// </summary>
         /// <returns></returns>
-        public int UpdateOrderFormManager(string statusId, string idName)
+        public int UpdateOrderFormManager(string statusId, string idName, string qSQD)
         {
-            return ofs.UpdateOrderFormService(statusId, idName);
+            return ofs.UpdateOrderFormService(statusId, idName, qSQD);
         }
         public int AddOrderFormManager(string rstaurantId, string totalPrices, string clientId, string statusId)
         {

@@ -324,7 +324,7 @@ namespace 点餐系统
 
             lvCP.Items.Clear();
 
-            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "",""))
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "","","",""))
             {
                 if (item.StatusId != 1)
                 {
@@ -359,7 +359,7 @@ namespace 点餐系统
                 return;
             }
 
-            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString()) > 0)
+            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString(),"") > 0)
             {
                 BttDD_Click("", null);
                 MessageBox.Show("订单已发送，等待骑手接单");
@@ -395,7 +395,7 @@ namespace 点餐系统
 
             if (MessageBox.Show("你确定要拒收此订单？","温馨提示",MessageBoxButtons.YesNo ,MessageBoxIcon.Information)==DialogResult.Yes) {
                 OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
-                if (of.UpdateOrderFormManager("3", odf.IdName.ToString()) > 0)
+                if (of.UpdateOrderFormManager("3", odf.IdName.ToString(),"") > 0)
                 {
                     BttDD_Click("", null);
                     MessageBox.Show("订单已拒绝");

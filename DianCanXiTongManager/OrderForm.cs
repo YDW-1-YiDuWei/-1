@@ -34,10 +34,13 @@ namespace DianCanXiTongManager
         /// 订单状态ID
         /// </summary>
         public int StatusId { get; set; }
-
         /// <summary>
         /// 订单状态
         /// </summary>
         public OrderStatus OrderStatus { get; set; }
+        /// <summary>
+        /// 骑手
+        /// </summary>
+        public Rider Rider { get; set; }
     }
 }

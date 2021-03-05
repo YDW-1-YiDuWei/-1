@@ -52,7 +52,7 @@ namespace 点餐系统
             lVMHB.Items.Clear();
             int j = 0;
 
-            foreach (OrderForm item in of.SelectOrderFormManager(User.khID, User.restaKhID, "",""))
+            foreach (OrderForm item in of.SelectOrderFormManager(User.khID, User.restaKhID, "","","",""))
             {
                 Image asg = System.Drawing.Image.FromFile(Temp.pathCG + item.Restaurant.RestaurantImage);//已经把拿到的图片保存到了这里面
                 lVMHB.Items.Add(item.IdName.ToString(), "\t餐馆名称：" + item.Restaurant.RestaurantName + "\n\t订单状态：" + item.OrderStatus.StatusName + "\n餐馆电话：\n\t" + item.Restaurant.RestaurantPhone, j);
@@ -154,7 +154,7 @@ namespace 点餐系统
 
         private void BttQD_Click(object sender, EventArgs e)
         {
-            if (of.UpdateOrderFormManager("1002",lVMHB.SelectedItems[0].Name)>0)
+            if (of.UpdateOrderFormManager("1002",lVMHB.SelectedItems[0].Name,"")>0)
             {
                 MessageBox.Show("确定收货成功!");
                 DDSX();

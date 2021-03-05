@@ -170,7 +170,7 @@ namespace 点餐系统
                 return;
             }*/
 
-            if (of.UpdateOrderFormManager("3", User.restaKhID) > 0) MessageBox.Show("订单已发送，等待骑手接单");
+            if (of.UpdateOrderFormManager("3", User.restaKhID,"") > 0) MessageBox.Show("订单已发送，等待骑手接单");
             button1_Click("", null);
             i = 1;
         }
@@ -185,7 +185,7 @@ namespace 点餐系统
 
             lvCP.Items.Clear();
 
-            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "",""))
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "","","",""))
             {
                 if (item.StatusId!=1)
                 {
@@ -438,7 +438,7 @@ namespace 点餐系统
 
             if (MessageBox .Show("你确定要拒绝此订单？","温馨提示",MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.Yes ) {
                 OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
-                if (of.UpdateOrderFormManager("3", odf.IdName.ToString()) > 0)
+                if (of.UpdateOrderFormManager("3", odf.IdName.ToString(),"") > 0)
                 {
                     MessageBox.Show("订单已退单");
                     button1_Click("", null);
@@ -467,7 +467,7 @@ namespace 点餐系统
 
             OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
 
-            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString()) > 0)
+            if (of.UpdateOrderFormManager("1003", odf.IdName.ToString(),"") > 0)
             {
                 button1_Click("", null);
                 MessageBox.Show("订单已发送，等待骑手接单");

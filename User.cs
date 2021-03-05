@@ -32,6 +32,10 @@ namespace 点餐系统
         public static string restaPass = "";
         public static string restaKhID = "";
         public static string path = "";
+        /// <summary>
+        /// 骑手ID
+        /// </summary>
+        public static string restaId = "";
 
 
         /// <summary>

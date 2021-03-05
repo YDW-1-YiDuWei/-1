@@ -32,7 +32,7 @@ namespace 点餐系统
             {
                 User.riderUser = list[0].RiderNumber;
                 User.riderPwd = list[0].RiderNumberPwd;
-                User.riderKhId = list[0].RiderId.ToString();
+                User.restaId = list[0].RiderId.ToString();
                 User.riderName = list[0].RiderName.ToString();
                 MessageBox.Show("登录成功", "登录提示");
                 //登录成功显示骑手首页
