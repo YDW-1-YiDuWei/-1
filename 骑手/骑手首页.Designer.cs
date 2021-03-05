@@ -34,9 +34,7 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lvYOrder = new System.Windows.Forms.ListView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lvOrder = new System.Windows.Forms.ListView();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -63,8 +61,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -119,37 +115,17 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.lvYOrder);
             this.panel4.Location = new System.Drawing.Point(392, 149);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(399, 433);
             this.panel4.TabIndex = 2;
             // 
-            // lvYOrder
-            // 
-            this.lvYOrder.HideSelection = false;
-            this.lvYOrder.Location = new System.Drawing.Point(5, 6);
-            this.lvYOrder.Name = "lvYOrder";
-            this.lvYOrder.Size = new System.Drawing.Size(388, 427);
-            this.lvYOrder.TabIndex = 0;
-            this.lvYOrder.UseCompatibleStateImageBehavior = false;
-            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.lvOrder);
             this.panel3.Location = new System.Drawing.Point(4, 150);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(387, 432);
             this.panel3.TabIndex = 2;
-            // 
-            // lvOrder
-            // 
-            this.lvOrder.HideSelection = false;
-            this.lvOrder.Location = new System.Drawing.Point(5, 5);
-            this.lvOrder.Name = "lvOrder";
-            this.lvOrder.Size = new System.Drawing.Size(378, 427);
-            this.lvOrder.TabIndex = 0;
-            this.lvOrder.UseCompatibleStateImageBehavior = false;
             // 
             // button5
             // 
@@ -312,7 +288,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(791, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(277, 522);
+            this.groupBox1.Size = new System.Drawing.Size(277, 579);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "骑手信息表";
@@ -327,6 +303,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "修改";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label7
             // 
@@ -350,6 +327,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "切换";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -361,7 +339,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "退出登入";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -445,11 +423,10 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "骑手首页";
             this.Text = "骑手首页";
+            this.Load += new System.EventHandler(this.骑手首页_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

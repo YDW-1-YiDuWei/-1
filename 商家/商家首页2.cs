@@ -77,10 +77,10 @@ namespace 点餐系统
 
             panel2.Visible = true;
             panel3.Visible = true;
-            /*bttJD.Enabled = false;                                                                                            唐梦石
-            bttTD.Enabled = false;                                                                                              唐梦石
-            textBox1.Enabled = true;                                                                                            唐梦石
-            bttCX.Enabled = true;*/                                                                                           //唐梦石
+            /*bttJD.Enabled = false;    唐梦石
+            bttTD.Enabled = false;      唐梦石
+            textBox1.Enabled = true;    唐梦石
+            bttCX.Enabled = true;*/   //唐梦石
             i = 1; count = 0;
             Temp.index = 0;
         }
@@ -153,7 +153,7 @@ namespace 点餐系统
             {
                 if (count == 0)
                 {
-                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName,1);
+                    int count = cIM.AddCuisineInformations(txtName.Text, int.Parse(User.restaKhID), cbLX.SelectedIndex, decimal.Parse(txtMoney.Text + ".0"), 0, ofdLJ.SafeFileName, 1);
                     if (count > 0)
                     {
                         MessageBox.Show("增加成功");
@@ -265,6 +265,45 @@ namespace 点餐系统
         {
             cbLX.SelectedIndex = 0;
             Inquire();
+
+           // btnquit.Enabled = true;
+         //   btnUpdate.Enabled = true;
+            label2.Text = DateTime.Now.ToLongDateString().ToString();
+            if (list != null)
+            {
+                User.restaKhID = list[0].id.ToString();
+                label1.Text = "商家的名称：" + list[0].RestaurantName;
+                pictureBox3.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
+                //txtCGname.Text = list[0].RestaurantName;
+                // txtCGnum.Text = User.restaUser;
+
+            }
+
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            if (i == 1)
+            {
+                lvCPMessage.ContextMenuStrip = null;
+            }
+            label3.Text = DateTime.Now.ToString("t");
+            label2.Text = DateTime.Now.ToString("g");
+        }
+
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = (int)lvCPMessage.SelectedItems[0].Tag;
+            int count = cIM.DeleteCuisinelnformationsAmend(a);
+            if (count > 0)
+            {
+                MessageBox.Show("删除成功");
+                Inquire();//刷新界面
+            }
+            else
+            {
+                MessageBox.Show("删除失败");
+            }
         }
         /// <summary>
         /// 订单
