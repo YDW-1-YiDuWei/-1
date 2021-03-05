@@ -312,5 +312,12 @@ namespace 点餐系统
             fq.Li = Li;
             fq.Show();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            餐馆列表 cglp = new 餐馆列表();
+            cglp.Show();
+            this.Close();
+        }
     }
 }
