@@ -252,7 +252,7 @@ namespace 点餐系统
             Uiop = null;
         }
         /// <summary>
-        ///一点菜品
+        ///已点菜品
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
