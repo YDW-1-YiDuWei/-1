@@ -15,7 +15,7 @@ namespace 点餐系统
 {
     public partial class 商家登入修改注册 : Form
     {
-
+        public 商家首页2 ri = null;
         public int jurisdiction = 0; //判断是修改还是删除
         public 商家登入修改注册()
         {
@@ -90,6 +90,8 @@ namespace 点餐系统
                     string name = User.path;
 
                     MessageBox.Show("修改成功");
+                    ri.Refreshs();
+                    
                 }
                 else
                 {

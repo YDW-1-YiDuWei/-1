@@ -62,7 +62,7 @@ namespace 点餐系统
 
         private void 登录界面_Load(object sender, EventArgs e)////用户登入界面
         {
-            if (list != null)
+            if (list!= null&&list.Count==1)
             {
                 if (MessageBox.Show("是否登录该账号", "登录提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
@@ -77,7 +77,7 @@ namespace 点餐系统
         }
         public void a()
         {
-            商家首页 sy = new 商家首页();
+            用户首页 sy = new 用户首页();
 
             sy.Show();
             this.Hide();

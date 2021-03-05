@@ -38,8 +38,10 @@ namespace 点餐系统
         private void toolStripLabel2_Click(object sender, EventArgs e)//商家首页2  首页（按键）
         {
             panel1.Visible = true;
+
             panel2.Visible = true;
             panel3.Visible = true;
+            panel7.Visible = false;
 
             if (a == 1)
             {
@@ -54,8 +56,7 @@ namespace 点餐系统
         private void toolStripLabel3_Click(object sender, EventArgs e)//商家首页2  我的（按键）
         {
             i = 1;
-            btnSerach.Visible = false;
-            panel1.Visible = false;//商家首页显示（panel1）
+            panel7.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)//商家首页2  已完成（按钮）
@@ -170,6 +171,7 @@ namespace 点餐系统
                         if (index > 0)
                         {
                             Temp.index = 0;//把这个重新变成0好以后判断用
+                            count = 0;
                             MessageBox.Show("修改成功");
                             Inquire(); //刷新菜品信息
                             Delete();//删除输入框里面的值
@@ -266,19 +268,27 @@ namespace 点餐系统
             cbLX.SelectedIndex = 0;
             Inquire();
 
-           // btnquit.Enabled = true;
-         //   btnUpdate.Enabled = true;
+            Refreshs();
+
+        }
+
+        /// <summary>
+        /// 刷新商家界面
+        /// </summary>
+        public void Refreshs()
+        {
+            btnUpdate.Enabled = true;
+            btnquit.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
             if (list != null)
             {
                 User.restaKhID = list[0].id.ToString();
                 label1.Text = "商家的名称：" + list[0].RestaurantName;
                 pictureBox3.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
-                //txtCGname.Text = list[0].RestaurantName;
-                // txtCGnum.Text = User.restaUser;
-
+                txtCGname.Text = list[0].RestaurantName;
+                txtCGnum.Text = User.restaUser;
+                pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
             }
-
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -393,7 +403,8 @@ namespace 点餐系统
                 return;
             }
 
-            if (MessageBox.Show("你确定要拒收此订单？","温馨提示",MessageBoxButtons.YesNo ,MessageBoxIcon.Information)==DialogResult.Yes) {
+            if (MessageBox.Show("你确定要拒收此订单？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
                 OrderForm odf = (OrderForm)lvCP.SelectedItems[0].Tag;
                 if (of.UpdateOrderFormManager("3", odf.IdName.ToString(),"") > 0)
                 {
@@ -428,6 +439,32 @@ namespace 点餐系统
 
             OrderForm of = (OrderForm)lvCP.SelectedItems[0].Tag;
             lblZJG.Text = of.TotalPrices.ToString();
+        }
+
+        private void Btnquit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("是否退出登录", "登录提示", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                btnUpdate.Enabled = false;
+                btnquit.Enabled = false;
+                txtCGname.Text = "";
+                txtCGnum.Text = "";
+            }
+        }
+
+        private void BtnHandover_Click(object sender, EventArgs e)
+        {
+            商家登录 sa = new 商家登录();
+            sa.Show();
+            this.Close();
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            商家登入修改注册 sa = new 商家登入修改注册();
+            sa.ri = this;
+            sa.jurisdiction = 1;
+            sa.Show();
         }
     }
 }

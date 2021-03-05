@@ -12,9 +12,9 @@ using DianCanXiTongManager;
 
 namespace 点餐系统
 {
-    public partial class 商家首页 : Form
+    public partial class 用户首页 : Form
     {
-        public 商家首页()
+        public 用户首页()
         {
             InitializeComponent();
         }
@@ -63,7 +63,7 @@ namespace 点餐系统
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

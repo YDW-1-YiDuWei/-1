@@ -46,5 +46,10 @@ namespace 点餐系统
                 MessageBox.Show("登录失败", "登录提示");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

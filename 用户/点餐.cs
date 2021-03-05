@@ -32,7 +32,7 @@ namespace 点餐系统
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            商家首页 sy = new 商家首页();
+            用户首页 sy = new 用户首页();
             sy.Show();
         }
 
@@ -252,7 +252,7 @@ namespace 点餐系统
             Uiop = null;
         }
         /// <summary>
-        ///一点菜品
+        ///已点菜品
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -311,6 +311,13 @@ namespace 点餐系统
 
             fq.Li = Li;
             fq.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            餐馆列表 cglp = new 餐馆列表();
+            cglp.Show();
+            this.Close();
         }
     }
 }

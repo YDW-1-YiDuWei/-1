@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(商家首页1));
             this.btnrefresh = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.btXZ = new System.Windows.Forms.Button();
             this.btQX = new System.Windows.Forms.Button();
@@ -47,10 +51,10 @@
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lVUDD = new System.Windows.Forms.ListView();
+            this.images = new System.Windows.Forms.ImageList(this.components);
             this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.images = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSerach = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -87,10 +91,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnquit = new System.Windows.Forms.Button();
+            this.btnHandover = new System.Windows.Forms.Button();
+            this.txtCGnum = new System.Windows.Forms.TextBox();
+            this.txtCGname = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pbpath = new System.Windows.Forms.PictureBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
@@ -104,6 +113,8 @@
             this.panel4.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).BeginInit();
             this.SuspendLayout();
             // 
             // btnrefresh
@@ -140,6 +151,35 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(228, 376);
             this.panel3.TabIndex = 27;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(228, 376);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.Visible = false;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "订单";
+            this.columnHeader4.Width = 36;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "客户姓名";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "联系电话";
+            this.columnHeader6.Width = 128;
             // 
             // pbImage
             // 
@@ -300,6 +340,12 @@
             this.lVUDD.TabIndex = 0;
             this.lVUDD.UseCompatibleStateImageBehavior = false;
             // 
+            // images
+            // 
+            this.images.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.images.ImageSize = new System.Drawing.Size(100, 100);
+            this.images.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // lvCPMessage
             // 
             this.lvCPMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -330,15 +376,10 @@
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
-            // images
-            // 
-            this.images.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.images.ImageSize = new System.Drawing.Size(100, 100);
-            this.images.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.btnSerach);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.txtCPName);
@@ -769,34 +810,116 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // listView1
+            // panel7
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(228, 376);
-            this.listView1.TabIndex = 9;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.Visible = false;
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.Controls.Add(this.btnquit);
+            this.panel7.Controls.Add(this.btnHandover);
+            this.panel7.Controls.Add(this.txtCGnum);
+            this.panel7.Controls.Add(this.txtCGname);
+            this.panel7.Controls.Add(this.label9);
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Controls.Add(this.pbpath);
+            this.panel7.Controls.Add(this.btnUpdate);
+            this.panel7.Location = new System.Drawing.Point(4, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(990, 532);
+            this.panel7.TabIndex = 37;
             // 
-            // columnHeader4
+            // btnquit
             // 
-            this.columnHeader4.Text = "订单";
-            this.columnHeader4.Width = 36;
+            this.btnquit.BackColor = System.Drawing.Color.Transparent;
+            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquit.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnquit.Location = new System.Drawing.Point(503, 360);
+            this.btnquit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnquit.Name = "btnquit";
+            this.btnquit.Size = new System.Drawing.Size(74, 25);
+            this.btnquit.TabIndex = 0;
+            this.btnquit.Text = "退出登录";
+            this.btnquit.UseVisualStyleBackColor = false;
             // 
-            // columnHeader5
+            // btnHandover
             // 
-            this.columnHeader5.Text = "客户姓名";
+            this.btnHandover.BackColor = System.Drawing.Color.Transparent;
+            this.btnHandover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHandover.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHandover.Location = new System.Drawing.Point(459, 310);
+            this.btnHandover.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHandover.Name = "btnHandover";
+            this.btnHandover.Size = new System.Drawing.Size(56, 27);
+            this.btnHandover.TabIndex = 1;
+            this.btnHandover.Text = "切换";
+            this.btnHandover.UseVisualStyleBackColor = false;
+            this.btnHandover.Click += new System.EventHandler(this.btnHandover_Click_1);
             // 
-            // columnHeader6
+            // txtCGnum
             // 
-            this.columnHeader6.Text = "联系电话";
-            this.columnHeader6.Width = 128;
+            this.txtCGnum.Location = new System.Drawing.Point(504, 266);
+            this.txtCGnum.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCGnum.Name = "txtCGnum";
+            this.txtCGnum.ReadOnly = true;
+            this.txtCGnum.Size = new System.Drawing.Size(117, 21);
+            this.txtCGnum.TabIndex = 2;
+            // 
+            // txtCGname
+            // 
+            this.txtCGname.Location = new System.Drawing.Point(503, 229);
+            this.txtCGname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCGname.Name = "txtCGname";
+            this.txtCGname.ReadOnly = true;
+            this.txtCGname.Size = new System.Drawing.Size(118, 21);
+            this.txtCGname.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(421, 230);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 16);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "餐馆名称：";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(422, 267);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "餐馆账号：";
+            // 
+            // pbpath
+            // 
+            this.pbpath.Location = new System.Drawing.Point(503, 90);
+            this.pbpath.Margin = new System.Windows.Forms.Padding(2);
+            this.pbpath.Name = "pbpath";
+            this.pbpath.Size = new System.Drawing.Size(118, 105);
+            this.pbpath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbpath.TabIndex = 4;
+            this.pbpath.TabStop = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnUpdate.Location = new System.Drawing.Point(573, 310);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(56, 27);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "修改";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
             // 商家首页1
             // 
@@ -834,6 +957,9 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -904,5 +1030,14 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnquit;
+        private System.Windows.Forms.Button btnHandover;
+        private System.Windows.Forms.TextBox txtCGnum;
+        private System.Windows.Forms.TextBox txtCGname;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pbpath;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

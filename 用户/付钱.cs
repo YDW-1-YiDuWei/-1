@@ -63,5 +63,12 @@ namespace 点餐系统
             fqcg.Li = Li;
             fqcg.Get = this.Get;
         }
+
+        private void btnreturn_Click(object sender, EventArgs e)
+        {
+            点餐 dc = new 点餐();
+            dc.Show();
+            this.Close();
+        }
     }
 }
