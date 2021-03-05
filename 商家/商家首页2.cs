@@ -447,7 +447,7 @@ namespace 点餐系统
         {
             商家登录 sa = new 商家登录();
             sa.Show();
-            this.Close;
+            this.Close();
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
