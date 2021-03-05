@@ -35,7 +35,9 @@ namespace 点餐系统
             {
                 a =reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString(), ls[0].IdName.ToString(), item.VegetableQuantity.ToString());
             }
-            Get.DDSX();
+            if (Get!=null) {
+                Get.DDSX();
+            }
             tj.Show();
             if (a ==0&& b==0)
             {
