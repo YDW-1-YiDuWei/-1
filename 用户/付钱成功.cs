@@ -25,7 +25,7 @@ namespace 点餐系统
         private void button1_Click(object sender, EventArgs e)//提交按钮
         {
             int b=ofm.AddOrderFormManager(User.RestaurantId, User.TotalPrices, User.khID, "1");
-            List<OrderForm> ls= ofm.SelectOrderFormManager("","","1");
+            List<OrderForm> ls= ofm.SelectOrderFormManager("","","1","");
 
             ReservationManager reservation = new ReservationManager();
             提交 tj = new 提交();

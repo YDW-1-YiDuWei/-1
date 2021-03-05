@@ -185,7 +185,7 @@ namespace 点餐系统
 
             lvCP.Items.Clear();
 
-            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, ""))
+            foreach (OrderForm item in of.SelectOrderFormManager("", User.restaKhID, "",""))
             {
                 if (item.StatusId!=1)
                 {
