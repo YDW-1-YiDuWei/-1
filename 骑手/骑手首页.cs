@@ -68,7 +68,7 @@ namespace 点餐系统
 
             foreach (OrderForm item in of)
             {
-                if (item.StatusId== 1004 || item.StatusId == 2)
+                if (item.StatusId== 1004 || item.StatusId == 2||item.StatusId== 2)
                 {
                     string[] a = { item.IdName.ToString(), item.ClientId.Name, item.ClientId.Phone, item.Restaurant.RestaurantName, item.Restaurant.RestaurantPhone };
                     ListViewItem lv = new ListViewItem(a);

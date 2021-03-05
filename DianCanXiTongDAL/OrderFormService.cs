@@ -48,7 +48,7 @@ namespace DianCanXiTongDAL
             }
             if (riderId.Trim()!=""&& statusId.Trim()!="")
             {
-                sql += " and a.RiderId='"+ riderId + "' and a.StatusId='"+ statusId + "'";
+                sql += " and a.RiderId='"+ riderId + "' and a.StatusId='"+ statusId + "' or a.StatusId='2'";
             }
 
             SqlDataReader sdr=dB.ExecuteReader(sql);
