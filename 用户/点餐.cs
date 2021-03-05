@@ -289,6 +289,7 @@ namespace 点餐系统
         /// <param name="e"></param>
         private void BttXD_Click(object sender, EventArgs e)
         {
+
             if (cC.Count == 0)
             {
                 MessageBox.Show("尊敬的用户您没有点餐，请您点菜之后在进行下单");
@@ -308,7 +309,7 @@ namespace 点餐系统
                 };
                 Li.Add(rv);
             }
-
+            fq.name = this;
             fq.Li = Li;
             fq.Show();
         }

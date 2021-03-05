@@ -75,8 +75,10 @@ namespace DianCanXiTongDAL
                 string reservationName = sdr["CuisineName"].ToString();
                 string phone = sdr["Phone"].ToString();
                 string address = sdr["Address"].ToString();
+                Random rd = new Random();
+                int a = rd.Next(1000,9999);
 
-                using (FileStream fs = new FileStream("" + name + ".txt", FileMode.Create, FileAccess.Write))
+                using (FileStream fs = new FileStream("" + name +a+ ".txt", FileMode.Create, FileAccess.Write))
                 {
                     StreamWriter sw = new StreamWriter(fs);
                     sw.WriteLine("***************************");
@@ -89,6 +91,8 @@ namespace DianCanXiTongDAL
                     sw.WriteLine("****************************");
                     sw.Close();
                 }
+
+                
                 i++;
             }
             return i;
