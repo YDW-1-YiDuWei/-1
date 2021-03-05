@@ -12,9 +12,11 @@ namespace 点餐系统
 {
     public partial class 骑手首页 : Form
     {
+        public 骑手登入 Get = null;
         public 骑手首页()
         {
             InitializeComponent();
+            lblQSXM .Text=":"+ User.riderName;
         }
 
         private void button4_Click(object sender, EventArgs e)//骑手首页 接单（按钮）
@@ -35,6 +37,11 @@ namespace 点餐系统
         private void toolStripLabel1_Click(object sender, EventArgs e)//骑手首页 首页（按键）
         {
             panel1.Visible = true;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Get.Close();
         }
     }
 }
