@@ -77,7 +77,7 @@ namespace 点餐系统
         }
         public void a()
         {
-            商家首页 sy = new 商家首页();
+            用户首页 sy = new 用户首页();
 
             sy.Show();
             this.Hide();

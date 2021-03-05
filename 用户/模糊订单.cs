@@ -27,7 +27,7 @@ namespace 点餐系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            商家首页 sy = new 商家首页();
+            用户首页 sy = new 用户首页();
             sy.Show();
             this.Close();
         }
@@ -163,7 +163,9 @@ namespace 点餐系统
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-
+            用户首页 sa = new 用户首页();
+            sa.Show();
+            this.Close();
         }
     }
 }

@@ -136,11 +136,11 @@
     <Compile Include="用户\登录界面.Designer.cs">
       <DependentUpon>登录界面.cs</DependentUpon>
     </Compile>
-    <Compile Include="用户\首页.cs">
+    <Compile Include="用户\用户首页.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="用户\首页.Designer.cs">
-      <DependentUpon>首页.cs</DependentUpon>
+    <Compile Include="用户\用户首页.Designer.cs">
+      <DependentUpon>用户首页.cs</DependentUpon>
     </Compile>
     <Compile Include="用户\编辑个人信息.cs">
       <SubType>Form</SubType>
@@ -217,8 +217,8 @@
     <EmbeddedResource Include="用户\登录界面.resx">
       <DependentUpon>登录界面.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="用户\首页.resx">
-      <DependentUpon>首页.cs</DependentUpon>
+    <EmbeddedResource Include="用户\用户首页.resx">
+      <DependentUpon>用户首页.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="用户\编辑个人信息.resx">
       <DependentUpon>编辑个人信息.cs</DependentUpon>
