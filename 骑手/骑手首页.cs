@@ -14,10 +14,11 @@ namespace 点餐系统
 {
     public partial class 骑手首页 : Form
     {
-        public List<Rider> list = null;
+        public 骑手登入 Get = null;
         public 骑手首页()
         {
             InitializeComponent();
+            lblQSXM .Text=":"+ User.riderName;
         }
         private void button4_Click(object sender, EventArgs e)//骑手首页 接单（按钮）
         {
