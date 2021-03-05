@@ -16,6 +16,7 @@ namespace 点餐系统
     {
         public List<Reservation> Li = null;
         private OrderFormManager ofm = new OrderFormManager();
+        public 模糊订单 Get = null;
         public 付钱成功()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace 点餐系统
         private void button1_Click(object sender, EventArgs e)//提交按钮
         {
             int b=ofm.AddOrderFormManager(User.RestaurantId, User.TotalPrices, User.khID, "1");
-            List<OrderForm> ls= ofm.SelectOrderFormManager("","","1");
+            List<OrderForm> ls= ofm.SelectOrderFormManager("","","1","");
 
             ReservationManager reservation = new ReservationManager();
             提交 tj = new 提交();
@@ -34,7 +35,7 @@ namespace 点餐系统
             {
                 a =reservation.AddReservationManager(item.ClientId.ToString(), item.Money.ToString(), item.CuisineInformationId.ToString(), ls[0].IdName.ToString(), item.VegetableQuantity.ToString());
             }
-            
+            Get.DDSX();
             tj.Show();
             if (a ==0&& b==0)
             {

@@ -25,7 +25,7 @@ namespace DianCanXiTongDAL
         /// <summary>
         /// 数据层，订单查询表
         /// </summary>
-        public List<OrderForm> SelectOrderFormService(string clientId,string restaurant ,string hQ)
+        public List<OrderForm> SelectOrderFormService(string clientId,string restaurant ,string hQ,string sJ)
         {
             List<OrderForm> ls = new List<OrderForm>();
             string sql = "Select IdName, RestaurantId, TotalPrices, ClientId, StatusId,b.Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage, c.Id, Number, Name, Sex, Phone, Password, Address,d.OrderStatusId, d.StatusName From OrderForm a join Restaurant b on b.Id =a.RestaurantId join Client c on ClientId=c.Id join OrderStatus d on d.OrderStatusId=a.StatusId where 1=1";
@@ -41,6 +41,10 @@ namespace DianCanXiTongDAL
             if (hQ.Trim() != "")
             {
                 sql += " order by IdName desc";
+            }
+            if (sJ.Trim()!="")
+            {
+                sql = " select top 1 *, NewID() as random from OrderForm order by random";
             }
             SqlDataReader sdr=dB.ExecuteReader(sql);
             while (sdr.Read())

@@ -47,10 +47,10 @@
             this.txtCPName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lVUDD = new System.Windows.Forms.ListView();
-            this.images = new System.Windows.Forms.ImageList(this.components);
             this.lvCPMessage = new System.Windows.Forms.ListView();
             this.Cmlist = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.images = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSerach = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -86,6 +86,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel2.SuspendLayout();
@@ -117,6 +122,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.listView1);
             this.panel3.Controls.Add(this.pbImage);
             this.panel3.Controls.Add(this.btXZ);
             this.panel3.Controls.Add(this.btQX);
@@ -169,7 +175,6 @@
             this.btQX.TabIndex = 5;
             this.btQX.Text = "取消";
             this.btQX.UseVisualStyleBackColor = false;
-            this.btQX.Click += new System.EventHandler(this.btQX_Click);
             // 
             // btQD
             // 
@@ -288,18 +293,12 @@
             // 
             this.lVUDD.HideSelection = false;
             this.lVUDD.LargeImageList = this.images;
-            this.lVUDD.Location = new System.Drawing.Point(5, 4);
+            this.lVUDD.Location = new System.Drawing.Point(0, 0);
             this.lVUDD.Name = "lVUDD";
-            this.lVUDD.Size = new System.Drawing.Size(685, 484);
+            this.lVUDD.Size = new System.Drawing.Size(690, 488);
             this.lVUDD.SmallImageList = this.images;
-            this.lVUDD.TabIndex = 22;
+            this.lVUDD.TabIndex = 0;
             this.lVUDD.UseCompatibleStateImageBehavior = false;
-            // 
-            // images
-            // 
-            this.images.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.images.ImageSize = new System.Drawing.Size(100, 100);
-            this.images.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // lvCPMessage
             // 
@@ -330,6 +329,12 @@
             this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // images
+            // 
+            this.images.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.images.ImageSize = new System.Drawing.Size(100, 100);
+            this.images.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // panel1
             // 
@@ -472,6 +477,7 @@
             // bttJD
             // 
             this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            this.bttJD.Enabled = false;
             this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
             this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -484,6 +490,7 @@
             this.bttJD.TabIndex = 3;
             this.bttJD.Text = "接单";
             this.bttJD.UseVisualStyleBackColor = false;
+            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
             // 
             // lblZJG
             // 
@@ -500,6 +507,7 @@
             // bttTD
             // 
             this.bttTD.BackColor = System.Drawing.Color.Transparent;
+            this.bttTD.Enabled = false;
             this.bttTD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
             this.bttTD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.bttTD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -512,7 +520,6 @@
             this.bttTD.TabIndex = 3;
             this.bttTD.Text = "退单";
             this.bttTD.UseVisualStyleBackColor = false;
-            this.bttTD.Click += new System.EventHandler(this.bttTD_Click);
             // 
             // bttDD
             // 
@@ -756,6 +763,41 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "label2";
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(228, 376);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.Visible = false;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "订单";
+            this.columnHeader4.Width = 36;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "客户姓名";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "联系电话";
+            this.columnHeader6.Width = 128;
+            // 
             // 商家首页1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -857,5 +899,10 @@
         private System.Windows.Forms.ListView lVUDD;
         private System.Windows.Forms.ImageList images;
         private System.Windows.Forms.Label lblZJG;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }
