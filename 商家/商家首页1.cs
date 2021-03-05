@@ -95,8 +95,7 @@ namespace 点餐系统
             panel4.Visible = false;//商家模糊接单查询
             //panel5.Visible = false;//商家详细接单查询
             #endregion
-            panel5.Visible = false;//商家详细接单查询
-            #endregion*/
+            //panel5.Visible = false;//商家详细接单查询
         }
 
         private void button3_Click(object sender, EventArgs e)//商家菜品删除
