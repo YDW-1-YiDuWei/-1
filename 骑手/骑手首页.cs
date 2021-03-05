@@ -211,6 +211,7 @@ namespace 点餐系统
             if (lVYDD.SelectedItems.Count==0)
             {
                 MessageBox.Show("你没选择以送达的订单");
+                return;
             }
             OrderForm jd = (OrderForm)lVYDD.SelectedItems[0].Tag;
             if (jd.StatusId != 2)
