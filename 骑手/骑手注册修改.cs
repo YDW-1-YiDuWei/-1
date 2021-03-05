@@ -21,7 +21,7 @@ namespace 点餐系统
         }
 
         RiderManager rider = new RiderManager();
-        private void 骑手注册修改_Load(object sender, EventArgs e)
+        private void 骑手注册修改_Load(object sender, EventArgs e)//显示窗体的时候
         {
             textBox2.ReadOnly = false;
             if (i == 1)
