@@ -275,9 +275,9 @@ namespace 点餐系统
                 User.restaKhID = list[0].id.ToString();
                 label1.Text = "商家的名称：" + list[0].RestaurantName;
                 pictureBox3.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
-                //txtCGname.Text = list[0].RestaurantName;
-                // txtCGnum.Text = User.restaUser;
-
+                 txtCGname.Text = list[0].RestaurantName;
+                 txtCGnum.Text = User.restaUser;
+                pbpath.Image= Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
             }
 
         }
