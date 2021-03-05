@@ -180,6 +180,7 @@
             this.Name = "付钱";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "付钱";
+            this.Load += new System.EventHandler(this.付钱_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

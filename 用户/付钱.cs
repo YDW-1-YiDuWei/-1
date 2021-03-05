@@ -67,9 +67,13 @@ namespace 点餐系统
 
         private void btnreturn_Click(object sender, EventArgs e)
         {
-           
             name.Show();
             this.Close();
+        }
+
+        private void 付钱_Load_1(object sender, EventArgs e)//显示界面的时候
+        {
+
         }
     }
 }
