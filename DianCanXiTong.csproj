@@ -154,12 +154,6 @@
     <Compile Include="用户\编辑个人信息.Designer.cs">
       <DependentUpon>编辑个人信息.cs</DependentUpon>
     </Compile>
-    <Compile Include="骑手\骑手我的.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="骑手\骑手我的.Designer.cs">
-      <DependentUpon>骑手我的.cs</DependentUpon>
-    </Compile>
     <Compile Include="骑手\骑手登入.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,9 +231,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="用户\编辑个人信息.resx">
       <DependentUpon>编辑个人信息.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="骑手\骑手我的.resx">
-      <DependentUpon>骑手我的.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="骑手\骑手登入.resx">
       <DependentUpon>骑手登入.cs</DependentUpon>
