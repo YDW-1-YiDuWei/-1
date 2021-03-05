@@ -28,7 +28,7 @@ namespace DianCanXiTongDAL
         public List<OrderForm> SelectOrderFormService(string clientId,string restaurant ,string hQ,string sJ,string riderId,string statusId)
         {
             List<OrderForm> ls = new List<OrderForm>();
-            string sql = "Select IdName, RestaurantId, TotalPrices, ClientId, StatusId,b.Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage, c.Id, Number, Name, Sex, Phone, Password, Address,d.OrderStatusId, d.StatusName From OrderForm a join Restaurant b on b.Id =a.RestaurantId join Client c on ClientId=c.Id join OrderStatus d on d.OrderStatusId=a.StatusId where 1=1";
+            string sql = "Select IdName, RestaurantId, TotalPrices, ClientId, a.StatusId,b.Id, RestaurantNumber, RestaurantNumberPwd, RestaurantName, RestaurantAddress, RestaurantPhone, RestaurantComment, RestaurantImage, c.Id, Number, Name, Sex, Phone, Password, Address,d.OrderStatusId, d.StatusName From OrderForm a join Restaurant b on b.Id =a.RestaurantId join Client c on ClientId=c.Id join OrderStatus d on d.OrderStatusId=a.StatusId where 1=1";
             if (clientId.Trim() != "")
             {
                 sql += " and ClientId='" + clientId + "'";
@@ -46,9 +46,9 @@ namespace DianCanXiTongDAL
             {
                 sql = " select top 1 *, NewID() as random from OrderForm order by random";
             }
-            if (riderId.Trim()!="")
+            if (riderId.Trim()!=""&& statusId.Trim()!="")
             {
-                sql += " and a.RiderId='"+ riderId + "'";
+                sql += " and a.RiderId='"+ riderId + "' and a.StatusId='"+ statusId + "' or a.StatusId='2'";
             }
 
             SqlDataReader sdr=dB.ExecuteReader(sql);

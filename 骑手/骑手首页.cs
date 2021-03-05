@@ -61,12 +61,14 @@ namespace 点餐系统
 
         private void button5_Click(object sender, EventArgs e)//骑手首页 已接单（按钮）
         {
+            bttJD.Enabled = false;
+            lVYDD.Items.Clear();
             if (of.Count == 0) lVYDD.Visible = false;
 
 
             foreach (OrderForm item in of)
             {
-                if (item.StatusId== 1004 || item.StatusId == 2)
+                if (item.StatusId== 1004 || item.StatusId == 2||item.StatusId== 2)
                 {
                     string[] a = { item.IdName.ToString(), item.ClientId.Name, item.ClientId.Phone, item.Restaurant.RestaurantName, item.Restaurant.RestaurantPhone };
                     ListViewItem lv = new ListViewItem(a);
@@ -146,7 +148,7 @@ namespace 点餐系统
         /// </summary>
         public void QSXQDD()
         {
-            of = ofm.SelectOrderFormManager("","", "", "",User.restaId, "");
+            of = ofm.SelectOrderFormManager("","", "", "",User.restaId, "1004");
         }
         /// <summary>
         /// 详细订单
@@ -175,6 +177,7 @@ namespace 点餐系统
 
         private void Button6_Click(object sender, EventArgs e)
         {
+            bttJD.Enabled = true;
             plYJD.Visible = false;
             lVYDD.Visible = true ;
         }
@@ -211,6 +214,7 @@ namespace 点餐系统
             if (lVYDD.SelectedItems.Count==0)
             {
                 MessageBox.Show("你没选择以送达的订单");
+                return;
             }
             OrderForm jd = (OrderForm)lVYDD.SelectedItems[0].Tag;
             if (jd.StatusId != 2)
