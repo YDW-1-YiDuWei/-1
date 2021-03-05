@@ -267,6 +267,15 @@ namespace 点餐系统
             cbLX.SelectedIndex = 0;
             Inquire();
 
+            Refreshs();
+
+        }
+
+        /// <summary>
+        /// 刷新商家界面
+        /// </summary>
+        public void Refreshs()
+        {
             btnUpdate.Enabled = true;
             btnquit.Enabled = true;
             label2.Text = DateTime.Now.ToLongDateString().ToString();
@@ -279,7 +288,6 @@ namespace 点餐系统
                 txtCGnum.Text = User.restaUser;
                 pbpath.Image = Image.FromFile(Temp.pathCG + list[0].RestaurantImage);
             }
-
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -453,6 +461,7 @@ namespace 点餐系统
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             商家登入修改注册 sa = new 商家登入修改注册();
+            sa.ri = this;
             sa.jurisdiction = 1;
             sa.Show();
         }
