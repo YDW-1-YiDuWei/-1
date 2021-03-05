@@ -55,21 +55,21 @@ namespace DianCanXiTongDAL
         /// <param name="sqlParams">sql语句中的参数列表</param>
         public int ExecuteNonQuery(string sql, params SqlParameter[] sqlParams)//Sql是：实现操作的SQL语句。sqlParams是：sql语句中的参数列表。
         {
-            /*try//捕获异常，将可能出现异常的代码放入其中，不能单独出现
-            {*/
+            try//捕获异常，将可能出现异常的代码放入其中，不能单独出现
+            {
                 //创建执行对象
                 SqlCommand cmd = new SqlCommand(sql, Conn);//大写的Conn,小写的conn不行
                 if (sqlParams != null)
                 {
                     //添加参数到执行对象中
-                    //cmd.Parameters.AddRange(sqlParams);//第一种方法
-                    foreach (var param in sqlParams)//第二种方法
+                    cmd.Parameters.AddRange(sqlParams);//第一种方法
+                   /* foreach (var param in sqlParams)//第二种方法
                     {
                         cmd.Parameters.Add(param);
-                    }
+                    }*/
                 }
                 return cmd.ExecuteNonQuery();//执行且返回影响行数
-           /* }
+            }
             catch (Exception ex)//当try里面的代码出现异常，则会执行catch里面的代码，如果无异常就不会执行
             {
                 Console.WriteLine(ex.Message);
@@ -78,7 +78,7 @@ namespace DianCanXiTongDAL
             finally //不管有没有异常都会执行
             {
                 this.CloseConnection();//关闭连接
-            }*/
+            }
         }
         /// <summary>
         /// 返回单行单列的对象
