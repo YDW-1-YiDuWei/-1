@@ -36,5 +36,9 @@ namespace 点餐系统
         {
             panel1.Visible = true;
         }
+        public void Inquire() //查询未接的订单
+        {
+        
+        }
     }
 }
