@@ -148,7 +148,7 @@ namespace 点餐系统
         /// </summary>
         public void QSXQDD()
         {
-            of = ofm.SelectOrderFormManager("","", "", "",User.restaId, "");
+            of = ofm.SelectOrderFormManager("","", "", "",User.restaId, "1004");
         }
         /// <summary>
         /// 详细订单
