@@ -171,6 +171,7 @@ namespace 点餐系统
                         if (index > 0)
                         {
                             Temp.index = 0;//把这个重新变成0好以后判断用
+                            count = 0;
                             MessageBox.Show("修改成功");
                             Inquire(); //刷新菜品信息
                             Delete();//删除输入框里面的值
