@@ -16,6 +16,7 @@ namespace 点餐系统
     {
         ClientManager client = new ClientManager();
         public int a = 0;
+      //  public 我的 wo = null;
         public 登入修改()
         {
             InitializeComponent();
@@ -111,12 +112,26 @@ namespace 点餐系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            List<Client> list = client.Login(User.user, User.pass);
-            登录界面 wd = new 登录界面();
-            wd.list = list;
-            wd.Show();
-            this.Close();
+            if (a == 1)
+            {
+                List<Client> list = client.Login(User.user, User.pass);
+                登录界面 wd = new 登录界面();
+              
+                    wd.list = list;
+                
 
+                wd.Show();
+                this.Close();
+            }
+            else
+            {
+                ClientManager clent = new ClientManager();
+                我的 wo = new 我的();
+                wo.list = clent.Login(User.user, User.pass);
+                wo.Show();
+                this.Close();
+            }
+            a = 0;
         }
         private void 登入修改_Load(object sender, EventArgs e)//加载事件
         {
