@@ -37,7 +37,7 @@ namespace 点餐系统
                 MessageBox.Show("请选中你要，接的订单");
                 return;
             }
-            if (of.Count == 3)
+            if (of.Count <= 3)
             {
                 MessageBox.Show("您的订单篮已装满，请您送完再来接单哦~~~谢谢配合^.^");
                 return;
@@ -61,6 +61,8 @@ namespace 点餐系统
 
         private void button5_Click(object sender, EventArgs e)//骑手首页 已接单（按钮）
         {
+            bttJD.Enabled = false;
+            lVYDD.Items.Clear();
             if (of.Count == 0) lVYDD.Visible = false;
 
 
@@ -146,7 +148,7 @@ namespace 点餐系统
         /// </summary>
         public void QSXQDD()
         {
-            of = ofm.SelectOrderFormManager("","", "", "",User.restaId, "");
+            of = ofm.SelectOrderFormManager("","", "", "",User.restaId, "1004");
         }
         /// <summary>
         /// 详细订单
@@ -175,6 +177,7 @@ namespace 点餐系统
 
         private void Button6_Click(object sender, EventArgs e)
         {
+            bttJD.Enabled = true;
             plYJD.Visible = false;
             lVYDD.Visible = true ;
         }

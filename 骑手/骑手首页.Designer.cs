@@ -35,6 +35,13 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.plYJD = new System.Windows.Forms.Panel();
+            this.lVYDD = new System.Windows.Forms.ListView();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.bttDDYSD = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.lblTS = new System.Windows.Forms.Label();
@@ -50,7 +57,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bttJD = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblQSXM = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -73,13 +80,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bttDDYSD = new System.Windows.Forms.Button();
-            this.lVYDD = new System.Windows.Forms.ListView();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.plYJD.SuspendLayout();
@@ -131,7 +131,7 @@
             this.panel1.Controls.Add(this.plYJD);
             this.panel1.Controls.Add(this.plDD);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.bttJD);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Location = new System.Drawing.Point(0, 26);
             this.panel1.Name = "panel1";
@@ -151,6 +151,61 @@
             this.plYJD.Size = new System.Drawing.Size(787, 429);
             this.plYJD.TabIndex = 3;
             this.plYJD.Visible = false;
+            // 
+            // lVYDD
+            // 
+            this.lVYDD.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10});
+            this.lVYDD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lVYDD.FullRowSelect = true;
+            this.lVYDD.GridLines = true;
+            this.lVYDD.HideSelection = false;
+            this.lVYDD.Location = new System.Drawing.Point(0, 0);
+            this.lVYDD.Name = "lVYDD";
+            this.lVYDD.Size = new System.Drawing.Size(787, 397);
+            this.lVYDD.TabIndex = 5;
+            this.lVYDD.UseCompatibleStateImageBehavior = false;
+            this.lVYDD.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "订单";
+            this.columnHeader6.Width = 151;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "用户姓名";
+            this.columnHeader7.Width = 166;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "用户联系电话";
+            this.columnHeader8.Width = 162;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "商家名称";
+            this.columnHeader9.Width = 149;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "商家联系电话";
+            this.columnHeader10.Width = 156;
+            // 
+            // bttDDYSD
+            // 
+            this.bttDDYSD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bttDDYSD.Location = new System.Drawing.Point(91, 403);
+            this.bttDDYSD.Name = "bttDDYSD";
+            this.bttDDYSD.Size = new System.Drawing.Size(75, 23);
+            this.bttDDYSD.TabIndex = 4;
+            this.bttDDYSD.Text = "订单已送达";
+            this.bttDDYSD.UseVisualStyleBackColor = true;
+            this.bttDDYSD.Click += new System.EventHandler(this.BttDDYSD_Click);
             // 
             // button7
             // 
@@ -292,19 +347,19 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // bttJD
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("宋体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(286, 149);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "接单";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttJD.Font = new System.Drawing.Font("宋体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bttJD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bttJD.Location = new System.Drawing.Point(0, 0);
+            this.bttJD.Name = "bttJD";
+            this.bttJD.Size = new System.Drawing.Size(286, 149);
+            this.bttJD.TabIndex = 1;
+            this.bttJD.Text = "接单";
+            this.bttJD.UseVisualStyleBackColor = false;
+            this.bttJD.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox2
             // 
@@ -562,61 +617,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "骑手账号:";
             // 
-            // bttDDYSD
-            // 
-            this.bttDDYSD.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.bttDDYSD.Location = new System.Drawing.Point(91, 403);
-            this.bttDDYSD.Name = "bttDDYSD";
-            this.bttDDYSD.Size = new System.Drawing.Size(75, 23);
-            this.bttDDYSD.TabIndex = 4;
-            this.bttDDYSD.Text = "订单已送达";
-            this.bttDDYSD.UseVisualStyleBackColor = true;
-            this.bttDDYSD.Click += new System.EventHandler(this.BttDDYSD_Click);
-            // 
-            // lVYDD
-            // 
-            this.lVYDD.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-            this.lVYDD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lVYDD.FullRowSelect = true;
-            this.lVYDD.GridLines = true;
-            this.lVYDD.HideSelection = false;
-            this.lVYDD.Location = new System.Drawing.Point(0, 0);
-            this.lVYDD.Name = "lVYDD";
-            this.lVYDD.Size = new System.Drawing.Size(787, 397);
-            this.lVYDD.TabIndex = 5;
-            this.lVYDD.UseCompatibleStateImageBehavior = false;
-            this.lVYDD.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "订单";
-            this.columnHeader6.Width = 151;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "用户姓名";
-            this.columnHeader7.Width = 166;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "用户联系电话";
-            this.columnHeader8.Width = 162;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "商家名称";
-            this.columnHeader9.Width = 149;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "商家联系电话";
-            this.columnHeader10.Width = 156;
-            // 
             // 骑手首页
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -662,7 +662,7 @@
         private System.Windows.Forms.Panel plDD;
         private System.Windows.Forms.ListView lvOrder;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bttJD;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblQSXM;
         private System.Windows.Forms.Label label10;
