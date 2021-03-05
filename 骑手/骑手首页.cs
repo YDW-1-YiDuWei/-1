@@ -37,7 +37,7 @@ namespace 点餐系统
                 MessageBox.Show("请选中你要，接的订单");
                 return;
             }
-            if (of.Count <= 3)
+            if (of.Count == 3)
             {
                 MessageBox.Show("您的订单篮已装满，请您送完再来接单哦~~~谢谢配合^.^");
                 return;
