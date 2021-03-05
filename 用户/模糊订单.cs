@@ -39,12 +39,20 @@ namespace 点餐系统
 
         private void 模糊订单_Load(object sender, EventArgs e)
         {
+            DDSX();
+        }
+        /// <summary>
+        /// 订单刷新
+        /// </summary>
+        public void DDSX()
+        {
             keyValuePairs.Clear();
+            images.Images.Clear();
 
             lVMHB.Items.Clear();
             int j = 0;
 
-            foreach (OrderForm item in of.SelectOrderFormManager(User.khID, User.restaKhID, ""))
+            foreach (OrderForm item in of.SelectOrderFormManager(User.khID, User.restaKhID, "",""))
             {
                 Image asg = System.Drawing.Image.FromFile(Temp.pathCG + item.Restaurant.RestaurantImage);//已经把拿到的图片保存到了这里面
                 lVMHB.Items.Add(item.IdName.ToString(), "\t餐馆名称：" + item.Restaurant.RestaurantName + "\n\t订单状态：" + item.OrderStatus.StatusName + "\n餐馆电话：\n\t" + item.Restaurant.RestaurantPhone, j);
@@ -53,6 +61,11 @@ namespace 点餐系统
                 images.Images.Add(asg);//添加图片到上面去
                 j++;
             }
+        }
+
+        internal void 模糊订单_Load(string v, object p)
+        {
+            throw new NotImplementedException();
         }
 
         private void LVMHB_DoubleClick(object sender, EventArgs e)
@@ -77,6 +90,7 @@ namespace 点餐系统
             
             付钱 fq = new 付钱();
             fq.Li = this.Li;
+            fq.Get = this;
             fq.Show();
 
         }
@@ -94,7 +108,7 @@ namespace 点餐系统
             {
                 of.DeleteOrderFormManager(bianHao);
                 rm.DeleteReservationManager(bianHao);
-                模糊订单_Load("", null);
+                DDSX();
             }
 
         }
@@ -143,7 +157,7 @@ namespace 点餐系统
             if (of.UpdateOrderFormManager("1002",lVMHB.SelectedItems[0].Name)>0)
             {
                 MessageBox.Show("确定收货成功!");
-                模糊订单_Load("",null);
+                DDSX();
             }
         }
 

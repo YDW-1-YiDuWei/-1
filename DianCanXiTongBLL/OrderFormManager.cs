@@ -17,9 +17,9 @@ namespace DianCanXiTongBLL
         /// <summary>
         /// 业务层，订单增加方法
         /// </summary>
-        public List<OrderForm> SelectOrderFormManager(string clientId, string restaurant,string a)
+        public List<OrderForm> SelectOrderFormManager(string clientId, string restaurant,string a, string sJ)
         {
-            return ofs.SelectOrderFormService(clientId, restaurant,a);
+            return ofs.SelectOrderFormService(clientId, restaurant,a, sJ);
         }
         /// <summary>
         /// 订单状态修改，业务层

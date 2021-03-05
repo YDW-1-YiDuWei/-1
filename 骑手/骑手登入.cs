@@ -25,7 +25,7 @@ namespace 点餐系统
             qszcxg.Show();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)//确定按钮
         {
             List<Rider> list = rider.Longin(textBox1.Text, textBox2.Text);
             if (list.Count == 1)
@@ -34,6 +34,10 @@ namespace 点餐系统
                 User.riderPwd = list[0].RiderNumberPwd;
                 User.riderKhId = list[0].RiderId.ToString();
                 MessageBox.Show("登录成功", "登录提示");
+                //登录成功显示骑手首页
+                骑手首页 frm = new 骑手首页();
+                frm.Show();
+                this.Hide();//隐藏用户
             }
             else
             {
