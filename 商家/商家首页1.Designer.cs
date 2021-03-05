@@ -307,10 +307,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvCPMessage.ContextMenuStrip = this.Cmlist;
             this.lvCPMessage.HideSelection = false;
-            this.lvCPMessage.Location = new System.Drawing.Point(3, 0);
+            this.lvCPMessage.Location = new System.Drawing.Point(5, 4);
             this.lvCPMessage.Margin = new System.Windows.Forms.Padding(4);
             this.lvCPMessage.Name = "lvCPMessage";
-            this.lvCPMessage.Size = new System.Drawing.Size(685, 470);
+            this.lvCPMessage.Size = new System.Drawing.Size(683, 466);
             this.lvCPMessage.TabIndex = 21;
             this.lvCPMessage.UseCompatibleStateImageBehavior = false;
             this.lvCPMessage.View = System.Windows.Forms.View.List;
@@ -517,7 +517,7 @@
             this.bttTD.Margin = new System.Windows.Forms.Padding(4);
             this.bttTD.Name = "bttTD";
             this.bttTD.Size = new System.Drawing.Size(63, 59);
-            this.bttTD.TabIndex = 4;
+            this.bttTD.TabIndex = 3;
             this.bttTD.Text = "退单";
             this.bttTD.UseVisualStyleBackColor = false;
             // 
