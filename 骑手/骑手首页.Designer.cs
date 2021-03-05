@@ -34,13 +34,11 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lvYOrder = new System.Windows.Forms.ListView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lvOrder = new System.Windows.Forms.ListView();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblQSXM = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -63,8 +61,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -119,37 +115,17 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.lvYOrder);
             this.panel4.Location = new System.Drawing.Point(392, 149);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(399, 433);
             this.panel4.TabIndex = 2;
             // 
-            // lvYOrder
-            // 
-            this.lvYOrder.HideSelection = false;
-            this.lvYOrder.Location = new System.Drawing.Point(5, 6);
-            this.lvYOrder.Name = "lvYOrder";
-            this.lvYOrder.Size = new System.Drawing.Size(388, 427);
-            this.lvYOrder.TabIndex = 0;
-            this.lvYOrder.UseCompatibleStateImageBehavior = false;
-            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.lvOrder);
             this.panel3.Location = new System.Drawing.Point(4, 150);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(387, 432);
             this.panel3.TabIndex = 2;
-            // 
-            // lvOrder
-            // 
-            this.lvOrder.HideSelection = false;
-            this.lvOrder.Location = new System.Drawing.Point(5, 5);
-            this.lvOrder.Name = "lvOrder";
-            this.lvOrder.Size = new System.Drawing.Size(378, 427);
-            this.lvOrder.TabIndex = 0;
-            this.lvOrder.UseCompatibleStateImageBehavior = false;
             // 
             // button5
             // 
@@ -182,7 +158,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.lblQSXM);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.pictureBox5);
@@ -199,15 +175,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "骑手状态";
             // 
-            // label11
+            // lblQSXM
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(49, 92);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 24);
-            this.label11.TabIndex = 2;
-            this.label11.Text = ": 张三";
+            this.lblQSXM.AutoSize = true;
+            this.lblQSXM.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblQSXM.Location = new System.Drawing.Point(49, 92);
+            this.lblQSXM.Name = "lblQSXM";
+            this.lblQSXM.Size = new System.Drawing.Size(82, 24);
+            this.lblQSXM.TabIndex = 2;
+            this.lblQSXM.Text = ": 张三";
             // 
             // label10
             // 
@@ -312,7 +288,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(791, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(277, 522);
+            this.groupBox1.Size = new System.Drawing.Size(277, 579);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "骑手信息表";
@@ -327,6 +303,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "修改";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label7
             // 
@@ -350,6 +327,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "切换";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -361,6 +339,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "退出登入";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -444,11 +423,10 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "骑手首页";
             this.Text = "骑手首页";
+            this.Load += new System.EventHandler(this.骑手首页_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -476,7 +454,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblQSXM;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox5;

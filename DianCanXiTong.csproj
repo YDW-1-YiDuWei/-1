@@ -48,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Temp.cs" />
     <Compile Include="User.cs" />
     <Compile Include="商家\商家登录.cs">
@@ -154,12 +148,6 @@
     <Compile Include="用户\编辑个人信息.Designer.cs">
       <DependentUpon>编辑个人信息.cs</DependentUpon>
     </Compile>
-    <Compile Include="骑手\骑手我的.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="骑手\骑手我的.Designer.cs">
-      <DependentUpon>骑手我的.cs</DependentUpon>
-    </Compile>
     <Compile Include="骑手\骑手登入.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,9 +166,6 @@
     <Compile Include="骑手\骑手首页.Designer.cs">
       <DependentUpon>骑手首页.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="商家\商家登录.resx">
       <DependentUpon>商家登录.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,9 +222,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="用户\编辑个人信息.resx">
       <DependentUpon>编辑个人信息.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="骑手\骑手我的.resx">
-      <DependentUpon>骑手我的.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="骑手\骑手登入.resx">
       <DependentUpon>骑手登入.cs</DependentUpon>

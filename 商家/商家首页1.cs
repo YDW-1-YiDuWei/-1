@@ -57,6 +57,7 @@ namespace 点餐系统
         private void toolStripLabel3_Click_1(object sender, EventArgs e)//商家我的
         {
             i = 1;
+            panel7.Visible = true;
             btnSerach.Visible = false;
             #region 隐藏窗口
             //panel7.Visible = true;
@@ -487,6 +488,11 @@ namespace 点餐系统
                     writer.Flush();//刷新缓存，且输入信息
                 }
             }
+        }
+
+        private void btnHandover_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,5 +40,9 @@ namespace 点餐系统
         public static string riderKhId = "";
         public static string riderUser = "";
         public static string riderPwd = "";
+        /// <summary>
+        /// 骑手姓名
+        /// </summary>
+        public static string riderName = "";
     }
 }
