@@ -35,13 +35,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtnumber = new System.Windows.Forms.TextBox();
+            this.txtpwd = new System.Windows.Forms.TextBox();
+            this.txtrepwd = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
+            this.btnquit = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,65 +115,65 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "电话号码:";
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 21);
-            this.textBox1.TabIndex = 3;
+            this.txtname.Location = new System.Drawing.Point(119, 160);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(142, 21);
+            this.txtname.TabIndex = 3;
             // 
-            // textBox2
+            // txtnumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 196);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 21);
-            this.textBox2.TabIndex = 3;
+            this.txtnumber.Location = new System.Drawing.Point(119, 196);
+            this.txtnumber.Name = "txtnumber";
+            this.txtnumber.Size = new System.Drawing.Size(142, 21);
+            this.txtnumber.TabIndex = 3;
             // 
-            // textBox3
+            // txtpwd
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 231);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(142, 21);
-            this.textBox3.TabIndex = 3;
+            this.txtpwd.Location = new System.Drawing.Point(119, 231);
+            this.txtpwd.Name = "txtpwd";
+            this.txtpwd.Size = new System.Drawing.Size(142, 21);
+            this.txtpwd.TabIndex = 3;
             // 
-            // textBox4
+            // txtrepwd
             // 
-            this.textBox4.Location = new System.Drawing.Point(119, 267);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(142, 21);
-            this.textBox4.TabIndex = 3;
+            this.txtrepwd.Location = new System.Drawing.Point(119, 267);
+            this.txtrepwd.Name = "txtrepwd";
+            this.txtrepwd.Size = new System.Drawing.Size(142, 21);
+            this.txtrepwd.TabIndex = 3;
             // 
-            // textBox5
+            // txtphone
             // 
-            this.textBox5.Location = new System.Drawing.Point(119, 304);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(142, 21);
-            this.textBox5.TabIndex = 3;
+            this.txtphone.Location = new System.Drawing.Point(119, 304);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(142, 21);
+            this.txtphone.TabIndex = 3;
             // 
-            // button1
+            // btnquit
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(42, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "确认";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnquit.BackColor = System.Drawing.Color.Transparent;
+            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquit.ForeColor = System.Drawing.Color.White;
+            this.btnquit.Location = new System.Drawing.Point(42, 350);
+            this.btnquit.Name = "btnquit";
+            this.btnquit.Size = new System.Drawing.Size(75, 23);
+            this.btnquit.TabIndex = 4;
+            this.btnquit.Text = "确认";
+            this.btnquit.UseVisualStyleBackColor = false;
+            this.btnquit.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // btnclose
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(186, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "取消";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnclose.BackColor = System.Drawing.Color.Transparent;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnclose.ForeColor = System.Drawing.Color.White;
+            this.btnclose.Location = new System.Drawing.Point(186, 350);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(75, 23);
+            this.btnclose.TabIndex = 4;
+            this.btnclose.Text = "取消";
+            this.btnclose.UseVisualStyleBackColor = false;
             // 
             // 骑手注册修改
             // 
@@ -181,13 +181,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(967, 483);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.btnquit);
+            this.Controls.Add(this.txtphone);
+            this.Controls.Add(this.txtrepwd);
+            this.Controls.Add(this.txtpwd);
+            this.Controls.Add(this.txtnumber);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -211,12 +211,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtnumber;
+        private System.Windows.Forms.TextBox txtpwd;
+        private System.Windows.Forms.TextBox txtrepwd;
+        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.Button btnquit;
+        private System.Windows.Forms.Button btnclose;
     }
 }

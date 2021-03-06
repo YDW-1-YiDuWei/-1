@@ -308,6 +308,9 @@ namespace 点餐系统
             fq.name = this;
             fq.Li = Li;
             fq.Show();
+
+            lblJGS.Text = "0";
+            cC.Clear();//下单之后清除数据
         }
 
         private void button3_Click_1(object sender, EventArgs e)
