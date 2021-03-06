@@ -16,6 +16,7 @@ namespace 点餐系统
 {
     public partial class 骑手首页 : Form
     {
+        public List<Rider> list = null;
         private OrderFormManager ofm = new OrderFormManager();
         public 骑手登入 Get = null;
         private ReservationManager rm = new ReservationManager();
@@ -118,6 +119,12 @@ namespace 点餐系统
 
         private void 骑手首页_Load(object sender, EventArgs e)
         {
+            if (list != null)
+            {
+                label2.Text = list[0].RiderName;
+                label4.Text = list[0].RiderNumber;
+               
+            }
             DDSX();
         }
 

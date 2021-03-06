@@ -38,6 +38,7 @@ namespace 点餐系统
                 //登录成功显示骑手首页
                 骑手首页 frm = new 骑手首页();
                 frm.Get = this;
+                frm.list = list;
                 frm.Show();
                 this.Hide();//隐藏用户
             }
