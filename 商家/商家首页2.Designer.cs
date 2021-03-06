@@ -151,6 +151,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.lVUDD);
             this.panel2.Controls.Add(this.lvCPMessage);
             this.panel2.Location = new System.Drawing.Point(304, 57);
@@ -259,8 +260,6 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.bttJD);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnSerach);
             this.panel1.Controls.Add(this.txtCPName);
@@ -289,7 +288,7 @@
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.pbpath);
             this.panel7.Controls.Add(this.btnUpdate);
-            this.panel7.Location = new System.Drawing.Point(3, 6);
+            this.panel7.Location = new System.Drawing.Point(221, 66);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(997, 537);
@@ -400,7 +399,7 @@
             this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttJD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.bttJD.ForeColor = System.Drawing.Color.White;
-            this.bttJD.Location = new System.Drawing.Point(236, 395);
+            this.bttJD.Location = new System.Drawing.Point(156, 9);
             this.bttJD.Margin = new System.Windows.Forms.Padding(4);
             this.bttJD.Name = "bttJD";
             this.bttJD.Size = new System.Drawing.Size(63, 59);
@@ -600,7 +599,7 @@
             this.btnSerach.BackColor = System.Drawing.Color.Transparent;
             this.btnSerach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSerach.ForeColor = System.Drawing.Color.White;
-            this.btnSerach.Location = new System.Drawing.Point(631, 17);
+            this.btnSerach.Location = new System.Drawing.Point(631, 10);
             this.btnSerach.Name = "btnSerach";
             this.btnSerach.Size = new System.Drawing.Size(75, 23);
             this.btnSerach.TabIndex = 25;
@@ -610,7 +609,7 @@
             // 
             // txtCPName
             // 
-            this.txtCPName.Location = new System.Drawing.Point(304, 17);
+            this.txtCPName.Location = new System.Drawing.Point(304, 11);
             this.txtCPName.Name = "txtCPName";
             this.txtCPName.Size = new System.Drawing.Size(321, 21);
             this.txtCPName.TabIndex = 24;
@@ -623,7 +622,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(234, 318);
+            this.button7.Location = new System.Drawing.Point(233, 403);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 59);
             this.button7.TabIndex = 15;
@@ -639,7 +638,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(235, 166);
+            this.button6.Location = new System.Drawing.Point(235, 207);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(63, 59);
             this.button6.TabIndex = 16;
@@ -655,7 +654,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(234, 242);
+            this.button3.Location = new System.Drawing.Point(234, 305);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(63, 59);
             this.button3.TabIndex = 17;
@@ -671,7 +670,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(235, 90);
+            this.button2.Location = new System.Drawing.Point(235, 109);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 59);
             this.button2.TabIndex = 18;
@@ -687,7 +686,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(235, 15);
+            this.button5.Location = new System.Drawing.Point(235, 11);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(63, 59);
             this.button5.TabIndex = 19;
@@ -698,6 +697,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.bttJD);
             this.groupBox2.Controls.Add(this.lblZJG);
             this.groupBox2.Controls.Add(this.bttTD);
             this.groupBox2.Controls.Add(this.bttDD);
@@ -731,7 +731,7 @@
             this.bttTD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttTD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.bttTD.ForeColor = System.Drawing.Color.White;
-            this.bttTD.Location = new System.Drawing.Point(203, 9);
+            this.bttTD.Location = new System.Drawing.Point(227, 9);
             this.bttTD.Margin = new System.Windows.Forms.Padding(4);
             this.bttTD.Name = "bttTD";
             this.bttTD.Size = new System.Drawing.Size(63, 59);

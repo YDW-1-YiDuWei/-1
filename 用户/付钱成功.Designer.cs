@@ -49,10 +49,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(499, 136);
+            this.pictureBox1.Size = new System.Drawing.Size(374, 109);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -60,10 +59,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(25, 236);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(19, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 18);
+            this.label1.Size = new System.Drawing.Size(82, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "星级评价：";
             // 
@@ -71,10 +69,9 @@
             // 
             this.btnsubmit.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnsubmit.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnsubmit.Location = new System.Drawing.Point(185, 295);
-            this.btnsubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsubmit.Location = new System.Drawing.Point(139, 236);
             this.btnsubmit.Name = "btnsubmit";
-            this.btnsubmit.Size = new System.Drawing.Size(159, 35);
+            this.btnsubmit.Size = new System.Drawing.Size(119, 28);
             this.btnsubmit.TabIndex = 3;
             this.btnsubmit.Text = "提交";
             this.btnsubmit.UseVisualStyleBackColor = true;
@@ -86,40 +83,36 @@
             // 
             // btW
             // 
-            this.btW.Location = new System.Drawing.Point(351, 230);
-            this.btW.Margin = new System.Windows.Forms.Padding(4);
+            this.btW.Location = new System.Drawing.Point(263, 184);
             this.btW.Name = "btW";
-            this.btW.Size = new System.Drawing.Size(45, 38);
+            this.btW.Size = new System.Drawing.Size(34, 30);
             this.btW.TabIndex = 4;
             this.btW.UseVisualStyleBackColor = true;
             this.btW.Click += new System.EventHandler(this.btW_Click);
             // 
             // btSr
             // 
-            this.btSr.Location = new System.Drawing.Point(299, 230);
-            this.btSr.Margin = new System.Windows.Forms.Padding(4);
+            this.btSr.Location = new System.Drawing.Point(224, 184);
             this.btSr.Name = "btSr";
-            this.btSr.Size = new System.Drawing.Size(44, 36);
+            this.btSr.Size = new System.Drawing.Size(33, 29);
             this.btSr.TabIndex = 5;
             this.btSr.UseVisualStyleBackColor = true;
             this.btSr.Click += new System.EventHandler(this.btSr_Click);
             // 
             // btSan
             // 
-            this.btSan.Location = new System.Drawing.Point(247, 230);
-            this.btSan.Margin = new System.Windows.Forms.Padding(4);
+            this.btSan.Location = new System.Drawing.Point(185, 184);
             this.btSan.Name = "btSan";
-            this.btSan.Size = new System.Drawing.Size(44, 35);
+            this.btSan.Size = new System.Drawing.Size(33, 28);
             this.btSan.TabIndex = 6;
             this.btSan.UseVisualStyleBackColor = true;
             this.btSan.Click += new System.EventHandler(this.btSan_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(195, 230);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(146, 184);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(44, 35);
+            this.button3.Size = new System.Drawing.Size(33, 28);
             this.button3.TabIndex = 7;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -128,10 +121,9 @@
             // 
             this.btYX.BackColor = System.Drawing.Color.Transparent;
             this.btYX.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btYX.Location = new System.Drawing.Point(143, 229);
-            this.btYX.Margin = new System.Windows.Forms.Padding(4);
+            this.btYX.Location = new System.Drawing.Point(107, 183);
             this.btYX.Name = "btYX";
-            this.btYX.Size = new System.Drawing.Size(44, 36);
+            this.btYX.Size = new System.Drawing.Size(33, 29);
             this.btYX.TabIndex = 8;
             this.btYX.UseVisualStyleBackColor = false;
             this.btYX.Click += new System.EventHandler(this.button2_Click);
@@ -139,10 +131,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(3, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(66, 28);
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
@@ -151,10 +142,9 @@
             this.btnreturn.BackColor = System.Drawing.Color.Transparent;
             this.btnreturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnreturn.Location = new System.Drawing.Point(25, -1);
-            this.btnreturn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnreturn.Location = new System.Drawing.Point(19, -1);
             this.btnreturn.Name = "btnreturn";
-            this.btnreturn.Size = new System.Drawing.Size(67, 35);
+            this.btnreturn.Size = new System.Drawing.Size(50, 28);
             this.btnreturn.TabIndex = 21;
             this.btnreturn.Text = "返回";
             this.btnreturn.UseVisualStyleBackColor = false;
@@ -162,10 +152,10 @@
             // 
             // 付钱成功
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(563, 359);
+            this.ClientSize = new System.Drawing.Size(422, 287);
             this.Controls.Add(this.btnreturn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btW);
@@ -176,7 +166,6 @@
             this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "付钱成功";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
