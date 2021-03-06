@@ -81,9 +81,10 @@ namespace 点餐系统
 
         private void button1_Click_1(object sender, EventArgs e)//返回
         {
-            this.Hide();
             用户首页 frm = new 用户首页();
             frm.Show();
+            frm.frm = this;
+            this.Hide();
         }
     }
 }
