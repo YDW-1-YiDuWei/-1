@@ -291,14 +291,6 @@
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
-    <COMReference Include="AxSYNCTRLLib">
-      <Guid>{82D70786-7968-46EA-836D-203AEBCA4481}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
     <COMReference Include="ComCtl3">
       <Guid>{38911DA0-E448-11D0-84A3-00DD01104159}</Guid>
       <VersionMajor>1</VersionMajor>

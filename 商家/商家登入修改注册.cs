@@ -29,7 +29,7 @@ namespace 点餐系统
                 MessageBox.Show("您没有选择图片");
                 return;
             }
-            /*if (RestName.Text.Trim() == "")
+            if (RestName.Text.Trim() == "")
             {
                 MessageBox.Show("请输入名称");
                 RestName.Focus();
@@ -64,7 +64,7 @@ namespace 点餐系统
                 MessageBox.Show("请输入商家地址");
                 RestAddress.Focus();
                 return;
-            }*/
+            }
             if (jurisdiction == 0)
             {
                 List<Restaurant> list = rest.Register(RestUid.Text, RestPwd.Text, RestName.Text, RestAddress.Text, RestPhone.Text, "", User.path);
