@@ -23,7 +23,7 @@ namespace 点餐系统
 
         private void 餐馆列表_Load(object sender, EventArgs e)//显示窗体的时候
         {
-
+            Inquire();//查询餐馆出来
         }
 
         private void button1_Click(object sender, EventArgs e)//查询按钮
