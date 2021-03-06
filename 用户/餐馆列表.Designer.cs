@@ -41,7 +41,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(442, 28);
+            this.label2.Location = new System.Drawing.Point(441, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 12);
             this.label2.TabIndex = 6;
@@ -50,7 +50,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(125, 28);
+            this.label1.Location = new System.Drawing.Point(124, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 7;
@@ -58,14 +58,14 @@
             // 
             // txtSJ
             // 
-            this.txtSJ.Location = new System.Drawing.Point(196, 25);
+            this.txtSJ.Location = new System.Drawing.Point(195, 9);
             this.txtSJ.Name = "txtSJ";
             this.txtSJ.Size = new System.Drawing.Size(240, 21);
             this.txtSJ.TabIndex = 5;
             // 
             // btnquery
             // 
-            this.btnquery.Location = new System.Drawing.Point(553, 25);
+            this.btnquery.Location = new System.Drawing.Point(552, 9);
             this.btnquery.Name = "btnquery";
             this.btnquery.Size = new System.Drawing.Size(75, 23);
             this.btnquery.TabIndex = 9;
@@ -109,7 +109,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 544);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lvSJXX);
             this.Controls.Add(this.btnquery);
             this.Controls.Add(this.label2);
