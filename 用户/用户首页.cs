@@ -29,8 +29,9 @@ namespace 点餐系统
                 return;
             }
             餐馆列表 cglb = new 餐馆列表();
+            cglb.sa = this;
             cglb.Show();
-            this.Close();
+            this.Hide();
 
         }
 

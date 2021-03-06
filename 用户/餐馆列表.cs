@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 餐馆列表 : Form
     {
+        public 用户首页 sa = null;
         ClientManager cm = new ClientManager();
         RestaurantManager restaurantManager = new RestaurantManager();
         public 餐馆列表()
@@ -85,6 +86,14 @@ namespace 点餐系统
             frm.Show();
             frm.frm = this;
             this.Hide();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            用户首页 frm = new 用户首页();
+            frm.frm = this;
+            frm.Show();
+            this.Close();
         }
     }
 }
