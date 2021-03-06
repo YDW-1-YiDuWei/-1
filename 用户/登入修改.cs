@@ -53,6 +53,7 @@ namespace 点餐系统
 
                     foreach (var item in list)
                     {
+                        User.khID = item.Id.ToString();
                         User.user = item.Number;
                         User.pass = item.Password;
                     }

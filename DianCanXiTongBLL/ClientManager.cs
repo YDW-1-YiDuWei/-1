@@ -13,9 +13,9 @@ namespace DianCanXiTongBLL
     {
         ClientService clientservice = new ClientService();
         
-        public List<Client> Login(string uid,string pwd)//用户登录
+        public List<Client> Login(string uid,string pwd,string id="")//用户登录
         {
-            return clientservice.Login(uid, pwd);
+            return clientservice.Login(uid, pwd,id);
         }
 
         public List<Client> Alter(string uid,string pwd,int id)//用户修改

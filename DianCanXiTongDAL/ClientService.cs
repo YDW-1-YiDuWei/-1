@@ -11,7 +11,7 @@ namespace DianCanXiTongDAL
     public class ClientService //用户数据层
     {
         public List<Client> list = new List<Client>();
-        public List<Client> Login(string uid, string pwd) //用户登录
+        public List<Client> Login(string uid, string pwd,string id="") //用户登录
         {
             SqlConnection coon = new SqlConnection("server=.;database=Order;uid=sa;pwd=sa");
 
@@ -21,10 +21,15 @@ namespace DianCanXiTongDAL
 
             string sql = "select Id,Number, Name,Phone,Password,Address from Client where Number=@Number and Password=@Password";
 
+            if (id != "")
+            {
+                sql += " and Id=@Id";
+            }
             SqlParameter[] sp =
             {
                 new SqlParameter("@Number",uid),
                 new SqlParameter("@Password",pwd),
+                new SqlParameter("@Id",id)
             };
             coon.Open();
 
