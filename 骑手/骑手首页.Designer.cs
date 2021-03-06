@@ -599,7 +599,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "骑手首页";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "骑手首页";
             this.Load += new System.EventHandler(this.骑手首页_Load);
             this.toolStrip1.ResumeLayout(false);

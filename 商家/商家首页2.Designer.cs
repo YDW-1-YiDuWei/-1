@@ -164,7 +164,7 @@
             // 
             this.lVUDD.HideSelection = false;
             this.lVUDD.LargeImageList = this.image;
-            this.lVUDD.Location = new System.Drawing.Point(0, -8);
+            this.lVUDD.Location = new System.Drawing.Point(0, -9);
             this.lVUDD.Name = "lVUDD";
             this.lVUDD.Size = new System.Drawing.Size(690, 488);
             this.lVUDD.SmallImageList = this.image;
@@ -183,9 +183,9 @@
             this.lvCPMessage.ContextMenuStrip = this.Cmlist;
             this.lvCPMessage.HideSelection = false;
             this.lvCPMessage.LargeImageList = this.image;
-            this.lvCPMessage.Location = new System.Drawing.Point(44, 44);
+            this.lvCPMessage.Location = new System.Drawing.Point(3, 3);
             this.lvCPMessage.Name = "lvCPMessage";
-            this.lvCPMessage.Size = new System.Drawing.Size(643, 426);
+            this.lvCPMessage.Size = new System.Drawing.Size(684, 467);
             this.lvCPMessage.SmallImageList = this.image;
             this.lvCPMessage.StateImageList = this.image;
             this.lvCPMessage.TabIndex = 21;
