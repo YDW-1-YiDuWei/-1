@@ -139,14 +139,14 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(857, 512);
+            this.panel1.Size = new System.Drawing.Size(782, 512);
             this.panel1.TabIndex = 8;
             // 
             // bttXD
             // 
             this.bttXD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bttXD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttXD.Location = new System.Drawing.Point(753, 479);
+            this.bttXD.Location = new System.Drawing.Point(665, 477);
             this.bttXD.Name = "bttXD";
             this.bttXD.Size = new System.Drawing.Size(90, 23);
             this.bttXD.TabIndex = 46;
@@ -160,15 +160,15 @@
             this.peCPQD.Controls.Add(this.dGVYDCP);
             this.peCPQD.Controls.Add(this.label4);
             this.peCPQD.Controls.Add(this.label3);
-            this.peCPQD.Location = new System.Drawing.Point(4, 3);
+            this.peCPQD.Location = new System.Drawing.Point(10, 6);
             this.peCPQD.Name = "peCPQD";
-            this.peCPQD.Size = new System.Drawing.Size(854, 506);
+            this.peCPQD.Size = new System.Drawing.Size(782, 506);
             this.peCPQD.TabIndex = 28;
             this.peCPQD.Visible = false;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(771, 480);
+            this.button5.Location = new System.Drawing.Point(685, 478);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
@@ -194,7 +194,7 @@
             this.dGVYDCP.RowHeadersVisible = false;
             this.dGVYDCP.RowTemplate.Height = 23;
             this.dGVYDCP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dGVYDCP.Size = new System.Drawing.Size(846, 435);
+            this.dGVYDCP.Size = new System.Drawing.Size(771, 435);
             this.dGVYDCP.TabIndex = 3;
             // 
             // Column1
@@ -273,7 +273,7 @@
             // lblJGS
             // 
             this.lblJGS.AutoSize = true;
-            this.lblJGS.Location = new System.Drawing.Point(701, 27);
+            this.lblJGS.Location = new System.Drawing.Point(648, 27);
             this.lblJGS.Name = "lblJGS";
             this.lblJGS.Size = new System.Drawing.Size(11, 12);
             this.lblJGS.TabIndex = 36;
@@ -284,7 +284,7 @@
             this.bTSS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bTSS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bTSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTSS.Location = new System.Drawing.Point(554, 21);
+            this.bTSS.Location = new System.Drawing.Point(464, 21);
             this.bTSS.Margin = new System.Windows.Forms.Padding(4);
             this.bTSS.Name = "bTSS";
             this.bTSS.Size = new System.Drawing.Size(63, 23);
@@ -298,7 +298,7 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(25, 20);
+            this.button3.Location = new System.Drawing.Point(10, 20);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -319,11 +319,11 @@
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Location = new System.Drawing.Point(4, 51);
+            this.tabControl1.Location = new System.Drawing.Point(10, 52);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(854, 425);
+            this.tabControl1.Size = new System.Drawing.Size(753, 425);
             this.tabControl1.TabIndex = 38;
             this.tabControl1.Click += new System.EventHandler(this.TabControl1_Click_1);
             // 
@@ -333,7 +333,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(846, 399);
+            this.tabPage1.Size = new System.Drawing.Size(745, 399);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "全部";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -353,7 +353,7 @@
             this.lvWQB.Location = new System.Drawing.Point(0, 0);
             this.lvWQB.Margin = new System.Windows.Forms.Padding(4);
             this.lvWQB.Name = "lvWQB";
-            this.lvWQB.Size = new System.Drawing.Size(846, 399);
+            this.lvWQB.Size = new System.Drawing.Size(745, 399);
             this.lvWQB.SmallImageList = this.image;
             this.lvWQB.TabIndex = 2;
             this.lvWQB.UseCompatibleStateImageBehavior = false;
@@ -385,7 +385,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(846, 399);
+            this.tabPage3.Size = new System.Drawing.Size(789, 399);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "冷菜";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -431,7 +431,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(846, 399);
+            this.tabPage4.Size = new System.Drawing.Size(789, 399);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "热菜";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -451,7 +451,7 @@
             this.lVRC.Location = new System.Drawing.Point(0, 0);
             this.lVRC.Margin = new System.Windows.Forms.Padding(4);
             this.lVRC.Name = "lVRC";
-            this.lVRC.Size = new System.Drawing.Size(846, 399);
+            this.lVRC.Size = new System.Drawing.Size(789, 399);
             this.lVRC.SmallImageList = this.image;
             this.lVRC.TabIndex = 2;
             this.lVRC.UseCompatibleStateImageBehavior = false;
@@ -477,7 +477,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(846, 399);
+            this.tabPage5.Size = new System.Drawing.Size(789, 399);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "肉类";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -497,7 +497,7 @@
             this.lVRL.Location = new System.Drawing.Point(0, 0);
             this.lVRL.Margin = new System.Windows.Forms.Padding(4);
             this.lVRL.Name = "lVRL";
-            this.lVRL.Size = new System.Drawing.Size(846, 399);
+            this.lVRL.Size = new System.Drawing.Size(789, 399);
             this.lVRL.SmallImageList = this.image;
             this.lVRL.TabIndex = 3;
             this.lVRL.UseCompatibleStateImageBehavior = false;
@@ -523,7 +523,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(846, 399);
+            this.tabPage6.Size = new System.Drawing.Size(789, 399);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "海鲜";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -543,7 +543,7 @@
             this.lVHX.Location = new System.Drawing.Point(0, 0);
             this.lVHX.Margin = new System.Windows.Forms.Padding(4);
             this.lVHX.Name = "lVHX";
-            this.lVHX.Size = new System.Drawing.Size(846, 399);
+            this.lVHX.Size = new System.Drawing.Size(789, 399);
             this.lVHX.SmallImageList = this.image;
             this.lVHX.TabIndex = 4;
             this.lVHX.UseCompatibleStateImageBehavior = false;
@@ -569,7 +569,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(846, 399);
+            this.tabPage7.Size = new System.Drawing.Size(789, 399);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "主食";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -589,7 +589,7 @@
             this.lVZS.Location = new System.Drawing.Point(0, 0);
             this.lVZS.Margin = new System.Windows.Forms.Padding(4);
             this.lVZS.Name = "lVZS";
-            this.lVZS.Size = new System.Drawing.Size(846, 399);
+            this.lVZS.Size = new System.Drawing.Size(789, 399);
             this.lVZS.SmallImageList = this.image;
             this.lVZS.TabIndex = 5;
             this.lVZS.UseCompatibleStateImageBehavior = false;
@@ -615,7 +615,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(846, 399);
+            this.tabPage8.Size = new System.Drawing.Size(789, 399);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "汤";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -635,7 +635,7 @@
             this.lVT.Location = new System.Drawing.Point(0, 0);
             this.lVT.Margin = new System.Windows.Forms.Padding(4);
             this.lVT.Name = "lVT";
-            this.lVT.Size = new System.Drawing.Size(846, 399);
+            this.lVT.Size = new System.Drawing.Size(789, 399);
             this.lVT.SmallImageList = this.image;
             this.lVT.TabIndex = 6;
             this.lVT.UseCompatibleStateImageBehavior = false;
@@ -661,7 +661,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(846, 399);
+            this.tabPage9.Size = new System.Drawing.Size(789, 399);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "酒水";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -681,7 +681,7 @@
             this.lVJS.Location = new System.Drawing.Point(0, 0);
             this.lVJS.Margin = new System.Windows.Forms.Padding(4);
             this.lVJS.Name = "lVJS";
-            this.lVJS.Size = new System.Drawing.Size(846, 399);
+            this.lVJS.Size = new System.Drawing.Size(789, 399);
             this.lVJS.SmallImageList = this.image;
             this.lVJS.TabIndex = 7;
             this.lVJS.UseCompatibleStateImageBehavior = false;
@@ -707,7 +707,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(846, 399);
+            this.tabPage10.Size = new System.Drawing.Size(789, 399);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "甜点";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -727,7 +727,7 @@
             this.lVTD.Location = new System.Drawing.Point(0, 0);
             this.lVTD.Margin = new System.Windows.Forms.Padding(4);
             this.lVTD.Name = "lVTD";
-            this.lVTD.Size = new System.Drawing.Size(846, 399);
+            this.lVTD.Size = new System.Drawing.Size(789, 399);
             this.lVTD.SmallImageList = this.image;
             this.lVTD.TabIndex = 8;
             this.lVTD.UseCompatibleStateImageBehavior = false;
@@ -751,7 +751,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 21);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 22);
@@ -768,7 +768,7 @@
             this.lblJG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblJG.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblJG.ForeColor = System.Drawing.Color.Black;
-            this.lblJG.Location = new System.Drawing.Point(638, 21);
+            this.lblJG.Location = new System.Drawing.Point(585, 21);
             this.lblJG.Name = "lblJG";
             this.lblJG.Size = new System.Drawing.Size(57, 19);
             this.lblJG.TabIndex = 42;
@@ -778,7 +778,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(718, 20);
+            this.button4.Location = new System.Drawing.Point(665, 20);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(90, 23);
             this.button4.TabIndex = 37;
@@ -806,7 +806,7 @@
             this.txtDishName.Location = new System.Drawing.Point(188, 22);
             this.txtDishName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDishName.Name = "txtDishName";
-            this.txtDishName.Size = new System.Drawing.Size(430, 21);
+            this.txtDishName.Size = new System.Drawing.Size(227, 21);
             this.txtDishName.TabIndex = 40;
             // 
             // label1
@@ -830,7 +830,7 @@
             this.button2.Location = new System.Drawing.Point(905, 549);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 106);
+            this.button2.Size = new System.Drawing.Size(125, 106);
             this.button2.TabIndex = 15;
             this.button2.Text = "下单";
             this.button2.UseVisualStyleBackColor = true;
@@ -842,7 +842,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1014, 20);
+            this.button1.Location = new System.Drawing.Point(939, 20);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 106);
@@ -855,7 +855,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 512);
+            this.ClientSize = new System.Drawing.Size(797, 512);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
