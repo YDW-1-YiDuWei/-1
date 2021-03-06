@@ -159,6 +159,7 @@ namespace 点餐系统
         private void 点餐_Load(object sender, EventArgs e)
         {
             dGVYDCP.AutoGenerateColumns = false;
+            Inquire();//查询这个餐馆的菜品
         }
 
         private void TSMDelete_Click(object sender, EventArgs e)
@@ -266,12 +267,17 @@ namespace 点餐系统
             dGVYDCP.DataSource = new BindingList<CuisineInformations>(cC);
             dGVYDCP.Tag = new BindingList<CuisineInformations>(cC);
         }
+       
+        private void BTSS_Click_1(object sender, EventArgs e)//搜索按钮
+        {
+            Inquire();
+        }
         /// <summary>
         /// 搜索
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void BTSS_Click_1(object sender, EventArgs e)
+        public void Inquire() 
         {
             tabControl1.SelectedIndex = 0;
             cuisineInformationsLXName = txtDishName.Text;

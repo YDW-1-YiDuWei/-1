@@ -125,6 +125,7 @@
             this.Controls.Add(this.lblindent);
             this.Controls.Add(this.lblmy);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "用户首页";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

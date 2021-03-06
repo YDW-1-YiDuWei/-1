@@ -364,6 +364,7 @@ namespace 点餐系统
         /// <param name="e"></param>
         private void BttJD_Click(object sender, EventArgs e)
         {
+
             if (lvCP.SelectedItems.Count == 0)
             {
                 MessageBox.Show("您没有选择，要接收的订单");
@@ -387,14 +388,18 @@ namespace 点餐系统
                 {
 
                     StreamWriter writer = new StreamWriter(fs);
-                    writer.Write("**********************订单" + odf.IdName.ToString() + " **********************\n点餐有：");//换行输入
+                    writer.Write("***************************\n菜品名称：");//换行输入
                     foreach (DataRow item in dt.Rows)
                     {
                         writer.Write(item["CuisineName"] + "(" + item["CuisinePrice"] + "/元)x" + item["VegetableQuantity"] + ", ");
                     }
-
-                    writer.WriteLine("\n*************客户姓名：" + odf.ClientId.Name + "*************");
-                    writer.WriteLine("*************客户姓名电话：" + odf.ClientId.Phone + "*************");
+                    writer.WriteLine("\n---------------------------");
+                    writer.WriteLine("费用金额："+ odf.TotalPrices+ "");
+                    writer.WriteLine("收货地址：XXX");
+                    writer.WriteLine("联系电话：" + odf.ClientId.Phone + "");
+                    writer.WriteLine("收货人： "+ odf.ClientId.Name + "");
+                    writer.WriteLine("下单时间：" + DateTime.Now.ToString());
+                    writer.WriteLine("***************************");
                     writer.Flush();//刷新缓存，且输入信息
                 }
             }
