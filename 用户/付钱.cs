@@ -67,9 +67,17 @@ namespace 点餐系统
 
         private void btnreturn_Click(object sender, EventArgs e)
         {
-           
-            name.Show();
-            this.Close();
+
+            if (name != null)
+            {
+                name.Show();
+                this.Close();
+            }
+            else
+            {
+                Get.Show();
+                this.Close();
+            }
         }
     }
 }

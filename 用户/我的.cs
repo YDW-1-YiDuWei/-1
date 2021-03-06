@@ -31,6 +31,7 @@ namespace 点餐系统
         {
             登入修改 drxg = new 登入修改();
             drxg.a = 2;
+           // drxg.wo = this;
             drxg.Show();
             this.Close();
         }

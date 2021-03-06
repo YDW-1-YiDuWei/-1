@@ -297,7 +297,7 @@ namespace 点餐系统
             }
         }
 
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)//记时器
         {
             if (i == 1)
             {
@@ -307,7 +307,7 @@ namespace 点餐系统
             label2.Text = DateTime.Now.ToString("g");
         }
 
-        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)//删除选项
         {
             int a = (int)lvCPMessage.SelectedItems[0].Tag;
             int count = cIM.DeleteCuisinelnformationsAmend(a);
@@ -383,7 +383,7 @@ namespace 点餐系统
                 BttDD_Click("", null);
                 MessageBox.Show("订单已发送，等待骑手接单");
 
-                using (FileStream fs = new FileStream(@"d:\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
+                using (FileStream fs = new FileStream(@"E:\点餐系统餐馆打单\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
                 {
 
                     StreamWriter writer = new StreamWriter(fs);
