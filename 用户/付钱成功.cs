@@ -44,8 +44,7 @@ namespace 点餐系统
                 MessageBox.Show("下单失败");
             }
 
-            Li.RemoveRange(0, Li.Count);
-           
+            Li.Clear();
             this.Close();
         }
 

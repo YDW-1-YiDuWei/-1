@@ -67,6 +67,12 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家首页2  菜品添加（按钮）
         {
+            ////
+
+            button6.Enabled = true;
+            button3.Enabled = true;
+            button7.Enabled = true;
+
             bttTD.Enabled = false;
             bttJD.Enabled = false;
 
@@ -326,6 +332,9 @@ namespace 点餐系统
             lvCP.Visible = true;
             lVUDD.Visible = true;
 
+            button6.Enabled = false;
+            button3.Enabled = false;
+            button7.Enabled = false;
             txtCPName.Enabled = false;
             btnSerach.Enabled = false;
 
