@@ -129,6 +129,7 @@
             this.Name = "用户首页";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "首页";
+            this.Load += new System.EventHandler(this.用户首页_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

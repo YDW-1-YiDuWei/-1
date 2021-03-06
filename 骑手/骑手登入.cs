@@ -63,5 +63,13 @@ namespace 点餐系统
             this.Close();
 
         }
+
+        private void 骑手登入_Load(object sender, EventArgs e)
+        {
+            User.riderName = "";
+            User.riderKhId = "";
+            User.riderPwd = "";
+            User.riderUser = "";
+        }
     }
 }
