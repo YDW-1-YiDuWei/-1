@@ -23,25 +23,54 @@ namespace 点餐系统
         RiderManager rider = new RiderManager();
         private void 骑手注册修改_Load(object sender, EventArgs e)//显示窗体的时候
         {
-            textBox2.ReadOnly = false;
+            txtnumber.ReadOnly = false;
             if (i == 1)
             {
-                textBox2.ReadOnly = true;
+                txtnumber.ReadOnly = true;
                 List<Rider> list = rider.Longin(User.riderUser, User.riderPwd);
 
-                textBox1.Text = list[0].RiderName;
-                textBox2.Text = list[0].RiderNumber;
-                textBox3.Text = list[0].RiderNumberPwd;
-                textBox4.Text = list[0].RiderNumberPwd;
-                textBox5.Text = list[0].RiderPhone;
+                txtname.Text = list[0].RiderName;
+                txtnumber.Text = list[0].RiderNumber;
+                txtpwd.Text = list[0].RiderNumberPwd;
+                txtrepwd.Text = list[0].RiderNumberPwd;
+                txtphone.Text = list[0].RiderPhone;
             }
         }
 
         private void Button1_Click(object sender, EventArgs e)//确认按钮
         {
+            if (txtname.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入姓名");
+                return;
+            }
+            if (txtnumber.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入帐号");
+            }
+            if (txtpwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入密码");
+                return;
+            }
+            if (txtrepwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入二次密码");
+                return;
+            }
+            if (txtphone.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入电话号码");
+                return;
+            }
+            if (txtrepwd.Text.Trim() != txtpwd.Text.Trim())
+            {
+                MessageBox.Show("密码不一致", "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (i == 1)
             {
-                List<Rider> list = rider.AddAlter(textBox1.Text, textBox2.Text, textBox3.Text, textBox5.Text, i, int.Parse(User.riderKhId));
+                List<Rider> list = rider.AddAlter(txtname.Text, txtnumber.Text, txtpwd.Text, txtphone.Text, i, int.Parse(User.riderKhId));
                 if (list.Count == 1)
                 {
                     User.riderPwd = list[0].RiderNumberPwd;
@@ -55,7 +84,7 @@ namespace 点餐系统
             }
             else
             {
-                List<Rider> list = rider.AddAlter(textBox1.Text, textBox2.Text, textBox3.Text, textBox5.Text);
+                List<Rider> list = rider.AddAlter(txtname.Text, txtnumber.Text, txtpwd.Text, txtphone.Text);
                 if (list.Count == 1)
                 {
                     MessageBox.Show("注册成功");
