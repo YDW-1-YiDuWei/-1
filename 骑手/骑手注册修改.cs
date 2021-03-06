@@ -75,10 +75,12 @@ namespace 点餐系统
                 {
                     User.riderPwd = list[0].RiderNumberPwd;
                     MessageBox.Show("修改成功");
+
                 }
                 else
                 {
                     MessageBox.Show("修改失败");
+                    this.Close();
                 }
 
             }
@@ -94,6 +96,7 @@ namespace 点餐系统
                     MessageBox.Show("注册失败");
                 }
             }
+            i = 0;
         }
     }
 }
