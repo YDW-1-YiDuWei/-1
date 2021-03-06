@@ -160,6 +160,7 @@
             this.Name = "骑手登入";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "骑手登入";
+            this.Load += new System.EventHandler(this.骑手登入_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
