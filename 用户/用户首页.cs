@@ -14,6 +14,7 @@ namespace 点餐系统
 {
     public partial class 用户首页 : Form
     {
+        public  餐馆列表 frm = null;
         public 用户首页()
         {
             InitializeComponent();
@@ -21,6 +22,12 @@ namespace 点餐系统
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (frm!=null)
+            {
+                frm.Show();
+                this.Close();
+                return;
+            }
             餐馆列表 cglb = new 餐馆列表();
             cglb.Show();
             this.Close();
@@ -64,6 +71,11 @@ namespace 点餐系统
         private void label3_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void 用户首页_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

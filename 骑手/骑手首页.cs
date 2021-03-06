@@ -31,7 +31,7 @@ namespace 点餐系统
             lblQSXM.Text = ":" + User.riderName;
         }
         private void button4_Click(object sender, EventArgs e)//骑手首页 接单（按钮）
-        {
+        { 
             plDD.Visible = true;
             if (lVDD.SelectedItems.Count == 0)
             {
@@ -111,6 +111,7 @@ namespace 点餐系统
         {
             if (MessageBox.Show("是否确认退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                button1.Enabled = false;
                 button3.Enabled = false;
                 label2.Text = "";
                 label4.Text = "";

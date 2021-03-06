@@ -38,6 +38,7 @@
             this.bttDelete = new System.Windows.Forms.Button();
             this.bttQD = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.lVMHB.HideSelection = false;
             this.lVMHB.LargeImageList = this.images;
             this.lVMHB.Location = new System.Drawing.Point(2, 27);
-            this.lVMHB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lVMHB.Margin = new System.Windows.Forms.Padding(2);
             this.lVMHB.Name = "lVMHB";
             this.lVMHB.Size = new System.Drawing.Size(558, 388);
             this.lVMHB.TabIndex = 0;
@@ -75,7 +76,7 @@
             // 
             this.bttZaiLeiYiDan.ForeColor = System.Drawing.Color.Red;
             this.bttZaiLeiYiDan.Location = new System.Drawing.Point(494, 380);
-            this.bttZaiLeiYiDan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttZaiLeiYiDan.Margin = new System.Windows.Forms.Padding(2);
             this.bttZaiLeiYiDan.Name = "bttZaiLeiYiDan";
             this.bttZaiLeiYiDan.Size = new System.Drawing.Size(56, 23);
             this.bttZaiLeiYiDan.TabIndex = 4;
@@ -98,7 +99,7 @@
             // 
             this.bttDelete.ForeColor = System.Drawing.Color.Red;
             this.bttDelete.Location = new System.Drawing.Point(433, 380);
-            this.bttDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttDelete.Margin = new System.Windows.Forms.Padding(2);
             this.bttDelete.Name = "bttDelete";
             this.bttDelete.Size = new System.Drawing.Size(56, 24);
             this.bttDelete.TabIndex = 4;
@@ -111,7 +112,7 @@
             // 
             this.bttQD.ForeColor = System.Drawing.Color.Red;
             this.bttQD.Location = new System.Drawing.Point(373, 380);
-            this.bttQD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttQD.Margin = new System.Windows.Forms.Padding(2);
             this.bttQD.Name = "bttQD";
             this.bttQD.Size = new System.Drawing.Size(56, 24);
             this.bttQD.TabIndex = 4;
@@ -133,11 +134,21 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(371, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(149, 12);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "（双击订单可以查看详细）";
+            // 
             // 模糊订单
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 414);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bttQD);
             this.Controls.Add(this.bttDelete);
@@ -145,7 +156,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lVMHB);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "模糊订单";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -167,5 +178,6 @@
         private System.Windows.Forms.Button bttDelete;
         private System.Windows.Forms.Button bttQD;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
     }
 }

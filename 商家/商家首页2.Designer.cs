@@ -35,6 +35,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnquit = new System.Windows.Forms.Button();
+            this.btnHandover = new System.Windows.Forms.Button();
+            this.txtCGnum = new System.Windows.Forms.TextBox();
+            this.txtCGname = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pbpath = new System.Windows.Forms.PictureBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.lVUDD = new System.Windows.Forms.ListView();
             this.image = new System.Windows.Forms.ImageList(this.components);
             this.lvCPMessage = new System.Windows.Forms.ListView();
@@ -46,16 +55,6 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnquit = new System.Windows.Forms.Button();
-            this.btnHandover = new System.Windows.Forms.Button();
-            this.txtCGnum = new System.Windows.Forms.TextBox();
-            this.txtCGname = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pbpath = new System.Windows.Forms.PictureBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.bttJD = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lvCP = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -82,6 +81,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bttJD = new System.Windows.Forms.Button();
             this.lblZJG = new System.Windows.Forms.Label();
             this.bttTD = new System.Windows.Forms.Button();
             this.bttDD = new System.Windows.Forms.Button();
@@ -97,11 +97,11 @@
             this.ofdLJ = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).BeginInit();
             this.Cmlist.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -151,7 +151,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.lVUDD);
             this.panel2.Controls.Add(this.lvCPMessage);
             this.panel2.Location = new System.Drawing.Point(304, 57);
@@ -159,123 +158,6 @@
             this.panel2.Size = new System.Drawing.Size(690, 473);
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
-            // 
-            // lVUDD
-            // 
-            this.lVUDD.HideSelection = false;
-            this.lVUDD.LargeImageList = this.image;
-            this.lVUDD.Location = new System.Drawing.Point(0, -8);
-            this.lVUDD.Name = "lVUDD";
-            this.lVUDD.Size = new System.Drawing.Size(690, 488);
-            this.lVUDD.SmallImageList = this.image;
-            this.lVUDD.TabIndex = 23;
-            this.lVUDD.UseCompatibleStateImageBehavior = false;
-            this.lVUDD.Visible = false;
-            // 
-            // image
-            // 
-            this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.image.ImageSize = new System.Drawing.Size(80, 80);
-            this.image.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // lvCPMessage
-            // 
-            this.lvCPMessage.ContextMenuStrip = this.Cmlist;
-            this.lvCPMessage.HideSelection = false;
-            this.lvCPMessage.LargeImageList = this.image;
-            this.lvCPMessage.Location = new System.Drawing.Point(44, 44);
-            this.lvCPMessage.Name = "lvCPMessage";
-            this.lvCPMessage.Size = new System.Drawing.Size(643, 426);
-            this.lvCPMessage.SmallImageList = this.image;
-            this.lvCPMessage.StateImageList = this.image;
-            this.lvCPMessage.TabIndex = 21;
-            this.lvCPMessage.UseCompatibleStateImageBehavior = false;
-            this.lvCPMessage.View = System.Windows.Forms.View.List;
-            // 
-            // Cmlist
-            // 
-            this.Cmlist.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.Cmlist.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.删除ToolStripMenuItem});
-            this.Cmlist.Name = "Cmlist";
-            this.Cmlist.Size = new System.Drawing.Size(101, 26);
-            // 
-            // 删除ToolStripMenuItem
-            // 
-            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.删除ToolStripMenuItem.Text = "删除";
-            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Black;
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripLabel1,
-            this.toolStripLabel2,
-            this.toolStripLabel3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(997, 30);
-            this.toolStrip1.TabIndex = 28;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 27);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(204, 27);
-            this.toolStripLabel1.Text = "御膳房                      ";
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.toolStripLabel2.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(148, 27);
-            this.toolStripLabel2.Text = "首页                ";
-            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.toolStripLabel3.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(52, 27);
-            this.toolStripLabel3.Text = "我的";
-            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btnSerach);
-            this.panel1.Controls.Add(this.txtCPName);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 539);
-            this.panel1.TabIndex = 29;
-            this.panel1.Visible = false;
             // 
             // panel7
             // 
@@ -288,7 +170,7 @@
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.pbpath);
             this.panel7.Controls.Add(this.btnUpdate);
-            this.panel7.Location = new System.Drawing.Point(221, 66);
+            this.panel7.Location = new System.Drawing.Point(3, 2);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(997, 537);
@@ -390,23 +272,123 @@
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
-            // bttJD
+            // lVUDD
             // 
-            this.bttJD.BackColor = System.Drawing.Color.Transparent;
-            this.bttJD.Enabled = false;
-            this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
-            this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttJD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.bttJD.ForeColor = System.Drawing.Color.White;
-            this.bttJD.Location = new System.Drawing.Point(156, 9);
-            this.bttJD.Margin = new System.Windows.Forms.Padding(4);
-            this.bttJD.Name = "bttJD";
-            this.bttJD.Size = new System.Drawing.Size(63, 59);
-            this.bttJD.TabIndex = 39;
-            this.bttJD.Text = "接单";
-            this.bttJD.UseVisualStyleBackColor = false;
-            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
+            this.lVUDD.HideSelection = false;
+            this.lVUDD.LargeImageList = this.image;
+            this.lVUDD.Location = new System.Drawing.Point(0, -9);
+            this.lVUDD.Name = "lVUDD";
+            this.lVUDD.Size = new System.Drawing.Size(690, 488);
+            this.lVUDD.SmallImageList = this.image;
+            this.lVUDD.TabIndex = 23;
+            this.lVUDD.UseCompatibleStateImageBehavior = false;
+            this.lVUDD.Visible = false;
+            // 
+            // image
+            // 
+            this.image.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.image.ImageSize = new System.Drawing.Size(80, 80);
+            this.image.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // lvCPMessage
+            // 
+            this.lvCPMessage.ContextMenuStrip = this.Cmlist;
+            this.lvCPMessage.HideSelection = false;
+            this.lvCPMessage.LargeImageList = this.image;
+            this.lvCPMessage.Location = new System.Drawing.Point(3, 3);
+            this.lvCPMessage.Name = "lvCPMessage";
+            this.lvCPMessage.Size = new System.Drawing.Size(684, 467);
+            this.lvCPMessage.SmallImageList = this.image;
+            this.lvCPMessage.StateImageList = this.image;
+            this.lvCPMessage.TabIndex = 21;
+            this.lvCPMessage.UseCompatibleStateImageBehavior = false;
+            this.lvCPMessage.View = System.Windows.Forms.View.List;
+            // 
+            // Cmlist
+            // 
+            this.Cmlist.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Cmlist.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem});
+            this.Cmlist.Name = "Cmlist";
+            this.Cmlist.Size = new System.Drawing.Size(101, 26);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Black;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripLabel1,
+            this.toolStripLabel2,
+            this.toolStripLabel3});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(997, 30);
+            this.toolStrip1.TabIndex = 28;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 27);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.White;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(204, 27);
+            this.toolStripLabel1.Text = "御膳房                      ";
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel2.ForeColor = System.Drawing.Color.White;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(148, 27);
+            this.toolStripLabel2.Text = "首页                ";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel3.ForeColor = System.Drawing.Color.White;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(52, 27);
+            this.toolStripLabel3.Text = "我的";
+            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.btnSerach);
+            this.panel1.Controls.Add(this.txtCPName);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(997, 539);
+            this.panel1.TabIndex = 29;
+            this.panel1.Visible = false;
             // 
             // panel3
             // 
@@ -710,6 +692,24 @@
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
+            // bttJD
+            // 
+            this.bttJD.BackColor = System.Drawing.Color.Transparent;
+            this.bttJD.Enabled = false;
+            this.bttJD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
+            this.bttJD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.bttJD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttJD.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bttJD.ForeColor = System.Drawing.Color.White;
+            this.bttJD.Location = new System.Drawing.Point(156, 9);
+            this.bttJD.Margin = new System.Windows.Forms.Padding(4);
+            this.bttJD.Name = "bttJD";
+            this.bttJD.Size = new System.Drawing.Size(63, 59);
+            this.bttJD.TabIndex = 39;
+            this.bttJD.Text = "接单";
+            this.bttJD.UseVisualStyleBackColor = false;
+            this.bttJD.Click += new System.EventHandler(this.BttJD_Click);
+            // 
             // lblZJG
             // 
             this.lblZJG.AutoSize = true;
@@ -868,14 +868,14 @@
             this.Load += new System.EventHandler(this.商家首页2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).EndInit();
             this.Cmlist.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpath)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();

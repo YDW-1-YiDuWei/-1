@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(骑手登入));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbphoto = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtnum = new System.Windows.Forms.TextBox();
+            this.txtpwd = new System.Windows.Forms.TextBox();
+            this.btnquit = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbphoto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbphoto
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(102, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbphoto.Image = ((System.Drawing.Image)(resources.GetObject("pbphoto.Image")));
+            this.pbphoto.Location = new System.Drawing.Point(102, 20);
+            this.pbphoto.Name = "pbphoto";
+            this.pbphoto.Size = new System.Drawing.Size(120, 120);
+            this.pbphoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbphoto.TabIndex = 0;
+            this.pbphoto.TabStop = false;
             // 
             // label1
             // 
@@ -76,57 +76,57 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "密码：";
             // 
-            // textBox1
+            // txtnum
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 21);
-            this.textBox1.TabIndex = 0;
+            this.txtnum.Location = new System.Drawing.Point(80, 143);
+            this.txtnum.Name = "txtnum";
+            this.txtnum.Size = new System.Drawing.Size(169, 21);
+            this.txtnum.TabIndex = 0;
             // 
-            // textBox2
+            // txtpwd
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '⭐';
-            this.textBox2.Size = new System.Drawing.Size(169, 21);
-            this.textBox2.TabIndex = 1;
+            this.txtpwd.Location = new System.Drawing.Point(80, 180);
+            this.txtpwd.Name = "txtpwd";
+            this.txtpwd.PasswordChar = '⭐';
+            this.txtpwd.Size = new System.Drawing.Size(169, 21);
+            this.txtpwd.TabIndex = 1;
             // 
-            // button1
+            // btnquit
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(33, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "确认";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnquit.BackColor = System.Drawing.Color.Transparent;
+            this.btnquit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquit.ForeColor = System.Drawing.Color.White;
+            this.btnquit.Location = new System.Drawing.Point(33, 212);
+            this.btnquit.Name = "btnquit";
+            this.btnquit.Size = new System.Drawing.Size(87, 28);
+            this.btnquit.TabIndex = 2;
+            this.btnquit.Text = "确认";
+            this.btnquit.UseVisualStyleBackColor = false;
+            this.btnquit.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // btnclose
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(153, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 28);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "取消";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnclose.BackColor = System.Drawing.Color.Transparent;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnclose.ForeColor = System.Drawing.Color.White;
+            this.btnclose.Location = new System.Drawing.Point(153, 212);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(87, 28);
+            this.btnclose.TabIndex = 4;
+            this.btnclose.Text = "取消";
+            this.btnclose.UseVisualStyleBackColor = false;
+            this.btnclose.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.pbphoto);
+            this.groupBox1.Controls.Add(this.btnclose);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnquit);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtpwd);
+            this.groupBox1.Controls.Add(this.txtnum);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(378, 144);
             this.groupBox1.Name = "groupBox1";
@@ -160,7 +160,7 @@
             this.Name = "骑手登入";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "骑手登入";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbphoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -170,13 +170,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbphoto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtnum;
+        private System.Windows.Forms.TextBox txtpwd;
+        private System.Windows.Forms.Button btnquit;
+        private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
     }

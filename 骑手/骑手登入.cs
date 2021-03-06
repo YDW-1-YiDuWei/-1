@@ -27,7 +27,17 @@ namespace 点餐系统
 
         private void Button1_Click(object sender, EventArgs e)//确定按钮
         {
-            List<Rider> list = rider.Longin(textBox1.Text, textBox2.Text);
+            List<Rider> list = rider.Longin(txtnum.Text, txtpwd.Text);
+            if (txtnum.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入帐号");
+                return;
+            }
+            if (txtpwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入密码");
+                return;
+            }
             if (list.Count == 1)
             {
                 User.riderUser = list[0].RiderNumber;
@@ -44,13 +54,22 @@ namespace 点餐系统
             }
             else
             {
-                MessageBox.Show("登录失败", "登录提示");
+                MessageBox.Show("帐号或密码错误", "登录提示");
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Close();
 
+        }
+
+        private void 骑手登入_Load(object sender, EventArgs e)
+        {
+            User.riderName = "";
+            User.riderKhId = "";
+            User.riderPwd = "";
+            User.riderUser = "";
         }
     }
 }
