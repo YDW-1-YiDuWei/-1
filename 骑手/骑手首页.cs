@@ -111,6 +111,7 @@ namespace 点餐系统
         {
             if (MessageBox.Show("是否确认退出登录", "退出提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                button1.Enabled = false;
                 button3.Enabled = false;
                 label2.Text = "";
                 label4.Text = "";
