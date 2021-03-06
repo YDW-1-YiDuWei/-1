@@ -15,6 +15,7 @@ namespace 点餐系统
     {
         public 点餐 name = null;
         public List<Reservation> Li = null;
+        public List<CuisineInformations> cC = null;
         public 模糊订单 Get = null;
         public 付钱()
         {
@@ -63,6 +64,8 @@ namespace 点餐系统
         {
             fqcg.Li = Li;
             fqcg.Get = this.Get;
+            fqcg.cC = this.cC;
+            fqcg.name = this.name;
         }
 
         private void btnreturn_Click(object sender, EventArgs e)

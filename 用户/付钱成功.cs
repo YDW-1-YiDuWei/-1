@@ -15,8 +15,10 @@ namespace 点餐系统
     public partial class 付钱成功 : Form
     {
         public List<Reservation> Li = null;
+        public List<CuisineInformations> cC = null;
         private OrderFormManager ofm = new OrderFormManager();
         public 模糊订单 Get = null;
+        public 点餐 name = null;
         public 付钱成功()
         {
             InitializeComponent();
@@ -43,8 +45,9 @@ namespace 点餐系统
             {
                 MessageBox.Show("下单失败");
             }
-
+            name.FQCG();
             Li.Clear();
+            cC.Clear();
             this.Close();
         }
 

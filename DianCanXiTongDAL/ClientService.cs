@@ -29,7 +29,7 @@ namespace DianCanXiTongDAL
             {
                 new SqlParameter("@Number",uid),
                 new SqlParameter("@Password",pwd),
-                new SqlParameter("@Id",id)
+                new SqlParameter("@Id",id),
             };
             coon.Open();
 

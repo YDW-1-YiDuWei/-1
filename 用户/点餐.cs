@@ -62,7 +62,7 @@ namespace 点餐系统
                 };
                 Li.Add(rv);
             }
-
+            fq.cC = this.cC;
             fq.Li = Li;
             fq.Show();
         }
@@ -89,14 +89,14 @@ namespace 点餐系统
                 if (int.Parse(abb) == item.id)
                 {
                     item.VegetableQuantity++;
-                    item.CuisinePrice = (int.Parse(item.CuisinePrice)+ int.Parse(cfo.CuisinePrice)).ToString();
+                    item.CuisinePrice = (int.Parse(item.CuisinePrice) + int.Parse(cfo.CuisinePrice)).ToString();
                     cm.Remove(cfo);
                     return;
                 }
             }
 
             cC.Add(cfo);
-           
+
 
             cm.Remove(cfo);
             Uiop = null;
@@ -173,14 +173,14 @@ namespace 点餐系统
                     {
                         int add = int.Parse(dGVYDCP.SelectedRows[0].Cells[3].Value.ToString());
                         int shdna = int.Parse(dGVYDCP.SelectedRows[0].Cells[2].Value.ToString()) / add;
-                        if (add >1)
-                        { 
+                        if (add > 1)
+                        {
                             dGVYDCP.SelectedRows[0].Cells[3].Value = add - 1;
 
                             dGVYDCP.SelectedRows[0].Cells[2].Value = shdna * int.Parse(dGVYDCP.SelectedRows[0].Cells[3].Value.ToString());
                             FangFa(int.Parse(lblJGS.Text), shdna);
 
-                            Button1_Click("",null);
+                            Button1_Click("", null);
                             return;
                         }
                         FangFa(int.Parse(lblJGS.Text), shdna);
@@ -196,7 +196,7 @@ namespace 点餐系统
         /// <summary>
         /// 订单计算
         /// </summary>
-        public void FangFa(int yuanJia,int jianJian)
+        public void FangFa(int yuanJia, int jianJian)
         {
             lblJGS.Text = (yuanJia - jianJian).ToString();
         }
@@ -313,10 +313,8 @@ namespace 点餐系统
             }
             fq.name = this;
             fq.Li = Li;
+            fq.cC = this.cC;
             fq.Show();
-
-            lblJGS.Text = "0";
-            cC.Clear();//下单之后清除数据
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -324,6 +322,10 @@ namespace 点餐系统
             餐馆列表 cglp = new 餐馆列表();
             cglp.Show();
             this.Close();
+        }
+        public void FQCG()
+        {
+            lblJGS.Text = "0";
         }
     }
 }

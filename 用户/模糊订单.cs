@@ -154,7 +154,7 @@ namespace 点餐系统
 
         private void BttQD_Click(object sender, EventArgs e)
         {
-            if (of.UpdateOrderFormManager("1002",lVMHB.SelectedItems[0].Name,"")>0)
+            if (of.UpdateOrderFormManager("1005", lVMHB.SelectedItems[0].Name,"")>0)
             {
                 MessageBox.Show("确定收货成功!");
                 DDSX();
