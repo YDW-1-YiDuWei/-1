@@ -31,11 +31,16 @@ namespace 点餐系统
             lblQSXM.Text = ":" + User.riderName;
         }
         private void button4_Click(object sender, EventArgs e)//骑手首页 接单（按钮）
-        { 
+        {
             plDD.Visible = true;
             if (lVDD.SelectedItems.Count == 0)
             {
                 MessageBox.Show("请选中你要，接的订单");
+                return;
+            }
+            if (button3.Enabled == false)
+            {
+                MessageBox.Show("尊敬的骑手你没有登录，要登录了才能抢单");
                 return;
             }
             if (of.Count == 3)
@@ -104,6 +109,7 @@ namespace 点餐系统
         private void button3_Click(object sender, EventArgs e)//骑手首页 修改（按钮）
         {
             骑手注册修改 qsdrxg = new 骑手注册修改();
+            qsdrxg.i = 1;
             qsdrxg.Show();
         }
 

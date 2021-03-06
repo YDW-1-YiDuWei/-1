@@ -383,7 +383,7 @@ namespace 点餐系统
                 BttDD_Click("", null);
                 MessageBox.Show("订单已发送，等待骑手接单");
 
-                using (FileStream fs = new FileStream(@"E:\点餐系统餐馆打单\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
+                using (FileStream fs = new FileStream(@"C:\点餐系统餐馆打单\" + odf.StatusId.ToString() + "txt", FileMode.Append, FileAccess.Write))
                 {
 
                     StreamWriter writer = new StreamWriter(fs);
