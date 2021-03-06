@@ -67,6 +67,12 @@ namespace 点餐系统
 
         private void button2_Click(object sender, EventArgs e)//商家首页2  菜品添加（按钮）
         {
+            ////
+
+            button6.Enabled = true;
+            button3.Enabled = true;
+            button7.Enabled = true;
+
             bttTD.Enabled = false;
             bttJD.Enabled = false;
 
@@ -291,7 +297,7 @@ namespace 点餐系统
             }
         }
 
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)//记时器
         {
             if (i == 1)
             {
@@ -301,7 +307,7 @@ namespace 点餐系统
             label2.Text = DateTime.Now.ToString("g");
         }
 
-        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)//删除选项
         {
             int a = (int)lvCPMessage.SelectedItems[0].Tag;
             int count = cIM.DeleteCuisinelnformationsAmend(a);
@@ -326,6 +332,9 @@ namespace 点餐系统
             lvCP.Visible = true;
             lVUDD.Visible = true;
 
+            button6.Enabled = false;
+            button3.Enabled = false;
+            button7.Enabled = false;
             txtCPName.Enabled = false;
             btnSerach.Enabled = false;
 

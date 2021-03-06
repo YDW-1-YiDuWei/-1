@@ -35,6 +35,7 @@
             this.btnquery = new System.Windows.Forms.Button();
             this.lvSJXX = new System.Windows.Forms.ListView();
             this.image = new System.Windows.Forms.ImageList(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -93,6 +94,16 @@
             this.image.ImageSize = new System.Drawing.Size(90, 90);
             this.image.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(35, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "返回";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // 餐馆列表
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -120,5 +131,6 @@
         private System.Windows.Forms.Button btnquery;
         private System.Windows.Forms.ListView lvSJXX;
         private System.Windows.Forms.ImageList image;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -23,7 +23,7 @@ namespace 点餐系统
 
         private void 餐馆列表_Load(object sender, EventArgs e)//显示窗体的时候
         {
-
+            Inquire();//查询餐馆出来
         }
 
         private void button1_Click(object sender, EventArgs e)//查询按钮
@@ -77,6 +77,13 @@ namespace 点餐系统
                 frm.Show();
                 this.Hide();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)//返回
+        {
+            this.Hide();
+            用户首页 frm = new 用户首页();
+            frm.Show();
         }
     }
 }

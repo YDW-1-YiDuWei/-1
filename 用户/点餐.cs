@@ -188,10 +188,6 @@ namespace 点餐系统
                         Button1_Click("", null);
                         break;
                     }
-                    else if (MessageBox.Show("尊敬的客户您确定要删除此菜品吗？", "温馨提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.No)
-                    {
-                        break;
-                    }
                 }
             }
         }
